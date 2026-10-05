@@ -65,7 +65,9 @@ The [workflow](WORKFLOW.md), [source record](source-validation-summary.json),
 [code checks](chapter-code-validation.json), [reader checks](reader-validation.json),
 and [clean-export checks](source-free-validation.json) retain the evidence and
 its limits. Complete preferred transcripts were read; full audiovisual review
-and human accessibility certification are not claimed.
+and human accessibility certification are not claimed. The
+[publication check](publication-validation.json) records served-file integrity,
+live desktop/mobile controls, and the rendered README preview.
 
 Public files contain the rewritten textbook, supporting code, source citations,
 and curated verification records. Raw recordings, transcripts, downloaded

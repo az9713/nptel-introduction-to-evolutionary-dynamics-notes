@@ -1,7 +1,7 @@
 {
   "status": "complete",
   "completed_at_utc": "2026-10-05T18:07:30.247557+00:00",
-  "scope": "Complete reading edition; publication status recorded separately",
+  "scope": "Complete reading edition published as a GitHub Pages site",
   "chapter_count": 20,
   "numbered_recording_count": 60,
   "orientation_recording_count": 1,
@@ -15,9 +15,11 @@
   "package": "Accepted-body preservation, local assets, coverage and privacy patterns passed",
   "human_accessibility": "not performed",
   "full_audiovisual_review": "not asserted; complete selected transcripts read",
-  "publication": "GitHub Pages deployment in progress",
+  "publication": "Published and live-verified on GitHub Pages",
   "source_free_export": "Passed: isolated Git archive rebuild and focused offline desktop/mobile reader and lab checks",
   "source_free_tested_commit": "8f17b46d77ff4eaa957f176ed0bc9f8d34f68480",
   "repository_url": "https://github.com/az9713/nptel-introduction-to-evolutionary-dynamics-notes",
-  "live_url": "https://az9713.github.io/nptel-introduction-to-evolutionary-dynamics-notes/"
+  "live_url": "https://az9713.github.io/nptel-introduction-to-evolutionary-dynamics-notes/",
+  "publication_verified_at_utc": "2026-10-05T18:42:33.925602+00:00",
+  "publication_validation": "publication-validation.json"
 }

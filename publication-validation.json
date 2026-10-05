@@ -1,0 +1,288 @@
+{
+  "checked_at_utc": "2026-10-05T18:42:33.925602+00:00",
+  "tested_content_commit": "83b576dab84235e38541f1a1167dcd8cb17cd8d0",
+  "site_url": "https://az9713.github.io/nptel-introduction-to-evolutionary-dynamics-notes/",
+  "scope": "Served site bytes, focused live reader and GitHub-rendered README",
+  "served_files": [
+    {
+      "file": "assets/book.css",
+      "http_status": 200,
+      "sha256": "e5c80c9247cda2b1604027ae0570b135cf99f6b7e4008dace6a90074a5733650",
+      "matches_git": true
+    },
+    {
+      "file": "assets/book.js",
+      "http_status": 200,
+      "sha256": "7a7c3ba2766e09ceae27bd5f960fa43c33289c647d800de4d1b3777533aaaad7",
+      "matches_git": true
+    },
+    {
+      "file": "assets/lab.css",
+      "http_status": 200,
+      "sha256": "142670571ea8ae5e3281afa14539b055c40444f36e79bb5f5022bd513d8072d3",
+      "matches_git": true
+    },
+    {
+      "file": "assets/lab.js",
+      "http_status": 200,
+      "sha256": "c5691584fe44571100436513bd97a60adcccdefc83147e6b7abb30d685eed0cc",
+      "matches_git": true
+    },
+    {
+      "file": "assets/mathjax-LICENSE",
+      "http_status": 200,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "matches_git": true
+    },
+    {
+      "file": "assets/mathjax-tex-svg.js",
+      "http_status": 200,
+      "sha256": "d4295dc33744836935c1399feece5159577b34c5c8ffb9f1c6324cd82e03a882",
+      "matches_git": true
+    },
+    {
+      "file": "assets/preview-mobile.png",
+      "http_status": 200,
+      "sha256": "7cc5f36ee67d2119268fded3e4dd55427c0efbed9d84677ffbfe5a0163e31a59",
+      "matches_git": true
+    },
+    {
+      "file": "assets/preview.png",
+      "http_status": 200,
+      "sha256": "b66ff9e38188c93746ebd924c29a86bdee390205a08d5097dd0d8513dce00c8c",
+      "matches_git": true
+    },
+    {
+      "file": "assets/site-preview.png",
+      "http_status": 200,
+      "sha256": "7c503deb985051f626af261efc9196a500842f9da620c69066273507f4d329ce",
+      "matches_git": true
+    },
+    {
+      "file": "book-overview.html",
+      "http_status": 200,
+      "sha256": "d86c0f101759f2e156c28c2e013b13cf22775c005ad812be5ec9c350ee77d01e",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-01-the-origin-of-evolutionary-thinking.html",
+      "http_status": 200,
+      "sha256": "5793b43fe766c9c886d189d8041561615af3075df95f371e758b4575ae18efb8",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-02-natural-selection-and-ecological-context.html",
+      "http_status": 200,
+      "sha256": "0a0b0267a071061b2b50efcec0cfc8b120cd99ed8811dd8dae9abf7c7d716525",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-03-molecular-biology-and-the-scales-of-evolution.html",
+      "http_status": 200,
+      "sha256": "1f4ccbb49e43bbd67b86a1d0a5ad9541e2537d825b29a9a92dfb2644b455bceb",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-04-microbial-growth-mutation-and-reproduction.html",
+      "http_status": 200,
+      "sha256": "930b55217c32f63c7f8d6261501981e7080917f91d4310e6ec739a3c4bca04d1",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-05-batch-growth-and-fitness.html",
+      "http_status": 200,
+      "sha256": "96a816665017bed99aab885f63722579de0082b9df67feef0f7cbd08264612c4",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-06-continuous-culture-and-selection.html",
+      "http_status": 200,
+      "sha256": "fd3f7ee684087670e9577414534c61756473b462d51eca3f0f3a4ed2b4404233",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-07-distributions-landscapes-and-epistasis.html",
+      "http_status": 200,
+      "sha256": "3caa593cfa71ad68aca878161ee75c1d05541629d3edf3ba1abac03231cc06e5",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-08-experimental-landscapes-and-accessibility.html",
+      "http_status": 200,
+      "sha256": "a94a55b551a7fe72ab04637b0f118cb32b5ec6b4f510980dcacddd923fd0a08a",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-09-chance-and-the-loss-of-diversity.html",
+      "http_status": 200,
+      "sha256": "cd539fc8ea0b8b4fa8c8e91f6ae7e498670639c7524b5b65194020fdc0af3b9a",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-10-moran-process-and-neutral-fixation.html",
+      "http_status": 200,
+      "sha256": "367e96dbd2e3278e934cf44d148a50d6b390602877daa6f0c9a049e2284a3932",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-11-beneficial-mutations-and-fixation.html",
+      "http_status": 200,
+      "sha256": "3860877fcce8b812c0fa2e948ed685cef8c177a77a84e945228ad83990fc1d04",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-12-mutation-supply-and-overlapping-sweeps.html",
+      "http_status": 200,
+      "sha256": "08bb880286fef16960c85fa4457f4c36eaa83a0cb0fe6294cbadb5567d792e46",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-13-traveling-waves-of-adaptation.html",
+      "http_status": 200,
+      "sha256": "b6b1d136dcf6fcf1983e8210708330ed62c850a0b73ea810318ff0c4879dbb9e",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-14-sequence-comparisons-and-experimental-design.html",
+      "http_status": 200,
+      "sha256": "9d94c209d781143ac8c9ad69496d2e3d97d92efab2481c350580031d735186ad",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-15-experimental-platforms-and-the-mega-plate.html",
+      "http_status": 200,
+      "sha256": "3ca46b8e6a6fd37e3892aede63dc8f5a2192f180daaf845429bf781fa17cceda",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-16-long-term-evolution-and-fitness-trajectories.html",
+      "http_status": 200,
+      "sha256": "4e9ccf8ebd9297c46c147f53d0bfc8f85fcccfe545fd3a7eb2ef5176d89d807c",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-17-mutation-rates-and-landscape-peaks.html",
+      "http_status": 200,
+      "sha256": "0a1e6323dd28c9bc2c561f1cfdd5ea5a8ea98b2fe64b1060f1346bf5e8b62239",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-18-innovation-selection-and-historical-contingency.html",
+      "http_status": 200,
+      "sha256": "95e2c7e28f1a4ddbad4e3d0ea10f9583c264f52de38802c778846322a07b77eb",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-19-multicellularity-and-diversification.html",
+      "http_status": 200,
+      "sha256": "664cbb580857bb05d4353cf1652c87e3304d94d0afbb5763de26022fb32843fb",
+      "matches_git": true
+    },
+    {
+      "file": "chapter-20-synonymous-fitness-and-mutation-accumulation.html",
+      "http_status": 200,
+      "sha256": "7a7cc971d479e50db147a09b621a4145454a7a27ad8794932959b17505137f5b",
+      "matches_git": true
+    },
+    {
+      "file": "index.html",
+      "http_status": 200,
+      "sha256": "1e3310362f8bcf2d900d9eb9341301ea31497f02a033078614496f9caf95b399",
+      "matches_git": true
+    },
+    {
+      "file": "numerical-lab.html",
+      "http_status": 200,
+      "sha256": "7de1b5ae9a1e386cd3da86fc159ed466b3d557208d869c7c4f62a1f88cd0f8a8",
+      "matches_git": true
+    },
+    {
+      "file": "references.html",
+      "http_status": 200,
+      "sha256": "a50108583b0da28bea815a732a4c992410e5897fe26baa4908d2f8b21b8bc7e5",
+      "matches_git": true
+    },
+    {
+      "file": "source-map.html",
+      "http_status": 200,
+      "sha256": "ddc5ae2f1f9fc36a3c2a77b7bbbe4a3d49de6d93f1fcc2f3dc959a125c0e6ec7",
+      "matches_git": true
+    }
+  ],
+  "github_readme": {
+    "rendered_by": "GitHub README HTML API",
+    "preview_loaded": true,
+    "preview_natural_width": 1280,
+    "preview_links_to_live_site": true,
+    "playlist_link_present": true,
+    "spine_positioning_present": true
+  },
+  "status": "passed",
+  "browser": [
+    {
+      "file": "index.html",
+      "viewport": 1280,
+      "math_nodes": 0,
+      "math_errors": 0,
+      "document_overflow": false,
+      "controls": "passed",
+      "javascript_errors": [],
+      "failed_responses": []
+    },
+    {
+      "file": "index.html",
+      "viewport": 390,
+      "math_nodes": 0,
+      "math_errors": 0,
+      "document_overflow": false,
+      "controls": "passed",
+      "javascript_errors": [],
+      "failed_responses": []
+    },
+    {
+      "file": "chapter-20-synonymous-fitness-and-mutation-accumulation.html",
+      "viewport": 1280,
+      "math_nodes": 186,
+      "math_errors": 0,
+      "document_overflow": false,
+      "controls": "passed",
+      "javascript_errors": [],
+      "failed_responses": []
+    },
+    {
+      "file": "chapter-20-synonymous-fitness-and-mutation-accumulation.html",
+      "viewport": 390,
+      "math_nodes": 186,
+      "math_errors": 0,
+      "document_overflow": false,
+      "controls": "passed",
+      "javascript_errors": [],
+      "failed_responses": []
+    },
+    {
+      "file": "numerical-lab.html",
+      "viewport": 1280,
+      "math_nodes": 173,
+      "math_errors": 0,
+      "document_overflow": false,
+      "controls": "passed",
+      "javascript_errors": [],
+      "failed_responses": []
+    },
+    {
+      "file": "numerical-lab.html",
+      "viewport": 390,
+      "math_nodes": 173,
+      "math_errors": 0,
+      "document_overflow": false,
+      "controls": "passed",
+      "javascript_errors": [],
+      "failed_responses": []
+    }
+  ],
+  "limitations": [
+    "Focused live browser checks cover the index, final chapter and numerical lab at both widths.",
+    "All 20 chapters also passed the separate full offline reader validation.",
+    "No human accessibility or operating-system print/clipboard certification is asserted."
+  ]
+}
