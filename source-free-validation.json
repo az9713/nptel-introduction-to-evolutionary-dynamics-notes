@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-05T18:12:54.737507+00:00",
+  "scope": "Source-free export and focused offline reader/lab behavior",
+  "git_commit": "8f17b46d77ff4eaa957f176ed0bc9f8d34f68480",
+  "archive_sha256": "139cff7e94ee7c11e448710de72bf8d0d67e183c31094b62947b72b66f7592ce",
+  "static": {
+    "status": "passed",
+    "html_files": 25,
+    "local_links_checked": 312,
+    "timestamps_checked": 319,
+    "chapter_pages_with_dollar_math": 14,
+    "failures": [],
+    "warnings": []
+  },
+  "checks": 102,
+  "failures": [],
+  "preserved_body_guards": 21,
+  "preserved_chapter_listing_digests": 20,
+  "preserved_standalone_chapter_companions": 8,
+  "preserved_numerical_lab_source": true,
+  "declared_chapter20_companion_sha256_verified": true,
+  "browser": [
+    {
+      "file": "index.html",
+      "width": 1280,
+      "mathNodes": 0,
+      "mathErrors": 0,
+      "documentWidth": 1280,
+      "viewportWidth": 1280
+    },
+    {
+      "file": "index.html",
+      "width": 390,
+      "mathNodes": 0,
+      "mathErrors": 0,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "file": "chapter-19-multicellularity-and-diversification.html",
+      "width": 1280,
+      "mathNodes": 111,
+      "mathErrors": 0,
+      "documentWidth": 1280,
+      "viewportWidth": 1280
+    },
+    {
+      "file": "chapter-19-multicellularity-and-diversification.html",
+      "width": 390,
+      "mathNodes": 111,
+      "mathErrors": 0,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    },
+    {
+      "file": "numerical-lab.html",
+      "width": 1280,
+      "mathNodes": 173,
+      "mathErrors": 0,
+      "documentWidth": 1280,
+      "viewportWidth": 1280
+    },
+    {
+      "file": "numerical-lab.html",
+      "width": 390,
+      "mathNodes": 173,
+      "mathErrors": 0,
+      "documentWidth": 390,
+      "viewportWidth": 390
+    }
+  ],
+  "limitations": [
+    "Does not repeat scientific review or all-chapter validation.",
+    "Python, Playwright and Chrome are installed host dependencies.",
+    "Does not inspect the operating-system print dialog or clipboard."
+  ]
+}

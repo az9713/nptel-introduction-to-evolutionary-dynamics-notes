@@ -15,5 +15,7 @@
   "package": "Accepted-body preservation, local assets, coverage and privacy patterns passed",
   "human_accessibility": "not performed",
   "full_audiovisual_review": "not asserted; complete selected transcripts read",
-  "publication": "local only"
+  "publication": "local only",
+  "source_free_export": "Passed: isolated Git archive rebuild and focused offline desktop/mobile reader and lab checks",
+  "source_free_tested_commit": "8f17b46d77ff4eaa957f176ed0bc9f8d34f68480"
 }

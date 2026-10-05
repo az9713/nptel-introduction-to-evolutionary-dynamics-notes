@@ -56,3 +56,5 @@ The [source map](source-map.html), [primary references](references.html),
 The [course review](course-review.json), [code checks](chapter-code-validation.json),
 [reader checks](reader-validation.json), and [completion record](completion.json)
 describe the completed local edition and its limits.
+The [clean-export check](source-free-validation.json) verifies the standalone
+rebuild, exact authored-body preservation, and focused offline reader/lab behavior.

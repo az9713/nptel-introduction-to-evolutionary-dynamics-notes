@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "scope": "Local package structure, accepted-body preservation, asset parity and privacy patterns",
-  "text_files_scanned": 74,
+  "text_files_scanned": 75,
   "accepted_chapters": 20,
   "numbered_lectures": 60,
   "findings": [],
