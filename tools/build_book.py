@@ -81,7 +81,7 @@ def page(title, content, course, chapter=False, previous=None, following=None, m
 <div class="layout{'' if chapter else ' no-toc'}">{toc}<main id="main">
 <div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
 <article id="chapter-content">{guarded}</article>{footer_nav}</main></div>
-<footer class="site-footer">Independent study notes. NPTEL IIT Bombay course recordings supply the topic sequence; added explanations and teaching constructions are separately attributed. {footer}</footer></body></html>'''
+<footer class="site-footer">Independent textbook rewrite. The NPTEL IIT Bombay lecture playlist supplies the chronological spine; original exposition and primary-source extensions are separately attributed. {footer}</footer></body></html>'''
 
 
 def chapter_metadata(path):
@@ -164,7 +164,7 @@ def build(course):
         edition_note = (f'This reading edition is in progress. {reviewed_count} available chapter(s) have passed '
                         'independent editorial review and local validation. Course completion checks remain pending.')
     page_label = 'chapter pages' if complete or reviewed_count else 'draft chapter pages available'
-    index = f'''<h1>{esc(course['course'])}: a textbook from the NPTEL lectures</h1><p>{esc(course['provider'])} · {esc(course['instructor'])} · {esc(course['term'])} · {len(course['chapters'])} chapters from {len(course['lectures'])} recordings · {len(chapters)} {page_label}.</p>
+    index = f'''<h1>{esc(course['course'])}: an independent textbook rewrite</h1><p>{esc(course['provider'])} · {esc(course['instructor'])} · {esc(course['term'])} · {len(course['chapters'])} chapters from {len(course['lectures'])} recordings · {len(chapters)} {page_label}.</p>
 <p>{edition_note}</p>
 {overview}
 <div class="search-tools"><label class="search-label" for="lecture-search">Search chapters</label><input id="lecture-search" type="search" placeholder="Search chapter title, topic, or status"><p id="search-status" role="status" aria-live="polite">{len(course['chapters'])} chapters shown</p></div><ol class="lecture-list">{''.join(rows)}</ol>'''

@@ -1,7 +1,6 @@
 # Lecture-note production workflow
 
-This local edition uses the Stanford lecture-note method supplied with the
-request, calibrated against the existing Stanford course books. The actual
+This textbook rewrite uses a transcript-grounded lecture-note workflow. The actual
 skills applied are `transcript-grounded-textbook`, `rigorous-explainer`, and
 `science-editor`. The course recordings provide the chronological spine.
 Definitions, derivations, worked examples and research extensions are original

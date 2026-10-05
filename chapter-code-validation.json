@@ -4,7 +4,7 @@
   "chapters": [
     {
       "chapter": "chapter-01-the-origin-of-evolutionary-thinking.html",
-      "html_sha256": "cd717772f221acbb87a60a52f9a77d6a3d8a2afaf1d54cb45e8f4e034f1d6bb0",
+      "html_sha256": "5793b43fe766c9c886d189d8041561615af3075df95f371e758b4575ae18efb8",
       "python_programs": 1,
       "checks": [
         {
@@ -19,7 +19,7 @@
     },
     {
       "chapter": "chapter-02-natural-selection-and-ecological-context.html",
-      "html_sha256": "5f9017833a79eb2cf52b204c123c898d8c87b573e1923c1710bbc7c1322bb9b2",
+      "html_sha256": "0a0b0267a071061b2b50efcec0cfc8b120cd99ed8811dd8dae9abf7c7d716525",
       "python_programs": 1,
       "checks": [
         {
@@ -34,7 +34,7 @@
     },
     {
       "chapter": "chapter-03-molecular-biology-and-the-scales-of-evolution.html",
-      "html_sha256": "9511c4a544ec4abc683ec2e6d18b8a1f4ddd274b78a4f171b4b9ec9acb783ee5",
+      "html_sha256": "1f4ccbb49e43bbd67b86a1d0a5ad9541e2537d825b29a9a92dfb2644b455bceb",
       "python_programs": 1,
       "checks": [
         {
@@ -49,7 +49,7 @@
     },
     {
       "chapter": "chapter-04-microbial-growth-mutation-and-reproduction.html",
-      "html_sha256": "fc7d05fe79a38913996402a654d582eb8cc33d75c6642a68a983fc71c4fc9459",
+      "html_sha256": "930b55217c32f63c7f8d6261501981e7080917f91d4310e6ec739a3c4bca04d1",
       "python_programs": 1,
       "checks": [
         {
@@ -64,7 +64,7 @@
     },
     {
       "chapter": "chapter-05-batch-growth-and-fitness.html",
-      "html_sha256": "85516da8dd2498d8a473d9e3c1afdc73f97d33a91d92bfc6a889003b12f84bf5",
+      "html_sha256": "96a816665017bed99aab885f63722579de0082b9df67feef0f7cbd08264612c4",
       "python_programs": 1,
       "checks": [
         {
@@ -79,7 +79,7 @@
     },
     {
       "chapter": "chapter-06-continuous-culture-and-selection.html",
-      "html_sha256": "50d827bc0bde664e8a1a52701cb8d529d76592ae829a0f8395b9e0df35a71bed",
+      "html_sha256": "fd3f7ee684087670e9577414534c61756473b462d51eca3f0f3a4ed2b4404233",
       "python_programs": 1,
       "checks": [
         {
@@ -94,7 +94,7 @@
     },
     {
       "chapter": "chapter-07-distributions-landscapes-and-epistasis.html",
-      "html_sha256": "fbe936dd5537bdb67ad72a72627c8bc909e9442cbb0748fa44cd048b836c6c7b",
+      "html_sha256": "3caa593cfa71ad68aca878161ee75c1d05541629d3edf3ba1abac03231cc06e5",
       "python_programs": 1,
       "checks": [
         {
@@ -109,7 +109,7 @@
     },
     {
       "chapter": "chapter-08-experimental-landscapes-and-accessibility.html",
-      "html_sha256": "35615a9fa06618de2ac99d80ef1b67c960edfcd76688024abf442b32d2727c3e",
+      "html_sha256": "a94a55b551a7fe72ab04637b0f118cb32b5ec6b4f510980dcacddd923fd0a08a",
       "python_programs": 1,
       "checks": [
         {
@@ -124,7 +124,7 @@
     },
     {
       "chapter": "chapter-09-chance-and-the-loss-of-diversity.html",
-      "html_sha256": "75c2baa50e43bac271f70870c6d70bd1e1edff2f8c3364113f795691309c88c6",
+      "html_sha256": "cd539fc8ea0b8b4fa8c8e91f6ae7e498670639c7524b5b65194020fdc0af3b9a",
       "python_programs": 1,
       "checks": [
         {
@@ -139,7 +139,7 @@
     },
     {
       "chapter": "chapter-10-moran-process-and-neutral-fixation.html",
-      "html_sha256": "6bc7ddc423bde428d353625a9b3b8a51860b6de1302443c45f759b2798b6d955",
+      "html_sha256": "367e96dbd2e3278e934cf44d148a50d6b390602877daa6f0c9a049e2284a3932",
       "python_programs": 1,
       "checks": [
         {
@@ -154,7 +154,7 @@
     },
     {
       "chapter": "chapter-11-beneficial-mutations-and-fixation.html",
-      "html_sha256": "9b9af8e10844a28cb5f8f8830ec1b6dbd3004f674b003db147ec56666c19c5cb",
+      "html_sha256": "3860877fcce8b812c0fa2e948ed685cef8c177a77a84e945228ad83990fc1d04",
       "python_programs": 1,
       "checks": [
         {
@@ -169,7 +169,7 @@
     },
     {
       "chapter": "chapter-12-mutation-supply-and-overlapping-sweeps.html",
-      "html_sha256": "47ead87b100de4f2ef91e720f6b14bf409a8c8ce0ef630e22eade8e57e2c6c89",
+      "html_sha256": "08bb880286fef16960c85fa4457f4c36eaa83a0cb0fe6294cbadb5567d792e46",
       "python_programs": 1,
       "checks": [
         {
@@ -184,7 +184,7 @@
     },
     {
       "chapter": "chapter-13-traveling-waves-of-adaptation.html",
-      "html_sha256": "ece761f61fcd031a93c8536b6fd84d9a824e20c1e438dd0e7eac03694d3c1f56",
+      "html_sha256": "b6b1d136dcf6fcf1983e8210708330ed62c850a0b73ea810318ff0c4879dbb9e",
       "python_programs": 1,
       "checks": [
         {
@@ -199,7 +199,7 @@
     },
     {
       "chapter": "chapter-14-sequence-comparisons-and-experimental-design.html",
-      "html_sha256": "d05747e94daffde4a76d043becd1b1101202c3d400e1604cc49c878bbc08e455",
+      "html_sha256": "9d94c209d781143ac8c9ad69496d2e3d97d92efab2481c350580031d735186ad",
       "python_programs": 1,
       "checks": [
         {
@@ -214,7 +214,7 @@
     },
     {
       "chapter": "chapter-15-experimental-platforms-and-the-mega-plate.html",
-      "html_sha256": "d5aa476b766a2cf7ed074a7a42e9fef720ac71d6d27a6bb5d79f797e82fd7b2b",
+      "html_sha256": "3ca46b8e6a6fd37e3892aede63dc8f5a2192f180daaf845429bf781fa17cceda",
       "python_programs": 1,
       "checks": [
         {
@@ -229,7 +229,7 @@
     },
     {
       "chapter": "chapter-16-long-term-evolution-and-fitness-trajectories.html",
-      "html_sha256": "25d113d3974f6e3495d335541563dd048a559b9063049647f015bab5cc0a2c59",
+      "html_sha256": "4e9ccf8ebd9297c46c147f53d0bfc8f85fcccfe545fd3a7eb2ef5176d89d807c",
       "python_programs": 1,
       "checks": [
         {
@@ -244,7 +244,7 @@
     },
     {
       "chapter": "chapter-17-mutation-rates-and-landscape-peaks.html",
-      "html_sha256": "19ff960b070a9e704622ea11bc0e8b293154bcd342c63f6706369e8d352a6fb4",
+      "html_sha256": "0a1e6323dd28c9bc2c561f1cfdd5ea5a8ea98b2fe64b1060f1346bf5e8b62239",
       "python_programs": 1,
       "checks": [
         {
@@ -259,7 +259,7 @@
     },
     {
       "chapter": "chapter-18-innovation-selection-and-historical-contingency.html",
-      "html_sha256": "db3f316abcdd24d4dfe05acd0dc514f13b14054d874d5b668645f0932d7d2138",
+      "html_sha256": "95e2c7e28f1a4ddbad4e3d0ea10f9583c264f52de38802c778846322a07b77eb",
       "python_programs": 1,
       "checks": [
         {
@@ -274,7 +274,7 @@
     },
     {
       "chapter": "chapter-19-multicellularity-and-diversification.html",
-      "html_sha256": "2ed1a9b4e338aac6627dcbddd8f24e41f85d53b16fa08b2424aaa59a5906a017",
+      "html_sha256": "664cbb580857bb05d4353cf1652c87e3304d94d0afbb5763de26022fb32843fb",
       "python_programs": 1,
       "checks": [
         {
@@ -289,7 +289,7 @@
     },
     {
       "chapter": "chapter-20-synonymous-fitness-and-mutation-accumulation.html",
-      "html_sha256": "964791e117e84d11eba47725678916f37b59e96bc47cea07b5caa144c8b52b0d",
+      "html_sha256": "7a7cc971d479e50db147a09b621a4145454a7a27ad8794932959b17505137f5b",
       "python_programs": 1,
       "checks": [
         {
