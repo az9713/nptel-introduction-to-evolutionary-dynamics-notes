@@ -1,0 +1,209 @@
+{
+  "chapter_order": 11,
+  "title": "Why most beneficial mutations are lost",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 36,
+      "video_id": "8l9ZhY-FMsw",
+      "duration": 1682.581,
+      "playlist_reported_duration": 1683,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "transcript_filename": "transcript.machine.json",
+      "transcript_sha256": "2ed2d3ab3c7b79fdd93351365e5f4b1871dbfc8d7fd343bf41020b0a39ae3715",
+      "first_start_seconds": 1.17,
+      "last_end_seconds": 1653.14,
+      "input_media_sha256": "10c8e64c609edd07409e31aca9cac2f13f3d2fd1b122ffa750d0dbbca5cc1928",
+      "input_media_filename": "audio.webm",
+      "audio_sha256": null,
+      "audio_hash_note": "ASR used retained container; no separately extracted audio hash asserted.",
+      "transcript_reading": "Complete preferred machine transcript read sequentially by author.",
+      "visual_review": "No visually interpreted empirical figure or complete video review asserted."
+    },
+    {
+      "lecture_number": 37,
+      "video_id": "9HsJtRZvm_c",
+      "duration": 1691.521,
+      "playlist_reported_duration": 1692,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "transcript_filename": "transcript.machine.json",
+      "transcript_sha256": "79c9bb0363b9a2a220be2471118495ffa00df9781df8c32a5830af242858b9c9",
+      "first_start_seconds": 1.17,
+      "last_end_seconds": 1661.94,
+      "input_media_sha256": "2a141f6b81b115dd75ab9834f022aff66e18dd8712fa2fa554499f754be1c676",
+      "input_media_filename": "audio.webm",
+      "audio_sha256": null,
+      "audio_hash_note": "ASR used retained container; no separately extracted audio hash asserted.",
+      "transcript_reading": "Complete preferred machine transcript read sequentially by author.",
+      "visual_review": "No visually interpreted empirical figure or complete video review asserted."
+    },
+    {
+      "lecture_number": 38,
+      "video_id": "bKkkGVM_BMw",
+      "duration": 1766.941,
+      "playlist_reported_duration": 1767,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "transcript_filename": "transcript.machine.json",
+      "transcript_sha256": "375f6248b51bff451a2902882ff8f56f789ed46c8505d31af59295d77f70940d",
+      "first_start_seconds": 1.17,
+      "last_end_seconds": 1737.42,
+      "input_media_sha256": "427972b09883ef5d7c6f94edee10aa3be69174d4a54df7957541fd42ee0d4b1e",
+      "input_media_filename": "audio.webm",
+      "audio_sha256": null,
+      "audio_hash_note": "ASR used retained container; no separately extracted audio hash asserted.",
+      "transcript_reading": "Complete preferred machine transcript read sequentially by author.",
+      "visual_review": "No visually interpreted empirical figure or complete video review asserted."
+    }
+  ],
+  "sections": [
+    {
+      "section": "A trajectory distinguishes arrival, coexistence and fixation",
+      "video_id": "8l9ZhY-FMsw",
+      "duration": 1682.581,
+      "start": 1.17,
+      "end": 885.9,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Neutral self-loops, neutral fate recap, population trajectories, arrival/coexistence/fixation times.",
+      "research_extension": "",
+      "teaching_construction": "Stable notation, integer counts, transient coexistence, survivor conditioning and expectation-versus-exact-origin counts.",
+      "evidence_class": "source-grounded mathematical model with original worked elaboration"
+    },
+    {
+      "section": "First solve a general nearest-neighbor process",
+      "video_id": "8l9ZhY-FMsw",
+      "duration": 1682.581,
+      "start": 885.9,
+      "end": 1653.14,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Beneficial mutant question, alpha/beta/stay probabilities, endpoints and first-step fixation recurrence.",
+      "research_extension": "",
+      "teaching_construction": "Positive interior probabilities and explicit uniqueness assumptions.",
+      "evidence_class": "source-grounded mathematical model with original worked elaboration"
+    },
+    {
+      "section": "First solve a general nearest-neighbor process: matrix",
+      "video_id": "9HsJtRZvm_c",
+      "duration": 1691.521,
+      "start": 1.17,
+      "end": 590.54,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Beneficial-chemostat goal and matrix system for boundary probabilities.",
+      "research_extension": "",
+      "teaching_construction": "Tridiagonal interpretation and original model boundary explanation.",
+      "evidence_class": "source-grounded mathematical model with original worked elaboration"
+    },
+    {
+      "section": "Adjacent increments expose the derivational hinge",
+      "video_id": "9HsJtRZvm_c",
+      "duration": 1691.521,
+      "start": 590.54,
+      "end": 1661.94,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Adjacent yi differences, telescoping sum, ratio gamma, products and normalization for x1.",
+      "research_extension": "",
+      "teaching_construction": "General ui solution, marginal gain interpretation, positive weights and clock invariance.",
+      "evidence_class": "source-grounded mathematical model with original worked elaboration"
+    },
+    {
+      "section": "A constant reproductive advantage makes every ratio identical",
+      "video_id": "bKkkGVM_BMw",
+      "duration": 1766.941,
+      "start": 1.17,
+      "end": 1069.1,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Fixation less than one; downward/upward reproductive ratio RA/RB; constant gamma; geometric progression.",
+      "research_extension": "",
+      "teaching_construction": "Normalized r and exact finite formula, verified neutral/endpoint limits, five-cell example.",
+      "evidence_class": "source-grounded mathematical model with original worked elaboration"
+    },
+    {
+      "section": "Large population and weak selection are separate approximations",
+      "video_id": "bKkkGVM_BMw",
+      "duration": 1766.941,
+      "start": 1069.1,
+      "end": 1323.86,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Omit reciprocal fitness power for large population, s/(1+s), weak-s simplification.",
+      "research_extension": "",
+      "teaching_construction": "Explicit N log r criterion, exact relative error, finite neutral expansion and demographic variance comparison.",
+      "evidence_class": "source-grounded mathematical model with original worked elaboration"
+    },
+    {
+      "section": "A success fraction is not a schedule of successful mutations",
+      "video_id": "bKkkGVM_BMw",
+      "duration": 1766.941,
+      "start": 1323.98,
+      "end": 1538.62,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Equal-effect illustration from fitness change, rare beneficial fixation, mutation origins versus success.",
+      "research_extension": "",
+      "teaching_construction": "Multiplicative/additive distinction, exact21trialmean and20trialsuccess probability.",
+      "evidence_class": "source-grounded mathematical model with original worked elaboration"
+    },
+    {
+      "section": "Reaching a safer count is a different endpoint",
+      "video_id": "bKkkGVM_BMw",
+      "duration": 1766.941,
+      "start": 1538.62,
+      "end": 1737.42,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Selection versus drift near the loss boundary and first few mutant descendants.",
+      "research_extension": "",
+      "teaching_construction": "Original finite threshold-establishment formula, Markov product and95celltolerance construction.",
+      "evidence_class": "source-grounded mathematical model with original worked elaboration"
+    },
+    {
+      "section": "Primary comparisons, exact ratio code, six exercises and next question",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "No additional recording span claimed.",
+      "research_extension": "Kluth/Baake section2 PDFpp2-3 fixation and time conventions; Kimura PDFpp3-4 diploid diffusion comparison.",
+      "teaching_construction": "General ratio Fraction code, frequency-dependent barrier example, six fully reasoned solutions.",
+      "evidence_class": "inspected primary comparison and original teaching"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kluth and Baake, The Moran model with selection (2013)",
+      "url": "https://arxiv.org/pdf/1306.2772",
+      "supports": "Section2 PDFpages2-3: fixed haploid model, parent replacement, continuous rates and finite fixation sum; clock translated."
+    },
+    {
+      "title": "Kimura, On the Probability of Fixation of Mutant Genes in a Population (1962)",
+      "url": "https://www.zoology.ubc.ca/let/pdfs/Kimura_1962.pdf",
+      "supports": "PDFpages3-4, printed715-716: diploid random-sampling diffusion and small-selection limit; model conventions distinguished."
+    }
+  ],
+  "source_uncertainties": [
+    "ASR says moron for Moran and occasionally corrupts formula words; all equations independently derived.",
+    "Dropping reciprocal fitness power requires N log r large, not only large population count.",
+    "Twenty origins per expected success is approximate expectation, not a guaranteed schedule.",
+    "Equal35percenttotal across5mutations does not establish equal measured effects.",
+    "No full frame-by-frame visual review asserted."
+  ],
+  "symbol_ledger": [
+    {
+      "symbol": "A,B,N,i,u_i",
+      "definition": "Resident/mutant, fixed haploid count, mutant count, eventual fixation probability."
+    },
+    {
+      "symbol": "alpha_i,beta_i,gamma_i,d_i,w_k",
+      "definition": "Up/down probabilities, their ratio, adjacent fixation increment, cumulative ratio weight."
+    },
+    {
+      "symbol": "R_A,R_B,r,D_i,s",
+      "definition": "Positive reproductive weights, relative mutant weight, total normalized weight, dimensionless coefficient r-1."
+    },
+    {
+      "symbol": "a,epsilon,L,p",
+      "definition": "Omitted r^-N term, chosen error/loss tolerance, establishment threshold, independent trial success probability."
+    }
+  ],
+  "independent_review": {
+    "status": "pending"
+  },
+  "validation_evidence": [],
+  "accepted_body_sha256": "732df0ac2fac17d68a21f12ee4605e242a79bd76a31e90ffcf7b5415ac277cdc"
+}

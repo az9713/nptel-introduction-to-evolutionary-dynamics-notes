@@ -1,0 +1,344 @@
+{
+  "chapter_order": 19,
+  "title": "Multicellularity and diversification",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 58,
+      "video_id": "ckZZPJOM190",
+      "duration": 1812.901,
+      "playlist_reported_duration": 1813,
+      "selected_transcript_media_duration": 1812.8853125,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": "Systran/faster-whisper-small.en",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "963b5bbd362b33155162721c619d848c95a389b2923a4db0666f7c63bfaa8273",
+      "readable_transcript_sha256": "1b95d4b40f52558e6e50fd7773b9825936f0feb0358be9ddc65f28efaae1e7da",
+      "selected_transcript_first_start": 1.17,
+      "selected_transcript_last_end": 1783.63,
+      "selected_transcript_endpoint_gap": 29.270999999999958,
+      "transcript_reading": "Complete selected local machine transcript read sequentially before drafting; no publisher caption track was acquired.",
+      "input_media_sha256": "63efb32a2eae114083035913cfea55e5c59f933c5918b07033bb4774c4f7894e",
+      "input_media_type": "audio",
+      "audio_sha256": "63efb32a2eae114083035913cfea55e5c59f933c5918b07033bb4774c4f7894e",
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Both complete selected local machine transcripts read sequentially through final speech before drafting. Exact first/last speech endpoints and retained-media hashes checked; no continuous listening, full recording viewing or supplementary movie review claimed."
+    },
+    {
+      "lecture_number": 59,
+      "video_id": "QgTPc_TjcSk",
+      "duration": 1910.501,
+      "playlist_reported_duration": 1911,
+      "selected_transcript_media_duration": 1910.4853125,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": "Systran/faster-whisper-small.en",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "26576da9b7e7d44cb979a2244c686667b4e154cba1b2a0d0f38187aed69743d1",
+      "readable_transcript_sha256": "3a2abffabd144c357275ced369cc480452c4abb79d3f146277a9afb668d975eb",
+      "selected_transcript_first_start": 1.17,
+      "selected_transcript_last_end": 1881.14,
+      "selected_transcript_endpoint_gap": 29.360999999999876,
+      "transcript_reading": "Complete selected local machine transcript read sequentially before drafting; no publisher caption track was acquired.",
+      "input_media_sha256": "73f149c4ebd093e169dda4e7e9d89755142a603353608d75d48962f4f83f7330",
+      "input_media_type": "audio",
+      "audio_sha256": "73f149c4ebd093e169dda4e7e9d89755142a603353608d75d48962f4f83f7330",
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Both complete selected local machine transcripts read sequentially through final speech before drafting. Exact first/last speech endpoints and retained-media hashes checked; no continuous listening, full recording viewing or supplementary movie review claimed."
+    }
+  ],
+  "sections": [
+    {
+      "section": "Growth and capture jointly select the transmitted lineage",
+      "video_id": "ckZZPJOM190",
+      "duration": 1812.901,
+      "start": 1.17,
+      "end": 127.47,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Growth plus settling and bottom sampling determine descendants transferred; source slow-settling exclusion argument.",
+      "teaching_construction": "Mean-count expansion/capture product and ratio, finite rare-lineage loss versus certain exclusion, correlated clustered capture.",
+      "research_extension": "Ratcliff2012 main1595–1599 read; actualFigures1–3/6 viewed. Actual firstweek45min standing then100g10s notunchangedgravity60transfers.",
+      "evidence_class": "lecture-grounded assay argument; bounded primary experiment; original mean-count model"
+    },
+    {
+      "section": "A change in cell separation creates a reproducing cluster",
+      "video_id": "ckZZPJOM190",
+      "duration": 1812.901,
+      "start": 127.5,
+      "end": 273.2,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "ACE2-mediated motherdaughter separation and attached clonal budding descendants.",
+      "teaching_construction": "Define TF, postdivision adhesion versus aggregation, perturbation/rescue logic, continued division and clonal conflict limits.",
+      "research_extension": "Ratcliff2015 actualpp1–3/Fig1 knockout/complementation and5/10nonsynonymousACE2 lineages; Ratcliff2012 mainandactualFigs3/6 lifehistory/apoptosis bounded.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Different cell states do not require different inherited sequences",
+      "video_id": "ckZZPJOM190",
+      "duration": 1812.901,
+      "start": 273.2,
+      "end": 565.52,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Lecture proposes center/periphery mechanical/nutrient-associated expression differences and same-genome cell specialization analogy.",
+      "teaching_construction": "Mark positional mechanism as unverifiedhypothesis; sphere3/R scaling explicitlynotmeasuredsnowflakegeometry; coreinheritedgenome qualified forsomatic/immune/no-nucleus cases.",
+      "research_extension": "Ratcliff2015 strain-level expressioncomparison cannot validatepositionexpressionwithincluster.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "A static broth supplies distinct ecological opportunities",
+      "video_id": "ckZZPJOM190",
+      "duration": 1812.901,
+      "start": 574.8,
+      "end": 1123.66,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Adaptive radiation and staticPseudomonas spatialniches versus shakencontrol.",
+      "teaching_construction": "CorrectFSbottom notglass-wall claim; phenotypeclassesnotuniquegenomes; fiveof six directed rareinvasions notallmutualinvasion; no universalmixeddiversityimpossibility.",
+      "research_extension": "FullRainey1998 pp69–72 read; actualFigs1–4 viewed, oxygenmechanismboundedFSadvantageunclear.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "A static broth supplies distinct ecological opportunities",
+      "video_id": "QgTPc_TjcSk",
+      "duration": 1910.501,
+      "start": 1.17,
+      "end": 228.03,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Static spatialdiversification and wellmixed contrast recap.",
+      "teaching_construction": "Distinguish protocol-specific observation from impossibility ofdiversificationwithoutspatialgradients.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "The place of hydrolysis changes who receives the resource",
+      "video_id": "ckZZPJOM190",
+      "duration": 1812.901,
+      "start": 1129.3,
+      "end": 1783.63,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Bacterial internalhydrolysis,yeastpublicsucrose/melibiose,raffinoseenzymeproductpathways.",
+      "teaching_construction": "LacZbeta versusMelAalpha distinct; correctMel1raffinoseGal+sucrose andSuc2melibiose+Fru; bothcompletionG+Gal+Fru; strainhasMEL1required; private/publicfractionscontextual.",
+      "research_extension": "ActualMahilkar2022 Figure1/Introduction; Zhou2017 actualIntroduction/Fig1 chemistry inspected andretained; Gore2009actualpublisherabstract inspected~99%escape; originalMelA1971publisherabstract excerpt/EcoCyc reaction verified.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Well mixed does not mean ecologically uniform",
+      "video_id": "QgTPc_TjcSk",
+      "duration": 1910.501,
+      "start": 228.03,
+      "end": 711.44,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Slowextracellularmelibiosemonomerrelease and contrastwithpremixedmonomers/diauxicresponse; GALregulatorystates.",
+      "teaching_construction": "Threeconcentrationmassbalance fluxunits, unequaluptake yieldsunequalmonomerconcentration; diauxyconditionalnotallcellsynchronous; Gal3signal notgalactokinase.",
+      "research_extension": "Mahilkar2022actualIntroduction/Methods/Results andFigure1 regulatorydiagram inspected.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Common passage separates metabolic memory from genetic divergence",
+      "video_id": "QgTPc_TjcSk",
+      "duration": 1910.501,
+      "start": 339.79,
+      "end": 446.19,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Empirical few-hundred-generation geneticdiversification andtwo resourcepreferences fromisogenic founder.",
+      "teaching_construction": "Fullprimaryrepairs lecture500 toactual400generations; resetancestralversusevolved contrast, preference versusexclusiveuse; candidateallele/recipientbackground andno-speciation limits.",
+      "research_extension": "Mahilkar2022actualMethods/Results/Discussion/Figs4/6/7/8; actualSUC2recipientbackgrounddifference recorded; contradictorySNPAA labels notasserted.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Common passage separates metabolic memory from genetic divergence",
+      "video_id": "QgTPc_TjcSk",
+      "duration": 1910.501,
+      "start": 711.44,
+      "end": 755.18,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Explicit Evolution2022paper identification andpublic-good dependence before sucrose transition.",
+      "teaching_construction": "Publication attribution bounded; corrected empirical400generation scope remainsprimary extension.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "The place of hydrolysis changes who receives the resource",
+      "video_id": "QgTPc_TjcSk",
+      "duration": 1910.501,
+      "start": 755.18,
+      "end": 1098.7,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Sucrose periplasm/publicprivate recap andraffinose alternativeenzyme pathways.",
+      "teaching_construction": "Correctproduct stoichiometry andcontext-dependent capture allocation; complementaryL58association retained.",
+      "research_extension": "ActualGorepublisherabstract andZhou2017Introduction/actualFigure1 chemistry.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "A rare-type advantage can maintain two preferences",
+      "video_id": "QgTPc_TjcSk",
+      "duration": 1910.501,
+      "start": 711.44,
+      "end": 1128.3,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Populationdiversification/sharedresource argument and closure.",
+      "teaching_construction": "Explicitoriginalsymmetriccyclemap, equilibrium/contraction/boundaries andnoautomaticcoexistencefrompublicgood; originalparameter notempiricalfit.",
+      "research_extension": "ObservedfrequencydependencefromactualMahilkarFigure8e contextualonly; originalmapnotpaperfittedcostbenefitmodel.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "The inherited object also includes RNA-level effects",
+      "video_id": "QgTPc_TjcSk",
+      "duration": 1910.501,
+      "start": 1128.3,
+      "end": 1435.36,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "SynonymoussameAA doesnot guarantee neutral; RNAsequence changes.",
+      "teaching_construction": "Definitioninrelevantframe and mechanisms to investigate, notcauseassertionofGAL3.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "The inherited object also includes RNA-level effects",
+      "video_id": "QgTPc_TjcSk",
+      "duration": 1910.501,
+      "start": 1435.36,
+      "end": 1649.1,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "RNAstabilityabundance and translationstructure/initiation/tRNA illustrative proteinchanges.",
+      "teaching_construction": "Thermodynamicfoldingstability versusdecay persistence; ShineDalgarno bacterialnotyeastgeneral; rarecodonnotuniversallyslow; originalconstant-rateRNAproteinODE derivation andsteady-state limits.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "The inherited object also includes RNA-level effects",
+      "video_id": "QgTPc_TjcSk",
+      "duration": 1910.501,
+      "start": 1650.29,
+      "end": 1881.14,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Cotranslationalfoldingnascentchain pauses/kineticpath and unchangedproteinsequence.",
+      "teaching_construction": "Noeveryintermediateglobalminimum; kinetictrapnotnecessarilyequilibrium; Chapter20bridge experimentaldetailedtests retainedthere.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Executable model and six worked exercises",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": null,
+      "lecture_material": "No additional lecture span attributed to original models or exercises.",
+      "teaching_construction": "Three-vessel recurring investigator; declared growth-times-capture mean-count model; sphere surface/volume caveat; original three-route SVG with readable horizontal scrolling; extracellular monosaccharide mass balance and accounting; symmetric two-type frequency-cycle map, rare advantage/equilibrium/contraction/boundary derivation; constant-coefficient RNA/protein balance; one executable listing and six full quantitative/inference/experimental-design worked solutions.",
+      "research_extension": "",
+      "evidence_class": "original teaching construction"
+    }
+  ],
+  "source_uncertainties": [
+    "No acquired uploadercaptiontrack; actuallocal small.en machine transcript preferred byavailability. Completeavailabletranscript read sequentially; continuouslistening/fullrecordingreview notclaimed.",
+    "Actual transcript first/last endpoints retained separately; uncoveredbeginning/terminalgaps notmanufactured.",
+    "Lecturecenter/peripherygeneexpression map unverified byinspectedprimaries; explicitlymechanistic hypothesis, notestablishedexperiment. Sphere approximationnotactual branchedsnowflakegeometry.",
+    "Unverifiedlecturecurrent10000generation total not asserted.",
+    "ActualRatcliff2012 protocol changed afterfirstweek45minstanding to100g10scentrifuge; actualmain/figures reviewed, supplementarymovies/SI notclaimedreviewed.",
+    "Ratcliff2015 actual5/10lineagesnonsynonymousACE2, notoneuniversalsinglemutation; strainexpressioncontrastnotpositionresolvedexpression.",
+    "Finite slowsettling lineagenotcertainextinction; expectedcountratio notexpectedrandomodds; clusteredcapturecanbecorrelated.",
+    "Rainey1998FSbottomnotglass-wall; originalFSadvantagenotfullyresolved; fiveof six directedraremorphinvasionssuccessful, notallpairsmutual. No universalwellmixeddiversificationimpossibility.",
+    "ASRsugarnames malibios/lacto synonyms corrected; lactosebeta/LacZ andmelibiosealpha/MelA distinct; yeastMEL1notuniversalstrain.",
+    "RaffinoseMel1firstproductsGal+sucrose, Suc2firstmelibiose+Fru; transcriptionGal+Fruwrong.",
+    "Gore2009publisherabstract directlyinspected, nofullpaper/supplementfigreviewclaimed; approximately99%escape contextualnotuniversal98/2.",
+    "Mahilkar2022 primary400generations/three2%melibiose1:100shakenlines; lecturefewhundred/500approxnotexactempirical500.",
+    "Common-passageancestralstateversusevolvedheritablephenotype; resourcepreferencesnotexclusiveinabilitytouseothersugar.",
+    "MahilkarFigure8mutationalAA labels conflictcaption/maintext; exactsynonymousclassificationnotasserted. ActualfigureF121FversuscaptionL121F. RecipientSUC2backgrounddifference acknowledged. Candidate-locusanalysisnotfullgenomecausality; no new species/reproductiveisolationclaim.",
+    "Mahilkar2DG concentrationunits andpanelcaptionfractionsinconsistent; no numericthreshold/fractioninferredfromthoseuncertainties.",
+    "Premixedglucosegalactose diauxynotuniversallyidenticalsynchronousstateinallcells; no populationmaximizationteleology.",
+    "Originaldeterministicmodel notempiricalfit, nouptake/producer-cost mechanismproof, nofinitebottleneck survival ormutation/immigration.",
+    "mRNAthermodynamicfold stability versusdecay persistence separated; effectivehalf-life includesdeclaredfirstorderloss.",
+    "ShineDalgarno bacterialcontext notgeneralyeastinitiation; rarecodon notuniversal slowtranslation; cotranslationalintermediatesnotguaranteedglobalfreeenergyminima.",
+    "SameAA sequence notneutral; mechanismpossibilities notassertedcauseofGAL3 phenotype; experimentalfitness/foldingdetaildeferredChapter20."
+  ],
+  "references": [
+    {
+      "title": "Ratcliff et al. (2012), Experimental evolution of multicellularity",
+      "url": "https://doi.org/10.1073/pnas.1115323109",
+      "supports": "Actual retainedoriginalmainpp1595–1599read; actualFigures1–3/6viewed; settlingprotocoltransition, postdivisionadhesion,propagulelifehistory/apoptosis bounded."
+    },
+    {
+      "title": "Ratcliff et al. (2015), Origins of multicellular evolvability in snowflake yeast",
+      "url": "https://doi.org/10.1038/ncomms7102",
+      "supports": "Actual retainedauthorPDFpp1–3read andFig1viewed; ACE2knockout/complementation,5/10lineages; no positionalexpressionclaim."
+    },
+    {
+      "title": "Rainey and Travisano (1998), Adaptive radiation in a heterogeneous environment",
+      "url": "https://doi.org/10.1038/27900",
+      "supports": "Fullactualpp69–72read andFigures1–4viewed; morphlocations/mixingdiversity/5of6directedraremorphinvasions/FSadvantageuncertain."
+    },
+    {
+      "title": "Mahilkar et al. (2022), Public good-driven release of heterogeneous resources leads to genotypic diversification of an isogenic yeast population",
+      "url": "https://doi.org/10.1111/evo.14646",
+      "supports": "Actual publisherMethods/relevantResults/Discussion andFigs1/4/6/7/8inspected; MEL1pathway,common-passagecontrol,400generations,resourcepreferences,GAL3allele assays/coculturecontext; disputedAA labels notasserted."
+    },
+    {
+      "title": "Zhou et al. (2017), Construction of engineered Saccharomyces cerevisiae strain to improve that whole-cell biocatalytic production of melibiose from raffinose",
+      "url": "https://doi.org/10.1007/s10295-017-1901-8",
+      "supports": "ActualpublisherIntroduction/Figure1caption/actualFigure1viewed; exactalternative raffinosehydrolysis intermediates; no broaderengineeringclaims."
+    },
+    {
+      "title": "Gore, Youk and van Oudenaarden (2009), Snowdrift game dynamics and facultative cheating in yeast",
+      "url": "https://www.nature.com/articles/nature07921",
+      "supports": "Actualpublisherabstractinspected/retained; periplasmicsucrosehydrolysis/~99%monosaccharidediffusionassay; fullpaper/figuresnotclaimed."
+    },
+    {
+      "title": "EcoCyc LacZ reaction annotation",
+      "url": "https://www.biocyc.org/getid?id=EcoCyc%3ABETAGALACTOSID-MON",
+      "supports": "Curated enzyme-reactionrecord verified lactosehydrolysistoGlc+Gal; distinguishalphaenzyme."
+    },
+    {
+      "title": "The alpha-galactosidase from Escherichia coli K12 (1971)",
+      "url": "https://doi.org/10.1016/0304-4165(71)90053-5",
+      "supports": "Actualindexedpublisherabstractexcerptonly: melibioseuse requiresinduciblepermease/alpha-galactosidase; directfullpaperaccessblocked andnoreadclaimed."
+    }
+  ],
+  "symbol_ledger": [
+    {
+      "symbol": "nj,Aj,sigmaj",
+      "first_section": "settling",
+      "definition": "Typej foundingcellcount,expectedcellnumberexpansion,captureprobability; ratioofexpectedtransmittedcountsnotexpectedrandomratio."
+    },
+    {
+      "symbol": "ACE2,MEL1,SUC2,GAL3",
+      "first_section": "clonal-clusters / sugar-chemistry / resource-feedback",
+      "definition": "Namedgenes; ACE2TFcellseparation,MEL1secretedalpha-galactosidase,SUC2invertase,GAL3galactosesignaling; correspondingproteins distinguished."
+    },
+    {
+      "symbol": "R",
+      "first_section": "differentiation",
+      "definition": "Radiusoforiginalcompactsphere approximation;3/Rexternalarea/volume,notmeasuredsnowflake."
+    },
+    {
+      "symbol": "SM,WS,FS",
+      "first_section": "spatial-radiation",
+      "definition": "Smooth,wrinklyspreader,fuzzyspreader colonyphenotypeclasses; nooneclassonegenomeassertion."
+    },
+    {
+      "symbol": "M,G,A,J,UG,UA",
+      "first_section": "resource-feedback",
+      "definition": "Extracellularmelibiose/glucose/galactoseconcentrations; hydrolysisflux andtotaluptakefluxesconcentration/time,constantvolumeclosedbatch."
+    },
+    {
+      "symbol": "x,a,FG,FA,N,f,xstar",
+      "first_section": "coexistence",
+      "definition": "Glucosepreferringfrequency,positiveinteractionstrength,dimensionlesscyclemultipliers,totaldeterministiccount,nextfrequencymap,interiorequilibrium1/2."
+    },
+    {
+      "symbol": "m,p,alpha,delta,k,gamma,mstar,pstar",
+      "first_section": "synonymous-bridge",
+      "definition": "Per-cellRNA/proteinmeanabundances,RNAproductionrate,RNAeffectivefirstorderloss,proteinproductionperRNA,proteineffectiveloss,constant-rate steady states."
+    },
+    {
+      "symbol": "H,qi,t_half",
+      "first_section": "exercises",
+      "definition": "Shannoncategoryentropy/categoryfrequency andeffectivefirstorderRNAhalf-life underdeclaredrate; categoriesexplicitstateversusdetectedgenotype."
+    }
+  ],
+  "validation_evidence": [
+    "1 actual HTML code block(s) extracted and executed; exact stdout matched; pycodestyle and <=79 columns pass."
+  ],
+  "independent_review": {
+    "status": "pending"
+  },
+  "accepted_body_sha256": "35cc078178eee09d9a31d6458f41674cc03884f326d09c00acd6302a94307f05"
+}

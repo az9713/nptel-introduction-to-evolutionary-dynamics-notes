@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="35cc078178eee09d9a31d6458f41674cc03884f326d09c00acd6302a94307f05"><title>19. Multicellularity and diversification · Introduction to Evolutionary Dynamics</title>
+<link rel="stylesheet" href="assets/book.css"><script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="index.html">Introduction to Evolutionary Dynamics · January 2025</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main">
+<div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>19. Multicellularity and diversification</h1>
+<p class="lead">A culture founded by one yeast cell now contains visibly different cells. Has it evolved multiple genotypes, or has one genotype acquired several ways to behave? Put three vessels on the bench: settling yeast clusters, a static bacterial broth, and shaken yeast growing on melibiose. Each can develop internal diversity, but the evidence needed to explain that diversity changes from vessel to vessel.</p>
+<p>The problem is consequential because selection acts on reproductive success, whereas the investigator first sees morphology, gene expression or growth. <em>Cell differentiation</em> means cells acquire different functional states; <em>genetic diversification</em> means distinct heritable sequence variants arise and persist. <em>Adaptive radiation</em> describes diversification associated with specialization into different ecological opportunities. These are related processes, not interchangeable observations. A large colony, an enzyme-expressing cell and a genetically distinct resource specialist are three different objects.</p>
+<p class="source-note">Lecture spine: <a href="https://www.youtube.com/watch?v=ckZZPJOM190">Lecture 58</a> and <a href="https://www.youtube.com/watch?v=QgTPc_TjcSk">Lecture 59</a>. Both complete available local machine transcripts were read sequentially; no uploader caption track was acquired. Their sugar names and reaction products contain transcription errors, corrected below against biochemical sources. The primary studies, original derivations and proposed mechanisms are distinguished explicitly. Continuous listening, complete video viewing and review of supplementary movies are not claimed.</p>
+
+<h2 id="settling">Growth and capture jointly select the transmitted lineage <a class="video-link" href="https://www.youtube.com/watch?v=ckZZPJOM190&amp;t=1">L58 · 0:01</a></h2>
+<p>Return to the settling experiment from Chapter 18. Growth generates descendants; sampling decides which descendants found the next culture. A cluster may grow less rapidly than solitary cells but reach the sampled bottom fraction more efficiently. Selecting rapid settling therefore changes the relevant reproductive assay: the question concerns descendants after growth <em>and</em> transfer.</p>
+<p>For type $j$, let $n_j$ be the number of founding cells, $A_j$ its expected cell-number expansion during one growth interval, and $\sigma_j$ the probability that a descendant enters the transferred sample. In a simplified assay with type-specific but frequency-independent expansion and capture, the expected transmitted count is $n_jA_j\sigma_j$. Consequently, the ratio of mean transmitted counts for types $1$ and $2$ is</p>
+\[
+\frac{n_1A_1\sigma_1}{n_2A_2\sigma_2}
+=\frac{n_1}{n_2}\frac{A_1\sigma_1}{A_2\sigma_2}.
+\]
+<p>The hinge is the product $A_j\sigma_j$: capture can reverse the ranking obtained from growth alone. This is a mean-count comparison, not the expectation of a random count ratio. Real transfer can lose a rare lineage, and correlated capture of cells in one cluster changes the sampling variance. Slow settling does not imply certain extinction in one finite transfer.</p>
+<p>The original snowflake-yeast experiment used an evolving protocol: standing for 45 minutes during the first week, then centrifugation at $100g$ for 10 seconds. It was not 60 successive days of an unchanged gravity assay. The cluster phenotype appeared in all ten original replicate populations within 60 transfers. The paper's competition assays also compared selection with and without the settling component, directly testing the dependence of the advantage on that component. These are results in that experiment, rather than a universal advantage of multicellularity. <a href="https://doi.org/10.1073/pnas.1115323109">Ratcliff et al. (2012), main text and Figures 1–2</a>.</p>
+
+<h2 id="clonal-clusters">A change in cell separation creates a reproducing cluster <a class="video-link" href="https://www.youtube.com/watch?v=ckZZPJOM190&amp;t=127">L58 · 2:07</a></h2>
+<p>Budding yeast reproduce by forming a daughter cell from a mother. After division, separation normally releases that daughter. In snowflake yeast, incomplete separation makes descendants remain attached along their genealogical branches. This is postdivision adhesion, distinct from unrelated cells aggregating into a floc. Division continues; the mutation changes what happens to the physical connection afterward.</p>
+<p><em>ACE2</em> encodes a transcription factor, a protein that regulates transcription of other genes. In a later analysis, disrupting <em>ACE2</em> in the diploid ancestor, which has two chromosome sets, produced clusters, while restoring a functional copy in an evolved strain restored unicellular growth. That perturbation-and-rescue argument is stronger than finding a mutation associated with a phenotype. The same analysis found nonsynonymous <em>ACE2</em> mutations in five of ten examined snowflake lineages; it does not establish one identical mutation in every lineage. Its expression comparison concerned ancestral versus snowflake strains, not spatially resolved expression within a cluster. <a href="https://doi.org/10.1038/ncomms7102">Ratcliff et al. (2015), genetic-basis results and Figure 1</a>.</p>
+<p>A cluster also needs a way to reproduce as a cluster. Snowflake branches break into smaller propagules, pieces that grow into new clusters. Time-lapse observations showed a juvenile period before propagule production, giving the collective a reproducible life cycle. Clonal attachment reduces the opportunity for unrelated genotypes to exploit one another inside the founding cluster, although later mutation can generate variation. Common ancestry does not guarantee permanent genetic identity.</p>
+<p>The original study connected increased cell death in later clusters with smaller propagules and used an apoptosis-inducing treatment to test the relationship. Here <em>apoptosis</em> denotes the assayed programmed-cell-death process, not indiscriminate mechanical damage. Weak links can aid collective reproduction even when the affected cell stops reproducing. This is bounded evidence for a division of labor associated with propagule production; it is not evidence that these early clusters already possess the tissue organization of an animal. <a href="https://doi.org/10.1073/pnas.1115323109">Ratcliff et al. (2012), Figures 3 and 6</a>.</p>
+
+<h2 id="differentiation">Different cell states do not require different inherited sequences <a class="video-link" href="https://www.youtube.com/watch?v=ckZZPJOM190&amp;t=273">L58 · 4:33</a></h2>
+<p>The lecture proposes that cells near the center and periphery encounter different nutrient and mechanical conditions, potentially inducing different expression programs. Treat that specific positional explanation as a mechanistic hypothesis here. The inspected papers establish clustering and aspects of collective reproduction; they do not establish the lecture's complete map of center-versus-periphery gene expression. Nor does a spoken present-day generation total supply a verified date-stamped measurement.</p>
+<p>A geometric argument explains why such a hypothesis is reasonable without proving it. Approximate a compact cluster by a sphere of radius $R$. Its surface area is $4\pi R^2$, its volume $4\pi R^3/3$, and their ratio is $3/R$. Doubling radius halves external surface per unit volume. If supply occurs across that surface and consumption is distributed through the volume, the balance can become more restrictive with size. Actual snowflakes are branched, porous structures: the spherical estimate is a teaching model, not their measured transport law. Diffusion, internal flow and uptake must be measured before assigning a nutrient gradient.</p>
+<p>Gene regulation then supplies a possible route from environmental difference to functional difference without a new sequence mutation in every specialized cell. Most nucleated cells in a human share the core inherited genome yet express different programs; this comparison does not erase somatic mutations, immune-cell DNA rearrangements or cells without nuclei. The correct inference is conditional: shared sequence can support diverse states. To demonstrate distinct genotypes, use lineage and sequence evidence; to demonstrate differentiation, show reproducible state or function differences and their dependence on position or signals.</p>
+
+<h2 id="spatial-radiation">A static broth supplies distinct ecological opportunities <a class="video-link" href="https://www.youtube.com/watch?v=ckZZPJOM190&amp;t=574">L58 · 9:34</a></h2>
+<p>Move to the second vessel. A clonal bacterial founder now produces genetically differentiated descendants occupying different parts of a static microcosm. The famous experiment used <em>Pseudomonas fluorescens</em>. Its three dominant colony-morphology classes were smooth, wrinkly spreader and fuzzy spreader, abbreviated SM, WS and FS. WS formed a mat at the air–broth interface, SM occupied the broth, and FS was associated with the bottom. The third class should not be relabeled a demonstrated glass-wall specialist. <a href="https://doi.org/10.1038/27900">Rainey and Travisano (1998), Figures 1–2</a>.</p>
+<p>Oxygen access makes the surface a different environment from the interior. A lineage that builds an interface mat can gain access to oxygen while competing with broth residents. Yet this is not a complete explanation of every morph: the original authors explicitly left the FS advantage less clear. Colony morphology is an accessible phenotype, not a one-to-one map from every colony to one unique genome.</p>
+<p>Static cultures developed substantial morphological diversity, while shaken cultures did not show that diversification under the tested conditions. Changing the mixing regime changed the observed diversity. This is strong evidence that spatial opportunity matters in this system; it does not prove that genetic diversification is impossible in every mixed environment. Mixing suppresses one source of heterogeneity while leaving resource chemistry, temporal changes and interactions available. <a href="https://doi.org/10.1038/27900">Rainey and Travisano (1998), Figure 3</a>.</p>
+<p>Persistence requires more than the simultaneous presence of three colony types. A rare-invasion experiment introduces one type at low frequency into a common competitor and asks whether its relative abundance increases. In the original pairwise tests, five of six directed invasions succeeded; FS failed to invade WS. Thus the evidence supports frequency-dependent interactions but not universal mutual invasion of every pair. A surface mat can also deteriorate as it becomes common. Fitness changes when organisms modify the environment that determines their reproductive success. <a href="https://doi.org/10.1038/27900">Rainey and Travisano (1998), Figure 4</a>.</p>
+
+<figure>
+<div class="table-wrap" style="overflow-x:auto" tabindex="0" role="region" aria-label="Three routes to diversity; scroll horizontally on a narrow screen">
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="340" viewBox="0 0 680 340" role="img" aria-labelledby="fig19-title fig19-desc" style="min-width:680px;max-width:none;color:inherit">
+<title id="fig19-title">Three distinct routes to visible diversity</title>
+<desc id="fig19-desc">A clonal cluster contains different cell states. A static bacterial culture contains specialists at the air interface, in the broth and at the bottom. A mixed yeast culture contains two resource preferences accessing extracellular glucose and galactose. These are conceptual diagrams, not experimental images.</desc>
+<g fill="none" stroke="currentColor" stroke-width="2">
+<rect x="10" y="12" width="210" height="310" rx="12"/><rect x="235" y="12" width="210" height="310" rx="12"/><rect x="460" y="12" width="210" height="310" rx="12"/>
+<path d="M98 134L64 108M98 134L140 104M98 134L132 173M132 173L166 202M132 173L98 213"/>
+<circle cx="64" cy="108" r="19"/><circle cx="98" cy="134" r="19"/><circle cx="140" cy="104" r="19"/><circle cx="132" cy="173" r="19"/><circle cx="166" cy="202" r="19"/><circle cx="98" cy="213" r="19"/>
+<path d="M267 80V239H414V80M267 113H414"/><path d="M271 110L285 102L301 113L319 102L338 114L357 103L376 113L392 104L410 111" stroke-width="5"/>
+<circle cx="295" cy="157" r="5"/><circle cx="355" cy="170" r="5"/><circle cx="397" cy="193" r="5"/><path d="M277 235H407" stroke-width="6"/>
+<circle cx="503" cy="131" r="19"/><circle cx="627" cy="131" r="19"/><circle cx="565" cy="205" r="19"/>
+<path d="M525 96H603M534 99L526 106M594 99L602 106"/>
+</g>
+<g fill="currentColor" font-family="system-ui,sans-serif" font-size="18" text-anchor="middle">
+<text x="115" y="43">Clonal cluster</text><text x="340" y="43">Static broth</text><text x="565" y="43">Mixed resources</text>
+<text x="64" y="114">A</text><text x="98" y="140">A</text><text x="140" y="110">B</text><text x="132" y="179">A</text><text x="166" y="208">B</text><text x="98" y="219">B</text>
+<text x="340" y="94">WS: interface</text><text x="340" y="210">SM: broth</text><text x="340" y="267">FS: bottom</text>
+<text x="565" y="83">Public hydrolysis</text><text x="503" y="137">G</text><text x="627" y="137">A</text><text x="565" y="211">G</text><text x="565" y="246">Glucose + galactose</text>
+<text x="115" y="283">One founding genotype</text><text x="115" y="307">Different cell states</text>
+<text x="340" y="307">Spatial opportunities</text><text x="565" y="283">Different preferences</text><text x="565" y="307">Possible coexistence</text>
+</g></svg>
+</div>
+<figcaption>Figure 19.1. Original conceptual comparison. A/B denote hypothetical expression states within a clonal cluster; G/A denote glucose/galactose preferences in the mixed culture. The diagram asserts neither measured positional expression nor exclusive resource use. On a narrow screen, scroll the figure horizontally to retain readable labels.</figcaption>
+</figure>
+
+<h2 id="sugar-chemistry">The place of hydrolysis changes who receives the resource <a class="video-link" href="https://www.youtube.com/watch?v=ckZZPJOM190&amp;t=1129">L58 · 18:49</a></h2>
+<p>The third vessel is shaken. A single supplied sugar can nevertheless produce multiple ecological resources after extracellular processing. The relevant distinction is not just the list of atoms in a molecule. Bond specificity, enzyme location and regulation determine which cell captures its products.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Substrate</th><th>Relevant hydrolysis</th><th>Ecological implication in the discussed system</th></tr></thead>
+<tbody>
+<tr><td>Lactose</td><td>Galactose–glucose, a $\beta(1\to4)$ linkage; bacterial LacZ is a $\beta$-galactosidase.</td><td>In the familiar <em>E. coli</em> pathway, transport precedes intracellular hydrolysis.</td></tr>
+<tr><td>Melibiose</td><td>Galactose–glucose, an $\alpha(1\to6)$ linkage; hydrolysis needs an $\alpha$-galactosidase.</td><td>Bacterial MelA and secreted yeast Mel1 are distinct enzymes and contexts; LacZ should not be assigned both substrates.</td></tr>
+<tr><td>Sucrose</td><td>Glucose–fructose; yeast Suc2 invertase hydrolyzes it outside the cytoplasm.</td><td>Products can diffuse to neighbors, although some can be captured locally.</td></tr>
+<tr><td>Raffinose</td><td>Galactose attached to a sucrose unit.</td><td>Mel1 and Suc2 cut different bonds, giving different intermediate resources.</td></tr>
+</tbody></table></div>
+<p>These assignments refer to strains with the required enzymes. In particular, <em>MEL1</em> is not present in every laboratory yeast background. The melibiose experiment used a <em>MEL1</em>-carrying strain. The intracellular bacterial comparison and extracellular yeast pathway therefore cannot be merged into one universal sugar-use mechanism. <a href="https://www.biocyc.org/getid?id=EcoCyc%3ABETAGALACTOSID-MON">EcoCyc LacZ reaction</a>; <a href="https://doi.org/10.1016/0304-4165(71)90053-5">original bacterial α-galactosidase study</a>; <a href="https://doi.org/10.1111/evo.14646">Mahilkar et al. (2022), Introduction and Figure 1</a>.</p>
+<p>For raffinose, the two routes are</p>
+\[
+\begin{aligned}
+\mathrm{raffinose}&\xrightarrow{\mathrm{Mel1}}
+  \mathrm{galactose}+\mathrm{sucrose},\\
+\mathrm{raffinose}&\xrightarrow{\mathrm{Suc2}}
+  \mathrm{melibiose}+\mathrm{fructose}.
+\end{aligned}
+\]
+<p>Suc2 can then hydrolyze the sucrose intermediate into glucose and fructose; Mel1 can hydrolyze melibiose into glucose and galactose. Complete hydrolysis through either route releases one molecule of each monosaccharide per raffinose molecule. The first Mel1 cut does <em>not</em> release galactose plus fructose. The order of cuts matters during growth because intermediates and enzyme capacities affect the time-dependent resource supply. <a href="https://doi.org/10.1007/s10295-017-1901-8">Zhou et al. (2017), Introduction and Figure 1</a>.</p>
+<p>An extracellular enzyme is a <em>public good</em> when its action benefits cells other than the producer. This does not mean all cells receive equal benefit, or that producing it is free. In the sucrose system, hydrolysis occurs in the periplasm between membrane and cell wall. A primary study reported that about 99% of the resulting monosaccharides diffused away under its assay conditions. That measured allocation is not a universal 98:2 or 99:1 constant for all sugars, strains and geometries. <a href="https://www.nature.com/articles/nature07921">Gore, Youk and van Oudenaarden (2009), publisher abstract</a>.</p>
+
+<h2 id="resource-feedback">Well mixed does not mean ecologically uniform <a class="video-link" href="https://www.youtube.com/watch?v=QgTPc_TjcSk&amp;t=228">L59 · 3:48</a></h2>
+<p>Mel1 releases glucose and galactose from melibiose outside the cell. Galactose induces the GAL/MEL regulatory system, while glucose represses it. GAL denotes the galactose-use genes; MEL includes the secreted melibiose-hydrolyzing enzyme. Gal4 activates transcription, Gal80 inhibits that activation, and galactose signaling through Gal3 relieves inhibition. Gal3 is a signaling protein, distinct from the Gal1 galactokinase that catalyzes a metabolic step. Resource processing and resource response are therefore coupled.</p>
+<p>Compare supplying glucose and galactose together at the start with releasing them continuously through hydrolysis. In a glucose-first, diauxic response, growth on the preferred resource is followed by a regulatory transition and growth on the second. <em>Diauxy</em> names this two-stage growth pattern. It is a possible response under specified conditions, not proof that every cell switches synchronously or that every strain must use the same hierarchy. With continuous hydrolysis, fresh glucose can arrive while galactose remains present. The regulatory history and instantaneous ratio of resources can then matter throughout growth.</p>
+<p>A minimal batch mass balance makes the difference precise. Let $M$, $G$ and $A$ be extracellular concentrations of melibiose, glucose and galactose. Let $J$ be the melibiose-hydrolysis flux, in concentration per unit time, and $U_G,U_A$ the total uptake fluxes for its two products in the same units. With constant volume, no feeding and no other sources or sinks,</p>
+\[
+\frac{dM}{dt}=-J,\qquad
+\frac{dG}{dt}=J-U_G,\qquad
+\frac{dA}{dt}=J-U_A.
+\]
+<p>One hydrolyzed disaccharide supplies one molecule of each product, hence the equal $J$ terms. But $d(G-A)/dt=U_A-U_G$: equal production does not imply equal concentrations after uptake. Counting monosaccharide units gives $d(2M+G+A)/dt=-(U_G+U_A)$, the expected loss from the extracellular pool into cells. These equations are an original accounting model, not a fit to the experiment. They expose the ecological hinge: cells construct multiple resources even in a spatially mixed vessel.</p>
+
+<h2 id="heritable-split">Common passage separates metabolic memory from genetic divergence <a class="video-link" href="https://www.youtube.com/watch?v=QgTPc_TjcSk&amp;t=339">L59 · 5:39</a></h2>
+<p>In the melibiose study, ancestral small and large colonies lost their growth differences after passage through glycerol–lactate, a condition used to reset GAL induction history. Their subsequent colony-size distributions became similar. Thus ancestral heterogeneity did not by itself establish two heritable genotypes. Figure 4 supplies the critical control: carry cells through common conditions before interpreting the original contrast. <a href="https://doi.org/10.1111/evo.14646">Mahilkar et al. (2022), Figure 4</a>.</p>
+<p>Three diploid lines were evolved for 400 generations in 2% melibiose. The reported 1:100 serial-transfer protocol was shaken. After common passage, isolates from evolved line E1 retained distinct melibiose phenotypes. Large-colony isolates grew faster on melibiose and galactose, while their glucose growth resembled the small-colony isolates. “Specialist” here should mean a difference in preference or induction, not demonstrated inability to use the other sugar. The paper's experiment is 400 generations; the lecture's approximate few-hundred-generation description should not become an exact 500-generation datum. <a href="https://doi.org/10.1111/evo.14646">Mahilkar et al. (2022), Methods and Figure 7</a>.</p>
+<p>The study identified a variant <em>GAL3</em> allele and tested ancestral versus variant alleles in engineered recipients. Different starting mixtures converged toward similar final frequencies under the reported coculture conditions, supporting frequency-dependent coexistence in that assay. The recipient constructs also differed in <em>SUC2</em> background in the Methods, so the coculture must be interpreted in its declared construct context. Candidate-locus analysis is not a whole-genome proof that no other variation exists. Nor does persistent microbial polymorphism establish reproductive isolation or the origin of a new species. <a href="https://doi.org/10.1111/evo.14646">Mahilkar et al. (2022), GAL3 cloning, coculture Methods and Figure 8</a>.</p>
+<p>Return to the investigator's three vessels. Cell-state diversity needs measurements of state and function. Genetic divergence needs persistence after common passage and sequence or reconstruction evidence. Stable coexistence additionally needs tests of frequency dependence over the relevant transfer regime. Each claim adds an experimental obligation; a single photograph cannot satisfy all three.</p>
+
+<h2 id="coexistence">A rare-type advantage can maintain two preferences <a class="video-link" href="https://www.youtube.com/watch?v=QgTPc_TjcSk&amp;t=711">L59 · 11:51</a></h2>
+<p>To isolate the mathematical idea, construct a deterministic two-type model. This is an original teaching model, not the fitted cost–benefit model of the melibiose paper. Let $x$ be the fraction of a glucose-preferring type and $1-x$ the fraction of a galactose-preferring type at the beginning of a cycle. Set the dimensionless reproductive multipliers</p>
+\[
+F_G(x)=1+a(1-x),\qquad F_A(x)=1+ax,\qquad a>0.
+\]
+<p>The parameter $a$ controls the strength of a symmetric rare-type advantage: each type performs better when the other is abundant. This is an assumed effective interaction, not something that follows merely from calling an enzyme public. It could summarize resource competition only after an appropriate ecological reduction. Costs, local capture, saturation and unequal resource yields could change its form.</p>
+<p>Starting with total count $N$, the two deterministic end counts are $NxF_G$ and $N(1-x)F_A$. Dividing the first by their sum gives the next frequency $f(x)$:</p>
+\[
+x_{\mathrm{next}}=f(x)
+=\frac{x[1+a(1-x)]}{1+2ax(1-x)},\qquad
+f(x)-x=\frac{ax(1-x)(1-2x)}{1+2ax(1-x)}.
+\]
+<p>The denominator is positive. For $0&lt;x&lt;1/2$ the change is positive; for $1/2&lt;x&lt;1$ it is negative. The interior equilibrium is $x_*=1/2$, and differentiating at that point gives $f'(x_*)=2/(2+a)$, between zero and one. Small departures therefore contract. At $a=0$, every frequency is unchanged; at $x=0$ or $x=1$, the missing type stays absent because the model contains no mutation or immigration.</p>
+<p>The symmetric midpoint is a consequence of the chosen equations. It is not a measured universal 50:50 split. The model also has no finite-transfer extinction: deterministic frequencies can remain positive even when a real culture has fewer than one expected transmitted cell of a type. Large-population coexistence and survival through stochastic bottlenecks must be analyzed separately.</p>
+
+<h2 id="code">Compute convergence without importing an empirical claim</h2>
+<p>The following standard-library Python listing implements precisely the cycle map above. Inputs are an initial frequency in $[0,1]$ and a finite positive $a$; outputs are frequencies at four cycle numbers. It performs no fitting, mutation, resource integration or random transfer. Parameters and cycles are dimensionless. Changing this toy's results cannot establish an experimental ecological mechanism.</p>
+<pre><code class="language-python">"""Iterate an original symmetric frequency-dependent teaching model."""
+import math
+
+
+def advance(x, a):
+    """Return next-cycle frequency for positive interaction strength a."""
+    if not math.isfinite(x) or not 0.0 &lt;= x &lt;= 1.0:
+        raise ValueError("x must be a finite frequency in [0, 1]")
+    if not math.isfinite(a) or a &lt;= 0.0:
+        raise ValueError("a must be finite and positive")
+    glucose = 1.0 + a * (1.0 - x)
+    galactose = 1.0 + a * x
+    return x * glucose / (x * glucose + (1.0 - x) * galactose)
+
+
+for initial in (0.1, 0.5, 0.9):
+    frequency = initial
+    for cycle in range(21):
+        if cycle in (0, 1, 5, 20):
+            print(f"x0={initial:.1f} cycle={cycle:2d} x={frequency:.6f}")
+        frequency = advance(frequency, 0.4)
+</code></pre>
+<pre class="output">x0=0.1 cycle= 0 x=0.100000
+x0=0.1 cycle= 1 x=0.126866
+x0=0.1 cycle= 5 x=0.257771
+x0=0.1 cycle=20 x=0.481824
+x0=0.5 cycle= 0 x=0.500000
+x0=0.5 cycle= 1 x=0.500000
+x0=0.5 cycle= 5 x=0.500000
+x0=0.5 cycle=20 x=0.500000
+x0=0.9 cycle= 0 x=0.900000
+x0=0.9 cycle= 1 x=0.873134
+x0=0.9 cycle= 5 x=0.742229
+x0=0.9 cycle=20 x=0.518176
+</pre>
+<p>The two off-center trajectories approach the midpoint from opposite directions. Their symmetry checks the assumed interchangeability of the two types. Near equilibrium, the multiplier is $2/2.4\approx0.8333$ per cycle. Faster convergence for larger $a$ is a property of this specified deterministic interaction; it is not an estimate of the study's evolutionary rate.</p>
+
+<h2 id="synonymous-bridge">The inherited object also includes RNA-level effects <a class="video-link" href="https://www.youtube.com/watch?v=QgTPc_TjcSk&amp;t=1128">L59 · 18:48</a></h2>
+<p>The lecture closes by asking why a synonymous mutation can have a fitness effect. Synonymous means that the substituted codon specifies the same amino acid in the relevant reading frame. It leaves the encoded protein sequence unchanged, but changes the RNA sequence. Consequently, RNA decay, initiation, translation and cotranslational folding remain possible routes to a phenotype. An amino-acid label cannot settle neutrality.</p>
+<p>Separate two meanings of RNA “stability.” Thermodynamic stability describes relative free energies of folded RNA conformations; decay stability concerns persistence against degradation. A more favorable folded conformation does not automatically imply a longer cellular half-life. Sequence, structure and their molecular interactions must be connected to measured decay. Similarly, a structure near an initiation region can impede ribosome access, but the Shine–Dalgarno mechanism discussed in the lecture is bacterial; it is not the general initiation mechanism of the yeast experiments.</p>
+<p>A simple abundance model clarifies the lecture's illustrative numerical claims. Let $m$ and $p$ be mean RNA and protein abundances per cell, $\alpha$ a constant RNA-production rate, $\delta$ an effective first-order RNA-loss rate, $k$ the protein-production rate per RNA, and $\gamma$ an effective protein-loss rate. Loss may include degradation and dilution; all coefficients are positive and held constant in this construction:</p>
+\[
+\dot m=\alpha-\delta m,\qquad
+\dot p=km-\gamma p,\qquad
+m_*=\frac{\alpha}{\delta},\quad
+p_*=\frac{k\alpha}{\delta\gamma}.
+\]
+<p>At steady state, doubling $\delta$ halves both abundances if the other rates remain fixed. Reducing $k$ to $0.7k$ instead leaves RNA unchanged and reduces protein to 70%. A transient measurement need not equal these steady states, and feedback can change the coefficients. Protein abundance also need not scale linearly with reproductive fitness.</p>
+<p>Codon-dependent translation involves charged transfer RNAs, their availability and the cellular condition. Codon rarity is not a universal clock: a rare codon need not always translate more slowly. A pause can change the time available for an emerging protein segment to fold or interact with a chaperone, a protein assisting folding. The amino-acid sequence can therefore encounter different kinetic paths while remaining identical. Sequential folding need not select the global minimum-energy conformation at every intermediate stage, and a kinetically trapped product need not be the equilibrium state. Chapter 20 develops the experimental fitness and folding tests; here these are mechanisms to investigate, not inferred causes of the <em>GAL3</em> phenotype.</p>
+
+<h2 id="exercises">Exercises</h2>
+<p>Use the declared assay and model in each problem. Distinguish a calculation from the additional evidence needed to interpret a culture.</p>
+
+<h3>1. Can a slower-growing cluster increase through transfer?</h3>
+<p>A cluster type expands 80-fold and each descendant has capture probability $0.5$. Solitary cells expand 100-fold but have capture probability $0.1$. Equal founder counts are used. Compute the mean-count comparison after one cycle and after three identical cycles. Explain why it does not give a guaranteed outcome for one rare cluster.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p>The transmitted multipliers are $80(0.5)=40$ and $100(0.1)=10$. The ratio of expected counts is therefore $4$ after one cycle and, under repeated fixed multipliers, $4^3=64$ after three. Growth alone would favor the solitary type by $100/80=1.25$, so capture reverses the ranking. The three-cycle expectation calculation presumes the same assay parameters and does not condition on survival.</p>
+<p>Mean counts do not specify the full distribution. Descendants in a cluster can be captured together, giving correlated inclusion, and a rare cluster may miss the transferred fraction altogether. An extinction probability requires a sampling model, the number and sizes of propagules and their capture dependence. Taking the ratio of mean counts is not taking the mean of a random ratio.</p>
+</details>
+
+<h3>2. Does a two-state cluster prove genetic diversity?</h3>
+<p>Half the cells express a reporter and half do not. Sequencing detects one founding genotype at the assay's resolution. Compute the Shannon entropy of the two reporter states and the entropy of the detected genotype classes, using natural logarithms. Design a test of the center-versus-periphery hypothesis.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p>For categories with frequencies $q_i$, Shannon entropy is $H=-\sum_iq_i\ln q_i$, with zero-frequency contributions defined by continuity. Reporter-state entropy is $-2(1/2)\ln(1/2)=\ln2\approx0.6931$. The one detected genotype has frequency one, so its class entropy is $-\ln1=0$. State diversity thus does not imply detected sequence diversity. Sequencing resolution leaves rare or unmeasured variants possible.</p>
+<p>Image expression and cell position simultaneously, quantify nutrient or stress conditions, and compare matched cells before and after dispersing or altering transport through the cluster. Control reporter inheritance and cell age, which can covary with position. A positional association alone is not proof of a nutrient mechanism; a controlled perturbation plus reversible expression response strengthens that inference. Neither entropy calculation identifies a particular causal gene.</p>
+</details>
+
+<h3>3. Follow the carbon through extracellular hydrolysis</h3>
+<p>In a fixed-volume toy batch, $10\,\mu\mathrm{M}$ melibiose is completely hydrolyzed. Uptake then removes $8\,\mu\mathrm{M}$ glucose and $3\,\mu\mathrm{M}$ galactose. Find the remaining extracellular concentrations and check monosaccharide-unit accounting. Compare complete hydrolysis of $10\,\mu\mathrm{M}$ raffinose and name the intermediate following each possible first cut.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p>Hydrolysis creates $10\,\mu\mathrm{M}$ of each monomer. Uptake leaves $2\,\mu\mathrm{M}$ glucose and $7\,\mu\mathrm{M}$ galactose. Initially the pool contains $2(10)=20\,\mu\mathrm{M}$ monosaccharide units; uptake removes $8+3=11$, leaving $9$, equal to $2+7$. Equal release has not produced equal residual concentrations.</p>
+<p>Raffinose contains three monosaccharide units, so complete hydrolysis produces $10\,\mu\mathrm{M}$ each of galactose, glucose and fructose: $30\,\mu\mathrm{M}$ monomer units before uptake. Mel1 first produces galactose plus sucrose; Suc2 first produces fructose plus melibiose. Appropriate second cuts give the same final stoichiometry but can give different intermediate dynamics. The concentrations alone do not specify which strain consumes each product.</p>
+</details>
+
+<h3>4. Test an interior coexistence equilibrium</h3>
+<p>For the original cycle model, calculate the next frequency from $x=0.2$, $a=0.4$. Derive the local contraction factor at the interior equilibrium and determine whether the model can restore a type after it has been completely lost.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p>The multipliers are $F_G=1+0.4(0.8)=1.32$ and $F_A=1+0.4(0.2)=1.08$. Therefore $x_{\mathrm{next}}=0.264/(0.264+0.864)=0.234042553\ldots$. The glucose-preferring type rises because it is rare under the assumed interaction.</p>
+<p>Write $f(x)=x+h(x)$, where $h=ax(1-x)(1-2x)/D$ and $D=1+2ax(1-x)$. At $x=1/2$ the numerator of $h$ vanishes. Its derivative there is $-a/2$, and $D=1+a/2$, giving $h'=-a/(2+a)$ and $f'=1+h'=2/(2+a)$. For $a=0.4$ this is $5/6\approx0.833333$. Because it lies inside the unit circle, sufficiently small errors contract per cycle. At zero and one the cycle map preserves the boundary exactly. No mutation or immigration is present, so complete loss is irreversible in this model.</p>
+</details>
+
+<h3>5. Distinguish memory, inheritance and stable coexistence</h3>
+<p>Two colony classes from a shaken culture retain different sugar-growth curves after one assay. Propose a sequence of experiments that distinguishes metabolic memory from inherited divergence and inherited divergence from stable coexistence. What would remain unproved even if both classes invade when rare?</p>
+<details class="solution"><summary>Worked solution</summary>
+<p>First passage independent isolates through a common condition that resets the relevant induction history, then repeat growth and colony assays with matched inocula. Disappearance of the contrast favors state dependence; persistence motivates sequence analysis and reconstruction of candidate changes in controlled genetic backgrounds. Repeat isolates and account for assay noise: common passage alone does not identify the causal sequence.</p>
+<p>Next mix the reconstructed or carefully characterized types at several starting frequencies, including each type rare, and follow frequencies across the full transfer regime. Reciprocal increase when rare supports a restoring interaction under those conditions. Control markers, differing background alleles, contamination, mutation during the assay and environmental carryover. Reproductive isolation, coexistence in other environments and survival through arbitrarily severe bottlenecks remain unproved. The static experiment's five successful directed invasions out of six also warns against treating all pairwise coexistence claims as equivalent.</p>
+</details>
+
+<h3>6. Translate an RNA change into a conditional protein prediction</h3>
+<p>Initially the abundance model has steady-state $m_*=20$ and $p_*=100$ in consistent per-cell units. A synonymous variant doubles $\delta$ and changes $k$ to $0.7k$, leaving $\alpha$ and $\gamma$ unchanged. Predict the new steady-state abundances and the RNA half-life ratio. State what this calculation says about folding and fitness.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p>The new RNA abundance is $\alpha/(2\delta)=10$. The new protein abundance is $(0.7k)\alpha/(2\delta\gamma)=0.35(100)=35$. After stopping transcription, the first-order RNA equation gives $m(t)=m(0)e^{-\delta t}$, hence $t_{1/2}=\ln2/\delta$. Doubling the effective loss rate halves this half-life under the model's constant-rate assumptions.</p>
+<p>This predicts abundances conditional on the specified rate changes, not the rate changes from the DNA substitution itself. It does not identify an RNA fold, a translation-pause location, a protein conformation or a fitness effect. Those require decay, translation, folding and competition measurements. The steady state is stable because the linear dynamics have eigenvalues $-\delta$ and $-\gamma$, but a sample collected before relaxation can differ from 10 and 35.</p>
+</details>
+
+<h2 id="closing">Read diversity through the experiment that establishes it</h2>
+<p>The settling vessel makes a collective life cycle selectable; the static vessel supplies spatial opportunities; the melibiose vessel creates distinct resources through extracellular chemistry. In each case the organism changes part of its selective environment. The quantitative task is to state which reproductive multiplier depends on which state, resource or frequency. The evidential task is to distinguish an observed contrast from its inherited and ecological causes. That discipline also prepares the next chapter: an unchanged protein sequence is one observation, while neutrality is a claim requiring an assay.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-18-innovation-selection-and-historical-contingency.html">Previous available chapter</a><a href="index.html">Lecture index</a><a rel="next" href="chapter-20-synonymous-fitness-and-mutation-accumulation.html">Next available chapter</a></nav></main></div>
+<footer class="site-footer">Independent study notes. NPTEL IIT Bombay course recordings supply the topic sequence; added explanations and teaching constructions are separately attributed. Complete local reading edition; source and validation boundaries are recorded in this repository.</footer></body></html>

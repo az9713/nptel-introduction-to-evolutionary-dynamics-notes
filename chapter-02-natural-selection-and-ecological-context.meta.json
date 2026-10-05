@@ -1,0 +1,251 @@
+{
+  "chapter_order": 2,
+  "title": "Natural selection, adaptation, and ecological context",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 4,
+      "video_id": "yIQ1K999lbk",
+      "duration": 1629.821,
+      "playlist_reported_duration": 1630,
+      "caption_declared_duration": 1630,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "db121a32018a7f5e49562b30cc4523eb2d78f5e9705409d6d5cff43decd8d7cf",
+      "publisher_first_start": 1.493,
+      "publisher_last_end": 1608.6339999999998,
+      "publisher_endpoint_gap": 21.187000000000126,
+      "transcript_reading": "Complete preferred publisher transcript read sequentially before drafting; complete secondary-ASR reading is not claimed.",
+      "input_media_sha256": "2e3ef716ca3d00159c538df90c55046c1e9b73269c4e7de787fa7ad2788ab76e",
+      "input_media_type": "video container",
+      "audio_sha256": null,
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Terminal captions inspected in complete transcript reading. Lectures4–5 final sampled frames visually inspected; lecture6 retained source is audio and no visual claim is made. Full audiovisual review and continuous listening not claimed.",
+      "selected_transcript_sha256": "4d2e79d08cc47550d000c8cea0b63bcdbf85323cb9b9b9913415f2b0fe997f2a",
+      "readable_transcript_sha256": "0bfdd01b9a0887d93734afd7bbcec225b0fa7566fc8fb2cd16bbdad07a4f5da3"
+    },
+    {
+      "lecture_number": 5,
+      "video_id": "b2Qj3cekZN4",
+      "duration": 1720.961,
+      "playlist_reported_duration": 1721,
+      "caption_declared_duration": 1721,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "46b3fb831d49ef579d75c422674019d8f8ce9768d54afa633ac7b67065dc49b6",
+      "publisher_first_start": 1.513,
+      "publisher_last_end": 1715.973,
+      "publisher_endpoint_gap": 4.988000000000056,
+      "transcript_reading": "Complete preferred publisher transcript read sequentially before drafting; complete secondary-ASR reading is not claimed.",
+      "input_media_sha256": "dbb5528e4783122159e04fa65a40b9799e923ba25089e2b4d444d5e1c4cd8b54",
+      "input_media_type": "video container",
+      "audio_sha256": null,
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Terminal captions inspected in complete transcript reading. Lectures4–5 final sampled frames visually inspected; lecture6 retained source is audio and no visual claim is made. Full audiovisual review and continuous listening not claimed.",
+      "selected_transcript_sha256": "54a01e9d8bdeeb8745f84668bdfdf8ed7ee06db9efaca19152ccfed00ba5a7be",
+      "readable_transcript_sha256": "f871aade3b38098b04a05587afb351a32c656a8f74f0af5b0a70aeb43ab88286"
+    },
+    {
+      "lecture_number": 6,
+      "video_id": "N4A_Fer6xnE",
+      "duration": 1414.581,
+      "playlist_reported_duration": 1415,
+      "caption_declared_duration": 1415,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "9f63af1da8496ccce54fc6d8912f1f4ae591ad9a9bb076923a46dffc8899d64d",
+      "publisher_first_start": 1.513,
+      "publisher_last_end": 1392.969,
+      "publisher_endpoint_gap": 21.611999999999853,
+      "transcript_reading": "Complete preferred publisher transcript read sequentially before drafting; complete secondary-ASR reading is not claimed.",
+      "input_media_sha256": "4da48d86b7629f68477881900f0ffdb3631002a9c516fe127439bc3e76560d56",
+      "input_media_type": "audio",
+      "audio_sha256": "4da48d86b7629f68477881900f0ffdb3631002a9c516fe127439bc3e76560d56",
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Terminal captions inspected in complete transcript reading. Lectures4–5 final sampled frames visually inspected; lecture6 retained source is audio and no visual claim is made. Full audiovisual review and continuous listening not claimed.",
+      "selected_transcript_sha256": "5fac52135fd099f7a3223e66509ca04111aefd88b74f298b81e002a46e0b1d2c",
+      "readable_transcript_sha256": "aeb1603f7a179317aed0beea094d80844ac4f4582bfa07e20bbdea76401129a1"
+    }
+  ],
+  "sections": [
+    {
+      "section": "Describe a population before explaining its change",
+      "video_id": "yIQ1K999lbk",
+      "duration": 1629.821,
+      "start": 17.98,
+      "end": 371.46,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Phenotypes, bins, frequency distribution and variation.",
+      "teaching_construction": "Genotype/environment distinction, mass-versus-density, moments and observation process.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Differential descendant production reweights the distribution",
+      "video_id": "yIQ1K999lbk",
+      "duration": 1629.821,
+      "start": 372.58,
+      "end": 602.48,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Trait-dependent contribution and changed frequencies.",
+      "teaching_construction": "Normalized multi-class weights, covariance derivation, odds recurrence and finite-time limits.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Selection among parents and transmission to offspring are separate operations",
+      "video_id": "yIQ1K999lbk",
+      "duration": 1629.821,
+      "start": 604.02,
+      "end": 1608.63,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Inheritance; failure of each condition; consumption of variation.",
+      "teaching_construction": "Conditional transmission matrix and exact mean-change decomposition; qualified diversity loss.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Averaging parents cannot explain persistent variation on its own",
+      "video_id": "b2Qj3cekZN4",
+      "duration": 1720.961,
+      "start": 300.69,
+      "end": 1440.28,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Unknown inheritance basis, blending, continuous versus discrete variation.",
+      "teaching_construction": "Variance/SD correction; correlation and innovation terms; particulate-inheritance counterexample.",
+      "research_extension": "Mendel descendant sections; Fisher printed399–400,402 inspected.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Camouflage predictions must be tested at the relevant life stage",
+      "video_id": "N4A_Fer6xnE",
+      "duration": 1414.581,
+      "start": 54.94,
+      "end": 884.56,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Peppered moth environmental reversal, rock pocket mice, inheritance and pigmentation.",
+      "teaching_construction": "Stage-specific fitness, genotype/phenotype separation, association and causal limits.",
+      "research_extension": "Cook2012 fullpaper and Figure1/Table2; Nachman2003 relevant Results/Discussion/Table2 inspected.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Selection can change spread while leaving the mean fixed",
+      "video_id": "N4A_Fer6xnE",
+      "duration": 1414.581,
+      "start": 886.67,
+      "end": 1392.97,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Directional, divergent/disruptive, stabilizing selection.",
+      "teaching_construction": "Exact three-class examples and support-preservation counterexamples; no automatic speciation.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "An evolutionary timescale depends on generations and the mechanism",
+      "video_id": "b2Qj3cekZN4",
+      "duration": 1720.961,
+      "start": 1443.89,
+      "end": 1715.97,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Rapid viral change and prospective antibiotic resistance experiment.",
+      "teaching_construction": "Generation and waiting times distinguished; no universal two-week resistance claim; human response versus inherited change.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "An evolutionary timescale depends on generations and the mechanism",
+      "video_id": "b2Qj3cekZN4",
+      "duration": 1720.961,
+      "start": 62.43,
+      "end": 299.27,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Fitness meanings and relatedness anecdote.",
+      "teaching_construction": "Explicit comparison stage, expected versus realized output; no kin-selection result inferred from anecdote.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Executable model and six worked exercises",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": null,
+      "lecture_material": "No additional lecture span attributed to original models or exercises.",
+      "teaching_construction": "Exact rational discrete reweighting, covariance and transmission decompositions, blending variance proof, six varied worked solutions.",
+      "research_extension": "",
+      "evidence_class": "original teaching construction"
+    }
+  ],
+  "source_uncertainties": [
+    "Uploader subtitle track production method unknown; publisher label does not establish human generation.",
+    "Canonical duration is retained-media ffprobe, distinct from caption metadata whole-second playlist declaration.",
+    "Spoken standard-deviation halving corrected to variance halving and SD divided by square root of two under independent averaging.",
+    "Mean change is not a complete definition of evolution; distribution and genetic composition can change without a mean shift.",
+    "Perfect phenotype copying, certain finite-time fixation and universal loss of diversity are schematic assumptions rather than general inheritance/selection laws.",
+    "Moth disappearance is partly directly observed bird predation and partly inferred under behavior assumptions; survival stage is not lifetime reproductive contribution.",
+    "Nachman primary text inspected in author-uploaded web full text; initial local PDF/PMC routes failed and are not represented as successful evidence.",
+    "No full frame-by-frame visual or continuous audio listening claimed."
+  ],
+  "references": [
+    {
+      "title": "Mendel, Experiments in Plant Hybridization",
+      "url": "https://cs.brown.edu/people/rblumber/MendelWeb/archive/Mendel.Experiments.html",
+      "supports": "Complete relevant sections4–6 read; hybrid phenotype and reappearance of parental forms."
+    },
+    {
+      "title": "Fisher, The Correlation between Relatives on the Supposition of Mendelian Inheritance",
+      "url": "https://doi.org/10.1017/S0080456800012163",
+      "supports": "Printed399–400 and402 inspected in original scan, separately issued1October1918; particulate factors and quantitative variation."
+    },
+    {
+      "title": "Cook et al. (2012), Selective bird predation on the peppered moth",
+      "url": "https://doi.org/10.1098/rsbl.2011.1136",
+      "supports": "Complete four-page paper read; printed610–611 methods/Results, actual Figure1/Table2 viewed; bounded observed/inferred predation and relative daily survival."
+    },
+    {
+      "title": "Nachman et al. (2003), The genetic basis of adaptive melanism in pocket mice",
+      "url": "https://doi.org/10.1073/pnas.0431157100",
+      "supports": "Relevant author-uploaded Results/Discussion printed5270–5273, Table2 read; linked-variant uncertainty and distinct population molecular bases."
+    }
+  ],
+  "symbol_ledger": [
+    {
+      "symbol": "z,N,delta,j,n_j,q_j,z_j,zbar,V",
+      "first_section": "distribution",
+      "definition": "Trait, sample count, positive bin width, bin index/count/frequency/representative value, trait mean and variance."
+    },
+    {
+      "symbol": "w_j,wbar,q_sel,Cov_q",
+      "first_section": "weighting",
+      "definition": "Nonnegative expected recruited descendants per individual, positive mean contribution, selected frequency, frequency-weighted covariance."
+    },
+    {
+      "symbol": "D,L,p,r,t,p_0,p_t",
+      "first_section": "weighting",
+      "definition": "Dark/light ideal inherited types, dark fraction, positive contribution ratio, generation number and initial/later fraction."
+    },
+    {
+      "symbol": "K_jk,m_j,q_prime,zbar_prime",
+      "first_section": "transmission",
+      "definition": "Conditional offspring-class probability, parental-class mean descendant trait, offspring frequency and mean."
+    },
+    {
+      "symbol": "X,Y,Z,mu,sigma_squared,rho,epsilon,V_epsilon",
+      "first_section": "blending",
+      "definition": "Parental and offspring random trait values, mean, finite parental variance, parental correlation, independent zero-mean deviation and its variance."
+    },
+    {
+      "symbol": "A,a,AA,Aa,aa",
+      "first_section": "blending",
+      "definition": "Two alleles and three diploid genotypes in an illustrative segregation model."
+    }
+  ],
+  "validation_evidence": [
+    "1 actual HTML code block(s) extracted and executed; exact stdout matched; pycodestyle and <=79 columns pass."
+  ],
+  "independent_review": {
+    "status": "pending"
+  },
+  "accepted_body_sha256": "4cd84baba89d9a0dd31ae543c4b05e606a77b4f4e9a7c182a673b847cc15ab69"
+}

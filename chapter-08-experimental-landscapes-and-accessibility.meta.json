@@ -1,0 +1,264 @@
+{
+  "chapter_order": 8,
+  "title": "Experimental landscapes and evolutionary accessibility",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 25,
+      "video_id": "lh0_3Yt_TWc",
+      "duration": 1914.581,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1915,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": null,
+      "transcription_model": "Systran/faster-whisper-small.en",
+      "transcript_kind": "local machine ASR",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "59e1f3c0a49c1ec44495394549dda2c11710ff94e3e64d654c8304e48284a515",
+      "selected_first_start": 1.17,
+      "selected_last_end": 1884.98,
+      "endpoint_gap_seconds": 29.600999999999885,
+      "source_reported_duration": 1914.56,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "b90519bcd48eced0ce0af5cda2ddab758ddc095425de17fe4084b3db0fa4a1c9",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Local small.en machine ASR; phonetic names/numerical entries can be wrong."
+    },
+    {
+      "lecture_number": 26,
+      "video_id": "VRfWSqS1_XM",
+      "duration": 1669.861,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1670,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": null,
+      "transcription_model": "Systran/faster-whisper-small.en",
+      "transcript_kind": "local machine ASR",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "0ce3f5d762afe1da9b6db83bce134c2b9f4dd49f935e7e2c205b5888a5aa2721",
+      "selected_first_start": 1.17,
+      "selected_last_end": 1640.24,
+      "endpoint_gap_seconds": 29.621000000000095,
+      "source_reported_duration": 1669.8453125,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "a003fe695db2c2991bf2589d26981fdb7deecce7bdd83906b57ed54f016cf3cd",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Local small.en machine ASR; phonetic names/numerical entries can be wrong."
+    },
+    {
+      "lecture_number": 27,
+      "video_id": "vUoGIhHyCqY",
+      "duration": 1828.381,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1829,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": null,
+      "transcription_model": "Systran/faster-whisper-small.en",
+      "transcript_kind": "local machine ASR",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "7008cc513ff7a39f8749695d165ebbc7cca83d1a228a951709c463e02ae305a4",
+      "selected_first_start": 1.17,
+      "selected_last_end": 1798.93,
+      "endpoint_gap_seconds": 29.451000000000022,
+      "source_reported_duration": 1828.3733125,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "3903090c865a3e7a5021f035b2554972c58bf74a44d5b7ede1fd505b17200ece",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Local small.en machine ASR; phonetic names/numerical entries can be wrong."
+    },
+    {
+      "lecture_number": 28,
+      "video_id": "sg_yY8ZbDS8",
+      "duration": 1777.021,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1778,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": null,
+      "transcription_model": "Systran/faster-whisper-small.en",
+      "transcript_kind": "local machine ASR",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "8f186ec0fc7cfe18a0d73c6de3c1151080b9b76d88529facb1b1ddb2bbb6955a",
+      "selected_first_start": 1.17,
+      "selected_last_end": 1747.76,
+      "endpoint_gap_seconds": 29.260999999999967,
+      "source_reported_duration": 1777.0026875,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "2eb0337bf90b937a1a979e0e4fed2d095e7ab86a312618f73b25148aafb2b419",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Local small.en machine ASR; phonetic names/numerical entries can be wrong."
+    }
+  ],
+  "sections": [
+    {
+      "section": "Resistance is a measured phenotype",
+      "video_id": "lh0_3Yt_TWc",
+      "duration": 1914.581,
+      "start": 1.17,
+      "end": 1131.71,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Antibiotic environment, target variation, inhibitory concentration, resistance phenotype and five-change example.",
+      "research_extension": "Weinreich2006 actual indexed primary abstract only: approximate100000fold and102 inaccessible orders; full article unavailable. Khan2011 p1194 independently compares18/120.",
+      "teaching_construction": "Define concentration/protocol, inhibition versus killing, MIC versus rate and assay dependence; avoid ambiguous lecture fold-change.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Five differences define32 genotypes and120 shortest orders",
+      "video_id": "lh0_3Yt_TWc",
+      "duration": 1914.581,
+      "start": 1131.71,
+      "end": 1466.05,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Five changes can accumulate in120 different orders.",
+      "research_extension": "No separate empirical claim.",
+      "teaching_construction": "Derive2^d vertices, d2^(d-1) edges, d! shortest orders and exact subset recurrence.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "A blocked order does not establish a local peak",
+      "video_id": "lh0_3Yt_TWc",
+      "duration": 1914.581,
+      "start": 1466.05,
+      "end": 1884.98,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Some prescribed paths fail to increase resistance and18 remain accessible.",
+      "research_extension": "Bounded primary abstract and Khan2011 p1194 comparison, noWeinreich raw-data reproduction.",
+      "teaching_construction": "Distinguish blocked path step from graph peak; original five-site sign model has60 accessible orders and one peak.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Sign interaction and constrained routes",
+      "video_id": "VRfWSqS1_XM",
+      "duration": 1669.861,
+      "start": 1.17,
+      "end": 980.59,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Recap restricted routes, two-site1/1.04/.98/1.09 example, order and predictability.",
+      "research_extension": "No separate empirical claim.",
+      "teaching_construction": "Analyse simple sign epistasis without multiple peaks; path counts are not transition probabilities.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "A reconstructed genome-wide experiment",
+      "video_id": "VRfWSqS1_XM",
+      "duration": 1669.861,
+      "start": 980.59,
+      "end": 1640.24,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Long-term glucose-limited bacterial experiment, twelve lines, first five fixed changes and their reconstruction.",
+      "research_extension": "Khan2011 actual author-uploaded body pp1193-1194:32 combinations, competitive assay, selected loci.",
+      "teaching_construction": "Retain historical setup without present generation claims; mutations need not be nucleotide point changes.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Genome-wide mutation regions and accessible routes",
+      "video_id": "vUoGIhHyCqY",
+      "duration": 1828.381,
+      "start": 1.17,
+      "end": 1350.1,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Five mutation regions, approximate gain,86 accessible orders versus18, gene-location comparison.",
+      "research_extension": "Khan2011 pp1193-1195:about30percent gain,86/120, one peak and uncertain apparent declines; narrow attribution.",
+      "teaching_construction": "Do not substitute lecture35percent exact; equal additive/multiplicative effects not identified by endpoint; no universal intragenic/intergenic law.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Diminishing returns and limits of gene-location comparison",
+      "video_id": "vUoGIhHyCqY",
+      "duration": 1828.381,
+      "start": 1350.1,
+      "end": 1798.93,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Physical-interaction hypothesis and diminishing marginal benefits on fitter backgrounds.",
+      "research_extension": "Khan2011 p1195:four declining marginal trends, three significant; pykF opposite trend and neutral ancestral effect.",
+      "teaching_construction": "Derive concave original model, raw negative epistasis with positive margins/all120 paths; slowing adaptation has alternatives.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Binary restrictions and expanded nucleotide choices",
+      "video_id": "sg_yY8ZbDS8",
+      "duration": 1777.021,
+      "start": 1.17,
+      "end": 564.21,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Binary five-sites32 differs from fullDNA4^5; complete long gene impractical.",
+      "research_extension": "No separate empirical claim.",
+      "teaching_construction": "Clarify genotypes versus orders and restricted-region completeness.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Expanding the alphabet and measuring a pooled library",
+      "video_id": "sg_yY8ZbDS8",
+      "duration": 1777.021,
+      "start": 564.24,
+      "end": 1441.84,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "folA/DHFR region, nine nucleotides, codons, pooled growth and sequencing, one-change graph.",
+      "research_extension": "Papkou2023 primary article pp1,6-7:edited region,261382/262144 detected frequency pairs, replicates, regression and count threshold.",
+      "teaching_construction": "Derive separate generic log-ratio-of-ratios model with explicit time units; zeros/bias/variable-rate limitations.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Many peaks can coexist with accessible high endpoints",
+      "video_id": "sg_yY8ZbDS8",
+      "duration": 1777.021,
+      "start": 1441.84,
+      "end": 1747.76,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Ruggedness,514 peaks, high peak accessibility and large basins.",
+      "research_extension": "Papkou2023 actual article pp2-5,7 and visually inspectedFig2-4:filtered135178 giant component,73 above1 plus one.87 grouped among74,76.5percent simulated adaptive walks, overlapping basins.",
+      "teaching_construction": "Reachability versus probability; original eight-genotype recurrence, basin overlap, uniform/greedy counterexample.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Original derivations, examples, code, exercises and separately attributed research",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": null,
+      "lecture_material": "Not attributed to a recording.",
+      "research_extension": "Khan2011 author-uploaded full body and Papkou2023 primary article inspected; Weinreich2006 actual primary abstract only, fulltext unavailable.",
+      "teaching_construction": "Original exact derivations, synthetic numerical cases, executed code and six reasoned exercises; not experimental reproductions.",
+      "evidence_class": "original mathematical teaching constructions and inspected primary research, not empirical reproduction"
+    }
+  ],
+  "symbol_ledger": [
+    [
+      "MIC",
+      "protocol-dependent growth-inhibition concentration"
+    ],
+    [
+      "d, S",
+      "number of chosen changes and derived-allele subset"
+    ],
+    [
+      "F, C",
+      "measured score and shortest accessible order count"
+    ],
+    [
+      "b_j",
+      "binary allele indicator"
+    ],
+    [
+      "z, v_j, a",
+      "dimensionless latent performance, positive increments, saturation amplitude"
+    ],
+    [
+      "n_v, n_0, T",
+      "variant/reference sequencing counts, hours"
+    ],
+    [
+      "g_v, g_0, ell_v",
+      "per-hour rates and dimensionless log enrichment"
+    ],
+    [
+      "B_p, Q(v,w), H_p(v)",
+      "reachability basin, uphill transition rule, endpoint probability"
+    ]
+  ],
+  "accepted_body_sha256": "6e770626bb700b25b4de6ec46580f4d030f96495acbf7a44d8af5aeabd9e2243"
+}

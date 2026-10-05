@@ -1,0 +1,5 @@
+_private_sources/
+__pycache__/
+*.pyc
+.venv/
+*.log

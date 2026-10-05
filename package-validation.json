@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "scope": "Local package structure, accepted-body preservation, asset parity and privacy patterns",
+  "text_files_scanned": 74,
+  "accepted_chapters": 20,
+  "numbered_lectures": 60,
+  "findings": [],
+  "limitations": "Pattern scan is not a claim of exhaustive security or human accessibility certification."
+}

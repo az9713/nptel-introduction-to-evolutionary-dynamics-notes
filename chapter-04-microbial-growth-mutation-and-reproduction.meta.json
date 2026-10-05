@@ -1,0 +1,311 @@
+{
+  "chapter_order": 4,
+  "title": "Microbial growth, mutation, and reproduction",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 10,
+      "video_id": "tjT6EFDWITc",
+      "duration": 2044.341,
+      "playlist_reported_duration": 2045,
+      "caption_declared_duration": 2044,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "c5cfb0b2006cec73b1a01fe71c5174e2516f404342f5a4b8040e5f47ff5f3718",
+      "selected_transcript_sha256": "19632226878899d34510afe3376f83553e261e567f660b271f0d813c9da8e7b7",
+      "readable_transcript_sha256": "6a47c596b968e0d7958e3003e1b41dc15dee2addece4bbfb84aa353a2918cbf9",
+      "publisher_first_start": 14.039,
+      "publisher_last_end": 2028.8429999999998,
+      "publisher_endpoint_gap": 15.498000000000047,
+      "transcript_reading": "Complete preferred publisher transcript read sequentially before drafting; complete secondary-ASR reading is not claimed.",
+      "input_media_sha256": "bdcb18a2e1a1326b91dfec1e59c5df60f2bbd291ecf9f743371ee8169f358eed",
+      "input_media_type": "audio",
+      "audio_sha256": "bdcb18a2e1a1326b91dfec1e59c5df60f2bbd291ecf9f743371ee8169f358eed",
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Complete preferred transcript ending inspected. Lecture11 late attribution footer is subtitle material, not adopted as biological speech or as original course attribution. Last lecture13 substantive speech through1347; terminal caption1356.25. Continuous audiovisual review not claimed."
+    },
+    {
+      "lecture_number": 11,
+      "video_id": "P-O4kbGfqlw",
+      "duration": 1901.301,
+      "playlist_reported_duration": 1902,
+      "caption_declared_duration": 1901,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "e2a484887d1f361945a014fbbe87f77a968371c30635b22ffc60dd7308deb0da",
+      "selected_transcript_sha256": "192fb1c7b0a14a1ab06994e6f02d11617d1e6d48a7554eccb057943481e4cc52",
+      "readable_transcript_sha256": "77dc14f6f68893df6a854508e1a73dc10b8a59cac0526e393a26370591c8f6fe",
+      "publisher_first_start": 1.513,
+      "publisher_last_end": 1876.5829999999999,
+      "publisher_endpoint_gap": 24.718000000000075,
+      "transcript_reading": "Complete preferred publisher transcript read sequentially before drafting; complete secondary-ASR reading is not claimed.",
+      "input_media_sha256": "513d987c0580bff8fecef269be741e569abcc87382c22396162df8bcb3665dec",
+      "input_media_type": "audio",
+      "audio_sha256": "513d987c0580bff8fecef269be741e569abcc87382c22396162df8bcb3665dec",
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Complete preferred transcript ending inspected. Lecture11 late attribution footer is subtitle material, not adopted as biological speech or as original course attribution. Last lecture13 substantive speech through1347; terminal caption1356.25. Continuous audiovisual review not claimed."
+    },
+    {
+      "lecture_number": 12,
+      "video_id": "ArYoGEZrkDM",
+      "duration": 2242.661,
+      "playlist_reported_duration": 2243,
+      "caption_declared_duration": 2243,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "53bde6f1609bce3b5249bc1e37097c3f0f04b6225d1fde3767d0107d79f07b68",
+      "selected_transcript_sha256": "37c5cc4ae1faba2874ddb01735b912669b553e4e9555c0c636c9426c970aaf75",
+      "readable_transcript_sha256": "de21b53f94fd3fdbdad6f9749d28479bf8616f6add4254cea5ec7ed851c55301",
+      "publisher_first_start": 1.553,
+      "publisher_last_end": 2216.183,
+      "publisher_endpoint_gap": 26.478000000000065,
+      "transcript_reading": "Complete preferred publisher transcript read sequentially before drafting; complete secondary-ASR reading is not claimed.",
+      "input_media_sha256": "107208a5dd8397c67a13c7b85d289f15260b4472a91362678c25304603a630fc",
+      "input_media_type": "audio",
+      "audio_sha256": "107208a5dd8397c67a13c7b85d289f15260b4472a91362678c25304603a630fc",
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Complete preferred transcript ending inspected. Lecture11 late attribution footer is subtitle material, not adopted as biological speech or as original course attribution. Last lecture13 substantive speech through1347; terminal caption1356.25. Continuous audiovisual review not claimed."
+    },
+    {
+      "lecture_number": 13,
+      "video_id": "w6pDalBkIDc",
+      "duration": 1377.881,
+      "playlist_reported_duration": 1378,
+      "caption_declared_duration": 1378,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "b6e82122dfd5d14c5dc9380b2a2d2736071be9a305b4e73358a8b75f07ec3b89",
+      "selected_transcript_sha256": "a02f798d865e39f769ea5ad15ddc09f858170e8c527606ff50a84eb9e2efbad2",
+      "readable_transcript_sha256": "683a2ffeccd342ceb58253a246b67f537c24b37a91c14d696f3c5cb69f9c3b18",
+      "publisher_first_start": 14.078,
+      "publisher_last_end": 1356.251,
+      "publisher_endpoint_gap": 21.63000000000011,
+      "transcript_reading": "Complete preferred publisher transcript read sequentially before drafting; complete secondary-ASR reading is not claimed.",
+      "input_media_sha256": "34ea5cab58d523244d74390fff157a180524d5e92bf43fdc37cf4c99c529cbb9",
+      "input_media_type": "audio",
+      "audio_sha256": "34ea5cab58d523244d74390fff157a180524d5e92bf43fdc37cf4c99c529cbb9",
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Complete preferred transcript ending inspected. Lecture11 late attribution footer is subtitle material, not adopted as biological speech or as original course attribution. Last lecture13 substantive speech through1347; terminal caption1356.25. Continuous audiovisual review not claimed."
+    }
+  ],
+  "sections": [
+    {
+      "section": "A clonal founder specifies sequence, not an identical physiological state",
+      "video_id": "tjT6EFDWITc",
+      "duration": 2044.341,
+      "start": 40,
+      "end": 1085,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Isogenic sequence and aligned Hamming distance, single-founder culture, lag/exponential/stationary growth.",
+      "teaching_construction": "DNA identity versus physiological state; alignment constraint; basal induction; stationary observation versus turnover and environmental carrying capacity.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Divisions count events; generations count doublings",
+      "video_id": "tjT6EFDWITc",
+      "duration": 2044.341,
+      "start": 1096,
+      "end": 2014,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Binary-fission increment, total divisions, synchronous generations and illustrative1to100.",
+      "teaching_construction": "Cell balance including losses/flows; distinction population doublings versus lineage depths; exact6.643856.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Divisions count events; generations count doublings",
+      "video_id": "P-O4kbGfqlw",
+      "duration": 1901.301,
+      "start": 17,
+      "end": 603,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "General initial founder count and division/generation recap.",
+      "teaching_construction": "Round division opportunities geometric sum and unit audit.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Genome copying and cell division have different clocks",
+      "video_id": "ArYoGEZrkDM",
+      "duration": 2242.661,
+      "start": 902,
+      "end": 1429,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Bidirectional copying,5millionbasepair genome,1000bp/s forks and20minute division puzzle.",
+      "teaching_construction": "Exact2500s41.6667min, twoforks versus replisome enzyme count; semiconservative inheritance and overlapping cycles.",
+      "research_extension": "MeselsonStahl1958 printed674–678 pertinent results/methods and actualFigures4/5 inspected. CooperHelmstetter1968 Model/Concordance pp519–525 inspected.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "A mutation rate measures retained changes under a stated convention",
+      "video_id": "P-O4kbGfqlw",
+      "duration": 1901.301,
+      "start": 603,
+      "end": 1743,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "DNA replication error, mutations, approximate10^-3 genome rate and largeculture event count.",
+      "teaching_construction": "Retained mutation versus error/SNP; pergenome/site mean versus probability; binomial counting; actual1e8 expectation.",
+      "research_extension": "Lee2012 spontaneous mutation rate plus mutation accumulation methods inspected; strain/classes/proofreading boundaries.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Many events do not guarantee every sequence alternative",
+      "video_id": "P-O4kbGfqlw",
+      "duration": 1901.301,
+      "start": 1744,
+      "end": 1871.15,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "3L single-base alternatives and event abundance.",
+      "teaching_construction": "One-step versus4^L sequence space; uniform occupancy derivation showing nonguarantee; survival/detection/bias limitations.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "The time of an event determines its descendant count",
+      "video_id": "ArYoGEZrkDM",
+      "duration": 2242.661,
+      "start": 1,
+      "end": 900,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Variation recap,36.54 doublings, generation opportunities, event timing and clone expansion.",
+      "teaching_construction": "Finite neutral marker model, totalvariance recursion, closed mean, rare-event and deterministic boundary checks.",
+      "research_extension": "LuriaDelbruck1943 printed491–494,498–505 inspected; actualTable2 printed504 viewed, Tables1/3 read; original synchronous model distinct from historical continuous model.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Sequence change and expression change have several routes",
+      "video_id": "ArYoGEZrkDM",
+      "duration": 2242.661,
+      "start": 1430,
+      "end": 2216.18,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Coding/regulatory mutation, protein/RNA amount, insertions/deletions, duplication/HGT.",
+      "teaching_construction": "Conditional dosage/protein proportionality, frameshift, standing variation and nonexclusive mechanisms.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Sex reshuffles alleles as well as transmitting them",
+      "video_id": "w6pDalBkIDc",
+      "duration": 1377.881,
+      "start": 14,
+      "end": 787,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Asexual/sexual contrast, diploidy, homologous chromosomes and recombination.",
+      "teaching_construction": "Define locus/allele/haplotype; meiotic chromosome mechanism versus template-switch claim; no universal crossovercount; XYpseudoautosomal correction.",
+      "research_extension": "Poriswanish2018 primary publisher introduction and distal sperm crossover results inspected, no wholepaper orfigure inspection claimed.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Sex reshuffles alleles as well as transmitting them",
+      "video_id": "w6pDalBkIDc",
+      "duration": 1377.881,
+      "start": 799,
+      "end": 1347,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Standing sequence variation, mutation versus recombination and evolutionary comparison.",
+      "teaching_construction": "Two-locus gamete probability normalization/marginal conservation; association beneficial or broken; both asexual/sexual population genetics.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Executable model and six worked exercises",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": null,
+      "lecture_material": "No additional lecture span attributed to original models or exercises.",
+      "teaching_construction": "Original replicate-culture running case; loss-aware cell balance; occupancy expectation; exact synchronous irreversibly marked binary-tree moments and program; two-locus probability model; six fully reasoned varied solutions.",
+      "research_extension": "",
+      "evidence_class": "original teaching construction"
+    }
+  ],
+  "source_uncertainties": [
+    "Uploader English-NPTEL Verified production method unknown.",
+    "Exact media duration versus playlist/caption rounding retained independently; complete preferred reading rather than continuous listening or full secondaryASR claimed.",
+    "Lecture1to100generation arithmetic6.643856, not6.67; asynchronous population doubling metric is not common lineage depth.",
+    "Stationary population does not determine gross births/deaths or complete nutrient exhaustion.",
+    "Mutation probability and expected genome count distinguished; retained mutation estimate not raw polymerase error.",
+    "100mLtimes1e9cells/mLtimes1e-3 implies1e8 events, not1e3.",
+    "Mutation event count greater than3L does not guarantee every alternative sampled or surviving.",
+    "5e6/(2times1e3)=2500s41.6667min; overlapping inheritance cycles distinct from immediate cell cycle.",
+    "Original finite synchronous marker model is not claimed as literal continuous LuriaDelbruck1943 model or empirical culture measurement.",
+    "Gene copy/RNA doubling does not guarantee proportional protein outside fixed linear expression assumptions.",
+    "Meiosis uses homologous chromatid exchange; fixed3or4crossovers/chromosome and completeXYabsence corrected.",
+    "No universal superiority of sexual reproduction; bacterial HGT/asexual standing variation and eukaryotic asexual reproduction recognized.",
+    "Lee2012 and Cooper1968 primary full text hosted as author manuscripts/uploads inspected in pertinent sections; completearticle reading not claimed."
+  ],
+  "references": [
+    {
+      "title": "Meselson and Stahl (1958), The replication of DNA in Escherichia coli",
+      "url": "https://doi.org/10.1073/pnas.44.7.671",
+      "supports": "Original CaltechPDF printed671–672,674–680 read; actualFigure4 density profiles printed675 andFigure5 printed677 viewed; method/control/inference boundary."
+    },
+    {
+      "title": "Cooper and Helmstetter (1968), Chromosome replication and the division cycle of Escherichia coli B/r",
+      "url": "https://doi.org/10.1016/0022-2836(68)90425-7",
+      "supports": "Author-uploaded original text Model and Concordance pp519–525 read; overlapping C/D schedule and growthrange. Hosting webpage title refers to adjacent article, actual uploaded text identifies correct paper; no figure image inspection claimed."
+    },
+    {
+      "title": "Lee et al. (2012), Rate and molecular spectrum of spontaneous mutations in the bacterium Escherichia coli as determined by whole-genome sequencing",
+      "url": "https://doi.org/10.1073/pnas.1210309109",
+      "supports": "Author-uploaded primary fulltext spontaneous rate and MaterialsMethods read;1e-3/genome,2.2e-10/nucleotide class/strain/MA boundaries. Completepaper/figure inspection not claimed."
+    },
+    {
+      "title": "Luria and Delbrück (1943), Mutations of bacteria from virus sensitivity to virus resistance",
+      "url": "https://doi.org/10.1093/genetics/28.6.491",
+      "supports": "Original21pagePDF printed491–494,498–505 read; actualTable2 image printed504 viewed; comparative sampling/fluctuation logic and historical-model distinction."
+    },
+    {
+      "title": "Poriswanish et al. (2018), Recombination hotspots in an extended human pseudoautosomal domain predicted from double-strand break maps and characterized by sperm-based crossover analysis",
+      "url": "https://doi.org/10.1371/journal.pgen.1007680",
+      "supports": "Original publisher Introduction and distal sperm crossover results read; limitedXYhomology and actualexchange in extension, not quantitativeprediction orwholepaper/figure inspection."
+    }
+  ],
+  "symbol_ledger": [
+    {
+      "symbol": "L,a,b,d_H,indicator",
+      "first_section": "clone-and-growth",
+      "definition": "Alignedsequence length, two DNA strings, differing-position count and0/1indicator."
+    },
+    {
+      "symbol": "N0,NT,D,H,I,E,Gpop,g,r",
+      "first_section": "division-accounting",
+      "definition": "Endpointcellcounts; divisions,deaths,arrivals,departures; realpopulationdoublings, integersynchronous rounds and roundindex."
+    },
+    {
+      "symbol": "L,v,C,Dpost",
+      "first_section": "replication",
+      "definition": "Genomebasepairs, per-fork speed, replicationinterval and replicationcompletion-to-associateddivision interval; Dpost distinct from earlier division countD."
+    },
+    {
+      "symbol": "u,U,mu,Mevent",
+      "first_section": "mutation-rate",
+      "definition": "Mean retained perposition/pergeneration mutations, corresponding pergenome mean, Bernoullieventprobability and counted events."
+    },
+    {
+      "symbol": "S,m,Jj",
+      "first_section": "sequence-coverage",
+      "definition": "Single-stepalternative count, independent eventdraw count, alternativepresence indicator."
+    },
+    {
+      "symbol": "G,r,Xg,Ag,Vg,mu",
+      "first_section": "mutation-lineages",
+      "definition": "Fixedfinalround, eventround, markedleaves and theirmean/variance; mu now specified particular irreversibly inherited markereventprobability perunmarkeddivision."
+    },
+    {
+      "symbol": "A/a,B/b,AB/ab,r",
+      "first_section": "recombination",
+      "definition": "Alleles at two loci, phasedhaplotypes of diploid, recombinationfraction in[0,1/2]; r is recombinationfraction here rather than earlier generationindex."
+    }
+  ],
+  "validation_evidence": [
+    "1 actual HTML code block(s) extracted and executed; exact stdout matched; pycodestyle and <=79 columns pass."
+  ],
+  "independent_review": {
+    "status": "pending"
+  },
+  "accepted_body_sha256": "cc4f8b2820ed73d81f2e44f8db6e3b4aadc0864582026152c94bc4ccca4059ee"
+}

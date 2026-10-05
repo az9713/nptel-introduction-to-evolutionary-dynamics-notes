@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "completed_at_utc": "2026-10-05T18:07:30.247557+00:00",
+  "scope": "Complete local reading edition; no external publication",
+  "chapter_count": 20,
+  "numbered_recording_count": 60,
+  "orientation_recording_count": 1,
+  "chapter_worked_solutions": 120,
+  "lab_worked_solutions": 6,
+  "scientific_review": "Independent chapter and whole-book review accepted; zero blockers",
+  "source_collection": "61 retained sources with verified media/preferred-transcript associations",
+  "python_listings": 20,
+  "numerical_reference_checks": 2714,
+  "reader": "Offline desktop/mobile, equation rendering, links, timestamps and controls passed",
+  "package": "Accepted-body preservation, local assets, coverage and privacy patterns passed",
+  "human_accessibility": "not performed",
+  "full_audiovisual_review": "not asserted; complete selected transcripts read",
+  "publication": "local only"
+}

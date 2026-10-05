@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="732df0ac2fac17d68a21f12ee4605e242a79bd76a31e90ffcf7b5415ac277cdc"><title>Why most beneficial mutations are lost · Introduction to Evolutionary Dynamics</title>
+<link rel="stylesheet" href="assets/book.css"><script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="index.html">Introduction to Evolutionary Dynamics · January 2025</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main">
+<div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>Why most beneficial mutations are lost</h1>
+<p class="lead">A five-percent reproductive advantage can transform the descendants of a surviving mutant while leaving the great majority of new mutant lineages extinct. The quantitative question is not whether selection points upward. It is how often a lineage starting one step from loss escapes that boundary and eventually fixes.</p>
+<p>Keep the marked chemostat experiment from the preceding chapters: resident $A$, mutant $B$, fixed haploid population size $N$, and mutant count $i$. Haploid means one genome set per individual. A replacement event chooses a parent with probability proportional to its reproductive weight, then independently chooses a uniformly random cell to replace, including the parent. There is no further mutation, migration, recombination or environmental change. This is a finite mathematical idealization of competition, not a mechanistic claim that a chemostat exactly couples every division to one washout.</p>
+<p class="source-note">Complete local machine transcripts of <a href="https://www.youtube.com/watch?v=8l9ZhY-FMsw">lecture 36</a>, <a href="https://www.youtube.com/watch?v=9HsJtRZvm_c">lecture 37</a>, and <a href="https://www.youtube.com/watch?v=bKkkGVM_BMw">lecture 38</a> supply the sequence: neutral self-loops and trajectories; general forward/backward probabilities and telescoping increments; the fitness ratio, geometric sum and beneficial-mutant approximation. We translate the recordings' fixation variable $x_i$ to $u_i$ so that $x=i/N$ remains a frequency. Their adjacent difference $y_i$ becomes $d_i$. The exact finite result is separated from both large-population and weak-selection approximations.</p>
+
+<h2 id="trajectory">A trajectory distinguishes arrival, coexistence and fixation <a class="timestamp" href="https://www.youtube.com/watch?v=8l9ZhY-FMsw&amp;t=391">L36 · 6:31</a></h2>
+<p>Before a mutation appears, all $N$ cells are residents. At its first appearance in the modeled experiment, one cell is $B$ and $N-1$ are $A$. Subsequently a trajectory is a sequence of integer counts. It may rise to two, return to one, remain at one for several events, then reach zero. Another trajectory may eventually reach $N$. The upper and lower areas in the lecture's stacked population diagram encode $i$ and $N-i$, whose sum is always $N$.</p>
+<p><em>Coexistence</em> here means that both types are currently present, $0&lt;i&lt;N$. It does not mean a stable long-run polymorphism: with this finite no-mutation process, eventual loss or fixation occurs with probability one. A transient period of coexistence can last a long time without becoming an equilibrium maintained indefinitely.</p>
+<p>The neutral event probabilities remain a useful audit. At relative fitness one, upward and downward probabilities both equal $i(N-i)/N^2$. No-change probability is $[i^2+(N-i)^2]/N^2$, which accounts for resident replacing resident or mutant replacing mutant. Even equal fitness does not imply constant realized count. It implies equality of the probabilities of upward and downward changes. The previous chapter derives the neutral endpoint probability $u_i=i/N$.</p>
+<p>Drawing only the rare successful histories conceals the large number of lineages that disappear. A history plotted conditional on eventual fixation is sampled from a different distribution than an unconditioned history. Its apparently sustained progress cannot be used as the average path of a new mutant. Nor does a neutral one-copy probability $1/N$ imply that exactly one of every $N$ successive origins must fix. It describes an expectation across comparable trials.</p>
+
+<h2 id="general">First solve a general nearest-neighbor process <a class="timestamp" href="https://www.youtube.com/watch?v=8l9ZhY-FMsw&amp;t=1087">L36 · 18:07</a></h2>
+<p>Let $\alpha_i$ be the probability of increasing the count from $i$ to $i+1$ in one attempted event, and $\beta_i$ the probability of decreasing it to $i-1$. The self-loop probability is $1-\alpha_i-\beta_i$. In every interior state assume $\alpha_i&gt;0$, $\beta_i&gt;0$, and $\alpha_i+\beta_i\leq1$. At zero and $N$, remain at the endpoint. These conditions specify a finite birth-death chain, meaning a random process with only one-count upward or downward moves and possible no-change events.</p>
+<p>Let $u_i$ be eventual probability of reaching $N$ from $i$. At the boundaries $u_0=0$ and $u_N=1$. Condition on the first event:</p>
+\[
+u_i=\beta_i u_{i-1}+(1-\alpha_i-\beta_i)u_i+\alpha_i u_{i+1},
+\qquad 1\leq i\leq N-1.
+\]
+<p>The first term represents a downward move followed by later fixation. The next term includes all histories whose first event leaves the count unchanged. The third represents an upward move followed by later fixation. Local move probability and eventual fixation probability are different objects, and their multiplication is a conditional-history calculation.</p>
+<p>The interior equations together with boundary values form a tridiagonal linear system. They have a unique solution: the maximum-principle argument in the pilot shows that the difference between two proposed solutions cannot have a positive interior maximum or a negative interior minimum with zero endpoints. Strict positivity of both move probabilities is used. If an interior state cannot be crossed, the following product solution must be reconsidered.</p>
+
+<h2 id="increments">Adjacent increments expose the derivational hinge <a class="timestamp" href="https://www.youtube.com/watch?v=9HsJtRZvm_c&amp;t=590">L37 · 9:50</a></h2>
+<p>Subtract the self-loop term and rearrange the recurrence. Define the adjacent increment $d_i=u_i-u_{i-1}$ for $i=1,\ldots,N$. Then</p>
+\[
+\alpha_i(u_{i+1}-u_i)=\beta_i(u_i-u_{i-1}),\qquad
+d_{i+1}=\gamma_i d_i,\qquad \gamma_i=\frac{\beta_i}{\alpha_i}.
+\]
+<p>The entire endpoint calculation is controlled by the ratios $\gamma_i$, not the magnitude of each change probability separately. Starting with $d_1=u_1$, successive substitution gives $d_2=\gamma_1u_1$, $d_3=\gamma_2\gamma_1u_1$, and so on. Define positive weights</p>
+\[
+w_0=1,\qquad w_k=\prod_{j=1}^{k}\gamma_j
+\quad (1\leq k\leq N-1).
+\]
+<p>The empty product $w_0$ equals one; it corresponds to the first increment. Because increments telescope, $\sum_{i=1}^{N}d_i=u_N-u_0=1$. Substituting $d_i=w_{i-1}u_1$ yields</p>
+\[
+u_1=\frac{1}{\sum_{k=0}^{N-1}w_k},\qquad
+u_i=\frac{\sum_{k=0}^{i-1}w_k}{\sum_{k=0}^{N-1}w_k}.
+\]
+<p>The general formula is useful beyond a constant advantage. The increment also has an interpretation: $d_i$ is the increase in fixation probability when the initial count rises from $i-1$ to $i$. All weights are positive, so that increase is positive. The lecture introduces the difference mainly to simplify bookkeeping; the monotonicity and marginal-gain interpretation follow from its solution.</p>
+<p>Multiplying both $\alpha_i$ and $\beta_i$ by the same positive factor at each state leaves $\gamma_i$ and all $u_i$ unchanged, provided the new probabilities still sum to at most one. It changes how long the chain waits at states. Thus identical fixation probabilities do not establish identical event times or physical growth rates.</p>
+
+<h2 id="ratio">A constant reproductive advantage makes every ratio identical <a class="timestamp" href="https://www.youtube.com/watch?v=bKkkGVM_BMw&amp;t=308">L38 · 5:08</a></h2>
+<p>Normalize the resident reproductive weight to one and write the mutant weight as $r=R_B/R_A&gt;0$, with $R_A,R_B$ positive weights in the same units. The total normalized weight at state $i$ is $D_i=ri+N-i$. A mutant parent replacing a resident gives an upward move, while a resident parent replacing a mutant gives a downward move:</p>
+\[
+\alpha_i=\frac{ri}{D_i}\frac{N-i}{N},\qquad
+\beta_i=\frac{N-i}{D_i}\frac{i}{N},\qquad
+\gamma_i=\frac1r.
+\]
+<p>All factors depending on count cancel from the ratio. This cancellation is the specific consequence of fitness-weighted parent choice and uniform independent replacement. It is not a general property of every model called selection. A changed replacement rule or frequency-dependent reproductive weights can change $\gamma_i$.</p>
+<p>Now $w_k=r^{-k}$ and the fixation solution is a ratio of finite geometric sums:</p>
+\[
+u_i=\frac{\sum_{k=0}^{i-1}r^{-k}}{\sum_{k=0}^{N-1}r^{-k}}
+=
+\begin{cases}
+\dfrac{1-r^{-i}}{1-r^{-N}},&amp; r\ne1,\\
+i/N,&amp; r=1.
+\end{cases}
+\]
+<p>To verify the geometric-sum step, multiply $S_N=1+q+\cdots+q^{N-1}$ by $1-q$, where $q=1/r$. Consecutive powers cancel, leaving $(1-q)S_N=1-q^N$. At $r=1$ the sums have $i$ and $N$ identical unit terms; the result is $i/N$ without dividing zero by zero. The endpoint and neutral limits therefore agree with the previous chapters.</p>
+<p>For our exact five-cell illustration, a mutant with $r=1.05$ has $u_1\approx0.219976$, compared with neutral probability 0.2. The advantage increases success but most origins still fail. Using the large-population value 0.047619 for this five-cell population would incorrectly predict less success than neutrality. An approximation must retain the scale on which it is valid.</p>
+
+<h2 id="limits">Large population and weak selection are separate approximations <a class="timestamp" href="https://www.youtube.com/watch?v=bKkkGVM_BMw&amp;t=1069">L38 · 17:49</a></h2>
+<p>For a beneficial mutant define the selection coefficient $s=r-1&gt;0$. It is a dimensionless excess reproductive weight in this Moran convention. For one copy the exact result reads</p>
+\[
+u_1=\frac{s/(1+s)}{1-(1+s)^{-N}}.
+\]
+<p>Dropping $(1+s)^{-N}$ requires $N\log(1+s)$ to be large, not merely $N$ to be numerically large. Write $a=(1+s)^{-N}$. The large-population approximation is $u_{\mathrm{large}}=s/(1+s)$, while the exact value is $u_{\mathrm{large}}/(1-a)$. Its relative error when compared with the exact answer is exactly $a$. An error tolerance $\varepsilon$ is therefore satisfied if $N\log(1+s)\geq\log(1/\varepsilon)$.</p>
+<p>Only after this step does weak selection give $s/(1+s)\approx s$. For $s=0.05$ the large-population value is $1/21\approx0.047619$, so replacing it by 0.05 introduces a five-percent relative error. At $N=1000$, the omitted finite-size term is about $6.5\times10^{-22}$, far smaller. The two approximation errors are controlled by different quantities.</p>
+<p>At fixed finite $N$, expanding around $s=0$ instead gives</p>
+\[
+u_1=\frac1N+\frac{N-1}{2N}s+O(s^2).
+\]
+<p>This follows by expanding $\sum_{k=0}^{N-1}(1+s)^{-k}=N-sN(N-1)/2+O(s^2)$ and inverting. For a useful finite-population expansion, $Ns$ must be small enough that higher summed terms do not dominate. A population of 100 with $s=10^{-8}$ has $u_1$ near $0.01000000495$, not near $10^{-8}$. Selection is weak relative to this finite neutral baseline.</p>
+<p>The order of limits matters. Fix $s&gt;0$ and let $N$ grow: fixation approaches $s/(1+s)$. Fix $N$ and let $s$ tend to zero: fixation approaches $1/N$. A diffusion or offspring-generation model may give a different small-selection coefficient because its reproductive variance differs. Kimura's diploid sampling convention gives the familiar approximate $2s$ in its own regime. Transferring that factor to the present Moran weight without a demographic conversion would change the model.</p>
+
+<h2 id="establishment">Reaching a safer count is a different endpoint <a class="timestamp" href="https://www.youtube.com/watch?v=bKkkGVM_BMw&amp;t=1538">L38 · 25:38</a></h2>
+<p>The lecture's intuition that drift is particularly consequential near count one can be made precise by an original threshold calculation. Choose an integer $L$ with $1&lt;L&lt;N$. Call reaching $L$ before zero <em>establishment at threshold L</em>. This is an operational definition, not permanent immunity from extinction.</p>
+<p>Stop the count process when it hits zero or $L$. Its transition ratios remain $1/r$, even though its actual population still contains $N$ cells. The product solution depends only on those ratios and the stopping boundary, so</p>
+\[
+\Pr_1(\text{hit }L\text{ before }0)
+=\frac{1-r^{-1}}{1-r^{-L}}.
+\]
+<p>The subscript 1 denotes the starting mutant count. Once $L$ is reached, fixation probability from that state is $u_L=(1-r^{-L})/(1-r^{-N})$. Conditioning on the first hit of $L$ multiplies these two probabilities and recovers $u_1$. Every successful path must pass through $L$ because each change is one count. Establishment probability is at least fixation probability and need not equal it.</p>
+<p>When $r&gt;1$ and $N\log r$ is large, later loss probability after reaching $L$ is approximately $r^{-L}$. Choosing $L\geq\log(1/\varepsilon)/\log r$ makes that approximation at most $\varepsilon$. With $r=1.05$ and $\varepsilon=0.01$, $L=95$ is sufficient in the large-population approximation. The threshold depends on the advantage and tolerance. It is not a universal biological count.</p>
+
+<h2 id="origins">A success fraction is not a schedule of successful mutations <a class="timestamp" href="https://www.youtube.com/watch?v=bKkkGVM_BMw&amp;t=1323">L38 · 22:03</a></h2>
+<p>Under the large-population $s=0.05$ model, independent restarted one-copy trials have success probability $p=1/21$. Their expected number of trials up to and including the first success is $1/p=21$. The probability of at least one success in 20 trials is $1-(1-p)^{20}\approx0.623111$. Neither result says that the twentieth trial must succeed or that exactly 19 of every 20 origins disappear.</p>
+<p>Independence is an additional trial construction. In a continuously evolving culture, origins can overlap and compete, and the resident genotype can change between origins. The single-lineage fixation formula then does not by itself determine the culture's mutation-success count. Later chapters examine mutation supply and competing beneficial lineages.</p>
+<p>The lecture also motivates an equal-effect example from a 35% total fitness increase over five mutations. Adding five increments of seven percentage points is one chosen arithmetic convention, not an inference that every mutation has selection coefficient 0.07. If each mutation instead multiplies the current fitness by the same factor, the coefficient would be $1.35^{1/5}-1\approx0.061859$. Actual mutation effects need measurements on specified backgrounds; unequal effects and interactions can prevent either construction from describing the experiment.</p>
+
+<h2 id="code">Compute the product formula without assuming constant fitness</h2>
+<p>The standard-library program below implements the positive-ratio formula directly with exact fractions. Its input is the sequence of backward/forward ratios at the $N-1$ interior states. It returns all $N+1$ boundary probabilities. The ratios must be strictly positive; the function assumes there are legitimate transition probabilities with these ratios and does not supply a biological clock. It performs no file or network operations.</p>
+<pre><code class="language-python">from fractions import Fraction
+
+
+def fixation_from_ratios(ratios):
+    ratios = [Fraction(value) for value in ratios]
+    if any(value &lt;= 0 for value in ratios):
+        raise ValueError("interior ratios must be positive")
+    weights = [Fraction(1)]
+    for ratio in ratios:
+        weights.append(weights[-1] * ratio)
+    total = sum(weights)
+    probabilities = [Fraction(0)]
+    partial = Fraction(0)
+    for weight in weights:
+        partial += weight
+        probabilities.append(partial / total)
+    return probabilities
+
+
+neutral = fixation_from_ratios([1] * 4)
+assert neutral == [Fraction(i, 5) for i in range(6)]
+selected = fixation_from_ratios([Fraction(20, 21)] * 4)
+varying = fixation_from_ratios([Fraction(1, 2), 2, Fraction(1, 2)])
+print(f"five_cell_selected={float(selected[1]):.12f}")
+print(f"varying_ratio_fixation={varying[1]}")
+print(f"twenty_trial_success={1 - (20 / 21) ** 20:.12f}")
+</code></pre>
+<p>Actual clean-run output:</p>
+<pre class="output">five_cell_selected=0.219975998217
+varying_ratio_fixation=1/3
+twenty_trial_success=0.623110517127</pre>
+<p>The varying-ratio example has weights $1,1/2,1,1/2$, whose sum is three. Two states favor the mutant while the middle state disfavors it; no single constant reproductive weight describes that example. It is an original model construction, not a measurement of frequency-dependent fitness.</p>
+
+<h2 id="exercises">Six exercises with full solutions</h2>
+<section class="exercise"><h3>1. Audit the missing finite-size term</h3><p>For $s=0.05$, determine the minimum integer $N$ for which the large-population one-copy formula has relative error at most 1%. State the exact convention for that relative error.</p>
+<details class="solution"><summary>Solution</summary><p>Relative error against the exact probability is $(u_{\mathrm{exact}}-u_{\mathrm{large}})/u_{\mathrm{exact}}=(1.05)^{-N}$. Require $N\log1.05\geq\log100$. The smallest integer is 95. This criterion controls only the omission of the finite denominator term; replacing $s/(1+s)$ by $s$ adds a separate five-percent relative error at this selection coefficient.</p></details></section>
+<section class="exercise"><h3>2. Equal total improvement does not identify individual effects</h3><p>Five successive mutations give a total relative fitness of 1.35. Compare five equal additive increments to five equal multiplicative factors. Can the total determine the actual five effects?</p>
+<details class="solution"><summary>Solution</summary><p>Equal increments relative to the original baseline give $0.35/5=0.07$ per step. Equal multiplicative factors give $(1+s)^5=1.35$, hence $s\approx0.061859$. The two statements use different baselines. A total alone cannot identify five individual effects, their order, or interactions between mutations. Background-specific assays are needed even if equal effects are hypothesized.</p></details></section>
+<section class="exercise"><h3>3. Resolve establishment and fixation</h3><p>For $N=5$, $r=2$ and an establishment threshold $L=3$, compute the probability of reaching the threshold from one, the probability of fixation after reaching it, and their product.</p>
+<details class="solution"><summary>Solution</summary><p>The threshold probability is $(1-1/2)/(1-1/8)=4/7$. Fixation from count three is $(1-1/8)/(1-1/32)=28/31$. Their product is $16/31$, equal to the one-copy finite fixation probability. Establishment is more likely than fixation because some histories hit three and later return to zero. The multiplication uses the process's Markov property at the first hit, not independence of arbitrary segments of a path.</p></details></section>
+<section class="exercise"><h3>4. Which aspect of the chain is unidentified?</h3><p>At every interior state halve both upward and downward probabilities and put the remaining probability into the self-loop. What happens to fixation probability and mean attempted-event absorption time?</p>
+<details class="solution"><summary>Solution</summary><p>The ratio $\beta_i/\alpha_i$ is unchanged, so every fixation probability stays unchanged. For time, the old equation is $-1=\alpha_i(\tau_{i+1}-\tau_i)+\beta_i(\tau_{i-1}-\tau_i)$. Substituting the new probabilities and candidate times $2\tau_i$ reproduces that equation and zero endpoint times. Uniqueness gives doubled mean attempted-event time. Equal endpoint success does not identify the waiting clock.</p></details></section>
+<section class="exercise"><h3>5. Sum a frequency-dependent barrier</h3><p>A four-cell chain has ratios $\gamma_1=1/2,\gamma_2=2,\gamma_3=1/2$. Calculate $u_1$ and $u_2$. Explain why assuming a constant $r=2$ gives the wrong answer.</p>
+<details class="solution"><summary>Solution</summary><p>The weights are $w_0=1,w_1=1/2,w_2=1,w_3=1/2$, summing to three. Hence $u_1=1/3$ and $u_2=(1+1/2)/3=1/2$. A constant $r=2$ would require all three ratios to equal $1/2$, with weights $1,1/2,1/4,1/8$ and $u_1=8/15$. The actual middle-state ratio reverses the bias, changing the product weights. Looking only at the first state's advantage misses the later barrier.</p></details></section>
+<section class="exercise"><h3>6. Interpret twenty origins correctly</h3><p>Assume independent restarted origins each have success probability $1/21$. Calculate the expected successes in 20 origins, the chance of at least one success, and the expected trial number of first success. State one biological reason the restart assumption can fail.</p>
+<details class="solution"><summary>Solution</summary><p>Expected successes are $20/21$, approximately 0.952381. Probability of at least one is $1-(20/21)^{20}\approx0.623111$. The first-success trial number has a geometric distribution with mean 21, counting the successful trial. These are three different summaries. Overlapping beneficial lineages competing in one culture violate the independent identical restart assumption; a changing resident or environment can also change the success probability between origins.</p></details></section>
+
+<h2 id="primary">Primary comparison and the next question</h2>
+<p><a href="https://arxiv.org/pdf/1306.2772">Kluth and Baake (2013)</a>, Section 2, PDF pages 2–3, specify a fixed haploid Moran population, uniform replacement including the parent, continuous-time rates and the finite fixation sum. Dividing their upward and downward rates by total attempted reproduction rate retains the ratio used here, while changing the clock. <a href="https://www.zoology.ubc.ca/let/pdfs/Kimura_1962.pdf">Kimura (1962)</a>, PDF pages 3–4, uses a diploid diffusion model with a different offspring-variance convention. Those inspected sources support the model comparison, rather than an assertion that all microbial assays share one fixation law.</p>
+<p>We now have a conditional probability given that an origin has occurred. Predicting the speed of adaptation additionally requires a rate of origins and the time occupied by a successful sweep. Multiplying the mutation supply by a probability is useful only after its units and independence assumptions are specified. That is the next chapter's task.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-10-moran-process-and-neutral-fixation.html">Previous available chapter</a><a href="index.html">Lecture index</a><a rel="next" href="chapter-12-mutation-supply-and-overlapping-sweeps.html">Next available chapter</a></nav></main></div>
+<footer class="site-footer">Independent study notes. NPTEL IIT Bombay course recordings supply the topic sequence; added explanations and teaching constructions are separately attributed. Complete local reading edition; source and validation boundaries are recorded in this repository.</footer></body></html>

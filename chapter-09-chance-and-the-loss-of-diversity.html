@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="00ba4ad095102428c86f906c1bd622755549787da6e913544ce7aa38a9965c35"><title>Chance, lineage survival, and the loss of diversity · Introduction to Evolutionary Dynamics</title>
+<link rel="stylesheet" href="assets/book.css"><script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="index.html">Introduction to Evolutionary Dynamics · January 2025</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main">
+<div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>Chance, lineage survival, and the loss of diversity</h1>
+<p class="lead">A new bacterial lineage can divide faster than its competitors and still vanish before its first division. A population can change its genetic composition even when every individual has exactly the same reproductive advantage. Both observations require us to distinguish the expected direction of change from the fate of one finite population.</p>
+<p>Our running experiment begins with four cells carrying distinguishable inherited markers. Every marker is assumed to have the same effect on reproduction: none. We transfer the population through a sequence of idealized reproductive bottlenecks, each producing four descendants. The question is whether equal opportunities preserve all four markers. The experiment is an original teaching construction, deliberately small enough that every next-generation outcome can be calculated. It is not a report of an actual four-cell assay.</p>
+<p class="source-note">This chapter follows complete local machine transcripts of <a href="https://www.youtube.com/watch?v=wC7UhT50Vp8">lecture 29</a>, <a href="https://www.youtube.com/watch?v=i_94sLZrSII">lecture 30</a>, and <a href="https://www.youtube.com/watch?v=izTN713702k">lecture 31</a>. Their sequence moves from a beneficial cell's possible washout to the marble game and its evolutionary interpretation. The probability laws, diversity recurrence, proof and exact program below are original elaborations of that sequence. Machine wording can corrupt labels; all equations here are independently derived. No uploader-caption production method is inferred.</p>
+
+<h2 id="rare">A reproductive advantage does not guarantee survival <a class="timestamp" href="https://www.youtube.com/watch?v=wC7UhT50Vp8&amp;t=537">L29 · 8:57</a></h2>
+<p>A <em>chemostat</em> is a continuously mixed culture vessel with fresh medium flowing in and an equal volume flowing out. Its volume stays fixed. Growth supplies cells, while the outlet removes cells. Continuous mixing supports a useful idealization: a cell's chance of removal does not depend on its inherited marker. Mixing does not make the actual removal of a particular cell deterministic.</p>
+<p>Call the resident type $A$ and the new mutant type $B$. A mutant is an individual with an inherited genetic change relative to the resident being compared. Suppose $B$ has a reproductive advantage in the specified vessel conditions. That claim concerns reproduction in an environment. It does not imply that a particular $B$ cell must reproduce before it leaves the vessel. If the sole carrier is removed and no later mutation or immigration creates $B$, the lineage is gone.</p>
+<p>A deterministic frequency model instead describes continuously divisible abundance. If $x$ is the fraction of $B$, $g_B-g_A=\Delta g&gt;0$ is a constant growth-rate difference, and time is $t$, then the two-type growth model gives</p>
+\[
+\frac{dx}{dt}=\Delta g\,x(1-x),\qquad
+\frac{x(t)}{1-x(t)}=\frac{x(0)}{1-x(0)}e^{\Delta g t}.
+\]
+<p>Here $g_A,g_B,\Delta g$ have units of inverse time, and $x$ is dimensionless. The second equality follows by separating variables and integrating $dx/[x(1-x)]$. For an initial frequency strictly between zero and one, the solution approaches one as time increases. It never makes a discrete jump to zero. That feature is a consequence of the model's continuous state, rather than proof that a rare real lineage survives.</p>
+<p>The lecture illustrates a relative reproductive fitness of 1.05 against a resident value of 1. Those dimensionless numbers alone do not specify $\Delta g$ per hour or the probability of washout before reproduction. A clock, birth rule and removal rule are needed. We therefore retain the qualitative question at this stage: conditional on the mutant having appeared, what is the probability that its descendants eventually occupy the population? The next chapter supplies one precise event model. Mutation arrival and subsequent lineage survival are separate random events.</p>
+<p>Having two carriers generally gives more opportunities for descendants to survive than having one, under suitable independent reproduction and loss assumptions. That is not a statement that their losses are independent in every experiment. A common environmental catastrophe can remove both. Nor does a mutation invariably begin with one observable carrier: recurrent origins, recombination or migration can introduce additional copies. The one-carrier case is the model being isolated here.</p>
+
+<h2 id="rules">Sampling with replacement gives the marble game its force <a class="timestamp" href="https://www.youtube.com/watch?v=i_94sLZrSII&amp;t=74">L30 · 1:14</a></h2>
+<p>The lecture's jar contains $N$ marbles. To construct the next jar, draw one marble uniformly, record its color, put a new marble of that color in the new jar, and return the original marble to the old jar. Repeat $N$ times. Once the new jar is full, it becomes the parent jar for the next generation. Every draw in a generation uses the unchanged parent jar.</p>
+<p>In biological language, a color marks a <em>genotype</em>, the inherited genetic constitution at the sites being tracked. A descendant copies its parent's marker without mutation in this model. A generation replaces the whole population. This is different from replacing one cell at a time. Equal sampling probabilities implement <em>neutrality</em>: none of the marker types has a reproductive advantage under this reproduction rule.</p>
+<p>Let there be $m$ represented colors at generation $t$. The count of color $a$ is $n_a$, its frequency is $p_a=n_a/N$, and $\sum_{a=1}^m p_a=1$. Counts are nonnegative integers; frequencies sum to one. The next counts are random variables $K_1,\ldots,K_m$, with $\sum_a K_a=N$. The capital letter distinguishes a random future count from a count already observed.</p>
+<p>Returning the parent marble is the decisive hinge. A color can be chosen more than once, leaving fewer slots for other colors. If instead each parent marble were drawn exactly once without replacement, each color would have exactly its previous count in the new jar. That alternate experiment has no reproductive sampling drift. The words “random drawing” are insufficient to specify which experiment is being run.</p>
+
+<h2 id="law">The next population has a multinomial law <a class="timestamp" href="https://www.youtube.com/watch?v=i_94sLZrSII&amp;t=861">L30 · 14:21</a></h2>
+<p>For a specified ordered sequence of $N$ draws, multiply the individual draw probabilities. A sequence containing $k_a$ draws of color $a$ has probability $\prod_a p_a^{k_a}$. There are $N!/\prod_a k_a!$ orders with those same counts. Thus</p>
+\[
+\Pr(K_1=k_1,\ldots,K_m=k_m\mid p_1,\ldots,p_m)
+=\frac{N!}{\prod_a k_a!}\prod_a p_a^{k_a},
+\quad k_a\geq0,\quad \sum_a k_a=N.
+\]
+<p>This is the multinomial distribution. The conditioning bar means that the parent frequencies are given. A single focal color can be considered against all other colors together. Its next count $K$, given current frequency $p$, is binomial:</p>
+\[
+\Pr(K=k\mid p)=\binom Nk p^k(1-p)^{N-k},
+\qquad k=0,\ldots,N.
+\]
+<p>The binomial coefficient counts which of the $N$ offspring slots carry the focal color. The formula includes both immediate loss, $k=0$, and immediate fixation, $k=N$. <em>Fixation</em> means that every individual in the modeled population carries the tracked type. Without mutation or immigration, a fixed color remains fixed.</p>
+<p>In our four-cell experiment, a chosen marker starts at $p=1/4$. Its next-count probabilities for $k=0,1,2,3,4$ are respectively $81/256,108/256,54/256,12/256,1/256$. They sum to one. The probability of immediate loss is over 31%, despite complete equality of reproductive opportunities. The probability of fixing in a single generation is only $1/256$. Neither of these one-generation probabilities is the eventual fixation probability.</p>
+<p>Write the focal count as a sum of $N$ independent indicator variables, each one for an offspring of that color. Each indicator has mean $p$ and variance $p(1-p)$. Consequently, with $X'=K/N$ the next frequency,</p>
+\[
+\mathbb E[X'\mid p]=p,\qquad
+\operatorname{Var}(X'\mid p)=\frac{p(1-p)}{N}.
+\]
+<p>The average frequency is unchanged across repeated populations with the same starting composition. Individual populations fluctuate. The conditional standard deviation is $\sqrt{p(1-p)/N}$, so increasing population size reduces one-generation fluctuations at a fixed starting frequency. Holding a single starting copy instead changes $p=1/N$; comparisons must say which quantity is held fixed.</p>
+
+<h2 id="diversity">Diversity can fall while every mean frequency stays constant <a class="timestamp" href="https://www.youtube.com/watch?v=i_94sLZrSII&amp;t=1089">L30 · 18:09</a></h2>
+<p>One diversity measure is <em>richness</em>, the number of distinct colors present. Let $R'$ be the richness of the next generation. Color $a$ is absent only if all $N$ draws avoid it, which has probability $(1-p_a)^N$. Summing the indicators for represented colors gives</p>
+\[
+\mathbb E[R'\mid \mathbf p]
+=\sum_{a=1}^m\left[1-(1-p_a)^N\right].
+\]
+<p>The bold symbol $\mathbf p$ denotes the vector of parent frequencies. Independence between colors' presence indicators is unnecessary for this expectation; linearity of expectation suffices. Starting with four singleton colors, expected next richness is $4[1-(3/4)^4]=175/64=2.734375$. This is an average over jars. A particular jar has an integer richness, between one and four.</p>
+<p>Richness cannot increase along any trajectory because no new colors are introduced. It need not decrease at every generation: all currently present colors may appear again. The lecture's downward trend therefore describes eventual loss and typical trajectories, not a strictly falling count at every step. Equal mean frequencies and decreasing diversity are compatible because expectation is taken before the nonlinear operation of counting which frequencies are zero.</p>
+<p>A second measure weights frequencies. Define</p>
+\[
+H(\mathbf p)=1-\sum_a p_a^2.
+\]
+<p>This is the probability that two independent draws with replacement from the current jar have different colors. It is often called gene diversity or expected heterozygosity, although our individuals are haploid: each has one genome set. The term here concerns a pair of sampled copies, not two copies inside one individual. Sampling without replacement instead gives a distinct-individual diversity of $N H/(N-1)$ when $N&gt;1$; the sampling convention matters.</p>
+<p>For each next frequency $P'_a=K_a/N$, the second moment is its variance plus its squared mean, $p_a(1-p_a)/N+p_a^2$. Sum over colors and subtract from one. This yields the exact conditional recurrence</p>
+\[
+\mathbb E[H(\mathbf P')\mid\mathbf p]
+=\left(1-\frac1N\right)H(\mathbf p).
+\]
+<p>Iterating conditional expectations at constant $N$ gives $\mathbb E[H_t]=(1-1/N)^t H_0$, where $t$ counts whole generations. Initially our four singleton colors give $H_0=3/4$; after one generation the expected value is $9/16$. Unlike richness, $H$ can increase in an individual transition if the remaining colors become more evenly represented. Its expectation declines under this model.</p>
+<p>For large $N$, the ratio is approximately $e^{-t/N}$ on this diversity-decay scale, using $\log(1-1/N)\approx-1/N$. The approximate half-decay time is $N\log 2$ generations. This is a time for expected pair diversity to halve, not the mean time until a single color fixes. Those are different observables.</p>
+
+<h2 id="endpoints">Eventual fixation has a probability, not a predetermined winner <a class="timestamp" href="https://www.youtube.com/watch?v=izTN713702k&amp;t=757">L31 · 12:37</a></h2>
+<p>Why must this finite game eventually reach one color? At any nonfixed state, some color has frequency at least $1/N$. The probability that all $N$ next draws choose that color is at least $\delta=N^{-N}&gt;0$. Such a draw fixes the population immediately. The same lower bound applies at every later nonfixed state. If $T$ is the generation of first fixation, repeated conditioning gives</p>
+\[
+\Pr(T&gt;t)\leq(1-\delta)^t.
+\]
+<p>The bound tends to zero, proving fixation with probability one. Summing the tail bound also gives $\mathbb E[T]\leq1/\delta$. It is usually a very loose bound, useful for proving finiteness rather than estimating a biological time. Finite $N$, repeated independent draws conditional on the current jar, and absence of new colors are all used. Recurrent mutation changes the endpoint question.</p>
+<p>Let $X_t$ be a focal color's frequency. The one-step mean calculation implies $\mathbb E[X_t]=X_0$ for every generation. Eventual fixation makes its limiting frequency either zero or one. Because $0\leq X_t\leq1$, bounded convergence permits us to pass the limit through expectation. If $u$ is the probability that the focal color is the winner, then</p>
+\[
+u=\mathbb E[X_\infty]=X_0.
+\]
+<p>We have derived eventual neutral fixation from two ingredients: preserved mean frequency and almost-sure absorption. Symmetry alone suffices when all initial colors are singletons. The expectation proof additionally handles unequal initial counts. Starting with three copies in six cells gives a fixation probability of $1/2$, not one probability per color. The one-copy result $1/N$ is a special case.</p>
+<p>In our four-color population, the probability of a specified eventual winner is $1/4$, whereas its probability of winning in the next generation was $1/256$. Many histories can lead to the same endpoint: expansion, contraction, near-loss and recovery before fixation. Observing the winner reveals the endpoint but does not reconstruct its trajectory. Nor does survival of one neutral marker establish that it was the best marker.</p>
+
+<h2 id="biology">The analogy identifies a mechanism and its limits <a class="timestamp" href="https://www.youtube.com/watch?v=izTN713702k&amp;t=190">L31 · 3:10</a></h2>
+<p><em>Genetic drift</em> is stochastic change in inherited-type frequencies arising from finite reproductive sampling. In the model there is inherited variation but no difference in expected reproduction. Thus evolutionary change does not require a selective advantage. Mutation supplies variation in other models, migration moves it, and selection biases reproduction; none is needed to produce the sampling changes just derived.</p>
+<p>Genotype and <em>phenotype</em> are distinct: a phenotype is an observable characteristic expressed by an individual in an environment. Different marker genotypes may have the same relevant growth phenotype. Calling them neutral means equality in the specified reproductive model or assay, not a universal claim that every molecular or environmental effect is identical. Changing the medium may change their relative fitness.</p>
+<p>The lecture compares a population of four initial singleton genotypes with a population of 400. Our variance and diversity calculations explain why fixed-frequency drift is weaker and diversity erodes more slowly in larger populations under otherwise identical generational sampling. Real microbial experiments also undergo bottlenecks. A culture with a large final cell count can experience substantial drift during a transfer of a few founders. The population size controlling this calculation is the size at the sampling event, rather than simply the maximum cell count later reached.</p>
+<p>An <em>effective population size</em> is an idealized-model size chosen to reproduce a specified sampling property of a real population, such as its rate of neutral diversity loss. It need not equal the census count of cells. Unequal offspring production and changing population size can alter that correspondence. This chapter does not estimate an effective size from data. It instead gives a transparent constant-size reference against which an assay can be compared.</p>
+<p>The generational game also should not be confused with the next chapter's Moran process. Here $N$ descendants replace an entire generation, giving variance $p(1-p)/N$ in one generation. There one attempted birth-replacement event changes at most one count. Clocks and reproductive variance differ. Kimura's <a href="https://www.zoology.ubc.ca/let/pdfs/Kimura_1962.pdf">1962 fixation paper</a>, PDF page 3, writes the corresponding diploid random-sampling variance $x(1-x)/(2N)$: its $N$ counts diploid individuals with $2N$ tracked gene copies. Our haploid jar has $N$ copies. A factor of two can encode a biological sampling convention; it is not a typographical choice.</p>
+
+<h2 id="code">Compute one generation exactly before simulating a trajectory</h2>
+<p>The following standard-library program computes the focal-marker row for four cells and the two initial diversity measures. It uses rational arithmetic, so normalization and expectations are checked exactly. It has no random seed, files, network requests or biological input data. It prints model calculations, rather than empirical estimates. Counts must be positive integers and the focal count must lie between zero and $N$; the example's fixed inputs satisfy those restrictions.</p>
+<pre><code class="language-python">from fractions import Fraction
+from math import comb
+
+
+def next_count_row(n, i):
+    if type(n) is not int or type(i) is not int:
+        raise TypeError("counts must be integers")
+    if n &lt; 1 or not 0 &lt;= i &lt;= n:
+        raise ValueError("require n &gt;= 1 and 0 &lt;= i &lt;= n")
+    p = Fraction(i, n)
+    return [comb(n, k) * p ** k * (1 - p) ** (n - k)
+            for k in range(n + 1)]
+
+
+n = 4
+row = next_count_row(n, 1)
+assert sum(row) == 1
+mean_count = sum(k * probability for k, probability in enumerate(row))
+assert mean_count == 1
+p = Fraction(1, n)
+richness = n * (1 - (1 - p) ** n)
+diversity = 1 - n * p ** 2
+next_diversity = (1 - Fraction(1, n)) * diversity
+print("row=" + ", ".join(str(probability) for probability in row))
+print(f"mean_count={mean_count}")
+print(f"expected_richness={richness} ({float(richness):.6f})")
+print(f"diversity={diversity}; expected_next={next_diversity}")
+</code></pre>
+<p>Actual output from a clean execution:</p>
+<pre class="output">row=81/256, 27/64, 27/128, 3/64, 1/256
+mean_count=1
+expected_richness=175/64 (2.734375)
+diversity=3/4; expected_next=9/16</pre>
+<p>Fractions simplify themselves, explaining why the displayed row uses several denominators. Convert them to denominator 256 to recover the earlier five probabilities. Exact enumeration scales only to small examples when many colors are tracked. A stochastic simulation can explore larger trajectories, but it introduces Monte Carlo error and must not be substituted for the conditional laws proved here.</p>
+
+<h2 id="exercises">Six exercises with full solutions</h2>
+<section class="exercise"><h3>1. Immediate loss versus eventual loss</h3>
+<p>A focal color has two copies in a neutral six-cell jar. Calculate its probability of immediate loss and its probability of eventual loss. Explain their difference.</p>
+<details class="solution"><summary>Solution</summary><p>The frequency is $p=2/6=1/3$. Immediate loss requires all six offspring to choose another color, giving $(2/3)^6=64/729$, approximately 0.08779. Eventual fixation probability is the initial frequency $1/3$; eventual loss probability is therefore $2/3$. The latter includes immediate loss and all later histories that reach zero after one or more intermediate counts. It cannot be calculated by treating every generation as another independent trial with the original frequency, because the frequency changes after each reproduction.</p></details></section>
+<section class="exercise"><h3>2. What changes if the marbles are not returned?</h3>
+<p>Draw all four parent marbles without replacement, recording each color once and copying it into a new four-marble jar. Repeat across jars. What are the next-generation variance and the fate of initial singleton colors?</p>
+<details class="solution"><summary>Solution</summary><p>Drawing every parent once produces exactly its original count of descendants. Each singleton color remains a singleton, and a focal frequency is exactly $1/4$ in every jar. Its conditional variance is zero. No color fixes from this initial state. Random order of drawing is insufficient to create count fluctuations. The binomial law, its $p(1-p)/N$ variance and the absorption proof do not apply to this without-replacement protocol.</p></details></section>
+<section class="exercise"><h3>3. Diversity depends on frequencies, not only color count</h3>
+<p>A six-cell jar has counts $3,2,1$. Find its current pair diversity and expected next richness. Compare current richness with expected next richness.</p>
+<details class="solution"><summary>Solution</summary><p>Frequencies are $1/2,1/3,1/6$, giving $H=1-(1/4+1/9+1/36)=11/18$. Expected next richness is $3-(1/2)^6-(2/3)^6-(5/6)^6=59759/23328$, approximately 2.561686. The current richness is three. Expected next richness is smaller because each of the three colors has a positive probability of being absent, although some individual offspring jars retain all three. Expected next pair diversity is separately $(5/6)(11/18)=55/108$, approximately 0.50926. Richness and pair diversity are different quantities.</p></details></section>
+<section class="exercise"><h3>4. A half-decay time is not a fixation time</h3>
+<p>A neutral six-cell population begins with six singleton colors. At which first integer generation does expected pair diversity fall to at most half its initial value? Does this imply fixation by that generation?</p>
+<details class="solution"><summary>Solution</summary><p>The ratio of expected diversity to its initial value is $(5/6)^t$. The inequality requires $t\geq\log(1/2)/\log(5/6)$, approximately 3.802. The first integer is four. This does not imply fixation in every population by generation four. Diversity is positive in any jar retaining more than one color, and such jars still have positive probability. The calculation concerns an ensemble mean, rather than a bound on each absorption time.</p></details></section>
+<section class="exercise"><h3>5. Diagnose a claim of positive selection</h3>
+<p>One neutral marker wins in each of 100 independent repeats of the four-singleton experiment. A particular marker wins 32 repeats. Explain what a neutral null model predicts and why the outcome alone is not proof of a selective advantage.</p>
+<details class="solution"><summary>Solution</summary><p>Each independent repeat gives this marker eventual fixation probability $1/4$, so the number of wins is binomial with mean 25 and variance $100(1/4)(3/4)=18.75$, standard deviation approximately 4.330. Thirty-two wins is about 1.62 standard deviations above the mean. A formal significance calculation would require a specified one- or two-sided test and attention to whether this marker was selected after looking at all winners. More directly, unequal realized win counts are allowed under equal fitness. The assay should measure repeated reproductive differences under controlled conditions and compare the full outcome distribution with a declared null. The calculation does not prove neutrality either; it shows why winner status alone is inadequate evidence.</p></details></section>
+<section class="exercise"><h3>6. Find the broken assumption in a mutation experiment</h3>
+<p>Every offspring independently has a positive probability of changing its inherited color to a different color, and every color can eventually mutate to every other. Which parts of the no-mutation argument survive, and which conclusions fail?</p>
+<details class="solution"><summary>Solution</summary><p>Sampling parents still has a multinomial law, but final offspring-color probabilities now include the mutation step and need not equal parent frequencies. Hence the focal-frequency mean is no longer generally preserved. Richness can increase because new colors are created. An all-one-color population can produce other colors in its next generation and is no longer absorbing. Thus the proof of permanent eventual fixation, and the deduction $u=X_0$, fail. At finite time a population can still happen to contain one color. That is a transient state, not permanent fixation under ongoing bidirectional mutation. If mutation were one-way only, some boundaries could remain absorbing, so the direction assumption must be stated.</p></details></section>
+
+<h2 id="perspective">The question changes from a trajectory to a distribution</h2>
+<p>The marble model supplies an exact example in which a preserved mean coexists with loss of lineages and loss of expected diversity. Its central lesson is that neutrality constrains conditional reproductive probabilities, not the realized winner. To combine a reproductive advantage with this finite-population uncertainty, we must specify how fitness biases parent choice and how individuals are replaced. That specification is the Moran process developed next.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-08-experimental-landscapes-and-accessibility.html">Previous available chapter</a><a href="index.html">Lecture index</a><a rel="next" href="chapter-10-moran-process-and-neutral-fixation.html">Next available chapter</a></nav></main></div>
+<footer class="site-footer">Independent study notes. NPTEL IIT Bombay course recordings supply the topic sequence; added explanations and teaching constructions are separately attributed. Complete local reading edition; source and validation boundaries are recorded in this repository.</footer></body></html>

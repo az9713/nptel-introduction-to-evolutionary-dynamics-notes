@@ -1,0 +1,165 @@
+{
+  "chapter_order": 13,
+  "title": "A traveling wave in fitness space",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 43,
+      "video_id": "pOPgo5TeAzk",
+      "duration": 1903.101,
+      "playlist_reported_duration": 1904,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "transcript_filename": "transcript.machine.json",
+      "transcript_sha256": "cec8437cf1c7c6c7b773af9bfe74d5c660fc00491adc79352f1c158dd98ec579",
+      "first_start_seconds": 1.17,
+      "last_end_seconds": 1873.39,
+      "input_media_sha256": "ea24d09794b3e902eb49e407db3b250b5fc6512feabe36113ce457df6810ec73",
+      "input_media_filename": "audio.webm",
+      "audio_sha256": null,
+      "audio_hash_note": "Input container identified by media hash; no separately extracted audio hash asserted.",
+      "transcript_reading": "Complete preferred transcript read sequentially by chapter author.",
+      "visual_review": "No complete recording visual review asserted."
+    },
+    {
+      "lecture_number": 44,
+      "video_id": "spjPlFQ_YD0",
+      "duration": 1603.101,
+      "playlist_reported_duration": 1604,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "transcript_filename": "transcript.machine.json",
+      "transcript_sha256": "b210df85e493a69c3642e4986a86f6d624f05fecd1ea56e7aeb790ad04add941",
+      "first_start_seconds": 1.17,
+      "last_end_seconds": 1573.58,
+      "input_media_sha256": "5ef6d086a2ffb8b6a0e62748f6a6fdebe67146e5f4d7d72b768afea931e08167",
+      "input_media_filename": "audio.webm",
+      "audio_sha256": null,
+      "audio_hash_note": "Input container identified by media hash; no separately extracted audio hash asserted.",
+      "transcript_reading": "Complete preferred transcript read sequentially by chapter author.",
+      "visual_review": "No complete recording visual review asserted."
+    }
+  ],
+  "sections": [
+    {
+      "section": "An exponential rise gives a scale rather than an exact fixation time",
+      "video_id": "pOPgo5TeAzk",
+      "duration": 1903.101,
+      "start": 1.17,
+      "end": 601.87,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Waiting-time recap, established count1/s, exponentialrise, log(Ns)/s scale and concurrent regime.",
+      "research_extension": "",
+      "teaching_construction": "Explicit scale/endpoints versus exactfixation and bounded regime claim.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "Choose a fitness coordinate before talking about translation",
+      "video_id": "pOPgo5TeAzk",
+      "duration": 1903.101,
+      "start": 603.38,
+      "end": 970.1,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Fitness distribution, leadingedge steps above normalizedmean, equalstep mutation and possiblelargejumps.",
+      "research_extension": "",
+      "teaching_construction": "Stable additive logcoordinate, reference-generation convention and movingnormalization.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "A traveling profile is stationary only in its moving frame",
+      "video_id": "pOPgo5TeAzk",
+      "duration": 1903.101,
+      "start": 970.1,
+      "end": 1873.39,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Laggingloss/newleadingestablishment, shiftingbarprofile, mean increase bystep everytau, speedstep/tau.",
+      "research_extension": "",
+      "teaching_construction": "Distributiontranslation versusindividualmutation, centeredmoments and stochasticprofile limits.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "A traveling profile is stationary only in its moving frame: setup",
+      "video_id": "spjPlFQ_YD0",
+      "duration": 1603.101,
+      "start": 1.17,
+      "end": 630.51,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Wave recap, meanfitnessgain/speed and two unknowns lead andinterval.",
+      "research_extension": "",
+      "teaching_construction": "Distinguish exactkinematicrelation from assumedconstantshape.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "Integrate successful-origin hazard at an exponentially growing edge",
+      "video_id": "spjPlFQ_YD0",
+      "duration": 1603.101,
+      "start": 630.51,
+      "end": 1185.47,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Establishededgecountinverseleadadvantage, exponentialgrowth, beneficial mutation supply times establishment and integratedcountone.",
+      "research_extension": "",
+      "teaching_construction": "Independentderivation correctsASRproduct/quotient ambiguity, retainsminusone, interprets hazardone andmedian.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "A second equation matches edge growth to bulk abundance",
+      "video_id": "spjPlFQ_YD0",
+      "duration": 1603.101,
+      "start": 1185.47,
+      "end": 1573.58,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Decreasingadvantage staircase, accumulated exponent, halfpopulation closure andtwoequations.",
+      "research_extension": "",
+      "teaching_construction": "General chosenbulkfractionc, realleadinterpolation, branch/domainchecks and no universalN/2claim.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "Bulk moment equation, primary comparison, root solver and six full solutions",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "No additional recording claim.",
+      "research_extension": "Desai/Fisher2007 relevant PDFpp4-7 andFigures1-2; logfitness, stochasticnose and asymptoticmatching comparison.",
+      "teaching_construction": "Original classfrequencyequation/momentidentity, finite-logclosurebisection, independentlycheckedtwoequationresiduals andsixsolutions.",
+      "evidence_class": "verified primarycomparison and original model teaching"
+    }
+  ],
+  "references": [
+    {
+      "title": "Desai and Fisher, Beneficial Mutation-Selection Balance and the Effect of Linkage on Positive Selection (2007)",
+      "url": "https://www.desai-lab.com/publications/PDFs/desaifisher07.pdf",
+      "supports": "Relevant PDFpp4-7 heuristic setup, logfitness, stochasticnose and leading/bulk matching; Figures1-2 inspected."
+    }
+  ],
+  "source_uncertainties": [
+    "ASR corrupts ratio Q/U_b into product in one sentence; equations reconstructed algebraically and compared to primary source.",
+    "Established count1/advantage is a scale, not guaranteedsurvival.",
+    "Exponentialrise toN is heuristic, not exactfinitefixation time.",
+    "Halfpopulation bulkpeak is a closure assumption; no verified universal empiricalfraction asserted.",
+    "All microbial populations neednotshare concurrent regime; supply andbottlenecks determine applicability.",
+    "Typicalbeneficialeffects not established fromillustrative lecture values.",
+    "No fullrecordingvisualreview; actualprimaryFigures1-2 separately inspected."
+  ],
+  "symbol_ledger": [
+    {
+      "symbol": "N,U_b,G,G_ref,ell,h,k",
+      "definition": "Population,beneficialmutationprobability,referencegeneration multipliers,logfitness,equalstep and classindex."
+    },
+    {
+      "symbol": "f,F,v,t",
+      "definition": "Fitnessdensity,movingprofile,speed andtimecountin referencegenerations."
+    },
+    {
+      "symbol": "x_k,bar_ell",
+      "definition": "Classfrequency andmeanlogfitness."
+    },
+    {
+      "symbol": "q,Q,n_0,H,tau,c",
+      "definition": "Leadinsteps,leadadvantageqh,establishededgescale,cumulativehazard,characteristicinterval andchosenbulkfraction."
+    }
+  ],
+  "independent_review": {
+    "status": "pending"
+  },
+  "validation_evidence": [],
+  "accepted_body_sha256": "65f6ae62d71a8c7e759b0a854848a12f222dbc3aa4065ec937d4ec258d689ef7"
+}

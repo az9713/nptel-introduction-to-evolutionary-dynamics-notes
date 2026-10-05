@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="cc4f8b2820ed73d81f2e44f8db6e3b4aadc0864582026152c94bc4ccca4059ee"><title>Microbial growth, mutation, and reproduction · Introduction to Evolutionary Dynamics</title>
+<link rel="stylesheet" href="assets/book.css"><script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="index.html">Introduction to Evolutionary Dynamics · January 2025</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main">
+<div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>Microbial growth, mutation, and reproduction</h1>
+<p class="lead">Two cultures founded from the same bacterial clone reach the same final size. After exposure to a killing agent, one produces a handful of resistant colonies and the other produces thousands. Equal starting sequences and equal population sizes have not guaranteed equal evolutionary histories. To interpret the experiment, we must separate cell divisions, population doublings, mutation events, and descendants of those events.</p>
+<p>We will follow an original experimental construction: several well-mixed cultures receive genetically identical founders, grow without the killing agent, and are subsequently assayed for resistance. Before interpreting the assay, the investigator measures the growth curve and asks whether a count of resistant cells estimates the number of mutations. Lectures 10–13 supply the accounting and molecular mechanisms. The finite branching model and calculations below are teaching constructions, rather than a literal reconstruction of any particular experiment.</p>
+
+<h2 id="clone-and-growth">A clonal founder specifies sequence, not an identical physiological state <a class="lecture-link" href="https://www.youtube.com/watch?v=tjT6EFDWITc&amp;t=40">Lecture 10, 0:40</a></h2>
+<p>A clone is a set of descendants of one ancestral cell. Calling an inoculum <em>isogenic</em> means that its members have the same genotype at the resolution being considered; it does not mean that they have identical ages, protein abundances, or positions in the division cycle. Random expression fluctuations and environmental differences can produce physiological heterogeneity without a change in DNA sequence. Conversely, later descendants of one founder need not retain the same genotype indefinitely.</p>
+<p>For two aligned DNA sequences of equal length $L$, a simple measure of difference is the Hamming distance,</p>
+\[
+d_H(a,b)=\sum_{j=1}^{L}\mathbf{1}\{a_j\ne b_j\}.
+\]
+<p>The indicator is one at a differing position and zero otherwise. For the strings ATGCCC and ATCCCC the distance is one: only the third position differs. Zero distance establishes equality of these sequences, rather than equality of all cellular properties. The formula presupposes a position-by-position alignment. An insertion or deletion changes length or positional correspondence, so it first requires an alignment convention; forcing unequal strings into this definition conceals the biological change.</p>
+<p>After inoculation into a fresh medium, a culture may show a lag phase, followed by approximately exponential growth and then a stationary phase. Lag concerns the adaptation of cellular activity to the new conditions. In the lactose case from Chapter 3, altered transport and enzyme expression can matter. Basal expression allows induction to begin; the cell need not start with literally no relevant molecules. A visible delay in population increase can also include heterogeneous individual recovery times.</p>
+<p>Stationary means approximately constant population size over the observation interval. It does not establish that division and death have both stopped, or that both occur at one particular matched rate. Resource depletion, inhibitory products, oxygen supply and other constraints can contribute. A carrying capacity is a property of a specified environment and model, rather than a permanent number attached to a species. The coming growth chapters develop the rate equations; here the indispensable first step is to account for what each measurement counts.</p>
+
+<h2 id="division-accounting">Divisions count events; generations count doublings <a class="lecture-link" href="https://www.youtube.com/watch?v=tjT6EFDWITc&amp;t=1096">Lecture 10, 18:16</a></h2>
+<p>Let $N_0$ and $N_T$ denote cell numbers at the beginning and end of a growth interval. In binary fission, one cell becomes two daughter cells. The parent is replaced, so one division increases the count by one, not two. If $D$ counts such divisions and there are no deaths, arrivals, or departures, summing these unit increments gives</p>
+\[
+N_T=N_0+D,\qquad D=N_T-N_0.
+\]
+<p>This conclusion requires no synchronization and no assumption about the division rate. Its hinge is the net increment of each counted event. If $H$ cells die, $I$ enter, and $E$ leave during the same interval, the accounting becomes</p>
+\[
+N_T-N_0=D-H+I-E,\qquad
+D=N_T-N_0+H-I+E.
+\]
+<p>The first identity conserves cell number; the second shows why endpoint measurements alone cannot identify total births. An unchanged count can conceal extensive turnover. Dilution in a continuously fed vessel makes this qualification operational, even when the cells have excellent nutrient supply.</p>
+<p>Now suppose every cell doubles in each synchronous reproductive generation. After an integer $g$ generations, $N_g=N_0\,2^g$. Solving for the number of <em>population doublings</em> gives</p>
+\[
+G_{\mathrm{pop}}=\log_2\!\left(\frac{N_T}{N_0}\right).
+\]
+<p>This logarithm can be nonintegral. Starting with one cell and ending with 100 requires 99 divisions under the no-loss assumptions, and corresponds to $\log_2 100=6.643856$ population doublings. It cannot be the result of exactly that many completed synchronous rounds: six rounds yield 64 cells and seven yield 128. In an asynchronous culture, the logarithm is a population-level growth measure; different lineages can have different numbers of ancestral divisions.</p>
+<p>A 100-mL culture at $10^9$ cells/mL contains $10^{11}$ cells. From one founder it has approximately $10^{11}$ division events, but only $\log_2(10^{11})=36.541209$ population doublings. These quantities differ because each successive round contains more dividing cells. In round $r$ of the synchronous model, there are $2^{r-1}$ divisions; summing the geometric series through $g$ gives $2^g-1$. A mutation rate per cell division must therefore multiply the event count, rather than just the number of rounds.</p>
+
+<h2 id="replication">Genome copying and cell division have different clocks <a class="lecture-link" href="https://www.youtube.com/watch?v=ArYoGEZrkDM&amp;t=902">Lecture 12, 15:02</a></h2>
+<p>DNA replication copies a genome so that descendants can inherit it. It is a molecular process within the reproductive cycle, not a synonym for division of the cell. In semiconservative replication, each completed DNA duplex contains an old strand paired with a newly synthesized strand. Base pairing provides the copying rule; polymerases and associated replication machinery carry it out, with error correction that makes retained mutations much rarer than an uncorrected copying error would suggest.</p>
+<p>Meselson and Stahl shifted nitrogen-labeled <em>E. coli</em> into a lighter nitrogen source and measured DNA density. Their actual Figure 4 shows an intermediate band near one generation, followed by intermediate and lighter bands. The controls include mixtures that locate the band positions. These are density measurements, not photographs of individual strands. The authors' interpretation of conserved nitrogen-bearing subunits was consistent with the Watson–Crick mechanism, while their discussion explicitly distinguished that interpretation from directly establishing the structural identity of the subunits. See <a href="https://doi.org/10.1073/pnas.44.7.671">Meselson and Stahl (1958), pp. 674–678, Figures 4–5</a>.</p>
+<p>Consider the lecture's illustrative circular genome of $L=5\times10^6$ base pairs, replicated bidirectionally from one origin. If each of two forks advances at speed $v=10^3$ base pairs per second, the idealized chromosome-copying time is</p>
+\[
+C=\frac{L}{2v}=2500\ {\rm s}=41.6667\ {\rm min}.
+\]
+<p>The factor of two counts two advancing forks, each covering approximately half the chromosome. It is not a count of every enzyme molecule in a replisome, the protein assembly at a fork. Nor does it describe transcription. A 20-minute population doubling time is shorter than this copying time, so the mistaken inference would be that bacteria must finish a wholly new replication cycle between successive cell divisions.</p>
+<p>Overlapping replication cycles resolve the apparent contradiction. A cell can initiate replication for chromosomes that its later descendants will receive while a previous round is still in progress. Cooper and Helmstetter modeled this scheduling in rapidly growing <em>E. coli</em> B/r, separating a replication interval $C$ from the interval $D_{\mathrm{post}}$ between replication completion and the associated division. Their illustrative $C=40$ and $D_{\mathrm{post}}=20$ minutes are a useful scheduling example, not constants for all bacteria or media; their measurements and concordance analysis delimit the model. See <a href="https://doi.org/10.1016/0022-2836(68)90425-7">Cooper and Helmstetter (1968), Model and Concordance sections, pp. 519–525</a>.</p>
+<p>With these illustrative values, replication associated with a division at time zero starts at $-60$ minutes and finishes at $-20$ minutes. Replication associated with the next division, at 20 minutes, starts at $-40$ and finishes at zero. The overlap concerns inheritance across a lineage. It does not assert that a single isolated cell takes only 20 minutes to copy five million base pairs at the specified fork speed. Counts of origins and forks consequently depend on growth conditions and position in the cycle.</p>
+
+<h2 id="mutation-rate">A mutation rate measures retained changes under a stated convention <a class="lecture-link" href="https://www.youtube.com/watch?v=P-O4kbGfqlw&amp;t=761">Lecture 11, 12:41</a></h2>
+<p>A mutation is a heritable sequence change. A new base substitution can arise during genome copying, but many initial mismatches are repaired; not every copying error becomes a mutation. A single-nucleotide polymorphism describes variation at one nucleotide position in a population. A newly generated substitution in one cell need not yet constitute a polymorphism in the population being discussed.</p>
+<p>Declare the unit before using a rate. Let $u$ denote an illustrative mean number of retained substitutions per nucleotide position per reproductive generation, and let $U$ denote the corresponding mean number per genome. Under a homogeneous independent-site approximation, $U=Lu$. With unequal site rates, the appropriate mean is the sum of those rates. If the count of changes in one reproductive opportunity is modeled as Poisson with mean $U$, then</p>
+\[
+\Pr(\hbox{at least one change})=1-e^{-U}.
+\]
+<p>The mean $U$ and this probability agree approximately when $U\ll1$, but they are different objects. At $U=1$, the probability is about 0.632, not one, because a distribution with mean one includes both zero and multiple events. A “genome mutation rate” quoted as $10^{-3}$ must therefore be checked for whether it means a mean number of mutations or a probability of an event, and for which classes of mutations it counts.</p>
+<p>Whole-genome sequencing of mutation-accumulation lines provides a concrete empirical anchor. Lee and colleagues used repeated single-colony bottlenecks in a specified <em>E. coli</em> strain and reported a wild-type estimate of about $2.2\times10^{-10}$ retained mutations per nucleotide per generation, or $10^{-3}$ per genome, including the counted substitutions and indels. Their substitution-only estimate differs. The assay, correction procedures, strain and mutation classes matter; this is not an uncorrected polymerase error rate or a universal bacterial constant. See <a href="https://doi.org/10.1073/pnas.1210309109">Lee et al. (2012), Spontaneous Mutation Rate and Materials and Methods</a>.</p>
+<p>For a simpler counting model, let $\mu$ be the probability of one counted mutation event at each division, independently across $D$ divisions. The number $M_{\mathrm{event}}$ is then binomial:</p>
+\[
+\mathbb E[M_{\mathrm{event}}]=\mu D,\qquad
+\operatorname{Var}(M_{\mathrm{event}})=D\mu(1-\mu),\qquad
+\Pr(M_{\mathrm{event}}=0)=(1-\mu)^D.
+\]
+<p>This Bernoulli convention permits at most one counted event per division and is appropriate as a rare-event approximation, not an identity for all mutation mechanisms. If $\mu=10^{-3}$ and $D=1000$, the expected count is one, yet the probability of no events is about 0.3677. “One per thousand” describes an average, not a regularly scheduled mutation. For the large culture with $D\approx10^{11}$, the illustrative expectation is $10^8$ events. It is neither $10^3$ nor a count of distinct genotypes or mutant cells.</p>
+
+<h2 id="sequence-coverage">Many events do not guarantee every sequence alternative <a class="lecture-link" href="https://www.youtube.com/watch?v=P-O4kbGfqlw&amp;t=1744">Lecture 11, 29:04</a></h2>
+<p>A sequence of $L$ positions has $S=3L$ distinct single-base substitutions away from that initial sequence, because each position has three alternative bases. This is a one-step neighborhood. It is not the complete genotype space, which contains $4^L$ length-$L$ strings when every position can take any of four bases. Multiple substitutions, insertion and deletion events, and transferred DNA introduce other possibilities.</p>
+<p>Even within the single-step neighborhood, more events than alternatives does not imply complete coverage. As an original null model, imagine $m$ independent draws uniformly from $S$ alternatives, with replacement. Repeated draws are permitted. Let $J_j$ indicate whether alternative $j$ has ever been drawn. It is absent with probability $(1-1/S)^m$, so linearity of expectation gives</p>
+\[
+\mathbb E[\hbox{distinct alternatives}]
+=\sum_{j=1}^{S}\mathbb E[J_j]
+=S\left[1-\left(1-\frac1S\right)^m\right].
+\]
+<p>The expected number still missing is $S(1-1/S)^m$. For $L=5\times10^6$, $S=1.5\times10^7$, and $m=10^8$, the large-$S$ approximation is $S e^{-m/S}\approx19{,}090$ missing alternatives. The expected covered fraction is about 99.873%, which is impressive but not complete coverage. An expected count does not itself specify the probability of covering every alternative.</p>
+<p>The inference becomes weaker for a real culture. Sites differ in mutation propensity; some mutations are removed by death or selection; samples miss rare lineages. Once a genome has changed, another mutation need not be a draw from the initial sequence's single-step neighborhood. Thus the calculation isolates a combinatorial objection to guaranteed coverage, rather than predicting actual genetic diversity in the flask.</p>
+
+<h2 id="mutation-lineages">The time of an event determines its descendant count <a class="lecture-link" href="https://www.youtube.com/watch?v=ArYoGEZrkDM&amp;t=402">Lecture 12, 6:42</a></h2>
+<p>Suppose one founder undergoes $G$ synchronous generations of binary fission with no death. In round $r$, one division generates a mutation in one daughter. If that mutation has no effect on subsequent reproduction and is inherited without reversal, its clone contains $2^{G-r}$ cells at the end. A first-round mutation occupies half the final population; an event in the last round contributes one cell. There are, however, $2^{r-1}$ division opportunities in round $r$. Late events are numerous, while early events can leave disproportionately large clones.</p>
+<p>For rare events at probability $\mu$ per eligible division, ignoring overlapping mutant ancestry at first order, each round contributes the same expected mutant-cell count:</p>
+\[
+\mu\,2^{r-1}\,2^{G-r}=\mu\,2^{G-1}.
+\]
+<p>This cancellation exposes why counting event opportunities alone misses the cell-count distribution. Summing over rounds suggests $\mathbb E[X_G]\approx\mu G2^{G-1}$ mutant cells, although expected event count is approximately $\mu(2^G-1)$. The approximation neglects repeated events in already marked ancestry. We can avoid that approximation with a deliberately defined finite model.</p>
+<p>Start with one unmarked cell. Each unmarked division independently produces exactly one irreversibly marked daughter with probability $\mu$, and two unmarked daughters otherwise. Marked cells produce two marked daughters. Both types divide at the same rate; there is no death, back mutation, migration, or detection delay. Here $\mu$ is the probability of a particular heritable marker event, not the genome-wide $U$ above. Let $X_g$ be the final marked-cell count from one unmarked founder after $g$ rounds, and write $A_g=\mathbb E[X_g]$ and $V_g=\operatorname{Var}(X_g)$, with $A_0=V_0=0$.</p>
+<p>Condition on the first division of a depth-$g$ subtree. Without an event, its two unmarked daughters have independent copies of $X_{g-1}$. With an event, one daughter contributes a fully marked subtree of $2^{g-1}$ leaves and the other contributes $X_{g-1}$. The two conditional means are $2A_{g-1}$ and $2^{g-1}+A_{g-1}$. Averaging yields</p>
+\[
+A_g=(2-\mu)A_{g-1}+\mu2^{g-1}.
+\]
+<p>For the variance, the mean of the two conditional variances is $(2-\mu)V_{g-1}$. The variance of the conditional mean is the Bernoulli variance multiplied by the squared difference between the conditional means. The law of total variance therefore gives the exact recursion</p>
+\[
+V_g=(2-\mu)V_{g-1}
++\mu(1-\mu)\bigl(2^{g-1}-A_{g-1}\bigr)^2.
+\]
+<p>Dividing the mean recursion by $2^g$ turns it into a first-order recurrence with multiplier $1-\mu/2$. Solving from zero gives</p>
+\[
+A_g=2^g\left[1-\left(1-\frac{\mu}{2}\right)^g\right].
+\]
+<p>Expanding for $g\mu\ll1$ recovers the rare-event expression. The probability of no marked cells is $(1-\mu)^{2^g-1}$: on the zero-event history, all $2^g-1$ divisions remain eligible. Checks at the extremes are informative. At $\mu=0$, mean and variance are zero. At $\mu=1$, every division along the sole surviving unmarked lineage marks one daughter, leaving exactly one unmarked final cell; thus $A_g=2^g-1$ and $V_g=0$. The number of actual new marker events differs from a Bernoulli count over every division once many cells are already marked.</p>
+<p>Luria and Delbrück's fluctuation experiment made the distinction experimentally consequential. Their Table 1 compares samples from one culture, while Table 2 compares independently grown cultures and shows much larger fluctuations. A resistant lineage arising early can generate a “jackpot” before exposure to the selective agent. Their inference combined this comparison with a mutation model and sampling corrections; inheritance by itself would not distinguish induction at exposure from earlier change. The finite synchronous model here illustrates the lineage mechanism, rather than reproducing their continuous-growth calculation. See <a href="https://doi.org/10.1093/genetics/28.6.491">Luria and Delbrück (1943), pp. 491–494 and 498–505, Tables 1–3</a>.</p>
+<p>Our original investigator should therefore grow independent cultures, rather than only take many aliquots from one flask. Aliquots chiefly reveal sampling variation within one shared history. Culture-to-culture variation contains historical variation, but contamination, differential growth, unequal final sizes and incomplete detection must still be controlled. A resistance phenotype is not automatically a neutral marker: its growth effects before exposure and its expression delay after mutation can change the count.</p>
+
+<h2 id="variation-mechanisms">Sequence change and expression change have several routes <a class="lecture-link" href="https://www.youtube.com/watch?v=ArYoGEZrkDM&amp;t=1430">Lecture 12, 23:50</a></h2>
+<p>A coding mutation can preserve an amino acid, change it, create a stop, or alter a reading frame, as Chapter 3 established. A regulatory mutation can change when or how strongly an otherwise unchanged protein is produced. These are categories of molecular consequence; reproductive fitness still requires a specified environment and assay. A twofold increase in RNA abundance produces a twofold steady protein abundance in the earlier linear model only when translation and protein-removal parameters remain fixed. That conclusion does not transfer automatically to a stressed, nonlinear cell.</p>
+<p>Insertions and deletions alter sequence length; a coding insertion not divisible by three changes the downstream reading frame in the simple uninterrupted coding model. A duplication creates an extra copy of a DNA region, but twice the gene copy number does not guarantee twice the final protein abundance: regulation, dosage compensation, resource limitation and changes in degradation can intervene. Horizontal gene transfer is acquisition of DNA from another lineage, rather than ordinary parent-to-descendant inheritance. It is another route to variation in microbes and should not be attributed solely to polymerase mistakes.</p>
+<p>These mechanisms undermine a neat division between “asexual organisms that vary only by mutation” and “sexual organisms that vary only by reshuffling.” Asexual populations can contain standing variation, meaning variants already present before the environmental change. Bacteria can exchange DNA. Eukaryotes can reproduce asexually. Population-genetic reasoning applies to both, once the reproductive and inheritance mechanisms are specified.</p>
+
+<h2 id="recombination">Sex reshuffles alleles as well as transmitting them <a class="lecture-link" href="https://www.youtube.com/watch?v=w6pDalBkIDc&amp;t=171">Lecture 13, 2:51</a></h2>
+<p>In a simple diploid sexual life cycle, an individual carries two homologous versions of each chromosome, generally one inherited from each parent. Homologous means corresponding chromosomes carrying the same loci, where a locus is a specified genomic position or region. An allele is a sequence variant at a locus. Before meiosis, DNA replication produces sister chromatids. Meiotic segregation and crossover exchanges between homologous chromosomes help generate haploid gametes; fertilization restores the diploid complement. Actual organisms have diverse life cycles, so this description is a declared model rather than a universal organismal sequence.</p>
+<p>A crossover exchanges corresponding DNA segments between chromatids. It is not ordinarily DNA polymerase arbitrarily switching between the two parental genomes during copying. The number and location of crossovers vary, so there is no fixed requirement of three or four per chromosome. Human X and Y chromosomes have limited homologous pseudoautosomal regions in which recombination can occur; describing the entire pair as never recombining would also be misleading. The introduction and sperm crossover results of <a href="https://doi.org/10.1371/journal.pgen.1007680">Poriswanish et al. (2018)</a> provide a concrete primary-source correction, including evidence for recombination in an extended pseudoautosomal region.</p>
+<p>To isolate the effect of reshuffling, consider two loci with alleles $A/a$ and $B/b$. A <em>haplotype</em> specifies the alleles carried together on one chromosome segment. An $AB/ab$ individual has the $A,B$ alleles together on one homolog and $a,b$ together on the other. Let $r$ be the recombination fraction: the probability that a gamete has one of the recombinant combinations. In the ordinary two-locus Mendelian model without segregation distortion,</p>
+\[
+\Pr(AB)=\Pr(ab)=\frac{1-r}{2},\qquad
+\Pr(Ab)=\Pr(aB)=\frac r2,\qquad 0\le r\le\frac12.
+\]
+<p>The parental and recombinant probabilities sum to one. The frequency of allele $A$ remains $(1-r)/2+r/2=1/2$, and the same holds for $B$. Recombination changes association between alleles, not their marginal frequencies in this individual. Its fraction is not simply the number of physical crossovers: multiple exchanges can restore parental associations at the two observed loci.</p>
+<p>If the homologs contain the same alleles at these loci, reshuffling creates no new observed combinations. Mutation is the ultimate origin of new sequence variants in this model, while recombination reorganizes existing variation. It can unite beneficial alleles previously carried separately, but it can also break a favorable combination. Whether this helps adaptation depends on selection, linkage, mating, population size and environment, rather than on sex being universally “faster.” The original flask experiment exploits simple clonal descent; applying its branching model to a recombining population would require additional inheritance rules.</p>
+
+<h2 id="executable">Compute exact fluctuation moments without simulating cultures</h2>
+<p>The following standard-library program implements the finite marker model already derived. Inputs are an integer number of generations from 0 through 200 and a finite marker-event probability in $[0,1]$. The outputs are final cell count, marked-cell mean and variance, the variance-to-mean ratio, and the probability of zero marked cells. The upper generation bound keeps the numerical example in a safe floating-point range. Invalid inputs raise an exception. It performs no random sampling, reads no files, and has no external effects; the printed values are mathematical consequences of the model, not measured culture data.</p>
+<p>In particular, the variance update uses the <em>previous</em> mean. Using the newly updated mean inside the variance formula would change the conditional-mean difference and silently implement another calculation. The probability of zero is evaluated in logarithmic form to avoid losing precision at small probabilities.</p>
+<pre><code class="language-python">import math
+
+
+def moments(generations, probability):
+    if type(generations) is not int or not 0 &lt;= generations &lt;= 200:
+        raise ValueError("generations must be an integer from 0 to 200")
+    if not 0.0 &lt;= probability &lt;= 1.0:
+        raise ValueError("probability must lie in [0, 1]")
+    mean = variance = 0.0
+    for depth in range(1, generations + 1):
+        half = 2 ** (depth - 1)
+        variance = ((2 - probability) * variance
+                    + probability * (1 - probability) * (half - mean) ** 2)
+        mean = (2 - probability) * mean + probability * half
+    if generations == 0:
+        zero = 1.0
+    elif probability == 1.0:
+        zero = 0.0
+    else:
+        zero = math.exp((2 ** generations - 1) * math.log1p(-probability))
+    return 2 ** generations, mean, variance, zero
+
+
+for generations in (8, 12, 16):
+    cells, mean, variance, zero = moments(generations, 0.001)
+    print(f"G={generations} N={cells} mean={mean:.6f} "
+          f"variance={variance:.6f} V/mean={variance / mean:.6f} "
+          f"P0={zero:.6g}")
+</code></pre>
+<pre class="output">G=8 N=256 mean=1.022210 variance=32.395546 V/mean=31.691680 P0=0.774818
+G=12 N=4096 mean=24.508529 variance=8290.630971 V/mean=338.275346 P0=0.0166217
+G=16 N=65536 mean=522.326500 variance=2114413.570926 V/mean=4048.068728 P0=3.34404e-29
+</pre>
+<p>The variance-to-mean ratios are much larger than one, the ratio for a Poisson cell count. The model generates strong fluctuations because descendants share ancestry. Nearly every large culture can contain at least one marked cell while its count remains extremely variable. A low probability of zero therefore does not imply a narrow distribution of counts. Selection, asynchronous growth and measurement noise would require further modeling before fitting these moments to data.</p>
+
+<h2 id="exercises">Exercises</h2>
+<h3>1. Recover divisions from incomplete population measurements</h3>
+<p>A culture starts with 100 cells and ends with 800. During growth, 120 cells die and 20 cells are removed for sampling; none enter. Determine the number of divisions and the net population doublings. Explain why neither gives every lineage's division depth.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p>The accounting identity gives $D=800-100+120+20=840$. Each division contributes one net cell, each death or removal subtracts one. Omitting the losses would underestimate divisions by 140. The net growth factor is eight, so $G_{\mathrm{pop}}=\log_2 8=3$. These three doublings summarize endpoints, not gross reproductive effort: turnover permits additional divisions. Even without losses, asynchronous lineages can divide unequal numbers of times. With losses, some ancestral branches terminate while others continue; neither endpoint count nor total event count reconstructs that tree.</p>
+</details>
+<h3>2. Translate a rate into probabilities without making it periodic</h3>
+<p>Under the independent Bernoulli event model, take $\mu=10^{-3}$ and $D=1000$. Compute the expectation and probabilities of zero and exactly one event. Separately, use a Poisson genome mean $U=0.01$ to find the probability of at least one change. Why are these different conventions?</p>
+<details class="solution"><summary>Worked solution</summary>
+<p>The expectation is $\mu D=1$. The zero-event probability is $(0.999)^{1000}\approx0.367695$. Exactly one event has probability $\binom{1000}{1}(0.001)(0.999)^{999}\approx0.368063$. Thus a count with expectation one is neither certain to contain one event nor governed by a fixed waiting schedule. For a Poisson genome count with mean 0.01, the at-least-one probability is $1-e^{-0.01}\approx0.00995017$. The Bernoulli model excludes multiple counted events in one division; the Poisson model permits multiple changes in a genome opportunity. Agreement of a small mean with an event probability is an approximation, not a definition.</p>
+</details>
+<h3>3. Distinguish neighborhood coverage from event abundance</h3>
+<p>A toy sequence has 20 possible counted one-step alternatives. Forty events independently choose among them uniformly with replacement. Compute the expected number absent and present. If an experiment detects all 20, does that identify the uniform mutation model?</p>
+<details class="solution"><summary>Worked solution</summary>
+<p>Each alternative is absent with probability $(19/20)^{40}$. Therefore expected absent count is $20(0.95)^{40}\approx2.570243$, and expected present count is $20-2.570243\approx17.429757$. Forty events are enough to cover all alternatives but do not guarantee doing so. Detection of all 20 is one outcome compatible with the uniform model; other biased models can also assign it positive probability. Identification requires replicate counts, their distribution, and a detection model. The calculation further presumes the alternatives remain referenced to one starting sequence and that events are independently observed without selective loss.</p>
+</details>
+<h3>4. Verify the fluctuation recursion on a tree small enough to enumerate</h3>
+<p>For $G=2$ and event probability $\mu=1/2$, enumerate the distribution of $X_2$. Use it to calculate the mean and variance, then check both recursions. Explain why the final count cannot be four.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p>If no event occurs in the first division, probability $1/2$, the second-round divisions each yield one marked cell with probability $1/2$. Conditional counts 0, 1 and 2 have probabilities $1/4,1/2,1/4$. If the first division has an event, probability $1/2$, its marked daughter produces two marked leaves; the other daughter yields either zero or one marked leaf, equally likely. Combining branches gives $\Pr(X_2=0)=1/8$, $\Pr(X_2=1)=1/4$, $\Pr(X_2=2)=3/8$, and $\Pr(X_2=3)=1/4$.</p>
+<p>Hence $\mathbb E[X_2]=1/4+2(3/8)+3(1/4)=7/4$, while $\mathbb E[X_2^2]=1/4+4(3/8)+9(1/4)=4$. The variance is $4-(7/4)^2=15/16$. At depth one, $A_1=1/2$ and $V_1=1/4$. The recursions give $A_2=(3/2)(1/2)+(1/2)2=7/4$ and $V_2=(3/2)(1/4)+(1/4)(2-1/2)^2=15/16$. Every marked-producing division leaves an unmarked daughter, so at least one unmarked path survives; four marked leaves are impossible. Finally, zero-event probability is $(1/2)^3=1/8$, agreeing with enumeration.</p>
+</details>
+<h3>5. Schedule overlapping chromosome replication</h3>
+<p>Use $C=40$ minutes, $D_{\mathrm{post}}=20$ minutes, and a 20-minute lineage division interval. Construct initiation and completion times for divisions at 0, 20 and 40 minutes. Explain what this establishes and what it does not measure.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p>A division at $t$ is associated with completion at $t-20$ and initiation at $t-60$. The corresponding time triples (initiation, completion, division) are $(-60,-20,0)$, $(-40,0,20)$ and $(-20,20,40)$. Replication intervals overlap because starts are separated by 20 minutes while copying lasts 40. The schedule demonstrates that short division intervals are compatible with longer chromosome-copying times through advance initiation and inherited replication states. It does not estimate fork speed, measure actual origin numbers in an arbitrary sampled cell, or establish fixed constants across media. Those require experimental growth-state and replication measurements.</p>
+</details>
+<h3>6. Separate recombination's effect on association from creation of alleles</h3>
+<p>For an $AB/ab$ diploid, take $r=0.2$. Calculate the four gamete probabilities and marginal allele frequencies. Compare with $r=0$ and with an $Ab/aB$ individual at $r=0.2$. If $AB$ is a favorable combination, why is recombination not uniformly advantageous?</p>
+<details class="solution"><summary>Worked solution</summary>
+<p>For $AB/ab$, parental gametes $AB$ and $ab$ each have probability 0.4; recombinant $Ab$ and $aB$ each have probability 0.1. Allele $A$ appears with probability $0.4+0.1=0.5$, as does $B$. At $r=0$, only $AB$ and $ab$ occur, each with probability 0.5, so recombination has reduced the transmitted fraction of $AB$ without changing either allele's marginal frequency. For $Ab/aB$, the parental $Ab,aB$ gametes each have probability 0.4, while $AB,ab$ each have probability 0.1: recombination now creates the favorable association from existing alleles. Which outcome benefits adaptation depends on initial association and on fitness in the actual environment. None of these cases creates a new allele sequence. If all transmitted alleles were identical at both loci, there would be no observed recombinant distinction.</p>
+</details>
+
+<p class="source-note">Lectures 10–13 were read sequentially in full using the uploader's English – NPTEL Verified caption track; its production method is unknown. The source map distinguishes lecture material, original derivations and inspected primary evidence. Arithmetic and mechanism slips are corrected explicitly: real-valued population doublings are not synchronous rounds, expected events do not guarantee complete sequence coverage, and overlapping replication is distinct from cell division. Exact retained-media durations and caption endpoints are recorded separately. No continuous audiovisual review or full secondary-ASR reading is claimed.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-03-molecular-biology-and-the-scales-of-evolution.html">Previous available chapter</a><a href="index.html">Lecture index</a><a rel="next" href="chapter-05-batch-growth-and-fitness.html">Next available chapter</a></nav></main></div>
+<footer class="site-footer">Independent study notes. NPTEL IIT Bombay course recordings supply the topic sequence; added explanations and teaching constructions are separately attributed. Complete local reading edition; source and validation boundaries are recorded in this repository.</footer></body></html>

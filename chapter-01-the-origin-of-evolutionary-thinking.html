@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="fdec4d8af70426603092892ccc46e111ef84965d3ad06d3a508e1f961d2312d7"><title>The origin of evolutionary thinking · Introduction to Evolutionary Dynamics</title>
+<link rel="stylesheet" href="assets/book.css"><script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="index.html">Introduction to Evolutionary Dynamics · January 2025</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main">
+<div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>The origin of evolutionary thinking</h1>
+
+<p class="subtitle">Chapter 1 · Lectures 1–3 · From a naturalist's collection to a testable account of living systems</p>
+
+<p>Imagine returning from an archipelago with three kinds of evidence: birds whose feeding structures differ between islands, fossils resembling animals living on the nearby continent, and a notebook recording where each specimen was collected. What would justify saying that the organisms share ancestors? What additional evidence would explain why a particular feeding structure became common? Neither answer tells us how a reproducing organism first emerged from chemistry. Keeping these questions separate is the first discipline of evolutionary reasoning.</p>
+
+<p>Our running case is this hypothetical collection and the successive investigations it motivates. The investigator first needs a historical explanation for a geographic pattern, then a mechanism for changing a population, and eventually a chemical account of the systems on which that mechanism can operate. The lectures follow the same widening path: Darwin and Wallace, priority and evidence, the history of life, and the requirements of a first cellular system. The chemical models and experimental designs below are teaching constructions; they do not reconstruct a known sequence of events on the early Earth.</p>
+
+<h2 id="patterns">A geographic pattern poses a historical question <a class="yt" href="https://www.youtube.com/watch?v=joX7lvfLvzI&amp;t=267">Lecture 1 · 4:27</a></h2>
+
+<p>A <em>species</em> is a lineage or group of organisms treated as a distinct biological kind; the operational criteria for distinguishing species depend on the organisms and the investigation. For now, a collector's consistently identified kinds are enough. A <em>lineage</em> is a sequence of parent–offspring connections through time. <em>Descent with modification</em> proposes that descendants inherit features of their ancestors while also differing from them. It therefore makes relatedness a historical relation, rather than merely a resemblance.</p>
+
+<p>The lecture places Darwin's observations during the Beagle voyage alongside Wallace's collecting expeditions with Henry Walter Bates and later in the Malay Archipelago. Collecting was more than accumulating unusual objects. A specimen connected to a locality could reveal that similar environments contain different organisms, or that neighboring regions contain related organisms despite environmental differences. Fossils add a temporal comparison: related forms occur at different times as well as different places. A branching genealogy offers one explanation for these structured similarities.</p>
+
+<p>In our collection, suppose birds on two nearby islands resemble continental birds more than they resemble birds from a distant island with a similar climate. A hypothesis based only on present climate has difficulty explaining that pattern. Colonization from the nearby continent followed by divergence gives a historical explanation. This is an inference from a pattern, not a witnessed record of every ancestral birth. It becomes stronger when independently measured characters support compatible relationships and when geological history makes the proposed colonization possible.</p>
+
+<p>A tree diagram states a relationship but does not automatically state a mechanism. A branch point represents a shared ancestor of the lineages above it; it does not mean that one present-day species gave birth to another present-day species. Nor does a drawing with humans near the top establish a direction toward humans. Extinct branches and persistent microbial lineages are part of the history, not failed attempts to reach its current human observer.</p>
+
+<p>The lecture also uses Wallace's geographic boundary as an example of structured distributions. Such a boundary concerns turnover in groups of organisms across a region, not an impermeable wall respected by every species. Historical connectivity, dispersal ability and ecological conditions all matter. The useful lesson for our investigator is to ask what a proposed history predicts about a distribution, rather than treating a map's dividing line as an explanation by itself.</p>
+
+<h2 id="mechanism">Population pressure supplies a mechanism only when variation is inherited <a class="yt" href="https://www.youtube.com/watch?v=joX7lvfLvzI&amp;t=1232">Lecture 1 · 20:32</a></h2>
+
+<p>Darwin and Wallace connected variation among organisms to the observation that reproduction can generate more descendants than an environment supports. The lectures describe the influence of Malthus's population argument: repeated multiplication can outrun a more slowly growing supply of resources. Its enduring biological role is a constraint on unchecked reproduction. It is not a universal quantitative law that food must increase linearly, nor a forecast that every actual population grows exponentially indefinitely.</p>
+
+<p>That constraint alone explains why some descendants fail to reproduce. <em>Natural selection</em> requires a further connection: inherited differences must be associated with differences in reproductive contribution. Survival can affect that contribution, but a long-lived individual leaving no descendants contributes less to the next generation than a shorter-lived individual leaving many. The environment can include predators, mates and competing organisms as well as physical conditions.</p>
+
+<p>To expose the connection, simplify our island birds into two perfectly inherited types, A and B. Let $p$ be the fraction of breeding individuals of type A, and let $w_A,w_B&gt;0$ be their expected numbers of descendants entering the next breeding population in the same environment. Assume separate generations, a large population so that random sampling can be ignored, no immigration and no conversion between types. Beginning with $N$ individuals gives expected descendant counts $Np w_A$ and $N(1-p)w_B$. Dividing the first count by their sum gives</p>
+
+<div class="eq">\[
+p'=\frac{p w_A}{p w_A+(1-p)w_B},\qquad
+p'-p=\frac{p(1-p)(w_A-w_B)}{p w_A+(1-p)w_B}.
+\]</div>
+
+<p>The hinge is the normalization by total descendants. An advantage changes a fraction because descendants of the two types enter a common pool. With $p=1/2$, $w_A=2$ and $w_B=1$, the next fraction is $2/3$, not one. Equal contributions leave the fraction unchanged, and a type absent from this model remains absent. Selection sorts available inherited differences; this equation contains no mechanism for inventing a missing type. The next chapter develops that distinction without assuming that all inheritance is this simple.</p>
+
+<p>The <a href="https://darwin-online.org.uk/converted/published/1858_species_F350.html">1858 Darwin–Wallace publication</a> contains the essential connection between differential persistence and inherited differences. Darwin's extract explicitly relates a favored parental variation to descendants inheriting it; Wallace analyzes how varieties can persist differently under changed conditions. Their formulations differ, and their explanations predate modern genetics. The equation above is our explicit model, not an equation transcribed from their papers or the recording.</p>
+
+<h2 id="publication">Discovery, publication and a developed explanation are different achievements <a class="yt" href="https://www.youtube.com/watch?v=mwlT7kLQ-BY&amp;t=225">Lecture 2 · 3:45</a></h2>
+
+<p>When Wallace sent Darwin his account in 1858, Darwin already had an unpublished account of related ideas. The resulting public communication was read to the Linnean Society on 1 July 1858. Its covering letter by Charles Lyell and Joseph Dalton Hooker identifies Darwin's earlier manuscript extract, an abstract sent to Asa Gray, and Wallace's essay. This documentary structure matters: the communication did not simply consist of two newly written conference talks. Darwin's extended book followed in 1859. These are distinct records of an idea's development and public presentation. See the <a href="https://darwin-online.org.uk/converted/published/1858_species_F350.html">covering letter and three contributions</a>, printed pages 45–62.</p>
+
+<p>The lectures then recover Patrick Matthew's earlier contribution. In April 1860 Darwin publicly acknowledged that Matthew had anticipated the explanation he called natural selection in an appendix to a work on naval timber and arboriculture. Darwin also stated that he had been unaware of that publication and promised acknowledgment in a later edition. His <a href="https://darwin-online.org.uk/content/contentblock?basepage=1&amp;itemID=F1705&amp;hitpage=1&amp;viewtype=text">reply of 21 April 1860</a>, printed pages 362–363, establishes that acknowledgment directly. It does not by itself establish that Darwin obtained his theory from Matthew. Priority, awareness and influence require different evidence.</p>
+
+<p>For our investigator, this history teaches a practical distinction between proposing a mechanism and making an extensive case for it. A short proposal can have priority. A later analysis may connect the proposal to diverse observations, confront objections and develop consequences that make it productive. Recognizing one achievement need not erase the other. Scientific credit becomes misleading when a single name is used as a substitute for examining the actual claim and its evidential development.</p>
+
+<p>Batesian mimicry, introduced in the second lecture, illustrates the move from mechanism to a concrete ecological proposal. A relatively palatable organism can resemble an organism predators avoid. If the resemblance reduces attacks and is inherited, the frequency model gives a route by which it can spread. The mimic need not consciously try to deceive a predator. However, resemblance alone does not measure the advantage: the investigator must examine predator responses, survival and descendant production. The model and warning are conceptual here; we are not claiming new experimental measurements of butterflies.</p>
+
+<h2 id="history">The surviving tree is a filtered record of a much older history <a class="yt" href="https://www.youtube.com/watch?v=mwlT7kLQ-BY&amp;t=1288">Lecture 2 · 21:28</a></h2>
+
+<p>Tracing the ancestry of present cellular organisms motivates <em>LUCA</em>, the last universal common ancestor. “Last” means the most recent ancestral population shared by all those surviving lineages. It does not mean the final ancestor before evolution stopped. Nor does “universal” establish that every living system that ever existed descended from that population. Earlier lineages can disappear without leaving surviving descendants.</p>
+
+<p>This definition resolves an important shortcut in the recordings. LUCA is not synonymous with the first cell or the first living system. Even a perfectly reconstructed common ancestor of surviving lineages would not automatically reveal how chemistry first became capable of heredity and evolution. Transfer of genetic material between lineages also complicates the reconstruction of a single tree for every molecular component. The common-ancestry question remains meaningful, but its reconstruction requires models and evidence beyond a schematic branching sketch.</p>
+
+<p>The lecture's timeline emphasizes that microbial history occupies most of life's past. Bacteria and archaea are distinct groups of cellular organisms, typically lacking the membrane-enclosed nucleus characteristic of eukaryotic cells. A <em>nucleus</em> is an internal compartment enclosing much of a eukaryote's genetic material. Humans, other animals, plants and many microscopic organisms are eukaryotes. Thus “microbial” does not mean “bacterial,” and large visible organisms represent only a small part of biological diversity.</p>
+
+<p>The account of mitochondria introduces <em>endosymbiosis</em>: an association in which one organism lives within another, with descendants becoming integrated into the host lineage. A mitochondrion is an organelle, an internal cellular structure, involved in energy conversion. The bacterial ancestry of mitochondria illustrates that major evolutionary changes can involve interactions between lineages, not just a succession of changes within an isolated lineage. The lecture offers an engulfment narrative; the exact historical host, intermediate stages and order of integration are not settled merely by that narrative.</p>
+
+<p>The later timeline marks Ediacaran organisms, Cambrian diversification, mass extinction and subsequent ecological opportunities. The <a href="https://stratigraphy.org/chart/">International Commission on Stratigraphy chart</a> places the start of the Cambrian near 539 million years ago, the end-Permian boundary near 252 million years ago and the Cretaceous–Paleogene boundary at 66 million years ago. These anchors correct the recordings' occasional mixed dates. The end-Cretaceous loss concerned non-avian dinosaurs; birds survive as dinosaurs. Mammals already existed before that extinction. Ecological opportunity can change their subsequent diversification without constituting their first appearance.</p>
+
+<p>Extinction makes our island collection a biased sample of history: only surviving branches can be collected alive. An absence today need not mean a lineage was never present, and a successful lineage need not have survived because it was superior under every past condition. The lecture's thought experiment of replaying life's history sharpens this point. Physical constraints may favor recurrent solutions, while historical events change which populations and environments are available. A whole-planet replay is hypothetical; controlled replicate evolution experiments address narrower versions of the question, with their starting conditions held explicit.</p>
+
+<h2 id="cell">A first living system needs coupled functions <a class="yt" href="https://www.youtube.com/watch?v=rQzNZbI87U8&amp;t=403">Lecture 3 · 6:43</a></h2>
+
+<p>Now imagine our investigator finding organic molecules in a rock-associated fluid. An <em>organic molecule</em> is a carbon-containing chemical compound of the kinds studied in organic chemistry; finding one is not equivalent to finding an organism. The lecture asks what additional capabilities a cellular system would need. Its answer is best understood as a set of coupled functions, not a shopping list which proves life appears once its ingredients are mixed.</p>
+
+<p>A boundary retains components and permits different conditions inside and outside. Heredity transmits differences between generations. Replication makes more of the hereditary material, while reproduction produces descendant systems containing it. Catalysis accelerates reactions. Material supply replenishes the atoms used in those reactions, and an energy source sustains processes that would otherwise relax toward equilibrium. A chemical network can have some of these functions without having all of them linked into a reproducing system.</p>
+
+<p>Modern DNA, deoxyribonucleic acid, stores sequence information that cells copy and use. The chemical carriers in an earlier system need not have been identical to modern DNA. Likewise, a catalyst need not be a protein: catalytic RNA molecules demonstrate that informational polymers and catalytic functions are not mutually exclusive categories. We therefore distinguish the required function from the specific molecular implementation found in a modern cell.</p>
+
+<p>A catalyst changes reaction pathways and rates; it does not change the equilibrium free-energy difference between fixed reactants and products under the same conditions. Lowering an activation barrier can make a favorable reaction faster, but it cannot supply net free energy for an unfavorable transformation. Such a transformation requires coupling to another process, altered concentrations or other changed conditions. This distinction prevents a mineral surface that catalyzes chemistry from being treated as a complete energy supply.</p>
+
+<p>Living order also does not violate the second law of thermodynamics. Let $S_{\mathrm{sys}}$ and $S_{\mathrm{env}}$ denote the entropy of a chosen system and its environment. For their combined isolated accounting boundary, the total change obeys $\Delta S_{\mathrm{sys}}+\Delta S_{\mathrm{env}}\geq0$. An open cell can maintain a low-entropy organization while exporting entropy and consuming chemical free energy. The lecture's phrase about “fighting entropy” should be read through that accounting, not as an exception to the law.</p>
+
+<h2 id="miller">Making building blocks demonstrates one step, not a complete origin <a class="yt" href="https://www.youtube.com/watch?v=rQzNZbI87U8&amp;t=886">Lecture 3 · 14:46</a></h2>
+
+<p>Stanley Miller's <a href="https://doi.org/10.1126/science.117.3046.528">1953 experiment</a> tested whether a selected chemical environment could produce amino acids, molecules containing amino and carboxyl groups that serve as building blocks of proteins. The original paper's apparatus circulated water vapor, methane, ammonia and hydrogen through an electrical discharge, then condensed products into water. After a week, analysis identified glycine and two alanine forms; the paper treated some additional identifications less confidently. This is more specific than saying that ordinary water became life. See printed pages 528–529 and Figures 1–2.</p>
+
+<p>The experiment established abiotic production under its tested conditions: “abiotic” means without a biological source. It did not establish those conditions as a unique global early atmosphere, make a reproducing cell, or join the amino acids into a functional hereditary system. Its inferential strength is chemical feasibility. Its historical relevance depends on whether suitable conditions existed, whether products persisted and concentrated, and whether subsequent reactions connected them into a system capable of reproduction.</p>
+
+<p>Concentration is a mechanistic issue. In an ideal dilute, well-mixed solution, suppose a bimolecular reaction has rate per volume $v=k c_Ac_B$, where $c_A,c_B$ are the two reactant concentrations and $k$ is a rate constant at fixed conditions. Diluting both concentrations tenfold lowers (v) a hundredfold. If volume simultaneously rises tenfold while molecule counts stay fixed, total reaction events per time, $Vv$, fall tenfold. A confined region can therefore alter encounter rates, but confinement may also trap waste, exclude reactants or permit leakage. It is a proposed solution with its own transport requirements.</p>
+
+<p>Delivery from space is another possible source of molecules. Delivering organic building blocks and delivering viable organisms are different claims; neither follows from the other. A hypothesis that organisms arrived from elsewhere moves their first origin to a different setting unless it also explains how they arose there. Our investigator should therefore state whether a meteorite observation concerns chemical supply, biological transport or the origin process itself. No particular meteorite inventory is needed for that logical distinction.</p>
+
+<h2 id="energy">A proton gradient is an energy resource only if a system can couple to it <a class="yt" href="https://www.youtube.com/watch?v=rQzNZbI87U8&amp;t=1185">Lecture 3 · 19:45</a></h2>
+
+<p>The lecture turns to ATP, adenosine triphosphate, a molecule whose reactions help couple energy-releasing and energy-requiring cellular processes. ADP, adenosine diphosphate, can be phosphorylated by adding inorganic phosphate to form ATP. In chemiosmotic energy conversion, electron-transfer reactions help create an ion gradient across a membrane, and ATP synthase couples ion movement to ATP formation. This is a widespread mechanism. It is not the only way cells produce ATP: direct chemical coupling in substrate-level phosphorylation also occurs, and some systems use sodium rather than proton gradients.</p>
+
+<p>To quantify the chemical contribution, let $a_o$ and $a_i$ be dimensionless proton activities outside and inside a boundary, $T$ absolute temperature and $R$ the gas constant. The chemical potential of an ideal dilute solute contains $RT\ln a$. One mole of protons moving from outside to inside therefore changes chemical free energy by $RT\ln(a_i/a_o)$. A proton's electrical contribution is $F(\psi_i-\psi_o)$, where $F$ is the Faraday constant and $\psi$ is electrical potential in volts. Defining $\mathrm{pH}=-\log_{10}a$ gives</p>
+
+<div class="eq">\[
+\Delta G_{o\to i}
+=-RT\ln(10)(\mathrm{pH}_i-\mathrm{pH}_o)
++F(\psi_i-\psi_o).
+\]</div>
+
+<p>A negative value means that this direction releases free energy under the stated conditions. At $T=298.15$ kelvin, outside pH 7 and inside pH 10, with no electrical potential difference, the chemical contribution is approximately $-17.12$ kilojoules per mole of protons. Reversing the direction reverses its sign. Removing both gradients makes the contribution zero. A more positive potential inside opposes inward movement of positive ions and can offset the chemical advantage; an inward-favorable pH difference alone is not sufficient when that electrical term is large.</p>
+
+<p>Suppose an illustrative synthesis requires $50$ kilojoules per mole of product. Coupling three moles of those protons per mole of product would provide $51.37$ kilojoules in the ideal chemical-only calculation. Two would be insufficient. This is an energy-accounting bound for chosen numbers, not a measurement of ATP synthase stoichiometry or proof that an uncatalyzed mineral compartment makes ATP. Actual coupling needs a physical pathway; leaks and dissipation reduce what can be captured, and the free energy of ATP synthesis depends on conditions and concentrations.</p>
+
+<h2 id="vents">Hydrothermal experiments test parts of a proposed pathway <a class="yt" href="https://www.youtube.com/watch?v=rQzNZbI87U8&amp;t=1457">Lecture 3 · 24:17</a></h2>
+
+<p>Alkaline hydrothermal proposals bring concentration, catalysts and sustained chemical disequilibrium into one setting. Hydrothermal circulation involves water interacting with rock and returning to the surroundings with changed composition. Mineral pores may provide compartments, while alkaline fluid meeting less alkaline water can create a pH contrast. These features motivate experiments; they do not establish that life actually originated in that setting, or that every required step has been demonstrated.</p>
+
+<p>A useful inspected example is <a href="https://discovery.ucl.ac.uk/id/eprint/10109879/">Hudson and colleagues' 2020 experiment</a>. Their microfluidic reactor brought a hydrogen-driven alkaline stream together with a carbon-dioxide-driven acidic stream across freshly deposited iron–nickel sulfide material. They detected formate, a small reduced-carbon compound. Carbon-isotope labeling linked product carbon to supplied carbon dioxide. Removing hydrogen or the precipitate, and strongly reducing the pH contrast, removed detectable production under the tested conditions. See PDF pages 2–4, Tables 1–2. This supports a particular chemical transformation and constraints on its mechanism, not cell formation.</p>
+
+<p>The distinction returns us to the island collection. A geographic pattern supports an ancestral hypothesis; a trait-associated difference in descendants supports selection; a controlled chemical result supports a feasible reaction. Each becomes misleading if promoted to an answer to all three questions. A productive origin-of-life program asks which missing coupling can now be tested, while an evolutionary program asks how reproducing populations change once that coupling exists.</p>
+
+<h2 id="calculation">An executable energy-accounting check</h2>
+
+<p>The following standard-library Python program implements the chemical-only proton calculation already derived. Its inputs are outside and inside pH, temperature in kelvin and an illustrative positive synthesis cost in kilojoules per mole. It returns the inward chemical free-energy change and the smallest integer proton count whose ideal energy release meets that cost. It writes three lines to standard output and creates no files or network connections. It rejects nonfinite inputs, nonpositive temperature or synthesis cost, and a gradient which supplies no inward energy.</p>
+
+<p>The calculation assumes ideal activities, fixed reservoir conditions, zero electrical potential difference and perfect coupling. It calculates a bound, not a reaction rate, historical probability, membrane permeability or molecular stoichiometry. Changing the model to include voltage requires the electrical term above. In a finite unmaintained reservoir, movement changes the gradient, so the same release cannot be assumed for arbitrarily many protons.</p>
+
+<pre><code class="language-python">from math import ceil, isfinite, log
+
+
+def proton_budget(ph_out, ph_in, temperature, synthesis_cost):
+    """Return kJ/mol inward energy and an ideal integer coupling bound."""
+    values = (ph_out, ph_in, temperature, synthesis_cost)
+    if not all(isfinite(value) for value in values):
+        raise ValueError("Inputs must be finite")
+    if temperature &lt;= 0 or synthesis_cost &lt;= 0:
+        raise ValueError("Temperature and synthesis cost must be positive")
+    gas_constant = 8.314462618
+    delta_g = -gas_constant * temperature * log(10) * (ph_in - ph_out)
+    delta_g /= 1000
+    if delta_g &gt;= 0:
+        raise ValueError("This gradient supplies no inward chemical energy")
+    return delta_g, ceil(synthesis_cost / -delta_g)
+
+
+if __name__ == "__main__":
+    for ph_in in (8.0, 9.0, 10.0):
+        energy, count = proton_budget(7.0, ph_in, 298.15, 50.0)
+        print(f"inside pH {ph_in:.0f}: {energy:.2f} kJ/mol; bound {count}")
+</code></pre>
+
+<p>A clean run produces:</p>
+
+<pre class="output">inside pH 8: -5.71 kJ/mol; bound 9
+inside pH 9: -11.42 kJ/mol; bound 5
+inside pH 10: -17.12 kJ/mol; bound 3</pre>
+
+<p>The integer bound changes in steps even though chemical free energy varies continuously with pH difference. Near a threshold, rounding the energy before taking the ceiling can change the answer. The program therefore uses full floating-point precision internally and rounds only the displayed energy. Its values are illustrative accounting results, not predictions of which environmental niche first produced life.</p>
+
+<h2 id="exercises">Six exercises with worked solutions</h2>
+
+<h3>1. Separate historical relatedness from adaptation</h3>
+<p><strong>Problem.</strong> Island birds resemble nearby continental birds at several skeletal features but differ in beak shape between islands. An investigator says, “This proves natural selection produced the island species.” Identify two distinct claims in that sentence, explain what the stated observations support, and propose additional evidence for the mechanism.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> One claim concerns ancestry and divergence; the other concerns the cause of trait-frequency change. Shared characters and geographic proximity can support colonization and shared ancestry, especially when independent characters give compatible relationships. They do not identify selection as the cause of the beak differences. Chance, migration and noninherited developmental responses remain alternatives. Measure individual beak variation, its inheritance, available food, and descendant contribution associated with the trait under specified conditions. Replication across environments can test whether the association changes as predicted. Even then, explaining one trait's change does not by itself establish the complete history of reproductive separation between species.</p>
+</details>
+
+<h3>2. Find the missing inheritance assumption</h3>
+<p><strong>Problem.</strong> Begin with equal numbers of A and B adults. A adults produce twice as many surviving offspring, but every offspring develops into A or B with equal probability independently of parental type. What fraction of the offspring is expected to be A? Why does the chapter's frequency formula give a different answer?</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> Half the combined offspring are expected to be A regardless of which parental class supplied them. Hence the expected offspring fraction is $1/2$. The chapter's $2/3$ result assumes that type is perfectly inherited. In the problem, reproductive success sorts parents but their trait does not retain an association with the descendants' trait. If a parental A individual transmits A with probability $h_A$, and parental B transmits A with probability $h_B$, the appropriate expression is $\frac{p w_Ah_A+(1-p)w_Bh_B}{p w_A+(1-p)w_B}$. Setting both probabilities to $1/2$ cancels the reproductive weights. Differential reproduction without the relevant transmission cannot accumulate this trait difference.</p>
+</details>
+
+<h3>3. Audit a priority argument</h3>
+<p><strong>Problem.</strong> Document X proposes a mechanism in 1831. Document Y presents a related mechanism with extensive evidence in 1859. In 1860 Y's author acknowledges X's anticipation while stating prior ignorance. What can these documents establish, and what additional evidence would be needed to establish direct intellectual dependence?</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> Provided the mechanisms have actually been compared, X establishes earlier public presentation of its content, Y establishes its own later developed presentation, and the reply establishes acknowledgment and a stated account of awareness. Chronology alone does not establish that Y's author read X before developing the mechanism. Direct dependence would require evidence such as correspondence, reading notes, an identifiable borrowed argument or another documented route of transmission. The reply's claim of ignorance is evidence to assess, not a logical proof of independence. Equally, X's existence is not a proof of dependence. A fair account can distinguish priority, development and influence rather than assigning all three from one date.</p>
+</details>
+
+<h3>4. Design a chemical control rather than an origin-of-life claim</h3>
+<p><strong>Problem.</strong> A discharge apparatus yields amino acids. Propose controls that distinguish introduced contamination from new synthesis and test the role of discharge energy. State what a positive result still fails to establish.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> Analyze the input water and gases, sample apparatus blanks and run otherwise matched conditions without the discharge. Use replicates and the same extraction and analytical procedures so a difference is not introduced during analysis. An isotopically labeled carbon source can test whether product carbon came from the supplied reactant rather than preexisting organic contamination; identification should be checked against standards with a method capable of resolving alternatives. A higher product yield in the discharge condition supports an energy-dependent chemical process in that apparatus. It still does not establish the historical atmosphere, efficient polymerization, a membrane, heredity or autonomous reproduction. The controls target a specified causal step, not every step in life's origin.</p>
+</details>
+
+<h3>5. Resolve an apparent entropy violation</h3>
+<p><strong>Problem.</strong> A growing system's entropy decreases by (4) joules per kelvin while its environment's entropy increases by (7) joules per kelvin over the same process. Is the second law violated? If the environmental increase were only (2), what would have to be reconsidered?</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> The combined change is (-4+7=3) joules per kelvin, which is nonnegative. Local ordering is compatible with the second law. The alternative accounting gives (-2) joules per kelvin, incompatible with a complete isolated accounting boundary. Check omitted heat or material flows, whether the “environment” includes the energy source and its changes, and whether the measured entropy changes are valid. Merely calling the system alive does not repair an incomplete or physically inconsistent balance.</p>
+</details>
+
+<h3>6. Test the energetic boundary of a vent proposal</h3>
+<p><strong>Problem.</strong> At $298.15$ kelvin, outside pH 7 and inside pH 10, take $\psi_i-\psi_o=+0.10$ volts. Use $F=96485$ coulombs per mole. Calculate inward proton free energy and the ideal integer bound for a $50$-kilojoule-per-mole synthesis. Then determine the voltage which exactly cancels the chemical driving force and explain what either result says about an origin hypothesis.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> The electrical term is $+9.6485$ kilojoules per mole, opposing the chemical term of approximately $-17.1240$. The net is approximately $-7.4755$ kilojoules per mole, so the bound is $\lceil50/7.4755\rceil=7$. Cancellation occurs at $(RT\ln10\times3)/F\approx0.1775$ volts. Above that positive inward voltage, inward proton movement is unfavorable under these reservoir conditions. A favorable net balance supplies a necessary energy resource for the imagined coupling but does not establish a pathway, catalyst, retention mechanism or historical occurrence. An unfavorable balance rules out that direction of coupling under the chosen conditions; it does not rule out changed conditions or another energy source.</p>
+</details>
+
+<h2 id="source-note">Source boundaries and further reading</h2>
+
+<p>These notes follow all three numbered recordings in order, using the complete uploader-provided track labeled English – NPTEL Verified. The platform classifies the track as subtitles; its actual production method is unknown. Recording links locate the lecture discussion, while the mathematical models, exercises and control designs are original teaching constructions. Caption wording is not treated as authority for chronology, equations or chemical apparatus details. Primary documents inspected for the additions include the 1858 communication and Darwin's 1860 reply, Miller's complete two-page paper and its apparatus and chromatogram, and the relevant results and controls in Hudson and colleagues' paper.</p>
+
+<p>The readings support bounded conclusions: <a href="https://darwin-online.org.uk/converted/published/1858_species_F350.html">Darwin and Wallace (1858)</a> for the historical communication and inherited differential persistence; <a href="https://darwin-online.org.uk/content/contentblock?basepage=1&amp;itemID=F1705&amp;hitpage=1&amp;viewtype=text">Darwin (1860)</a> for the public acknowledgment of Matthew; <a href="https://doi.org/10.1126/science.117.3046.528">Miller (1953)</a> for tested abiotic synthesis; <a href="https://discovery.ucl.ac.uk/id/eprint/10109879/">Hudson et al. (2020)</a> for a controlled reduced-carbon reaction. The lectures' book recommendations and colorful anecdotes provide orientation, but the chapter's explanatory claims do not depend on an anecdote about who first appreciated a result. The next chapter asks precisely what selection requires and what an observed change does, and does not, demonstrate.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><span>First available chapter</span><a href="index.html">Lecture index</a><a rel="next" href="chapter-02-natural-selection-and-ecological-context.html">Next available chapter</a></nav></main></div>
+<footer class="site-footer">Independent study notes. NPTEL IIT Bombay course recordings supply the topic sequence; added explanations and teaching constructions are separately attributed. Complete local reading edition; source and validation boundaries are recorded in this repository.</footer></body></html>

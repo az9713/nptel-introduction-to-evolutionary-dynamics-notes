@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="7b2360557bd7855eb26bc71d9018a0068af166f96d5337ee233c8bbf27ba4d5b"><title>The Moran process and the fate of a neutral lineage · Introduction to Evolutionary Dynamics</title>
+<link rel="stylesheet" href="assets/book.css"><script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="index.html">Introduction to Evolutionary Dynamics · January 2025</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main">
+<div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>The Moran process and the fate of a neutral lineage</h1>
+<p class="lead">A marked bacterial cell enters a population whose size stays approximately constant. Its descendants may eventually replace every resident cell, or the marked lineage may disappear before it becomes abundant. A growth-rate measurement does not determine which outcome occurs. We need a probability over complete histories, including the histories that end after the first replacement event.</p>
+<p>Our running experiment follows a marked type, called \(B\), among unmarked residents, called \(A\). A <dfn>lineage</dfn> consists of a cell and its descendants. Initially one of the \(N\) cells belongs to the marked lineage. We assume the marker is inherited without error and changes no behavior in the neutral experiment. The small example \(N=5\) makes the arithmetic inspectable; it is a teaching construction, not a measured bacterial population.</p>
+<p class="source-note">This chapter follows <a href="https://www.youtube.com/watch?v=43S9eC0Ida8">lecture 32</a>, <a href="https://www.youtube.com/watch?v=jcCGsUVAyqQ">lecture 33</a>, <a href="https://www.youtube.com/watch?v=XpiVGNUsDHY">lecture 34</a>, and <a href="https://www.youtube.com/watch?v=eYBAk6_1cg0">lecture 35</a>. They develop replacement events, transition probabilities, the fixation recurrence, and neutral fixation. Full local machine transcripts were read sequentially and reconciled with complete uploader-caption tracks labeled English - NPTEL Verified. The label does not establish the caption production method. The handwritten probability formulas were checked in recording frames. The algebraic solution, absorption proof, finite checks, time calculation, and exercises below are independent teaching constructions. The constant-fitness selection formula is a research extension that anticipates the next chapter.</p>
+
+<h2 id="question">A successful lineage must survive its first few replacements <a class="timestamp" href="https://www.youtube.com/watch?v=43S9eC0Ida8&amp;t=212s">L32 · 3:32</a></h2>
+<p><dfn>Fixation</dfn> means that every cell in the modeled population has the marked type. <dfn>Loss</dfn> means that no marked cell remains. These are statements about type composition, not about whether the total population survives. A population can remain healthy while one lineage goes extinct.</p>
+<p>A chemostat supplies fresh medium and removes well-mixed culture. Its dilution can maintain a roughly steady population while cells continue to divide and leave. The Moran model idealizes this turnover by coupling each birth to exactly one replacement. Constant population size is a modeling assumption, stronger than a constant average measured over a long period. Real chemostats also have resource dynamics and fluctuations in total cell number.</p>
+<p>We track the integer \(i\in\{0,1,\ldots,N\}\), the number of marked cells, where \(N\geq1\) is fixed. The resident count is \(N-i\). The fraction \(x=i/N\) is dimensionless. A <dfn>state</dfn> is the information used to predict the next event. Here the count is sufficient only because cells of the same type have identical reproductive weights and mixing removes spatial information.</p>
+<p>No new mutation occurs after the initial marked cell appears. Every offspring inherits its parent's type. Consequently \(i=0\) and \(i=N\) are <dfn>absorbing states</dfn>: once the process reaches one of them, it cannot leave. Introducing recurrent mutation would change that boundary structure. The question is the probability of reaching \(N\) before reaching zero, starting at one.</p>
+<p>A beneficial mutant can be lost despite reproducing faster. Conversely, a deleterious mutant with positive reproductive weight can occasionally fix. The latter possibility is excluded by a verbal simplification in lecture 32, but it remains possible in the finite model derived below. A directional tendency is not a deterministic outcome.</p>
+
+<h2 id="replacement">One parent and one replacement determine the next count <a class="timestamp" href="https://www.youtube.com/watch?v=43S9eC0Ida8&amp;t=605s">L32 · 10:05</a></h2>
+<p>Each modeled cell carries one genome set, the <dfn>haploid</dfn> convention. Give each resident a positive reproductive weight \(R_A\) and each marked cell a positive weight \(R_B\), in the same units. These weights specify relative chances of supplying the next offspring. They can be proportional to division rates under appropriate conditions, but a batch-culture fitness assay need not equal these weights. Define the dimensionless relative fitness \(r=R_B/R_A&gt;0\). Dividing all weights by \(R_A\) leaves every parent-selection probability unchanged.</p>
+<p>Choose the parent with probability proportional to its reproductive weight. Independently choose one of the \(N\) cells uniformly for replacement by the offspring. The parent is among the possible replacement targets. The independence and target set are part of the model; choosing a target from the other \(N-1\) cells would change the event probabilities.</p>
+<p>The total normalized reproductive weight is \(D_i=ri+N-i\). The probability of a marked parent is \(ri/D_i\), and that of a resident parent is \((N-i)/D_i\). Uniform replacement gives a marked target with probability \(i/N\), and a resident target with probability \((N-i)/N\). The four mutually exclusive parent–target combinations give:</p>
+<table><thead><tr><th>Parent</th><th>Replaced type</th><th>New count</th><th>Probability</th></tr></thead><tbody>
+<tr><td>Marked \(B\)</td><td>Resident \(A\)</td><td>\(i+1\)</td><td>\(ri(N-i)/(ND_i)\)</td></tr>
+<tr><td>Resident \(A\)</td><td>Marked \(B\)</td><td>\(i-1\)</td><td>\(i(N-i)/(ND_i)\)</td></tr>
+<tr><td>Marked \(B\)</td><td>Marked \(B\)</td><td>\(i\)</td><td>\(ri^2/(ND_i)\)</td></tr>
+<tr><td>Resident \(A\)</td><td>Resident \(A\)</td><td>\(i\)</td><td>\((N-i)^2/(ND_i)\)</td></tr>
+</tbody></table>
+<p>Write \(T_i^+\) for the upward probability, \(T_i^-\) for the downward probability, and \(T_i^0\) for the probability of no change. The first two formulas reproduce the fitness-weighted birth and uniform-loss construction in the recording. The two same-type events combine to give</p>
+\[
+T_i^+=\frac{ri(N-i)}{ND_i},\qquad
+T_i^-=\frac{i(N-i)}{ND_i},\qquad
+T_i^0=\frac{ri^2+(N-i)^2}{ND_i}.
+\]
+<p>For \(N=5,i=2,r=2\), the marked type holds reproductive weight four and the residents hold weight three. Thus \(D_2=7\), and \(T_2^+=12/35\), \(T_2^-=6/35\), and \(T_2^0=17/35\). More than 48 percent of attempted replacements leave the type count unchanged. That does not mean the population stopped dividing.</p>
+
+<h2 id="normalization">No change is a real event, with a real probability <a class="timestamp" href="https://www.youtube.com/watch?v=jcCGsUVAyqQ&amp;t=143s">L33 · 2:23</a></h2>
+<p>A <dfn>transition probability</dfn> specifies the distribution of the next state, conditional on the current state. For each interior state, the three probabilities must be nonnegative and sum to one. The four parent–target outcomes are exhaustive because there are only two types. Summing their numerators verifies the normalization directly:</p>
+\[
+ri(N-i)+i(N-i)+ri^2+(N-i)^2
+=riN+(N-i)N=ND_i.
+\]
+<p>The process is a finite <dfn>Markov chain</dfn>: the distribution of the next count depends only on the current count. Its state space has \(N+1\) states, including both endpoints, and \(N-1\) interior states. The distinction matters when writing the linear equations. With \(N=5\), we solve for four unknown interior fixation probabilities, not six.</p>
+<p>A <dfn>self-loop</dfn> is a transition back to the same state. If we retain only events that change the count, the conditional upward probability is \(T_i^+/(T_i^++T_i^-)\). Under constant relative fitness this equals \(r/(1+r)\). The downward probability becomes \(1/(1+r)\). These define a different clock: one step now means one change of count, rather than one attempted replacement.</p>
+<p>Removing self-loops preserves the eventual choice between loss and fixation, because it deletes waiting events without changing the sequence of count changes. It does not preserve mean time measured in attempted events. Near a rare lineage, many births replace residents with residents. Ignoring those births can make a trajectory appear much faster.</p>
+
+<h2 id="absorption">The interior states are temporary, even when the next step is uncertain <a class="timestamp" href="https://www.youtube.com/watch?v=jcCGsUVAyqQ&amp;t=967s">L33 · 16:07</a></h2>
+<p>For \(N&gt;1\), every interior state has positive upward and downward probabilities because \(r&gt;0\). From any such state there is a finite sequence of downward transitions reaching zero. Each transition in that sequence has positive probability. The sequence contains at most \(N-1\) events.</p>
+<p>There are finitely many possible starting states. Let \(\delta&gt;0\) be the minimum, over those states, of the probability of the specified downward path. In every block of \(N-1\) events, conditional on not already being absorbed, the probability of absorption is at least \(\delta\). The probability of surviving \(k\) blocks is therefore at most \((1-\delta)^k\), which tends to zero.</p>
+<p>This proves eventual absorption with probability one and finite expected absorption time. The bound is deliberately loose; it establishes the conclusion without predicting a useful waiting time. It also identifies the hypotheses. With no positive path to an endpoint, as in a modified rule that traps the process at an interior state, this argument fails.</p>
+<p>The two endpoints are the only eventual outcomes in this model. Interior frequencies can fluctuate for a long time, but they do not constitute a permanent coexistence state. That conclusion must not be exported to models with mutation, balancing selection, immigration, or ecological interactions.</p>
+
+<h2 id="backward">A probability over complete histories satisfies a one-step equation <a class="timestamp" href="https://www.youtube.com/watch?v=XpiVGNUsDHY&amp;t=234s">L34 · 3:54</a></h2>
+<p>Define \(u_i\) as the probability of eventual marked-type fixation, conditional on starting at count \(i\). The recording denotes this quantity by \(x_i\); we use \(u_i\) to keep fixation probability distinct from the marked fraction \(x=i/N\). The boundary values are \(u_0=0\) and \(u_N=1\), because these starting populations have already determined the outcome.</p>
+<p>Condition on the first event. An upward step occurs with probability \(T_i^+\); from its successor the chance of fixation is \(u_{i+1}\). A downward step contributes \(T_i^-u_{i-1}\), and a self-loop contributes \(T_i^0u_i\). Adding the mutually exclusive cases gives the <dfn>backward equation</dfn>:</p>
+\[
+u_i=T_i^-u_{i-1}+T_i^0u_i+T_i^+u_{i+1},
+\qquad 1\leq i\leq N-1.
+\]
+<p>One-step probabilities and eventual fixation probabilities are different objects. \(T_1^+\) asks whether the next replacement increases the lineage count. \(u_1\) asks whether an entire random sequence reaches \(N\) before zero. A first successful division can still be followed by loss, and a first self-loop can still be followed by fixation.</p>
+<p>For example, with five neutral cells and one marked cell, \(T_1^+=T_1^-=4/25\), while \(T_1^0=17/25\). The first-event loss probability is 0.16. The eventual loss probability, derived below, is 0.8. Most eventual losses are not determined by that first event.</p>
+
+<h2 id="system">The boundary values make the linear system determinate <a class="timestamp" href="https://www.youtube.com/watch?v=XpiVGNUsDHY&amp;t=1191s">L34 · 19:51</a></h2>
+<p>Move the self-loop term to the left. Since \(1-T_i^0=T_i^++T_i^-\), the interior equations become</p>
+\[
+(T_i^++T_i^-)u_i-T_i^-u_{i-1}-T_i^+u_{i+1}=0.
+\]
+<p>The matrix is <dfn>tridiagonal</dfn>: an equation couples only one count and its two neighbors. The known boundary \(u_N=1\) supplies the nonzero right-hand-side term \(T_{N-1}^+\) in the last interior equation. The boundary \(u_0=0\) supplies zero in the first. An equation merely expressing \(u_1\) in terms of \(u_2\) is not a solution; all interior equations and both boundaries must be enforced.</p>
+<p>Uniqueness follows from a discrete maximum argument. Suppose two solutions exist and subtract them, obtaining values \(v_i\) with zero endpoints and the same averaging equation. If an interior maximum were positive, its positive neighbor weights would require both neighbors to share that maximum. Repeating the argument reaches an endpoint, contradicting its zero value. Applying the same argument to \(-v_i\) rules out a negative minimum. Therefore every \(v_i=0\).</p>
+<p>In our neutral five-cell experiment, \((u_0,u_1,\ldots,u_5)=(0,0.2,0.4,0.6,0.8,1)\). At count two the backward equation gives \(0.24(0.2)+0.52(0.4)+0.24(0.6)=0.4\). This checks a local equation. The uniqueness argument is what lets satisfaction of all equations identify the actual fixation probabilities.</p>
+
+<h2 id="neutral">Neutrality makes fixation proportional to the starting count <a class="timestamp" href="https://www.youtube.com/watch?v=eYBAk6_1cg0&amp;t=236s">L35 · 3:56</a></h2>
+<p><dfn>Neutrality</dfn> here means equal reproductive weights, \(R_A=R_B\), and therefore \(r=1\). It does not mean cells stop reproducing or mutations stop occurring throughout biology. Our model separately excludes further mutation while tracking this lineage's fate.</p>
+<p>For equal weights, \(D_i=N\), so \(T_i^+=T_i^-=i(N-i)/N^2\). Cancel this strictly positive factor from the interior backward equation:</p>
+\[
+2u_i=u_{i-1}+u_{i+1},\qquad
+u_{i+1}-u_i=u_i-u_{i-1}.
+\]
+<p>All adjacent increments are equal. Let their common value be \(c\). Starting at \(u_0=0\) gives \(u_i=ic\), and ending at \(u_N=1\) gives \(Nc=1\). Hence</p>
+\[
+\boxed{u_i=\frac{i}{N},\qquad u_1=\frac{1}{N}.}
+\]
+<p>The lecture motivates the one-copy result by giving every initial individual an equal chance of being the surviving ancestral lineage. Symmetry makes those \(N\) chances equal; eventual absorption makes their sum one. The recurrence proof also handles several initial marked cells without treating them as independent eventual winners. If two cells belong to the same marked type, the type's starting count is two and its fixation probability is \(2/N\).</p>
+<p>For \(N=5\), one neutral marked cell fixes with probability 0.2. For \(N=10^6\), the same idealized one-copy chance is \(10^{-6}\). Census size counts the cells physically present. An <dfn>effective population size</dfn> is a size parameter of a specified idealized model chosen to reproduce a particular sampling property of a real population, such as the variance of neutral frequency changes. It need not equal the census count. A bottleneck can change that sampling property even when the population later regrows. These finite Moran calculations do not estimate effective size from data.</p>
+
+<h2 id="interpretation">No directional drift does not mean no evolutionary change <a class="timestamp" href="https://www.youtube.com/watch?v=eYBAk6_1cg0&amp;t=1095s">L35 · 18:15</a></h2>
+<p>Let \(\Delta i\) be the change in count in one attempted event. Its conditional mean is \(T_i^+-T_i^-\), which vanishes under neutrality. Its conditional squared change is \(T_i^++T_i^-=2i(N-i)/N^2\). The population's composition therefore fluctuates even though it has no average directional tendency at the current count.</p>
+<p>This stochastic change in inherited composition is <dfn>genetic drift</dfn>. At neutral fraction \(x=i/N\), the squared fractional change has conditional expectation \(2x(1-x)/N^2\) per attempted event. A larger population has smaller fractional fluctuations at the same fraction. The process can nevertheless accumulate fluctuations until one endpoint is reached.</p>
+<p>The small one-copy fixation probability concerns one initial lineage. It does not assert that the population almost never changes. In a separate rare-mutation model, suppose neutral mutant copies enter at expected rate \(N\mu\) per generation, where \(\mu\) is the per-cell mutation probability at the tracked target. If origins are rare enough to treat their eventual fates separately, multiplying \(N\mu\) by \(1/N\) gives substitution rate \(\mu\). A <dfn>substitution</dfn> is replacement of the resident type by a mutant type. The cancellation depends on this additional mutation-supply model; it is not an assumption used in deriving \(u_i\).</p>
+<p>The statement that one in a million neutral one-copy origins fixes describes an expectation. It does not guarantee exactly one success among a million attempts. In an original construction with independent restarted experiments, the probability of at least one fixation among \(K\) trials is \(1-(1-1/N)^K\). At \(K=N\) and large \(N\), this approaches \(1-e^{-1}\approx0.632\), leaving a substantial probability of no fixation.</p>
+
+<h2 id="selection-extension">Research extension: a reproductive advantage changes the increments</h2>
+<p>The same finite recurrence also gives a useful comparison for constant \(r\neq1\). Define the adjacent increment \(d_i=u_i-u_{i-1}\). Rearranging the backward equation gives \(T_i^+d_{i+1}=T_i^-d_i\). Since \(T_i^-/T_i^+=1/r\), we obtain \(d_{i+1}=d_i/r\). The endpoint condition fixes the common scale:</p>
+\[
+u_i=d_1\sum_{k=0}^{i-1}r^{-k},\qquad
+1=d_1\sum_{k=0}^{N-1}r^{-k},\qquad
+u_i=\frac{\sum_{k=0}^{i-1}r^{-k}}{\sum_{k=0}^{N-1}r^{-k}}
+=\frac{1-r^{-i}}{1-r^{-N}}.
+\]
+<p>The finite-sum expression includes \(r=1\) directly and recovers \(i/N\). For five cells and \(r=2\), one marked cell fixes with probability \(16/31\approx0.516129\). For \(r=1/2\), it fixes with probability \(1/31\approx0.032258\). A disadvantage lowers the probability but does not make it zero.</p>
+<p><a href="https://arxiv.org/pdf/1306.2772">Kluth and Baake's primary treatment</a>, section 2, PDF pages 2–3, gives a continuous-time Moran construction and the corresponding fixation sum. Its reproduction rates become our attempted-event probabilities after division by total reproductive rate. This division leaves the downward/upward ratio unchanged and therefore leaves fixation probability unchanged. It changes the time spent at each state.</p>
+<p>For one copy and fixed \(r&gt;1\), letting \(N\) grow gives \(u_1\to1-1/r\). If \(r=1+s\) defines the dimensionless selection coefficient \(s&gt;0\), this limit is \(s/(1+s)\), approximately \(s\) when \(s\) is small. This limit takes large \(N\) before small \(s\); at fixed \(N\), letting \(s\to0\) instead recovers \(1/N\).</p>
+<p>The often-used approximation \(2s\) belongs to other demographic and offspring-variance assumptions. <a href="https://www.zoology.ubc.ca/let/pdfs/Kimura_1962.pdf">Kimura's 1962 derivation</a>, printed pages 715–716, specifies diploid genic selection and a diffusion variance before obtaining that limit. An advantage parameter alone cannot determine fixation probability without the reproduction model.</p>
+
+<h2 id="time">Original extension: waiting events affect time even when they cancel from fixation</h2>
+<p>Let \(\tau_i\) be the expected number of attempted replacement events until either endpoint, starting from \(i\). Both endpoints have \(\tau_0=\tau_N=0\). Every interior event consumes one unit of this clock. Conditioning on that event gives</p>
+\[
+\tau_i=1+T_i^-\tau_{i-1}+T_i^0\tau_i+T_i^+\tau_{i+1}.
+\]
+<p>The additional one distinguishes a time equation from a fixation equation. Under neutrality, the rearranged equation is \(\tau_{i+1}-2\tau_i+\tau_{i-1}=-N^2/[i(N-i)]\). Set \(a_i=\tau_i-\tau_{i-1}\). Then \(a_{i+1}-a_i=-N(1/i+1/(N-i))\).</p>
+<p>Sum the increments from one to \(N\). Their total is zero because both endpoint times are zero. Each difference indexed by \(k\) occurs in \(N-k\) later increments. Consequently</p>
+\[
+0=Na_1-N\sum_{k=1}^{N-1}(N-k)
+\left(\frac1k+\frac1{N-k}\right),\qquad
+\tau_1=a_1=N\sum_{k=1}^{N-1}\frac1k.
+\]
+<p>For five neutral cells, the one-copy expected absorption time is \(5(1+1/2+1/3+1/4)=125/12\approx10.416667\) attempted events. Defining one Moran generation as \(N\) attempted replacements makes this \(25/12\approx2.083333\) model generations. Neither number is a measured duration in hours.</p>
+<p>This expectation averages histories ending in loss and histories ending in fixation. It is not the mean time to fixation conditional on fixation. To obtain that quantity, the path distribution must be conditioned on the successful endpoint. Dividing \(\tau_i\) by \(u_i\) does not perform that conditioning.</p>
+
+<h2 id="implementation">Solve the finite equations independently of the geometric formula</h2>
+<p>The following original Python program checks the five-cell selected example. It uses exact rational arithmetic to assemble and solve the four interior backward equations. It separately computes the geometric-sum formula. These are independent computational routes to the same finite probabilities.</p>
+<p>The inputs are a fixed five-cell population and rational relative fitness two. The output contains the one-copy fixation probability, loss probability, and neutral reference. Python's standard library suffices. The script writes no files and accesses no network. Its pivot check raises an assertion if the finite system is singular; it is a small verification example, rather than a scalable population solver. The <a href="numerical_lab.py">numerical module</a> and <a href="numerical-lab.html">interactive laboratory</a> provide broader parameter checks.</p>
+<pre><code class="language-python">from fractions import Fraction as F
+
+n, r = 5, F(2)
+matrix = [[F(0) for _ in range(n)] for _ in range(n - 1)]
+for i in range(1, n):
+    total = r * i + n - i
+    up = r * i * (n - i) / (n * total)
+    down = F(i * (n - i), n) / total
+    row = matrix[i - 1]
+    row[i - 1] = up + down
+    if i &gt; 1:
+        row[i - 2] = -down
+    if i &lt; n - 1:
+        row[i] = -up
+    else:
+        row[-1] = up
+
+for col in range(n - 1):
+    pivot = next((j for j in range(col, n - 1)
+                  if matrix[j][col]), None)
+    assert pivot is not None
+    matrix[col], matrix[pivot] = matrix[pivot], matrix[col]
+    value = matrix[col][col]
+    matrix[col] = [entry / value for entry in matrix[col]]
+    for j in range(n - 1):
+        if j != col:
+            value = matrix[j][col]
+            matrix[j] = [a - value * b
+                         for a, b in zip(matrix[j], matrix[col])]
+
+solved = [F(0)] + [row[-1] for row in matrix] + [F(1)]
+weights = [r ** (-k) for k in range(n)]
+formula = [sum(weights[:i], F(0)) / sum(weights)
+           for i in range(n + 1)]
+assert solved == formula
+assert solved[1] == F(16, 31)
+assert solved[2] == F(24, 31)
+print(f"fixation={float(solved[1]):.12f}")
+print(f"loss={float(1 - solved[1]):.12f}")
+print(f"neutral={float(F(1, n)):.12f}")
+</code></pre>
+<p>The expected output is <code>fixation=0.516129032258</code>, <code>loss=0.483870967742</code>, and <code>neutral=0.200000000000</code>. Exact agreement checks all interior probabilities and both endpoints, not only the one-copy answer. It cannot validate the chemostat idealization or infer reproductive weights from biological data.</p>
+
+<h2 id="exercises">Exercises with complete worked solutions</h2>
+<div class="exercise"><h3>1. Compute the drift of the marked count.</h3><p>Use \(N=5,i=2,r=2\). Calculate all three transition probabilities and the expected count after one event. Is an increase certain?</p><details class="solution"><summary>Solution</summary><p>The denominator is \(ND_i=5(4+3)=35\). Thus \(T_2^+=12/35\), \(T_2^-=6/35\), and \(T_2^0=17/35\). Their sum is one. The expected change is \(12/35-6/35=6/35\), so the expected next count is \(2+6/35=76/35\). An increase has probability only \(12/35\). A positive average change is compatible with a downward step or no change in any individual event.</p></details></div>
+<div class="exercise"><h3>2. Distinguish first-event loss from eventual loss.</h3><p>Start with one neutral marked cell among five. Find the probability of immediate loss, eventual loss, and eventual fixation conditional on the first event being a self-loop.</p><details class="solution"><summary>Solution</summary><p>Immediate loss is \(T_1^-=1(5-1)/25=4/25\). Eventual fixation is \(u_1=1/5\), so eventual loss is \(4/5\). After a self-loop the state remains one, and the Markov rule supplies the same future distribution. Its conditional eventual fixation probability is therefore still \(1/5\). The event consumed time without changing the state. Multiplying \(T_1^0u_1=(17/25)(1/5)\) gives the joint probability of a first self-loop and eventual fixation, which is a different question.</p></details></div>
+<div class="exercise"><h3>3. Solve a selected three-cell model without the closed formula.</h3><p>Let \(N=3,r=2\). Write and solve the two interior equations for \(u_1,u_2\), using \(u_0=0,u_3=1\).</p><details class="solution"><summary>Solution</summary><p>At state one, \(T_1^+=1/3\) and \(T_1^-=1/6\), so \((1/2)u_1-(1/3)u_2=0\), or \(3u_1=2u_2\). At state two, \(T_2^+=4/15\) and \(T_2^-=2/15\), so \((6/15)u_2-(2/15)u_1=4/15\), or \(3u_2-u_1=2\). Substitute \(u_1=2u_2/3\) to obtain \((7/3)u_2=2\). Thus \(u_2=6/7\) and \(u_1=4/7\). Both lie between zero and one and increase with starting count. The geometric-sum formula gives the same values.</p></details></div>
+<div class="exercise"><h3>4. Explain why recurrent mutation changes the boundary question.</h3><p>Suppose either type can mutate into the other with positive probability. Can zero and \(N\) still be absorbing? Distinguish reaching an all-marked state from staying there forever.</p><details class="solution"><summary>Solution</summary><p>An all-resident population can produce a marked offspring, so zero is no longer absorbing. An all-marked population can produce a resident offspring, so \(N\) is no longer absorbing either. The equation \(u_0=0\) for eventual first arrival at an all-marked state is no longer justified. If the resulting finite chain permits a positive-probability path between every pair of states, each state is eventually visited with probability one. But an all-marked population also eventually leaves that state with probability one. First arrival and permanent fixation answer different questions; the original boundary-value problem concerns a model without recurrent mutation.</p></details></div>
+<div class="exercise"><h3>5. Expose the time error caused by deleting self-loops.</h3><p>For \(N=2,r=1,i=1\), compute expected attempted events to absorption. Compare it with the expected number of changes of count.</p><details class="solution"><summary>Solution</summary><p>Upward and downward probabilities are each \(1/4\), and the self-loop probability is \(1/2\). Either count change reaches an endpoint. Thus \(\tau_1=1+(1/2)\tau_1\), giving \(\tau_1=2\) attempted events. The count-change chain is absorbed after exactly one step. Both chains fix the marked type with probability \(1/2\), but their step counts differ by a factor two in this example. The time conversion is state-dependent in larger populations.</p></details></div>
+<div class="exercise"><h3>6. Test a claim about deleterious lineages.</h3><p>For five cells, give a marked type relative fitness \(r=1/2\). Calculate its one-copy fixation probability and the chance of at least one fixation in 31 independent restarted trials. Does an expected one success guarantee one?</p><details class="solution"><summary>Solution</summary><p>The finite formula gives \(u_1=(1-2)/(1-2^5)=1/31\). Positive downward bias has not removed every upward path. Thirty-one independent trials have expected success count \(31(1/31)=1\), but the probability of at least one success is \(1-(30/31)^{31}\), approximately 0.638. There is still about 0.362 probability of no success. The independence and restart conditions are essential; overlapping lineages in one continuously mutating population are not these trials.</p></details></div>
+
+<h2 id="limits">What the model resolves, and what an experiment must still establish</h2>
+<p>The finite calculation resolves a lineage's endpoint probability given a population size, reproduction rule, and relative fitness. It assumes well-mixed haploid cells, two faithfully inherited types, fixed population size, independent uniform replacement, constant reproductive weights, and no subsequent mutation. A structured biofilm, changing resources, frequency-dependent competition, or a serial-transfer bottleneck requires another transition model.</p>
+<p>A real experiment must establish whether the marker is neutral, whether counts capture the relevant state, and how its sampling changes the observed population. Fixation in the model means complete replacement; an assay's detection limit can mistake a rare surviving lineage for loss. Several initial marked cells alter \(i\). An unknown effective population size cannot be repaired by substituting a convenient census count.</p>
+<p>You can now construct the finite transition probabilities, derive neutral fixation, solve the boundary equations, and separate probability from time. The next chapter develops beneficial-mutant fixation more fully and examines the assumptions behind commonly quoted selection approximations.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-09-chance-and-the-loss-of-diversity.html">Previous available chapter</a><a href="index.html">Lecture index</a><a rel="next" href="chapter-11-beneficial-mutations-and-fixation.html">Next available chapter</a></nav></main></div>
+<footer class="site-footer">Independent study notes. NPTEL IIT Bombay course recordings supply the topic sequence; added explanations and teaching constructions are separately attributed. Complete local reading edition; source and validation boundaries are recorded in this repository.</footer></body></html>

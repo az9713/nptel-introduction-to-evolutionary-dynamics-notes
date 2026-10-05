@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="4cd84baba89d9a0dd31ae543c4b05e606a77b4f4e9a7c182a673b847cc15ab69"><title>Natural selection, adaptation, and ecological context · Introduction to Evolutionary Dynamics</title>
+<link rel="stylesheet" href="assets/book.css"><script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="index.html">Introduction to Evolutionary Dynamics · January 2025</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main">
+<div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>Natural selection, adaptation, and ecological context</h1>
+<p class="subtitle">Chapter 2 · Lectures 4–6 · What a changing distribution can establish</p>
+
+<p>A field survey records more dark moths after a region becomes polluted, then fewer dark moths after pollution declines. That pattern is suggestive, but it does not yet tell us whether predators favored one color, migrants changed the sample, the colors were inherited, or the survey method changed. A mechanistic explanation must connect observed variation to descendant production and transmission under specified environmental conditions.</p>
+
+<p>We will use this moth survey as a running case, while separating its measured biological evidence from a deliberately simple mathematical model. The lectures introduce variation, differential reproductive success and heredity; ask how inheritance preserves variation; and apply the ideas to camouflage and different forms of selection. Our goal is an explicit accounting of what changes, what causes that change, and which information is missing when only a mean or a picture is available.</p>
+
+<h2 id="distribution">Describe a population before explaining its change <a class="yt" href="https://www.youtube.com/watch?v=yIQ1K999lbk&amp;t=73">Lecture 4 · 1:13</a></h2>
+
+<p>A <em>phenotype</em> is an observable or measurable property of an organism, including a structural, physiological or behavioral property. Coat color is a phenotype; reproductive output and drug sensitivity can also be measured phenotypes. A <em>genotype</em> describes inherited genetic constitution at the sites under consideration. Phenotype depends on genotype, environment and their interaction, so phenotypic variation alone does not establish inherited genetic variation.</p>
+
+<p>Choose a quantitative trait $z$, such as a standardized measure of wing darkness, and measure it for $N$ sampled individuals. A histogram partitions the trait axis into bins of width $\delta&gt;0$. If bin $j$ contains $n_j$ individuals, its frequency is $q_j=n_j/N$; the frequencies sum to one when the bins cover the sample without overlap. Plotting $100q_j$ gives percent in each bin. Plotting a density instead requires height $q_j/\delta$, so that bar <em>area</em>, rather than height alone, represents frequency. This distinction matters when bin widths change.</p>
+
+<p>For a discrete model with representative trait values $z_j$, define the mean $\bar z=\sum_jq_jz_j$ and variance $V=\sum_jq_j(z_j-\bar z)^2$. Variance measures squared spread, in squared trait units; standard deviation is $\sqrt V$, in trait units. These are summaries of a distribution, not a replacement for it. A normal bell curve is one possible distribution, not a prerequisite for selection. Two color classes, several peaks, skewness and sharp bounds are all compatible with evolutionary change.</p>
+
+<p>The moth survey also has an observation process. If a trap catches dark and light individuals with different probabilities, sample frequencies can differ from population frequencies. Sampling the same location, season and life stage, and checking method-dependent capture, are part of interpreting change. The lecture's schematic percentages illustrate a concept; they are not a historical dataset which we can insert into a fitted model.</p>
+
+<h2 id="weighting">Differential descendant production reweights the distribution <a class="yt" href="https://www.youtube.com/watch?v=yIQ1K999lbk&amp;t=372">Lecture 4 · 6:12</a></h2>
+
+<p>Let $w_j\geq0$ be the expected number of descendants entering the next comparison stage per individual in class $j$. Require $\bar w=\sum_jq_jw_j&gt;0$: otherwise there is no descendant population to normalize. This definition makes the comparison stage explicit. Surviving one day, producing eggs and producing offspring that themselves breed are different measurements. A survival difference can contribute to reproductive success without being identical to lifetime reproductive success.</p>
+
+<p>First suppose the trait is copied perfectly and ignore finite sampling, migration and new variation. Beginning with $Nq_j$ parents yields expected descendant numbers $Nq_jw_j$. The resulting class frequencies are $q_j^{\mathrm{sel}}=q_jw_j/\bar w$. Multiplying all weights by the same positive constant leaves these frequencies unchanged. Thus relative contributions determine sorting even when absolute population growth differs.</p>
+
+<p>The mean after this reweighting is $\bar z_{\mathrm{sel}}=\sum_jq_jw_jz_j/\bar w$. Subtract the initial mean and collect terms:</p>
+
+<div class="eq">\[
+\bar z_{\mathrm{sel}}-\bar z
+=\frac{\sum_jq_j(z_j-\bar z)(w_j-\bar w)}{\bar w}
+=\frac{\operatorname{Cov}_q(z,w)}{\bar w}.
+\]</div>
+
+<p>The covariance $\operatorname{Cov}_q(z,w)$ is the frequency-weighted association between trait and reproductive contribution. The algebraic hinge is that $\sum_jq_j(z_j-\bar z)=0$, so subtracting $\bar w$ inside the numerator changes nothing. A positive covariance raises the mean; a negative one lowers it. This is an accounting identity in the defined model. It does not establish that darkness itself causes higher contribution: a correlated trait or a shared environmental cause could produce the association.</p>
+
+<p>For two perfectly inherited types D and L, let $p$ be the dark-type fraction and $r=w_D/w_L&gt;0$, assuming $w_L&gt;0$. Then $p'=rp/(rp+1-p)$, and for $0&lt;p&lt;1$ the odds obey $p'/(1-p')=r\,p/(1-p)$. With a constant environment for $t$ generations,</p>
+
+<div class="eq">\[
+p_t=\frac{p_0r^t}{1-p_0+p_0r^t}.
+\]</div>
+
+<p>Starting at $p_0=0.1$ with $r=2$ gives $p_4=0.64$. Four subsequent generations with $r=1/2$ return the odds, and therefore the frequency, to their starting value in this ideal model. It is the environment-specific contribution ratio which changes sign of the advantage; dark color does not have a universally high fitness. The symmetry is an illustrative model result, not a claim that pollution and cleanup historically produced exactly symmetric moth trajectories.</p>
+
+<p>With $r&gt;1$ and $0&lt;p_0&lt;1$, $p_t$ approaches one as $t$ increases but stays strictly below one at every finite $t$. A deterministic sketch that shows a class disappearing after a few generations may be rounding a small frequency. In a finite population, random loss can produce exact disappearance; later chapters analyze that process. A class with zero contribution can also disappear immediately. These cases should not be conflated.</p>
+
+<h2 id="transmission">Selection among parents and transmission to offspring are separate operations <a class="yt" href="https://www.youtube.com/watch?v=yIQ1K999lbk&amp;t=604">Lecture 4 · 10:04</a></h2>
+
+<p>Perfect phenotype copying is a convenient model assumption, not the general meaning of heredity. To relax it, let $K_{jk}$ be the probability that a descendant of parental class $j$ enters trait class $k$. Each row sums to one, and every entry is nonnegative. The probabilities may summarize genetic segregation, developmental variation or environmental effects. They are conditional on the experimental conditions and are not necessarily fixed across environments.</p>
+
+<div class="eq">\[
+q'_k=\frac{\sum_jq_jw_jK_{jk}}{\bar w},\qquad
+m_j=\sum_kK_{jk}z_k.
+\]</div>
+
+<p>Here $m_j$ is the mean descendant trait from parental class $j$. Sum $z_kq'_k$ over descendant classes, then add and subtract $\sum_jq_jw_jz_j/\bar w$. The total mean change becomes</p>
+
+<div class="eq">\[
+\bar z'-\bar z
+=\frac{\operatorname{Cov}_q(z,w)}{\bar w}
++\frac{\sum_jq_jw_j(m_j-z_j)}{\bar w}.
+\]</div>
+
+<p>The first term describes reweighting of parental classes; the second describes mean changes during transmission. This explicitly derived identity is a teaching extension of the lecture's three conditions. If each class is copied, $m_j=z_j$, the second term vanishes. If all parents produce the same descendant distribution, parental sorting does not preferentially transmit their trait: the descendant distribution is that common distribution, regardless of which parents contributed most. Intermediate inheritance can produce intermediate responses.</p>
+
+<p>In organisms with two parents, a one-parent class kernel is generally insufficient unless it already averages over mate distribution. It would be necessary to represent parental pairs and how their genetic constitution produces descendants. A trait resembling a parental average does not imply that the hereditary material itself becomes irreversibly blended. The distinction between a statistical prediction for an offspring trait and a physical model of inheritance is crucial.</p>
+
+<p>The lecture correctly emphasizes that available variation can be consumed by sorting, but selection does not always eliminate diversity. Advantages may depend on frequency or location, several classes may have equal maximal contribution, and new variation can enter. Selection against a measured trait need not eliminate all genetic variation affecting other traits. Likewise, no variation in darkness means no sorting <em>on darkness at that instant</em>, not an absence of every possible evolutionary process.</p>
+
+<h2 id="blending">Averaging parents cannot explain persistent variation on its own <a class="yt" href="https://www.youtube.com/watch?v=b2Qj3cekZN4&amp;t=524">Lecture 5 · 8:44</a></h2>
+
+<p>Consider the lecture's blending model as a mathematical counterfactual. Two parents have independent trait values $X$ and $Y$, drawn from the same population with mean $\mu$ and finite variance $\sigma^2$. Every offspring is assigned $Z=(X+Y)/2$, with no segregation, mutation, environmental deviation or selection. Linearity gives $\mathbb E[Z]=\mu$. Independence gives</p>
+
+<div class="eq">\[
+\operatorname{Var}(Z)
+=\frac{\operatorname{Var}(X)+\operatorname{Var}(Y)
++2\operatorname{Cov}(X,Y)}4
+=\frac{\sigma^2}{2}.
+\]</div>
+
+<p>Therefore standard deviation becomes $\sigma/\sqrt2$, not $\sigma/2$. Repeating the same assumptions gives variance $\sigma_0^2/2^t$ after $t$ generations. The mean remains constant while spread collapses. This corrects the recording's factor and shows why describing evolution only by a changing mean loses information.</p>
+
+<p>Changing an assumption changes the conclusion. If parents have correlation $\rho$ and the same variance, the offspring variance is $\sigma^2(1+\rho)/2$. If an independent zero-mean descendant deviation $\epsilon$ with variance $V_\epsilon$ is added, the variance becomes $\sigma^2(1+\rho)/2+V_\epsilon$. Under independent pairing and fixed $V_\epsilon$, an equilibrium variance would be $2V_\epsilon$. These are mathematical possibilities, not estimates of how much real biological variation any particular mechanism supplies.</p>
+
+<p>Particulate inheritance provides a different model. An <em>allele</em> is an inherited alternative at a specified genetic location, or locus. In a diploid organism there are two copies at such a locus. A parent with alternatives A and a can transmit either to a gamete, a reproductive cell carrying one copy. Two such parents can produce AA, Aa or aa descendants. An intermediate or dominant phenotype in the Aa individual need not erase either inherited alternative.</p>
+
+<p><a href="https://cs.brown.edu/people/rblumber/MendelWeb/archive/Mendel.Experiments.html">Mendel's plant experiments</a>, especially the sections on hybrid forms and their first and second generations, document the reappearance of parental characters and distinguish constant from hybrid descendants. They contradict an irreversible blending account for those characters. <a href="https://doi.org/10.1017/S0080456800012163">Fisher's paper issued separately in 1918</a>, printed pages 399–400 and 402, develops the compatibility of many Mendelian factors with quantitative variation. A continuously distributed phenotype therefore does not require continuously blending hereditary material. Neither result implies that every trait has the simple single-locus inheritance used in the example.</p>
+
+<h2 id="ecology">Camouflage predictions must be tested at the relevant life stage <a class="yt" href="https://www.youtube.com/watch?v=N4A_Fer6xnE&amp;t=55">Lecture 6 · 0:55</a></h2>
+
+<p>The lecture's peppered-moth example links background appearance to predator detection. A background matching one color can reduce detection of that color relative to another. If this changes survival before reproduction, and inherited color differences remain associated with descendants, selection can change frequencies. The color of an existing moth need not be transformed by the background. A changed environment can instead reweight variants already present.</p>
+
+<p>Our field survey needs direct tests of that causal chain. Natural resting positions, predator encounters, survival and inherited color are different measurements. A conspicuous dead moth pinned to an unusual location may test visual detection under that placement without establishing the magnitude of selection experienced by free-living moths. An improvement in experimental realism can strengthen a mechanism even when its qualitative prediction was already plausible.</p>
+
+<p><a href="https://doi.org/10.1098/rsbl.2011.1136">Cook and colleagues' analysis of Majerus's experiment (2012)</a> reports 4,864 released moths over six years, at low densities on normal resting substrates. At its unpolluted study site, melanic moths had lower estimated relative daily survival. The investigators directly observed bird predation for about a quarter of disappearances, and inferred predation for others under their behavioral assumptions. Printed pages 610–611 describe the methods, Figure 1 and Table 2. This distinction between observed attacks and inferred losses is part of the evidence, not a reason to present all disappearances as witnessed kills.</p>
+
+<p>The same paper describes the fully melanic form as dominant at an inherited locus. A dark parent therefore need not have only dark offspring. Our D/L perfect-copy model represents a sorting idealization; it is not the actual diploid genotype model of the moth. To predict genetic frequencies, distinguish heterozygotes from homozygotes and specify mating and genotype-specific contributions. The visible color classes alone can conceal that genetic structure.</p>
+
+<p>The lecture's rock pocket mice supply a spatial counterpart: light and dark substrates can favor different coat colors in neighboring habitats. <a href="https://doi.org/10.1073/pnas.0431157100">Nachman, Hoekstra and D'Agostino (2003)</a>, Results and Discussion, printed pages 5270–5273, associated Mc1r variation with dark color in the Pinacate population but found a different molecular basis in the Armendaris population. Their linked variants did not identify the individual contribution of each substitution. Similar phenotypes can therefore arise through different genetic changes. The study's lava flows are younger than a million years; the lecture's casual “thousand years” should not be adopted as a measured age for all these sites.</p>
+
+<p>These ecological cases make <em>adaptation</em> a context-dependent claim about features produced or maintained through selection, rather than a synonym for any useful appearance. Matching background and color is evidence to investigate. Stronger explanations connect inheritance, function and reproductive consequences and consider alternative processes such as migration. A beneficial effect under one condition does not establish universal superiority or intentional adjustment by the organism.</p>
+
+<h2 id="regimes">Selection can change spread while leaving the mean fixed <a class="yt" href="https://www.youtube.com/watch?v=N4A_Fer6xnE&amp;t=886">Lecture 6 · 14:46</a></h2>
+
+<p><em>Directional selection</em> favors trait values toward one end of the available range; <em>stabilizing selection</em> favors intermediate values; <em>disruptive selection</em> favors separated values over intermediates. The recording calls the last case divergent selection. Divergence between populations is related but does not imply that one episode of sorting has created separate species. Mating, gene flow and transmission affect whether two favored phenotype groups remain distinct.</p>
+
+<p>For an exact teaching example, use trait values $-1,0,1$, initial frequencies $1/4,1/2,1/4$, and perfect copying. Initial mean is zero and variance is $1/2$. Assign weights $1,2,3$: mean contribution is two, the new frequencies are $1/8,1/2,3/8$, the mean becomes $1/4$, and variance becomes $7/16$. The direction is positive, while the spread happens to decrease in this example; the label does not prescribe every change in variance.</p>
+
+<p>With stabilizing weights $1,2,1$, the new distribution is $1/6,2/3,1/6$. Its mean remains zero while variance drops to $1/3$. With disruptive weights $2,1,2$, the new distribution is $1/3,1/3,1/3$, still with mean zero but variance $2/3$. Thus an unchanged mean neither establishes an unchanged distribution nor the absence of selection. The recording's picture of stabilizing selection should be understood as persistence near a favored center, not a requirement that the entire distribution remain identical.</p>
+
+<p>Pure reweighting cannot produce a trait value absent from the starting distribution. A diagram extending beyond its original support implicitly requires mutation, migration or a transmission/developmental process. Nor does a favored visible extreme guarantee that all intermediate descendants disappear when sexual reproduction continually recreates them. The model's transmission assumptions determine how a weight profile translates into successive distributions.</p>
+
+<h2 id="timescale">An evolutionary timescale depends on generations and the mechanism <a class="yt" href="https://www.youtube.com/watch?v=b2Qj3cekZN4&amp;t=1443">Lecture 5 · 24:03</a></h2>
+
+<p>The lectures contrast the geological history of major changes with rapid viral evolution and antibiotic resistance. A fixed reproductive advantage changes odds multiplicatively per generation in our model, so short generation times can produce appreciable frequency change within a human observation period. The waiting time for a suitable variant, population structure and environmental change add further timescales. No single number characterizes every evolutionary process.</p>
+
+<p>Rapid change in a microbial population does not mean an exposed individual's needs direct the appropriate mutation. It also does not turn every human response to an infection into human genetic evolution: immune responses, behavior, treatment and changes in inherited population composition are distinct processes. The lecture's prospective resistance experiment is studied later in its actual experimental setting. A thousandfold resistance increase is not a general two-week guarantee for every organism and drug.</p>
+
+<p>Modern fitness measures likewise require a specified model. Expected descendants under defined conditions can predict systematic sorting; an individual's realized offspring count includes chance. Contributions through effects on relatives require an additional genetic and social model, rather than simply counting siblings as interchangeable copies. The lecture's anecdote about family relatedness points toward that topic, but no kin-selection result is inferred from the anecdote here.</p>
+
+<h2 id="calculation">Compute distributions rather than fitting a schematic curve</h2>
+
+<p>This standard-library program implements one round of perfect-copy reweighting. Inputs are equal-length sequences of rational frequencies, trait values and nonnegative rational contributions. Frequencies must sum to one and total contribution must be positive. The output is the selected distribution, its exact mean and variance. The chosen three-class cases are illustrative, not moth or mouse measurements. It writes three lines to standard output, creates no files and uses no randomness.</p>
+
+<p>The function rejects mismatched lengths, negative frequencies or contributions, invalid normalization and a nonexistent descendant population. It expects compatible numerical inputs; it does not parse field records or fit contributions from survival data. It omits transmission changes, sampling, mutation and migration. Fractions make these small rational examples exact and expose arithmetic errors which a smooth plotted curve could conceal.</p>
+
+<pre><code class="language-python">from fractions import Fraction
+
+
+def select(frequencies, traits, weights):
+    if not frequencies or not len(frequencies) == len(traits) == len(weights):
+        raise ValueError("Nonempty inputs must have equal lengths")
+    if sum(frequencies) != 1 or any(q &lt; 0 for q in frequencies):
+        raise ValueError("Frequencies must be nonnegative and sum to one")
+    if any(w &lt; 0 for w in weights):
+        raise ValueError("Contributions must be nonnegative")
+    total = sum(q * w for q, w in zip(frequencies, weights))
+    if total &lt;= 0:
+        raise ValueError("No descendant population")
+    result = tuple(q * w / total for q, w in zip(frequencies, weights))
+    mean = sum(q * z for q, z in zip(result, traits))
+    variance = sum(q * (z - mean) ** 2 for q, z in zip(result, traits))
+    return result, mean, variance
+
+
+if __name__ == "__main__":
+    initial = (Fraction(1, 4), Fraction(1, 2), Fraction(1, 4))
+    for name, profile in (("directional", (1, 2, 3)),
+                          ("stabilizing", (1, 2, 1)),
+                          ("disruptive", (2, 1, 2))):
+        selected, mean, variance = select(initial, (-1, 0, 1), profile)
+        print(f"{name}: mean={mean}; variance={variance}")
+</code></pre>
+
+<p>A clean run gives:</p>
+<pre class="output">directional: mean=1/4; variance=7/16
+stabilizing: mean=0; variance=1/3
+disruptive: mean=0; variance=2/3</pre>
+
+<h2 id="exercises">Six exercises with worked solutions</h2>
+
+<h3>1. Correct a histogram comparison</h3>
+<p><strong>Problem.</strong> One survey reports 20 percent of its sample in a bin of width 2 trait units. Another reports 10 percent in a bin of width 1. An analyst concludes that the first has twice the local concentration of phenotypes. Is this justified?</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> Their density heights are $0.20/2=0.10$ and $0.10/1=0.10$ per trait unit, so the stated frequencies do not demonstrate twice the density. Even equal heights do not establish identical distributions: bin locations, within-bin structure, capture probabilities and sampling uncertainty also matter. Compare common bins or an explicitly defined density estimator using compatible observation methods. Frequency is probability mass in a range; density is mass per unit range.</p>
+</details>
+
+<h3>2. Derive selection without directional mean change</h3>
+<p><strong>Problem.</strong> For the three-class initial distribution, use disruptive weights $2,1,2$. Calculate the covariance term and explain why selection occurs even though it is zero.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> Mean trait is zero and mean weight is $3/2$. The weighted product mean is $(1/4)(-1)(2)+(1/2)(0)(1)+(1/4)(1)(2)=0$, so covariance is zero. Yet frequencies change from $1/4,1/2,1/4$ to $1/3,1/3,1/3$. Equal promotion of negative and positive traits cancels in the mean. Their squared deviations do not cancel: variance increases from $1/2$ to $2/3$. The covariance identity tracks mean change correctly; it never claimed that zero covariance implies every frequency remains fixed.</p>
+</details>
+
+<h3>3. Separate selection from resetting during transmission</h3>
+<p><strong>Problem.</strong> Types have traits 0 and 1, equal initial frequencies and contributions 1 and 3. Every parent has descendants with traits 0 and 1 in equal proportions. Compute the parental sorting term, transmission term and final mean change.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> Initial mean is $1/2$, mean contribution is two, and the reweighted mean is $3/4$. Thus the sorting term is $1/4$. Each parental class has descendant mean $m_j=1/2$. The transmission numerator is $(1/2)(1)(1/2-0)+(1/2)(3)(1/2-1)=1/4-3/4=-1/2$; division by two gives $-1/4$. The terms cancel, leaving final mean $1/2$. Parents differ in contribution, but their traits are not preferentially retained among descendants. Selection among parental classes is not sufficient for a cumulative response in this reset trait.</p>
+</details>
+
+<h3>4. Diagnose persistent variance under blending</h3>
+<p><strong>Problem.</strong> Parents have variance 8 and correlation $1/2$; offspring are their arithmetic mean plus an independent deviation with variance 2. Find descendant variance. Could a stable variance of 8 distinguish this process from particulate inheritance?</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> Averaging contributes $8(1+1/2)/2=6$, and independent deviation adds two, giving variance eight. Stable variance is therefore possible in this modified averaging model. It does not uniquely identify a physical inheritance mechanism. Parent–offspring and sibling distributions, crosses, genetic segregation and controlled environmental measurements provide additional constraints. The example shows why the original variance-collapse proof requires independence and absence of new deviations, not that this modified model is a measured account of moth inheritance.</p>
+</details>
+
+<h3>5. Test camouflage without confusing disappearance and predation</h3>
+<p><strong>Problem.</strong> Dark released moths disappear more often than light moths. Propose observations which strengthen a bird-predation explanation and identify a remaining limitation in treating disappearance as reproductive fitness.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> Observe actual attacks, check natural resting sites and departure behavior, use realistic densities and local moths, and compare appropriately replicated backgrounds or predator-access conditions. Mark–recapture can help distinguish dispersal from death, though detection differences require their own checks. If disappearance usually represents predation at the observed stage, that supports a survival component of selection. Translating it into reproductive contribution additionally requires timing relative to reproduction, fecundity and other survival stages. A stage-specific relative survival estimate is not automatically a lifetime selection coefficient.</p>
+</details>
+
+<h3>6. Find a boundary case in the fixation sketch</h3>
+<p><strong>Problem.</strong> Two types have contributions 1 and 2, both initially present. Show that perfect-copy deterministic sorting cannot reach exact fixation in finite time. Then state two changes which allow an initially absent type to appear.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> With $0&lt;p_0&lt;1$, the expression $p_t=p_0\,2^t/(1-p_0+p_0\,2^t)$ has a strictly positive extra term $1-p_0$ in its denominator for every finite $t$. Hence $p_t&lt;1$, although its limit is one. Finite sampling can remove the remaining type exactly, but is absent from this recurrence. An initially absent type stays absent under multiplication by any contribution weight. Mutation or a transmission change can supply it internally; immigration can supply it from outside. A population plot extending to new trait values must specify such a source rather than attribute their creation to reweighting alone.</p>
+</details>
+
+<h2 id="source-note">Source boundaries and further reading</h2>
+
+<p>All three publisher transcripts were read in order and in full. Their uploader-provided English – NPTEL Verified labeling does not establish their production method. Timed links locate the conceptual lecture material. The distribution, transmission and variance derivations, exact calculations and six solutions are original teaching constructions. The notes explicitly repair the blending standard-deviation factor, distinguish mean from distribution change, and state the inheritance and population-size boundaries of the sketches.</p>
+
+<p>Primary inspection covered <a href="https://cs.brown.edu/people/rblumber/MendelWeb/archive/Mendel.Experiments.html">Mendel's hybrid and descendant sections</a>; <a href="https://doi.org/10.1017/S0080456800012163">Fisher's opening variance discussion and independent-factor construction</a>; the complete <a href="https://doi.org/10.1098/rsbl.2011.1136">Cook et al. moth paper</a>, including the actual survival figure and table; and the relevant <a href="https://doi.org/10.1073/pnas.0431157100">Nachman et al. results and limitations</a> in author-uploaded full text. Each ecological conclusion is bounded by those measurements. The next chapter examines the molecular information flow which makes inherited biological variation possible.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-01-the-origin-of-evolutionary-thinking.html">Previous available chapter</a><a href="index.html">Lecture index</a><a rel="next" href="chapter-03-molecular-biology-and-the-scales-of-evolution.html">Next available chapter</a></nav></main></div>
+<footer class="site-footer">Independent study notes. NPTEL IIT Bombay course recordings supply the topic sequence; added explanations and teaching constructions are separately attributed. Complete local reading edition; source and validation boundaries are recorded in this repository.</footer></body></html>

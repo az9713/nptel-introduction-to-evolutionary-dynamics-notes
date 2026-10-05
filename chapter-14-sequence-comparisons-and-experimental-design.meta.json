@@ -1,0 +1,208 @@
+{
+  "chapter_order": 14,
+  "title": "Sequence comparisons and the design of evolution experiments",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 45,
+      "video_id": "2plkuuTvQVw",
+      "duration": 1968.821,
+      "playlist_reported_duration": 1969,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "transcript_filename": "transcript.machine.json",
+      "transcript_sha256": "2394b2dbe53ae5aaae70dea2822576ff25f032fc9e3664bba5eba66893ffa037",
+      "first_start_seconds": 1.17,
+      "last_end_seconds": 1938.38,
+      "input_media_sha256": "7ab19ba27b0ba5244d5d7f93c469c31ffaf33d631c970811f7ed06244de66747",
+      "input_media_filename": "audio.webm",
+      "audio_sha256": null,
+      "audio_hash_note": "Input container identified by media hash; no separately extracted audio hash asserted.",
+      "transcript_reading": "Complete preferred transcript read sequentially by chapter author.",
+      "visual_review": "No complete recording visual review asserted."
+    },
+    {
+      "lecture_number": 46,
+      "video_id": "tKw-yjLQOnI",
+      "duration": 1778.141,
+      "playlist_reported_duration": 1779,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "transcript_filename": "transcript.machine.json",
+      "transcript_sha256": "1dcd53efe395eff13dde8e8fa6fc5909d0671325b5fb19da1b6ccf1024893e43",
+      "first_start_seconds": 1.17,
+      "last_end_seconds": 1748.88,
+      "input_media_sha256": "a28052572ed2e3f22a98f8ccfd5a4dd4e3520f5dda85e150495b04ae135a786c",
+      "input_media_filename": "audio.webm",
+      "audio_sha256": null,
+      "audio_hash_note": "Input container identified by media hash; no separately extracted audio hash asserted.",
+      "transcript_reading": "Complete preferred transcript read sequentially by chapter author.",
+      "visual_review": "No complete recording visual review asserted."
+    }
+  ],
+  "sections": [
+    {
+      "section": "A difference can be a substitution or a segregating variant",
+      "video_id": "2plkuuTvQVw",
+      "duration": 1968.821,
+      "start": 45.39,
+      "end": 505.7,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Separated populations, neutral versus selected fixation and endpoint comparison.",
+      "research_extension": "",
+      "teaching_construction": "Mutation supply cancels single-copy neutral fixation probability; branch clocks, repeated changes and polymorphism are distinguished.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "Classify changes using the applicable genetic code",
+      "video_id": "2plkuuTvQVw",
+      "duration": 1968.821,
+      "start": 505.7,
+      "end": 1355.79,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Synonymous/nonsynonymous codon examples and position-dependent possibilities.",
+      "research_extension": "NCBI standard code table1 assignments and initiation notes inspected.",
+      "teaching_construction": "Standard internal-code assumptions, start/stop/frame boundaries and sequence versus fitness classification.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "Normalize by opportunities before interpreting counts",
+      "video_id": "2plkuuTvQVw",
+      "duration": 1968.821,
+      "start": 1355.79,
+      "end": 1938.38,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Observed differences, nine one-base neighbors per codon and opportunity normalization.",
+      "research_extension": "Nei and Gojobori1986 scanned printed418-420: two-endpoint sites, alternate paths and approximate correction.",
+      "teaching_construction": "Original four-codon construction, explicit stop category and count-ratio boundaries; fuller Nei-Gojobori method is separately attributed.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "A ratio tests a model; it does not partition evolution into two forces",
+      "video_id": "tKw-yjLQOnI",
+      "duration": 1778.141,
+      "start": 45.74,
+      "end": 683.84,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Interpretations of ratios above/below/near one and conditional unused-transporter example.",
+      "research_extension": "Kryazhimskiy and Plotkin2008 PDF1-4, actual Figure1: divergent-lineage versus population samples under the paper's model.",
+      "teaching_construction": "Neutral baseline as assumption, fixed versus segregating differences, heterogeneous pressures, undefined denominator and uncertainty.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "Controlled histories answer questions that endpoint comparisons leave open",
+      "video_id": "tKw-yjLQOnI",
+      "duration": 1778.141,
+      "start": 738.38,
+      "end": 1173.2,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Controlled environments, rapid generations, archives, parallel populations and three experiment designs.",
+      "research_extension": "",
+      "teaching_construction": "Independent experimental units, whole-population versus clone archives, revival/assay effects and MA's incomplete suppression of selection.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "Count reproductive doublings through growth and transfer",
+      "video_id": "tKw-yjLQOnI",
+      "duration": 1778.141,
+      "start": 1174.61,
+      "end": 1748.88,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Serial growth, resource depletion, transfer volume, repeated cycles and generation calculation.",
+      "research_extension": "",
+      "teaching_construction": "Base-two logarithm correction, net versus actual divisions, volume versus cell sampling and original binomial bottleneck.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "Reproduce the opportunity and passage calculations",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": "Original construction; not a recording interval",
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original computations, worked solutions or learning bridge; assumptions stated in manuscript.",
+      "evidence_class": "original teaching construction"
+    },
+    {
+      "section": "Six exercises with full solutions",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": "Original construction; not a recording interval",
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original computations, worked solutions or learning bridge; assumptions stated in manuscript.",
+      "evidence_class": "original teaching construction"
+    },
+    {
+      "section": "Carry the model assumptions into the experiment",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": "Original construction; not a recording interval",
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original computations, worked solutions or learning bridge; assumptions stated in manuscript.",
+      "evidence_class": "original teaching construction"
+    }
+  ],
+  "references": [
+    {
+      "title": "NCBI, Standard genetic code table1",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi#SG1",
+      "supports": "Actual standard assignments and initiation distinction; internal-codon examples only."
+    },
+    {
+      "title": "Nei and Gojobori1986, Simple methods for estimating synonymous and nonsynonymous substitutions",
+      "url": "https://doi.org/10.1093/oxfordjournals.molbev.a040410",
+      "supports": "Actual scanned printed418-420 read visually, not blank text extraction: opportunities, two-endpoint averaging, alternate paths, approximate multiple-hit correction."
+    },
+    {
+      "title": "Kryazhimskiy and Plotkin2008, The Population Genetics of dN/dS",
+      "url": "https://doi.org/10.1371/journal.pgen.1000304",
+      "supports": "PDF1-4 read and actual Figure1 viewed; fixed substitutions and within-population polymorphism have different model interpretations."
+    }
+  ],
+  "source_uncertainties": [
+    "Both preferred transcripts are local machine ASR; listed uploader tracks were not retrieved for these recordings.",
+    "No full video or continuous audio inspection asserted; terminal ASR timestamps and retained media durations recorded.",
+    "Spoken/ASR generation-clock shorthands corrected using binary-growth identity.",
+    "Synonymous-neutral and nonsynonymous-selected identifications are simplifying test assumptions, not biological identities.",
+    "Near-one ratio does not prove absence of selection, especially within a population.",
+    "Primary readings limited to specified pages and Figure1; no full-paper reading or other figure-derived quantitative claim.",
+    "All sequence/count/transfer/sampling numerical cases are original teaching constructions; no empirical parameter fit."
+  ],
+  "symbols": [
+    [
+      "N, mu, t",
+      "haploid count, per-copy per-site mutation probability per generation, generations"
+    ],
+    [
+      "K_S, K_N, K_stop",
+      "reference one-base synonymous, sense-to-sense replacement and stop opportunity counts"
+    ],
+    [
+      "D_S, D_N",
+      "observed synonymous and amino-acid-changing endpoint differences"
+    ],
+    [
+      "omega_count",
+      "original equal-opportunity single-reference count ratio"
+    ],
+    [
+      "d_N, d_S, omega",
+      "model-inferred substitutions per corresponding site and their rate ratio"
+    ],
+    [
+      "N_in, N_out, G, b",
+      "growth endpoint counts, net binary doublings and inoculum fraction"
+    ],
+    [
+      "B, x",
+      "fixed independent sample count and rare-genotype source frequency"
+    ]
+  ],
+  "accepted_body_sha256": "5105e1c4fb3331e53f45c05e42467fd52de4c2a2f7e0fe7f8542e49f5eeb50f0"
+}

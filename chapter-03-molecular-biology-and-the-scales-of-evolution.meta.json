@@ -1,0 +1,255 @@
+{
+  "chapter_order": 3,
+  "title": "Molecular biology and the scales of evolution",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 7,
+      "video_id": "t77FFJIWHog",
+      "duration": 1997.181,
+      "playlist_reported_duration": 1998,
+      "caption_declared_duration": 1997,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "de873ee5df9fdf6cf02d4b4eae73e264e1a8e951b349727a6072a57b63f22412",
+      "publisher_first_start": 1.55,
+      "publisher_last_end": 1975.583,
+      "publisher_endpoint_gap": 21.597999999999956,
+      "transcript_reading": "Complete preferred publisher transcript read sequentially before drafting; complete secondary-ASR reading is not claimed.",
+      "input_media_sha256": "6b00b61b7fea8740c189e41b42eb60d29a6000cdcf4a64d4b2a4c5cdf34eefe1",
+      "input_media_type": "audio",
+      "audio_sha256": "6b00b61b7fea8740c189e41b42eb60d29a6000cdcf4a64d4b2a4c5cdf34eefe1",
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Final speech and closing captions inspected during complete preferred transcript reading. Full audiovisual review and continuous listening not claimed.",
+      "selected_transcript_sha256": "079dac78bb0a1881127820a224b15b8065ba124c4225632468b534a53776393b",
+      "readable_transcript_sha256": "1447b6e049ae416a35a45a4293986efccf77cfb275e6b06e2c7edf3e7481864a"
+    },
+    {
+      "lecture_number": 8,
+      "video_id": "Jdw2kk6Cotk",
+      "duration": 1599.961,
+      "playlist_reported_duration": 1600,
+      "caption_declared_duration": 1600,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "98450167041e93621fe0c15d6df9685b338ffe803916d691d9e4ffa5f8304219",
+      "publisher_first_start": 14.476,
+      "publisher_last_end": 1578.3310000000001,
+      "publisher_endpoint_gap": 21.62999999999988,
+      "transcript_reading": "Complete preferred publisher transcript read sequentially before drafting; complete secondary-ASR reading is not claimed.",
+      "input_media_sha256": "a9331055f00e18abc66d87f956db1f188cda938fb91cd76841c215c446be1b3d",
+      "input_media_type": "audio",
+      "audio_sha256": "a9331055f00e18abc66d87f956db1f188cda938fb91cd76841c215c446be1b3d",
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Final speech and closing captions inspected during complete preferred transcript reading. Full audiovisual review and continuous listening not claimed.",
+      "selected_transcript_sha256": "ee1a9966a40caeedc66013a1164c2fc716bb32e6518642f6f9df8a5ea4513b82",
+      "readable_transcript_sha256": "dd0d9b9ad3f8573441f6a2fc0f9d82dff2d22cd314f390d77a92d2038fc90cd4"
+    },
+    {
+      "lecture_number": 9,
+      "video_id": "cU4ugiQVH58",
+      "duration": 1914.341,
+      "playlist_reported_duration": 1915,
+      "caption_declared_duration": 1914,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "218344f8f6d31626283801c1c0780852b22d00040bfe20b6127d6f99dfe10ced",
+      "publisher_first_start": 17.417,
+      "publisher_last_end": 1889.5749999999998,
+      "publisher_endpoint_gap": 24.766000000000076,
+      "transcript_reading": "Complete preferred publisher transcript read sequentially before drafting; complete secondary-ASR reading is not claimed.",
+      "input_media_sha256": "8f19a7e20a0cb3408d6795c4c9067d46fcdf1f0d3b6cd49c81eac699d5968f3e",
+      "input_media_type": "audio",
+      "audio_sha256": "8f19a7e20a0cb3408d6795c4c9067d46fcdf1f0d3b6cd49c81eac699d5968f3e",
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Final speech and closing captions inspected during complete preferred transcript reading. Full audiovisual review and continuous listening not claimed.",
+      "selected_transcript_sha256": "10c0965abcd0e0464c74978ec5243cfa8b26ef62db5c4a0551c62fecc7dacb17",
+      "readable_transcript_sha256": "998549804362ff13c2256201acf44b0de6c6be8ca83cc3e1902647f665c46ec0"
+    }
+  ],
+  "sections": [
+    {
+      "section": "Information flow concerns sequence, while phenotype also depends on regulation",
+      "video_id": "t77FFJIWHog",
+      "duration": 1997.181,
+      "start": 120.0,
+      "end": 375.0,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "DNA, RNA, protein and the information-flow diagram.",
+      "teaching_construction": "Sequence transfer versus regulatory influence; RNA roles; pigment correction.",
+      "research_extension": "Crick1970 complete printed561–563 read; actual Figure3 viewed.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Information flow concerns sequence, while phenotype also depends on regulation",
+      "video_id": "Jdw2kk6Cotk",
+      "duration": 1599.961,
+      "start": 14.0,
+      "end": 470.0,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Protein folding, functions and near universality.",
+      "teaching_construction": "Folding kinetics and genotype versus physiological expression; bounded sequence consequences.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Strand direction determines what is copied",
+      "video_id": "t77FFJIWHog",
+      "duration": 1997.181,
+      "start": 376.0,
+      "end": 1124.0,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "DNA bases, pairing, strand polarity and transcription.",
+      "teaching_construction": "Correct polymerase direction and coding/template distinction; reverse-complement table.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "A reading frame converts triplets into an amino acid sequence",
+      "video_id": "t77FFJIWHog",
+      "duration": 1997.181,
+      "start": 1130.0,
+      "end": 1975.58,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Amino acid chain, translation, Shine–Dalgarno context, triplet code and UUU verbal correction.",
+      "teaching_construction": "N/C terminus; frame/initiation distinction; code degeneracy; bacterial versus universal mechanism.",
+      "research_extension": "NCBI code1/code11 full rows and initiation notes inspected.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "A single substitution can preserve, alter, or truncate the encoded chain",
+      "video_id": "cU4ugiQVH58",
+      "duration": 1914.341,
+      "start": 17.42,
+      "end": 845.22,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "ATGCCCAAAAGCTGA sequence, corrected CAC variant, synonymous CCT and premature TAA.",
+      "teaching_construction": "Explicit corrected amino acids, mutation categories versus fitness consequences, frameshift input boundary.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "The lactose response regulates shared expression machinery",
+      "video_id": "Jdw2kk6Cotk",
+      "duration": 1599.961,
+      "start": 471.0,
+      "end": 921.0,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Lactose utilization, transporter and hydrolase, resource costs.",
+      "teaching_construction": "LacY/LacZ identities and gene/protein naming.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "The lactose response regulates shared expression machinery",
+      "video_id": "Jdw2kk6Cotk",
+      "duration": 1599.961,
+      "start": 922.0,
+      "end": 1578.33,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Repressor, operator regulation, induction and regulatory versus coding changes.",
+      "teaching_construction": "Shared operon rather than independent cartoon promoters, allolactose, basal expression/bootstrap and fixed glucose background.",
+      "research_extension": "JacobMonod1961 printed329–333 and341–344 inspected; Tables2–3 read and Figure6 viewed. JobeBourgeois1972 publisher abstract inspected only for specific inducer identity.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Separate binding probabilities from product accumulation",
+      "video_id": "Jdw2kk6Cotk",
+      "duration": 1599.961,
+      "start": 922.0,
+      "end": 1437.0,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Repressor binding and effects of regulatory mutation.",
+      "teaching_construction": "Original two-state equilibrium normalization, mean RNA/protein accumulation, limiting cases, illustrative rates and causal identifiability.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Genome size, gene count, and molecule count answer different questions",
+      "video_id": "cU4ugiQVH58",
+      "duration": 1914.341,
+      "start": 846.17,
+      "end": 1889.57,
+      "timing_source": "Complete preferred publisher caption track; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "E.coli model, cell dimensions, chromosome/gene/length/coding estimates and protein molecule multiplicity.",
+      "teaching_construction": "Base-pair versus nucleotide count, haploid/diploid comparison, actual arithmetic60/75percent rather than derived80, noncoding versus intergenic distinctions, molecule versus species count.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Executable model and six worked exercises",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": null,
+      "lecture_material": "No additional lecture span attributed to original models or exercises.",
+      "teaching_construction": "Coding/template sequence table, equilibrium and accumulation derivations, arithmetic scale checks, explicit standard-code execution contract and six full worked exercises.",
+      "research_extension": "",
+      "evidence_class": "original teaching construction"
+    }
+  ],
+  "source_uncertainties": [
+    "Publisher track production method unknown; uploader label does not prove human generation.",
+    "Canonical source duration is exact retained-media ffprobe; publisher whole-second declaration and terminal credits are distinct.",
+    "Transcription direction/coding versus template clarified; synonymous example retains lysine, not spoken alanine; UUU is phenylalanine, not the initial spoken tryptophan slip.",
+    "Toy ATG/stop region is not a complete biological gene definition or functional transporter.",
+    "Lecture separate-protein cartoons do not imply independent lacZ/lacY transcription units; modern operon/allolactose/basal-expression mechanism distinguished.",
+    "JacobMonod1961 historical interpretation of repressor chemical identity is not adopted as modern fact.",
+    "JobeBourgeois1972 publisher abstract inspected for allolactose identity; no full experimental paper reading claimed.",
+    "Coding-density arithmetic does not independently support rounded80percent; noncoding complement is not wholly intergenic or untranscribed.",
+    "Million-protein-molecule scale is a lecture illustration, not a constant empirical count for all strains/conditions.",
+    "Full frame-by-frame video review and continuous listening not claimed."
+  ],
+  "references": [
+    {
+      "title": "Crick (1970), Central Dogma of Molecular Biology",
+      "url": "https://doi.org/10.1038/227561a0",
+      "supports": "Complete printed561–563 read; actual Figure3 viewed; detailed sequence transfer versus rate control and permitted reverse transcription."
+    },
+    {
+      "title": "Jacob and Monod (1961), Genetic Regulatory Mechanisms in the Synthesis of Proteins",
+      "url": "https://doi.org/10.1016/S0022-2836(61)80072-7",
+      "supports": "Original scan printed318,329–335,341–344 inspected; Tables2–3 and Figure6; regulator trans versus linked operator cis control, historical chemical-identity uncertainty."
+    },
+    {
+      "title": "Jobe and Bourgeois (1972), The natural inducer of the lac operon",
+      "url": "https://doi.org/10.1016/0022-2836(72)90253-7",
+      "supports": "Publisher abstract inspected for precise allolactose physiological-inducer identity only; full experimental text not claimed."
+    },
+    {
+      "title": "NCBI, The Genetic Codes",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi",
+      "supports": "Code1 and11 complete64assignment rows and initiation notes inspected; context-dependent alternative initiation."
+    }
+  ],
+  "symbol_ledger": [
+    {
+      "symbol": "A,C,G,T,U;5prime,3prime",
+      "first_section": "strands",
+      "definition": "Four standard DNA bases, uracil in RNA, and sugar-position strand-direction ends."
+    },
+    {
+      "symbol": "M,P,K,S,H;L",
+      "first_section": "translation",
+      "definition": "Methionine,proline,lysine,serine,histidine one-letter amino acid abbreviations and residue count."
+    },
+    {
+      "symbol": "U,B,R,K_d,p_on",
+      "first_section": "expression-model",
+      "definition": "Unbound/bound operator states, fixed active free repressor concentration, positive dissociation constant in matching units, unbound probability."
+    },
+    {
+      "symbol": "alpha0,alpha1,alpha;M,P,delta,gamma,beta,t,Mstar,Pstar",
+      "first_section": "expression-model",
+      "definition": "State/mean transcript production rates; mean RNA/protein molecule counts, positive removal rates, nonnegative translation rate, elapsed minutes and steady mean counts. M/P count notation distinct from earlier residue abbreviations by context."
+    }
+  ],
+  "validation_evidence": [
+    "1 actual HTML code block(s) extracted and executed; exact stdout matched; pycodestyle and <=79 columns pass."
+  ],
+  "independent_review": {
+    "status": "pending"
+  },
+  "accepted_body_sha256": "ede6c521c6fcc1c751b49e99192842474ad16f265288c79bcdc576c4141173cb"
+}

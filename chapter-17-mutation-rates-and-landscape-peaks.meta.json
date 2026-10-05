@@ -1,0 +1,246 @@
+{
+  "chapter_order": 17,
+  "title": "Mutation rates, future adaptation, and landscape peaks",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 52,
+      "video_id": "x6pME-ZL5FE",
+      "duration": 1902.501,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1903,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": null,
+      "transcription_model": "Systran/faster-whisper-small.en",
+      "transcript_kind": "local machine ASR",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "9e834818cdc128c73f670ad1a7935b38d981fdcd37ec9f71ee9bf14eca543f88",
+      "selected_first_start": 1.17,
+      "selected_last_end": 1872.98,
+      "endpoint_gap_seconds": 29.520999999999958,
+      "source_reported_duration": 1902.4853125,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "a2adf95ad401214e6a72b69021db1d3d356924292689302f87b3a32660c05507",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Machine ASR phonetic names and formulas corrected against actual primary sources where used; no video frames available from retained audio-only inputs."
+    },
+    {
+      "lecture_number": 53,
+      "video_id": "kTxJJrCVFoQ",
+      "duration": 1779.701,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1780,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": null,
+      "transcription_model": "Systran/faster-whisper-small.en",
+      "transcript_kind": "local machine ASR",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "1a5a7b767010ba994cc3ebfb14f8e9a7b82b7e0a6d4deecf4a4db213a2b1c2e5",
+      "selected_first_start": 1.17,
+      "selected_last_end": 1750.42,
+      "endpoint_gap_seconds": 29.28099999999995,
+      "source_reported_duration": 1779.6906875,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "9d7ff0238bd003e1628d1c9708ba42050109a07bd25885563a4cdb02448b491d",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Machine ASR phonetic names and formulas corrected against actual primary sources where used; no video frames available from retained audio-only inputs."
+    },
+    {
+      "lecture_number": 54,
+      "video_id": "93YFTWngbWg",
+      "duration": 1922.381,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1923,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": null,
+      "transcription_model": "Systran/faster-whisper-small.en",
+      "transcript_kind": "local machine ASR",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "b435011e994f20b6a9c9b7cdf48d2502a2aac94b0c078e073b6baacab4ac1f41",
+      "selected_first_start": 1.17,
+      "selected_last_end": 1892.78,
+      "endpoint_gap_seconds": 29.601000000000113,
+      "source_reported_duration": 1922.368,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "a87944316a176a25bb1ef80b2438eb2e4a6bcea2966a522ebd40bb740e20344f",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Machine ASR phonetic names and formulas corrected against actual primary sources where used; no video frames available from retained audio-only inputs."
+    }
+  ],
+  "sections": [
+    {
+      "section": "A modifier can benefit through its descendants",
+      "video_id": "x6pME-ZL5FE",
+      "duration": 1902.501,
+      "start": 1.17,
+      "end": 455.68,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Mutator descendants, indirect advantage and no initial growth advantage in the illustration.",
+      "research_extension": "No measured mutation-rate parameter inferred.",
+      "teaching_construction": "Independent first-success Poisson race; arrival versus fixation.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Replay tests future improvement",
+      "video_id": "x6pME-ZL5FE",
+      "duration": 1902.501,
+      "start": 455.68,
+      "end": 1663.54,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Initially inferior eventual-winner clones, replay outcomes and background dependence of subsequent changes.",
+      "research_extension": "Woods2011 primary Results:40 replays, mean outcome, reconstructed spoT loses benefit in EL; no increased mutation-rate explanation.",
+      "teaching_construction": "Operational conditional evolvability and causal reconstruction versus replicated endpoint comparisons.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Slowing and limits",
+      "video_id": "x6pME-ZL5FE",
+      "duration": 1902.501,
+      "start": 1663.57,
+      "end": 1872.98,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Plateau versus continued slowing and finite-genome question.",
+      "research_extension": "No external observation attributed to this mathematical section.",
+      "teaching_construction": "Finite strict-uphill graph termination and neutral-change caveat.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Shapes of slowing",
+      "video_id": "kTxJJrCVFoQ",
+      "duration": 1779.701,
+      "start": 1.17,
+      "end": 504.05,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Successive interval gains decrease; bounded and unbounded trajectory possibilities.",
+      "research_extension": "No numerical lecture R-squared treated as verified evidence.",
+      "teaching_construction": "Positive slope/negative curvature do not imply a finite limit.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Relative-fitness trajectory assay",
+      "video_id": "kTxJJrCVFoQ",
+      "duration": 1779.701,
+      "start": 504.05,
+      "end": 732.66,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Long-term experiment archived fitness measurements.",
+      "research_extension": "Wiser2013 pp1-2:realized competition growth fitness and first20k prediction compared through50k.",
+      "teaching_construction": "Dimensionless competition fitness versus maximum per-hour rate.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Hyperbolic and power-law families",
+      "video_id": "kTxJJrCVFoQ",
+      "duration": 1779.701,
+      "start": 732.66,
+      "end": 1420.69,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Hyperbolic fit and alternative power law.",
+      "research_extension": "Wiser2013 p1 actual candidate equations, not ASR reconstruction.",
+      "teaching_construction": "Units, domains, derivative limits and original matched slope/curvature curves.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Frozen prediction and later measurements",
+      "video_id": "kTxJJrCVFoQ",
+      "duration": 1779.701,
+      "start": 1420.69,
+      "end": 1750.42,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Fit earlier observations and compare subsequent improvement.",
+      "research_extension": "Wiser2013 actual Fig2 and caption viewed:earlier fitted points, later holdout observations and predictions.",
+      "teaching_construction": "Parameter uncertainty versus family discrepancy; no infinite continuation inferred from the successful prediction.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Physical extrapolation and finite biological claims",
+      "video_id": "93YFTWngbWg",
+      "duration": 1922.381,
+      "start": 1.17,
+      "end": 741.55,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Power-law recap, extrapolation and physical constraints.",
+      "research_extension": "Wiser2013 p2 distant2.5billion-generation4.7fold illustration; lag and doubling-time distinction retained.",
+      "teaching_construction": "A mathematical limit and a finite observed interval are different; original state-dependent improvement ODE.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "An unused resource and emergence",
+      "video_id": "93YFTWngbWg",
+      "duration": 1922.381,
+      "start": 741.55,
+      "end": 1534.29,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Glucose-limited medium, abundant citrate, density change and identity checks.",
+      "research_extension": "Blount2008 pp1-2 aerobic transport limitation, firstCit+by31500 and subsequent noticed density increase.",
+      "teaching_construction": "Present resource abundance versus physiological accessibility.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Rare opportunity or a potentiated background",
+      "video_id": "93YFTWngbWg",
+      "duration": 1922.381,
+      "start": 1537.9,
+      "end": 1892.78,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Single-line appearance and two historical hypotheses.",
+      "research_extension": "Blount2008 p2 frames rarity and background dependence.",
+      "teaching_construction": "Nonexclusive hypotheses and archived replay design; experimental outcomes developed in following chapter.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Original models, code, derivations and six worked exercises",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": null,
+      "lecture_material": "Not attributed to a recording.",
+      "research_extension": "Woods2011 primary accepted manuscript, Wiser2013 primary PDF and actual Fig2, Blount2008 primary pp1-2 inspected.",
+      "teaching_construction": "Explicit original numerical models, independently checked mathematics, runnable code and exercises.",
+      "evidence_class": "original mathematical construction; no empirical reproduction"
+    }
+  ],
+  "symbol_ledger": [
+    [
+      "A, B, x",
+      "ordinary and modifier lineages; B/(A+B) frequency"
+    ],
+    [
+      "r, m",
+      "present relative fitness; successful-supply multiplier"
+    ],
+    [
+      "c, lambda_A, lambda_B",
+      "rates per generation"
+    ],
+    [
+      "W_g, Delta t",
+      "dimensionless assay fitness and replay duration"
+    ],
+    [
+      "t, W(t)",
+      "elapsed generations and relative fitness"
+    ],
+    [
+      "H, P, a, b, kappa, p",
+      "candidate curves; dimensionless gain a/exponent p, time b, inverse-time kappa"
+    ],
+    [
+      "sigma",
+      "initial fitness slope per generation"
+    ],
+    [
+      "K, q",
+      "coarse improvement coefficient per generation and dimensionless slowdown exponent"
+    ],
+    [
+      "L",
+      "fixed DNA sequence length"
+    ]
+  ],
+  "accepted_body_sha256": "3d1ab9ce996bf7c22a0eab86add0a88bd9ecf67ec4780762614e7239a4999bcf"
+}

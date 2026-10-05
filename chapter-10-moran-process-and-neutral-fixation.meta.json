@@ -1,0 +1,296 @@
+{
+  "chapter_order": 10,
+  "title": "The Moran process and the fate of a neutral lineage",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 32,
+      "video_id": "43S9eC0Ida8",
+      "duration": 1713.4535,
+      "playlist_reported_duration": 1714,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "85f7c78b8cb89796ec41381c249de886aad9f41b9dc1c6bb84d64e26a620ba73",
+      "publisher_first_start": 1.553,
+      "publisher_last_end": 1691.864,
+      "publisher_endpoint_gap": 21.135999999999967,
+      "transcript_reading": "complete local machine transcript read sequentially; publisher additions and formula differences reconciled",
+      "machine_transcript_sha256": "597470acac79a362927a82c095ee9349dbd9b17515e2bdd90712673f2bd408c4",
+      "machine_first_start": 1.17,
+      "machine_last_end": 1683.92,
+      "input_media_sha256": "5ab50fefa8a64f6fdefd1919fcad524d7609f98516debb3aac78023fd04fe352",
+      "audio_sha256": null,
+      "audio_hash_note": "ASR input was the retained video container; its exact bytes are identified by input_media_sha256. No separate audio file was hashed.",
+      "endpoint_check": "Last active teaching and closing speech checked; frame at duration minus 15 seconds is NPTEL production credits. Credits are not a lecture omission."
+    },
+    {
+      "lecture_number": 33,
+      "video_id": "jcCGsUVAyqQ",
+      "duration": 1744.7735,
+      "playlist_reported_duration": 1745,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "d961b6b9616e2486782d93c167a23acfe0709ad6fd55ce32710c1a94bc8a6c35",
+      "publisher_first_start": 1.513,
+      "publisher_last_end": 1723.177,
+      "publisher_endpoint_gap": 21.823000000000093,
+      "transcript_reading": "complete local machine transcript read sequentially; publisher additions and formula differences reconciled",
+      "machine_transcript_sha256": "b1569760c1cb8c430f63ca800a6d318316c40aee136e9c22224d8ffa6575946a",
+      "machine_first_start": 1.17,
+      "machine_last_end": 1715.09,
+      "input_media_sha256": "a73f7cb26349b947c6b8331677c2e7c17c0b59e917571ddf4f97c4065efb46c1",
+      "audio_sha256": null,
+      "audio_hash_note": "ASR input was the retained video container; its exact bytes are identified by input_media_sha256. No separate audio file was hashed.",
+      "endpoint_check": "Last active teaching and closing speech checked; frame at duration minus 15 seconds is NPTEL production credits. Credits are not a lecture omission."
+    },
+    {
+      "lecture_number": 34,
+      "video_id": "XpiVGNUsDHY",
+      "duration": 1758.1735,
+      "playlist_reported_duration": 1759,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "23c681e32a73b848383f79300e9756cfa53efeb6d1e63841b78e777cf2bc49ca",
+      "publisher_first_start": 14.476,
+      "publisher_last_end": 1753.807,
+      "publisher_endpoint_gap": 4.192999999999984,
+      "transcript_reading": "complete local machine transcript read sequentially; publisher additions and formula differences reconciled",
+      "machine_transcript_sha256": "3c8a914dfe5fe863fcd72479b469a5e9fb387b4034ee54552d12f68cfd58b357",
+      "machine_first_start": 1.17,
+      "machine_last_end": 1728.94,
+      "input_media_sha256": "9621b62d4647bf6238be23483036bd7dd6399ca36f40e7fdd5a0a85e930396e9",
+      "audio_sha256": null,
+      "audio_hash_note": "ASR input was the retained video container; its exact bytes are identified by input_media_sha256. No separate audio file was hashed.",
+      "endpoint_check": "Last active teaching and closing speech checked; frame at duration minus 15 seconds is NPTEL production credits. Credits are not a lecture omission."
+    },
+    {
+      "lecture_number": 35,
+      "video_id": "eYBAk6_1cg0",
+      "duration": 1755.8935,
+      "playlist_reported_duration": 1756,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "8d3118a7111efc008ff24a949b35b4c37b8c62da398c05a26312660576ce9b5c",
+      "publisher_first_start": 14.479,
+      "publisher_last_end": 1731.142,
+      "publisher_endpoint_gap": 24.857999999999947,
+      "transcript_reading": "complete local machine transcript read sequentially; publisher additions and formula differences reconciled",
+      "machine_transcript_sha256": "e04c37ed2391d67b10bdeb05509c85fe2eac6d35f2168a682879de0ab0c4c091",
+      "machine_first_start": 1.17,
+      "machine_last_end": 1726.1,
+      "input_media_sha256": "48e3dc9ed39d29324fb67f862aaf5a81b9b187818d07839b3e7f31d7f999c2f1",
+      "audio_sha256": null,
+      "audio_hash_note": "ASR input was the retained video container; its exact bytes are identified by input_media_sha256. No separate audio file was hashed.",
+      "endpoint_check": "Last active teaching and closing speech checked; frame at duration minus 15 seconds is NPTEL production credits. Credits are not a lecture omission."
+    }
+  ],
+  "source_uncertainties": [
+    "Uploader track is labeled English - NPTEL Verified; its actual human or machine production method is not established.",
+    "Publisher captions contain Thank you and punctuation cues during introductory/outro credits; those artifacts are excluded from the teaching spine. Their endpoints alone do not certify speech coverage.",
+    "Publisher captions as well as ASR can corrupt formula factors. Handwritten recording frames and primary mathematics establish the equations.",
+    "ASR calls Moran moron and misrecognizes some probability factors; handwritten frames and publisher captions resolve these.",
+    "Occasional spoken type-label swaps are resolved to mutant B and resident A consistently.",
+    "A verbal assertion of certain deleterious-mutant elimination is corrected for finite positive-fitness models.",
+    "A million origins per expected neutral fixation is an expectation, not an exact count or guaranteed success.",
+    "Sampled recording frames support formulas; no claim of full frame-by-frame visual review."
+  ],
+  "sections": [
+    {
+      "section": "A successful lineage must survive its first few replacements",
+      "video_id": "43S9eC0Ida8",
+      "duration": 1713.4535,
+      "timing_source": "local machine transcription, reconciled with publisher captions and recording frames; both raw sources retained privately",
+      "start": 1.17,
+      "end": 605.33,
+      "lecture_material": "Chance versus selection; marked cell in chemostat; fixation question; no new mutation.",
+      "teaching_construction": "Five-cell marked-strain running case; explicit distinction between census and fixed-size idealization; correction of deterministic deleterious-loss claim.",
+      "research_extension": "",
+      "evidence_class": "source-grounded model and original derivation"
+    },
+    {
+      "section": "One parent and one replacement determine the next count",
+      "video_id": "43S9eC0Ida8",
+      "duration": 1713.4535,
+      "timing_source": "local machine transcription, reconciled with publisher captions and recording frames; both raw sources retained privately",
+      "start": 605.87,
+      "end": 1683.92,
+      "lecture_material": "State i, N-i resident count, paired birth/loss, fitness-weighted parent probabilities, upward/downward transitions.",
+      "teaching_construction": "Normalized relative fitness r=R_B/R_A; stable mutant B/resident A notation; four-outcome table and rational finite example.",
+      "research_extension": "",
+      "evidence_class": "source-grounded model and original derivation"
+    },
+    {
+      "section": "No change is a real event, with a real probability",
+      "video_id": "jcCGsUVAyqQ",
+      "duration": 1744.7735,
+      "timing_source": "local machine transcription, reconciled with publisher captions and recording frames; both raw sources retained privately",
+      "start": 1.17,
+      "end": 858.96,
+      "lecture_material": "Two same-type replacements; exhaustive four cases; normalization to one.",
+      "teaching_construction": "Explicit independent replacement rule, self-loops and count-change clock distinction.",
+      "research_extension": "",
+      "evidence_class": "source-grounded model and original derivation"
+    },
+    {
+      "section": "The interior states are temporary, even when the next step is uncertain",
+      "video_id": "jcCGsUVAyqQ",
+      "duration": 1744.7735,
+      "timing_source": "local machine transcription, reconciled with publisher captions and recording frames; both raw sources retained privately",
+      "start": 858.96,
+      "end": 1715.09,
+      "lecture_material": "Number line, N+1 states, steps of size zero or one, endpoints versus fluctuating interior states.",
+      "teaching_construction": "Positive-path finite-block proof of almost-sure absorption and finite expected absorption time.",
+      "research_extension": "",
+      "evidence_class": "source-grounded model and original derivation"
+    },
+    {
+      "section": "A probability over complete histories satisfies a one-step equation",
+      "video_id": "XpiVGNUsDHY",
+      "duration": 1758.1735,
+      "timing_source": "local machine transcription, reconciled with publisher captions and recording frames; both raw sources retained privately",
+      "start": 1.17,
+      "end": 1191.68,
+      "lecture_material": "Fixation variable, endpoints zero and one, first-step conditioning recurrence.",
+      "teaching_construction": "Translation of recording x_i to u_i; local probability versus eventual probability; five-cell neutral check.",
+      "research_extension": "",
+      "evidence_class": "source-grounded model and original derivation"
+    },
+    {
+      "section": "The boundary values make the linear system determinate",
+      "video_id": "XpiVGNUsDHY",
+      "duration": 1758.1735,
+      "timing_source": "local machine transcription, reconciled with publisher captions and recording frames; both raw sources retained privately",
+      "start": 1191.68,
+      "end": 1728.94,
+      "lecture_material": "Interdependent interior equations, simultaneous system and fixed boundary values.",
+      "teaching_construction": "Tridiagonal structure, discrete maximum-principle uniqueness proof and checked finite vector.",
+      "research_extension": "",
+      "evidence_class": "source-grounded model and original derivation"
+    },
+    {
+      "section": "Neutrality makes fixation proportional to the starting count",
+      "video_id": "eYBAk6_1cg0",
+      "duration": 1755.8935,
+      "timing_source": "local machine transcription, reconciled with publisher captions and recording frames; both raw sources retained privately",
+      "start": 1.17,
+      "end": 1095.36,
+      "lecture_material": "Equal-lineage symmetry, one-copy 1/N, general i/N and neutral assumptions.",
+      "teaching_construction": "Explicit increment proof, several initial marked cells, census/effective-size boundary.",
+      "research_extension": "",
+      "evidence_class": "source-grounded model and original derivation"
+    },
+    {
+      "section": "No directional drift does not mean no evolutionary change",
+      "video_id": "eYBAk6_1cg0",
+      "duration": 1755.8935,
+      "timing_source": "local machine transcription, reconciled with publisher captions and recording frames; both raw sources retained privately",
+      "start": 1095.36,
+      "end": 1475.81,
+      "lecture_material": "Loss versus fixation probability; many neutral origins lost; million-cell illustrative probability.",
+      "teaching_construction": "Conditional drift/variance, independent restarted-trial probability, distinction between expectation and certainty, rare-origin mutation-supply extension.",
+      "research_extension": "",
+      "evidence_class": "source-grounded model and original derivation"
+    },
+    {
+      "section": "Neutrality makes fixation proportional to the starting count: transition check",
+      "video_id": "eYBAk6_1cg0",
+      "duration": 1755.8935,
+      "timing_source": "local machine transcription, reconciled with publisher captions and recording frames; both raw sources retained privately",
+      "start": 1475.81,
+      "end": 1726.1,
+      "lecture_material": "Substitution of equal fitness into both upward/downward probability formulas.",
+      "teaching_construction": "Neutral transition formulas integrated into neutral derivation rather than repeated as an unconnected section.",
+      "research_extension": "",
+      "evidence_class": "source-grounded model and original derivation"
+    },
+    {
+      "section": "Research extension: a reproductive advantage changes the increments",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "No additional selected-case derivation attributed to lectures32–35.",
+      "research_extension": "Kluth and Baake section2 PDF pages2–3 finite Moran fixation sum; Kimura printed pp715–716 model-specific diffusion comparison.",
+      "teaching_construction": "General positive-r increments proof, beneficial/deleterious rational checks, order of limits and time-clock translation.",
+      "evidence_class": "original theorem derivation and verified primary-source comparison"
+    },
+    {
+      "section": "Absorption time, independent finite solver, six exercises and model limits",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "No additional recording span claimed.",
+      "research_extension": "None required for original finite derivations.",
+      "teaching_construction": "Expected event-time recurrence, neutral harmonic-sum proof, exact Fraction linear solver, varied fully reasoned solutions and assay limitations.",
+      "evidence_class": "original teaching construction"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kluth and Baake, The Moran model with selection (2013)",
+      "url": "https://arxiv.org/pdf/1306.2772",
+      "supports": "Fixed haploid population, uniform replacement, continuous-time birth/death rates and finite fixation sum. Section2 PDF pages2–3; time convention explicitly translated."
+    },
+    {
+      "title": "Kimura, On the Probability of Fixation of Mutant Genes in a Population (1962)",
+      "url": "https://www.zoology.ubc.ca/let/pdfs/Kimura_1962.pdf",
+      "supports": "Diffusion assumptions and diploid genic selection/offspring-variance convention underlying the small-s 2s limit. Printed pp713–716, especially715–716."
+    }
+  ],
+  "symbol_ledger": [
+    {
+      "symbol": "A,B,N,i,x",
+      "first_section": "opening/question",
+      "definition": "Resident/marked inherited types, fixed positive census size, marked integer count0..N and dimensionless fractioni/N."
+    },
+    {
+      "symbol": "R_A,R_B,r,D_i",
+      "first_section": "replacement",
+      "definition": "Positive same-unit reproductive weights, ratioR_B/R_A and total normalized weightri+N-i."
+    },
+    {
+      "symbol": "T_i^+,T_i^-,T_i^0",
+      "first_section": "replacement",
+      "definition": "Attempted-event upward, downward and self-loop probabilities."
+    },
+    {
+      "symbol": "delta,k",
+      "first_section": "absorption",
+      "definition": "Positive finite-state path-probability lower bound and block count."
+    },
+    {
+      "symbol": "u_i,v_i,c",
+      "first_section": "backward/system/neutral",
+      "definition": "Eventual fixation probability, difference of proposed solutions and common neutral adjacent increment."
+    },
+    {
+      "symbol": "Delta i,mu,K",
+      "first_section": "interpretation",
+      "definition": "One-event count change, per-cell mutation probability per model generation in a separate rare-origin construction, and independent trial count."
+    },
+    {
+      "symbol": "d_i,s",
+      "first_section": "selection-extension",
+      "definition": "Adjacent fixation incrementu_i-u_(i-1), and constant relative reproductive selection coefficientr-1."
+    },
+    {
+      "symbol": "tau_i,a_i",
+      "first_section": "time",
+      "definition": "Expected attempted-event absorption time and its adjacent difference."
+    }
+  ],
+  "validation_evidence": [
+    "source and probability audit passed",
+    "actual embedded Python executed and PEP8 passed",
+    "offline desktop/mobile reader checks passed"
+  ],
+  "independent_review": {
+    "status": "accepted",
+    "round": 2,
+    "blocking_defects": 0,
+    "accepted_body_sha256": "7b2360557bd7855eb26bc71d9018a0068af166f96d5337ee233c8bbf27ba4d5b",
+    "evidence": "private independent science-editor report chapter10-round2.md"
+  },
+  "accepted_body_sha256": "7b2360557bd7855eb26bc71d9018a0068af166f96d5337ee233c8bbf27ba4d5b"
+}

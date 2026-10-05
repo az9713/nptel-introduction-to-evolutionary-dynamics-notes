@@ -1,0 +1,162 @@
+{
+  "chapter_order": 20,
+  "title": "Synonymous fitness effects, mutation accumulation, and the limits of a lineage model",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 60,
+      "video_id": "tx93BMONJnI",
+      "duration": 1982.821,
+      "playlist_reported_duration": 1983,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "transcript_filename": "transcript.machine.json",
+      "transcript_sha256": "34a3e6b743b1fbbc71a165fa418a1b0b0d35bbf51f1532550fd9980f4f434522",
+      "first_start_seconds": 1.17,
+      "last_end_seconds": 1953.74,
+      "input_media_sha256": "b84fa3c632665e7cc4412ff731889fbe6b464feb6db9577d42a61877ef0486cc",
+      "input_media_filename": "audio.webm",
+      "audio_sha256": null,
+      "audio_hash_note": "Input container identified by media hash; no separately extracted audio hash asserted.",
+      "transcript_reading": "Complete preferred transcript read sequentially by chapter author.",
+      "visual_review": "No complete recording visual review asserted."
+    }
+  ],
+  "sections": [
+    {
+      "section": "A synonymous change preserves a sequence, not every phenotype",
+      "video_id": "tx93BMONJnI",
+      "duration": 1982.821,
+      "start": 46.32,
+      "end": 225.1,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Recap of expression and folding routes for synonymous effects.",
+      "research_extension": "",
+      "teaching_construction": "Causal chain and sequence classification versus fitness inference.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "Translation creates a time window for folding",
+      "video_id": "tx93BMONJnI",
+      "duration": 1982.821,
+      "start": 225.1,
+      "end": 613.12,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Competing fluorescent folding cartoon and synonymous timing.",
+      "research_extension": "Sander/Chaney/Clark2014 actual full primary XML main text read; actual Figures1-3 downloaded from official PMC open-data bucket and visually inspected; YKB yellow/blue versus lecture green/red; pulse-chase nonresolution noted. Figure acquisition hashes recorded in separate private audit.",
+      "teaching_construction": "Original constant-hazard finite-window derivation and synthetic values.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "Random transfers reduce selection without abolishing it",
+      "video_id": "tx93BMONJnI",
+      "duration": 1982.821,
+      "start": 613.12,
+      "end": 1177.1,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Plate preselection, resuspension, sampling and repeated MA lines.",
+      "research_extension": "Lee2012 actual author-upload introductory protocol and MaterialsMethods inspected; single-colony passes, preselected closest isolated colony, generation and calling limits.",
+      "teaching_construction": "Founder versus plating counts, selective growth and original odds calculation.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "A fitness decline is a statistical prediction with assumptions",
+      "video_id": "tx93BMONJnI",
+      "duration": 1982.821,
+      "start": 1177.1,
+      "end": 1340.56,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Fitness-decline intuition and deleterious versus beneficial changes.",
+      "research_extension": "",
+      "teaching_construction": "Original compound-Poisson log-fitness moments, averaging distinction and limits.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "A mutation-rate denominator counts lineage exposure",
+      "video_id": "tx93BMONJnI",
+      "duration": 1982.821,
+      "start": 1340.56,
+      "end": 1498.9,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Sequence endpoints, mutation classes, rates and replicate lines.",
+      "research_extension": "",
+      "teaching_construction": "Original Poisson likelihood, exposure denominators, standard errors and zero-count bound.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "Why the best competitor need not exclude every other species",
+      "video_id": "tx93BMONJnI",
+      "duration": 1982.821,
+      "start": 1498.9,
+      "end": 1687.66,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Community coexistence and responses to perturbation as open questions.",
+      "research_extension": "",
+      "teaching_construction": "Original two-species competition example with explicit local stability calculation.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "Horizontal transfer changes the ancestry of genetic material",
+      "video_id": "tx93BMONJnI",
+      "duration": 1982.821,
+      "start": 1687.66,
+      "end": 1953.74,
+      "timing_source": "retained preferred transcript; provenance in recording record",
+      "lecture_material": "Vertical versus horizontal inheritance and transfer mechanisms; course closing.",
+      "research_extension": "",
+      "teaching_construction": "Original transfer-loss model, zero-donor boundary and qualified effect-size distinction.",
+      "evidence_class": "source-grounded model with original elaboration"
+    },
+    {
+      "section": "Reproduce the teaching calculations",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": "original teaching",
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original computations, worked solutions or course learning bridge.",
+      "evidence_class": "original teaching construction"
+    },
+    {
+      "section": "Six exercises with full solutions",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": "original teaching",
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original computations, worked solutions or course learning bridge.",
+      "evidence_class": "original teaching construction"
+    },
+    {
+      "section": "What to carry into the next experiment",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": "original teaching",
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original computations, worked solutions or course learning bridge.",
+      "evidence_class": "original teaching construction"
+    }
+  ],
+  "references": [
+    {
+      "title": "Sander, Chaney and Clark (2014): Expanding Anfinsen’s principle",
+      "url": "https://doi.org/10.1021/ja411302m",
+      "supports": "Actual primary full main text and visually inspected Figures1-3: engineered YKB half-domain competition, yellow/blue outcomes, synonymous coding-region effects and unresolved overall synthesis-rate difference; not universal folding or fitness effects."
+    },
+    {
+      "title": "Lee et al. (2012): Rate and molecular spectrum of spontaneous mutations in E. coli",
+      "url": "https://doi.org/10.1073/pnas.1210309109",
+      "supports": "Actual author-upload introductory MA protocol and MaterialsMethods, printedE2781-E2782: colony bottlenecks/preselected isolated colony, generations and variant-calling procedures; not a claim that all selection is abolished."
+    }
+  ],
+  "worked_solutions": 6,
+  "companion": "chapter20_mutation_accumulation.py",
+  "companion_sha256": "2c1adce9524dd0aa43757c03a06acfd6d16797e4fab91d0b449dd8abce91347b",
+  "accepted_body_sha256": "1b46681c4b23df6cf0b4333080f286a89e1ed4a3466f859463802b507996502f"
+}

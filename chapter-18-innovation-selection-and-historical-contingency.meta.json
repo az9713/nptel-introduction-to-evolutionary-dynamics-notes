@@ -1,0 +1,246 @@
+{
+  "chapter_order": 18,
+  "title": "Innovation, selection, and historical contingency",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 55,
+      "video_id": "CvVVCaHpPXs",
+      "duration": 1734.821,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1735,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": null,
+      "transcription_model": "Systran/faster-whisper-small.en",
+      "transcript_kind": "local machine ASR",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "5421f6fd7c93d5ab79dffc852ed67b2041d3c3c49d02abd43b3f535c27f11db4",
+      "selected_first_start": 1.17,
+      "selected_last_end": 1705.49,
+      "endpoint_gap_seconds": 29.330999999999904,
+      "source_reported_duration": 1734.8053125,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "73c7e5d5c2d1a302fddc88f2f4e26c90e5cb369923767bc7d590b43cf844867d",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Machine ASR phonetic names and formulas corrected against actual primary sources where used; no video frames available from retained audio-only inputs."
+    },
+    {
+      "lecture_number": 56,
+      "video_id": "aCq6rjE_TsA",
+      "duration": 1825.561,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1826,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": null,
+      "transcription_model": "Systran/faster-whisper-small.en",
+      "transcript_kind": "local machine ASR",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "690f31bccf97a198806af146396e1b8fded8b3a1042829b718b263ad58481d35",
+      "selected_first_start": 1.17,
+      "selected_last_end": 1795.98,
+      "endpoint_gap_seconds": 29.580999999999904,
+      "source_reported_duration": 1825.536,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "5bbb63ddce6e09551af5c98b1b96a1b551860a5f1689f45b47bed2f50a6169d4",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Machine ASR phonetic names and formulas corrected against actual primary sources where used; no video frames available from retained audio-only inputs."
+    },
+    {
+      "lecture_number": 57,
+      "video_id": "Hs4tJGpWa10",
+      "duration": 1864.141,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1865,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": null,
+      "transcription_model": "Systran/faster-whisper-small.en",
+      "transcript_kind": "local machine ASR",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "63ac91e6d68e25b8c6250d0a727c2a51b47af364c8df7b0a69d599b18902ed02",
+      "selected_first_start": 1.17,
+      "selected_last_end": 1834.38,
+      "endpoint_gap_seconds": 29.760999999999967,
+      "source_reported_duration": 1864.128,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "d1b964e8bd4e48afab36e39d4fab91398f41294908817709b83c24d3af4b3430",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Machine ASR phonetic names and formulas corrected against actual primary sources where used; no video frames available from retained audio-only inputs."
+    }
+  ],
+  "sections": [
+    {
+      "section": "Compare histories by replay",
+      "video_id": "CvVVCaHpPXs",
+      "duration": 1734.821,
+      "start": 1.17,
+      "end": 384.62,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Rare event and prior background hypotheses for citrate use.",
+      "research_extension": "Blount2008 pp3-4 historical Ara-3 clones and nonexclusive rarity/potentiation hypotheses.",
+      "teaching_construction": "Conditional outcome probability with matched exposure and detection, not certain success.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Replicated archived futures",
+      "video_id": "CvVVCaHpPXs",
+      "duration": 1734.821,
+      "start": 384.62,
+      "end": 981.52,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Frozen archive, restarted evolution and contrasting outcomes.",
+      "research_extension": "Blount2008 actual Table1:three replay assays4+5+8=17, not19successes fromall12linesat28k.",
+      "teaching_construction": "Zero-event Poisson bound and original exact conditional trial comparison; no raw experimental reanalysis.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Regulatory actualization and refinement",
+      "video_id": "CvVVCaHpPXs",
+      "duration": 1734.821,
+      "start": 981.84,
+      "end": 1453.6,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "citT duplication/promoter association and three innovation roles.",
+      "research_extension": "Blount2012 pp2-5 promoter capture, weak reconstructed phenotype, copy-number refinement, diverse replay rearrangements and background epistasis. ActualFig2/4/5/6 viewed.",
+      "teaching_construction": "Original conceptual regulatory schematic; measured1% benefit not universal1% drift-survival probability.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "History and subsequent possibilities",
+      "video_id": "CvVVCaHpPXs",
+      "duration": 1734.821,
+      "start": 1453.6,
+      "end": 1705.49,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Evolutionary history as determinant and next1995study preview.",
+      "research_extension": "Actual primary1995 abstract only; fullarticle unavailable, no empirical figure or exact original partition claimed.",
+      "teaching_construction": "Outcome comparison versus causal mechanism and hidden historical differences.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Three factors and hitchhiking",
+      "video_id": "aCq6rjE_TsA",
+      "duration": 1825.561,
+      "start": 101.76,
+      "end": 458.86,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Selection, chance, history and a neutral change carried with a beneficial linked change.",
+      "research_extension": "No empirical mutation-rate value inferred.",
+      "teaching_construction": "Chance includes stochastic mutation as well as genetic drift; neutrality conditional on assay.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "A resource-switch history example",
+      "video_id": "aCq6rjE_TsA",
+      "duration": 1825.561,
+      "start": 458.86,
+      "end": 744.78,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "lacZ loss in glucose and later lactose opportunity cartoon.",
+      "research_extension": "No experimental lacZ deletion data claimed.",
+      "teaching_construction": "Explicit assumed neutrality; no categorical proof of all future evolutionary impossibility.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Ancestral and endpoint trait comparisons",
+      "video_id": "aCq6rjE_TsA",
+      "duration": 1825.561,
+      "start": 744.94,
+      "end": 1795.98,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Identical founders, endpoint equality line, shared shifts and dispersed outcomes.",
+      "research_extension": "Travisano1995 actual primary abstract reports trait-specific fitness versus cell-size history/chance influence.",
+      "teaching_construction": "Parallel outcomes do not prove exclusive selection; zero mean does not exclude stabilizing selection or pleiotropy.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Cartoon response recap",
+      "video_id": "Hs4tJGpWa10",
+      "duration": 1864.141,
+      "start": 1.17,
+      "end": 150.06,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Recap of shared shifts and variable endpoints.",
+      "research_extension": "No source figure interpreted from unavailable1995 article.",
+      "teaching_construction": "Separate measured pattern from a uniquely identified mechanism.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Several histories, repeated futures",
+      "video_id": "Hs4tJGpWa10",
+      "duration": 1864.141,
+      "start": 150.86,
+      "end": 1076.56,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Distinct ancestral values, repeated populations within each, retained differences versus convergence.",
+      "research_extension": "Original balanced ANOVA not attributed to1995 dataset.",
+      "teaching_construction": "Independent random-intercept variance identities, negative raw estimate, measurement error and conditional inference.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Selection for settling preview",
+      "video_id": "Hs4tJGpWa10",
+      "duration": 1864.141,
+      "start": 1076.56,
+      "end": 1834.38,
+      "timing_source": "selected transcript segment times",
+      "lecture_material": "Laboratory question, budding yeast, growth and bottom-transfer filters, first45minute settling step.",
+      "research_extension": "Ratcliff2012 primary p1:initial45minute standing changed after week1 to100g10second centrifugation.",
+      "teaching_construction": "Original growth-times-retention multiplier; full cluster biology follows chapter19.",
+      "evidence_class": "lecture topic sequence; inspected primary claims and original constructions distinguished"
+    },
+    {
+      "section": "Original models, code, derivations and six worked exercises",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": null,
+      "lecture_material": "Not attributed to a recording.",
+      "research_extension": "Blount2008/2012 main full PDFs inspected, selected2012 actual figures viewed; Ratcliff2012 p1 protocol verified. Travisano1995 primary abstract only; fullpaper unavailable.",
+      "teaching_construction": "Explicit original numerical models, independently checked mathematics, runnable code and exercises.",
+      "evidence_class": "original mathematical construction; no empirical reproduction"
+    }
+  ],
+  "symbol_ledger": [
+    [
+      "g, E, T, p_g",
+      "founder, protocol, opportunity, success probability"
+    ],
+    [
+      "mu, D, K, alpha",
+      "effective event rate, exposure, detected count, one-sided error probability"
+    ],
+    [
+      "X, Y_j",
+      "ancestral trait and replicate endpoint in trait units"
+    ],
+    [
+      "h, j, m, n",
+      "history and population indices; group/replicate counts"
+    ],
+    [
+      "theta, H_h, C_hj",
+      "common endpoint mean, background deviation, within-history stochastic residual"
+    ],
+    [
+      "sigma_H^2, sigma_C^2",
+      "variances in squared trait units"
+    ],
+    [
+      "MS_H, MS_C",
+      "between/within mean squares"
+    ],
+    [
+      "gamma, beta",
+      "regression intercept and slope"
+    ],
+    [
+      "G_A, G_B, q_A, q_B",
+      "positive cycle growth and retained fractions"
+    ]
+  ],
+  "accepted_body_sha256": "87bb43549735d35c5185e88bc263ba37f25f593fc909b2f1db28d71a0c683c31"
+}

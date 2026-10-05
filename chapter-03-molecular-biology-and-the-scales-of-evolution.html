@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="ede6c521c6fcc1c751b49e99192842474ad16f265288c79bcdc576c4141173cb"><title>Molecular biology and the scales of evolution · Introduction to Evolutionary Dynamics</title>
+<link rel="stylesheet" href="assets/book.css"><script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="index.html">Introduction to Evolutionary Dynamics · January 2025</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main">
+<div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>Molecular biology and the scales of evolution</h1>
+<p class="subtitle">Chapter 3 · Lectures 7–9 · Sequence, expression, and cellular function</p>
+
+<p>A culture of <em>Escherichia coli</em>, abbreviated <em>E. coli</em>, encounters lactose after growing without it. Some cells begin producing more machinery for importing and consuming this sugar. Does that change mean their DNA has mutated? If a descendant later imports lactose more efficiently, must its transporter have a different amino acid sequence? These questions connect the distribution-level account of selection in Chapter 2 to the molecular mechanisms which generate and express inherited differences.</p>
+
+<p>We will follow this lactose transition through three distinct operations: copying sequence information, assembling proteins, and controlling how much of each product is made. A DNA substitution, a change in the amount of messenger RNA, and a change in enzyme activity are different observations. Their causal relationships can be tested, but none is interchangeable with the others. The lectures supply the information-flow and lactose examples; the explicit sequence checks and quantitative expression model below make their assumptions examinable.</p>
+
+<h2 id="information">Information flow concerns sequence, while phenotype also depends on regulation <a class="yt" href="https://www.youtube.com/watch?v=t77FFJIWHog&amp;t=279">Lecture 7 · 4:39</a></h2>
+
+<p>DNA, deoxyribonucleic acid, is a polymer whose ordered units carry inherited sequence information in cellular organisms. RNA, ribonucleic acid, is a related polymer used in several roles. A protein is one or more chains of amino acid units, organized into structures which can perform cellular functions. An enzyme is a catalyst: it accelerates a chemical reaction without being consumed in the net reaction. Many enzymes are proteins, but catalytic RNA also exists. A pigment such as melanin is not itself a protein, even when proteins control its synthesis.</p>
+
+<p><em>Transcription</em> makes an RNA molecule using a DNA template. For a protein coding gene, the RNA used in protein synthesis is called messenger RNA, or mRNA. <em>Translation</em> uses the ordered mRNA sequence to assemble an amino acid chain. DNA replication copies DNA before inherited material is apportioned to descendants. These operations implement different maps and use different molecular machinery; an error in one RNA molecule does not automatically become an inherited DNA mutation.</p>
+
+<p>The familiar DNA-to-RNA-to-protein diagram describes a major route of sequence information. It is not a claim that every RNA becomes a protein: ribosomal RNA and transfer RNA participate in the translation machinery without being translated themselves. Nor does it imply that proteins cannot affect transcription. A protein can regulate how often a DNA sequence is transcribed without copying its own amino acid sequence into that DNA.</p>
+
+<p><a href="https://doi.org/10.1038/227561a0">Crick's 1970 clarification</a>, printed pages 561–563, distinguishes the transfer of detailed sequence information from the control of transfer rates. Its central restriction concerns sequence information leaving protein; reverse transcription from RNA to DNA was not forbidden by that formulation. Figure 3 distinguishes ordinary and special transfers. This is a useful boundary for our lactose case: a repressor changing RNA production is a regulatory interaction, not a reversal of translation.</p>
+
+<p>Protein sequence influences folding and interactions, but a sequence list alone is not a complete physiological description. Assembly, chemical modification, binding partners, cellular location and environmental conditions can affect function. Folding is not a guarantee that every new chain instantly finds a unique global free-energy minimum; kinetic barriers, helper proteins and aggregation matter. Likewise, cells with similar inherited DNA can express different products. A change in expression can be a reversible physiological response even when the genetic capacity to make that response is inherited.</p>
+
+<h2 id="strands">Strand direction determines what is copied <a class="yt" href="https://www.youtube.com/watch?v=t77FFJIWHog&amp;t=376">Lecture 7 · 6:16</a></h2>
+
+<p>A nucleotide contains a sugar, phosphate and a nitrogen-containing base. In DNA the usual bases are adenine A, thymine T, guanine G and cytosine C. The sugar-phosphate backbone gives a strand direction, conventionally designated by its 5′ and 3′ ends, referring to numbered sugar positions. Neighboring nucleotides in that backbone are connected by covalent bonds. The two strands of ordinary double-stranded DNA run in opposite directions and pair A with T and G with C. Their two and three hydrogen bonds respectively are not double and triple covalent bonds.</p>
+
+<p>When sequences are listed without further qualification, write each strand in its own 5′-to-3′ direction. The reverse complement of 5′-AAAGCT-3′ is therefore 5′-AGCTTT-3′. Merely replacing A by T and G by C produces the complementary strand aligned in the opposite, 3′-to-5′ direction; reversing the order is necessary to report it in the usual orientation. Forgetting this reversal changes the sequence to be analyzed.</p>
+
+<p>RNA polymerase, the enzyme which synthesizes RNA, reads the template DNA strand in the 3′-to-5′ direction and synthesizes RNA in the 5′-to-3′ direction. The <em>coding strand</em> is the other DNA strand: its sequence matches the RNA sequence except that RNA uses uracil U in place of T. Thus replacing T by U is valid when starting from coding-strand DNA. It is not the correct operation on an arbitrarily labeled template strand.</p>
+
+<table>
+<thead><tr><th>Representation</th><th>Sequence for the same toy transcript</th></tr></thead>
+<tbody>
+<tr><td>Coding DNA, 5′ to 3′</td><td>ATG CCC AAA AGC TGA</td></tr>
+<tr><td>Aligned template DNA, 3′ to 5′</td><td>TAC GGG TTT TCG ACT</td></tr>
+<tr><td>Template DNA reported 5′ to 3′</td><td>TCA GCT TTT GGG CAT</td></tr>
+<tr><td>mRNA, 5′ to 3′</td><td>AUG CCC AAA AGC UGA</td></tr>
+</tbody>
+</table>
+
+<p>The lecture's phrase “identical copy” must be read with this strand distinction. RNA is complementary to the template and corresponds to the coding strand. The lecture's example becomes consistent once its displayed ATG-starting sequence is identified as coding DNA. This naming is not cosmetic: sequence orientation is part of the input specification for every computation below.</p>
+
+<h2 id="translation">A reading frame converts triplets into an amino acid sequence <a class="yt" href="https://www.youtube.com/watch?v=t77FFJIWHog&amp;t=1356">Lecture 7 · 22:36</a></h2>
+
+<p>A ribosome is a complex of RNA and proteins which carries out translation. Transfer RNAs connect codon recognition to amino acids; enzymes charge these RNAs with the appropriate amino acid, using chemical energy. The ribosome links amino acids by peptide bonds and extends the chain from its amino end, the N terminus, toward its carboxyl end, the C terminus. These are not the 5′ and 3′ ends of a nucleotide chain.</p>
+
+<p>A <em>codon</em> is a three-base unit interpreted in a specified reading frame. In the standard code, there are $4^3=64$ possible triplets, 61 specifying amino acids and three specifying termination. The 20 canonical amino acids are therefore encoded by a many-to-one map: several codons can specify the same amino acid. “Degenerate” refers to this multiplicity, not to a codon ambiguously assigning several amino acids in this model. UUU specifies phenylalanine, whereas UGG specifies tryptophan; the lecture corrects its initial verbal slip about UUU.</p>
+
+<p>Initiation establishes a reading frame rather than dividing an arbitrary mRNA into triplets from its first nucleotide. Many bacterial transcripts use a ribosome binding region involving a Shine–Dalgarno sequence near the start site. Recognition depends on positioning and context; it is not a universal mechanism in which all organisms scan from that sequence to the first AUG. Bacteria can also initiate at alternative codons. <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi">NCBI's translation tables 1 and 11</a> distinguish ordinary codon assignments from permitted initiation codons. Our artificial examples explicitly start at ATG and use the standard assignments, without predicting real initiation sites.</p>
+
+<p>For the mRNA in the table, AUG, CCC, AAA and AGC specify methionine, proline, lysine and serine. UGA terminates translation and contributes no amino acid. We write the resulting sequence as MPKS, using one-letter amino acid abbreviations M, P, K and S. In bacteria, initiation normally uses a chemically modified methionine; the sequence abbreviation M does not describe that modification or later processing. A four-residue toy chain is not a model of a functional lactose transporter.</p>
+
+<p>A protein coding region of $L$ amino acids requires $3L$ bases for those residues and normally another three for its stop codon. Transcription may also include untranslated regions before and after that coding region. A gene is consequently not defined universally as any DNA interval from an ATG to a stop: noncoding RNA genes exist, real start sites need context, and regulatory sequences help determine expression. An open reading frame is a candidate uninterrupted frame; it does not by itself establish expression or biological function.</p>
+
+<h2 id="mutations">A single substitution can preserve, alter, or truncate the encoded chain <a class="yt" href="https://www.youtube.com/watch?v=cU4ugiQVH58&amp;t=395">Lecture 9 · 6:35</a></h2>
+
+<p>Hold the orientation, start site and standard code fixed. In the lecture's corrected toy sequence, changing the middle base of CCC to produce CAC changes proline P to histidine H. The chain becomes MHKS. This is a nonsynonymous substitution; more specifically, a missense change replacing one encoded amino acid by another. The corrected written sequence, not the lecturer's transient rewriting error, defines this comparison.</p>
+
+<p>Changing CCC to CCT instead produces RNA CCU, which still specifies proline. The resulting amino acid sequence remains MPKS. This is a synonymous substitution. That word describes equality of encoded amino acid at the changed codon; it does not establish equality of expression, folding kinetics or fitness. Such additional consequences need evidence. The lecture's incidental “alanine” in the unchanged chain is also a slip: AAA still specifies lysine in this example.</p>
+
+<p>Changing AAA to TAA produces UAA in RNA, a stop codon. The chain is then MP, because translation terminates before the remaining serine codon. This is a nonsense substitution in the chosen frame. An insertion or deletion of one base introduces another class of change: a frameshift which changes the grouping of subsequent bases. An insertion of three bases can instead preserve the downstream frame while adding a residue, though it need not preserve function.</p>
+
+<p>These categories concern the chosen coding region. A substitution outside it may alter a binding site, transcription rate, RNA processing or stability. Some substitutions have little detectable effect under a given assay. “One base changed” therefore does not determine the magnitude or direction of a fitness effect. The causal chain to examine is altered sequence, altered molecular process, altered cellular behavior and altered descendant contribution under a defined environment.</p>
+
+<p>For the lactose culture, sequencing a transporter gene and finding unchanged amino acids would rule out a particular proposed amino acid replacement. It would not rule out a regulatory change increasing transporter abundance. Conversely, detecting a replacement would not establish better transport: activity, abundance and growth must be measured. These are competing mechanistic explanations which require distinct observations.</p>
+
+<h2 id="regulation">The lactose response regulates shared expression machinery <a class="yt" href="https://www.youtube.com/watch?v=Jdw2kk6Cotk&amp;t=471">Lecture 8 · 7:51</a></h2>
+
+<p>Lactose is a disaccharide made from glucose and galactose units. In the lecture's <em>E. coli</em> example, LacY is a membrane transporter, or permease, which helps bring lactose into the cell. LacZ is β-galactosidase, an enzyme which can hydrolyze lactose. The corresponding genes are written <em>lacY</em> and <em>lacZ</em>; the capitalized names designate their protein products. Producing these proteins consumes material and energy, so their abundance can affect both utilization and cellular costs.</p>
+
+<p>A <em>promoter</em> is a DNA region involved in recruiting and initiating transcription by RNA polymerase. An <em>operator</em> is a regulatory DNA site recognized by a regulator. These are distinct functional descriptions and their positions can overlap. LacI, encoded by <em>lacI</em>, is a repressor protein which binds operator DNA and reduces initiation from the regulated promoter. The <em>lacZYA</em> genes form an operon: they can be transcribed together into a single RNA containing several protein coding regions. <em>lacI</em> has its own transcriptional control. The lecture's separate-protein cartoon should not be interpreted as requiring independent promoters for LacZ and LacY.</p>
+
+<p><a href="https://doi.org/10.1016/S0022-2836(61)80072-7">Jacob and Monod (1961)</a>, printed pages 329–333 and 341–344, separate structural changes from control of product amounts through genetic experiments. Their operator mutations affect linked genes, whereas a regulator product can act across copies in the same cell. Their Table 3 and operon discussion provide a more discriminating test than observing that two proteins increase together. The original paper also left the repressor's chemical identity unsettled, including an interpretation subsequently revised; we use its regulatory logic without attributing all later molecular details to it.</p>
+
+<p>The physiological inducer is allolactose, made from lactose through LacZ activity, rather than lactose simply attaching as an interchangeable generic signal. <a href="https://doi.org/10.1016/0022-2836(72)90253-7">Jobe and Bourgeois's 1972 paper</a> identifies that distinction; its publisher abstract was inspected for this specific identity claim. Inducer binding lowers the repressor's affinity for operator DNA. Repression and induction change probabilities and rates; “off” and “on” are useful extremes rather than assertions of exactly zero or a perfectly instantaneous binary response.</p>
+
+<p>Basal, low-level expression makes initial lactose import and inducer production possible. Setting both processes identically to zero in a cartoon would create a bootstrap problem: the external sugar could never trigger the internal signal through that route. Glucose availability adds further control through activation and transport interactions. Thus lactose presence alone is not a complete predictor of expression. The following model isolates one operator-binding effect under a fixed background; it is not the full lac circuit or a claim of universal all-or-none induction.</p>
+
+<h2 id="expression-model">Separate binding probabilities from product accumulation <a class="yt" href="https://www.youtube.com/watch?v=Jdw2kk6Cotk&amp;t=922">Lecture 8 · 15:22</a></h2>
+
+<p>To quantify that isolated effect, assume one operator is either unbound U or repressor-bound B, binding equilibrates rapidly, and free active repressor concentration $R$ remains fixed. Let $K_d&gt;0$ be the dissociation constant in the same concentration units as $R$. Mass action gives the ratio of bound to unbound probabilities as $R/K_d$. If $p_{\mathrm{on}}$ denotes the probability of the unbound state, normalization gives</p>
+
+<div class="eq">\[
+p_{\mathrm{on}}+\frac{R}{K_d}p_{\mathrm{on}}=1,
+\qquad p_{\mathrm{on}}=\frac{K_d}{K_d+R}.
+\]</div>
+
+<p>The hinge is normalization over the two permitted states. More binding states, DNA looping, competition with polymerase or a fluctuating repressor pool require a different state model. Here $R=0$ gives an unbound operator with probability one, and $R\to\infty$ drives that probability to zero. Neither limit alone predicts the number of protein molecules.</p>
+
+<p>Let $\alpha_0\geq0$ and $\alpha_1\geq\alpha_0$ be transcript production rates in the bound and unbound states, in transcripts per minute per modeled cell. The mean production rate is $\alpha=\alpha_0+(\alpha_1-\alpha_0)p_{\mathrm{on}}$. Let $M$ and $P$ be mean mRNA and protein molecule counts per cell. Let $\delta&gt;0$ and $\gamma&gt;0$ be effective first-order removal rates, including any degradation and growth dilution retained in this approximation, and let $\beta\geq0$ be protein production per transcript per minute. Then</p>
+
+<div class="eq">\[
+\frac{dM}{dt}=\alpha-\delta M,\qquad
+\frac{dP}{dt}=\beta M-\gamma P,\qquad
+M_*=\frac{\alpha}{\delta},\qquad
+P_*=\frac{\beta\alpha}{\gamma\delta}.
+\]</div>
+
+<p>The steady-state expressions follow by setting both derivatives to zero in sequence. They describe deterministic mean counts, which need not be integers. With constant parameters, mRNA relaxes as $M(t)=M_*+[M(0)-M_*]e^{-\delta t}$; protein responds to that changing input and its own removal rate. Immediately after induction, RNA production can change while protein abundance remains continuous. A measured lag therefore need not imply mutation or a new genetic sequence.</p>
+
+<p>For an illustrative parameter set, take $R=90$, $K_d=10$, $\alpha_0=0.02$, $\alpha_1=1$, $\delta=0.2$, $\beta=10$ and $\gamma=0.1$, using minutes and compatible concentration units. The unbound probability is 0.1, production rate is 0.118, and steady counts are $M_*=0.59$ and $P_*=59$. Reducing active $R$ to zero changes those counts to 5 and 500, a factor of about 8.47. The factor is not ten because the bound state already produces a little RNA. These are teaching parameters, not fitted lac measurements.</p>
+
+<p>A mutation weakening operator binding can increase $K_d$ without changing the regulated protein sequence. A coding mutation in LacI can instead change the repressor's abundance or binding behavior. A change affecting mRNA lifetime can change $\delta$. At steady state all can increase $P_*$, so protein amount alone cannot identify the mechanism. Time-resolved RNA measurements and binding or turnover assays constrain different parts of the model. Selection acts on resulting descendant contributions, not directly on the algebraic label of a parameter.</p>
+
+<h2 id="scales">Genome size, gene count, and molecule count answer different questions <a class="yt" href="https://www.youtube.com/watch?v=cU4ugiQVH58&amp;t=890">Lecture 9 · 14:50</a></h2>
+
+<p>The lecture introduces <em>E. coli</em> as a rod-shaped model bacterium with dimensions of order micrometers and a chromosome of order a few million base pairs. A micrometer is $10^{-6}$ meter. Cell size and division time depend on strain and growth conditions; these are scale estimates, not universal constants. Gram-negative bacteria such as <em>E. coli</em> have an inner membrane, a thin peptidoglycan wall and an outer membrane. Merely possessing a wall and membrane does not define the Gram-negative envelope.</p>
+
+<p>For a double-stranded genome, a length in base pairs counts paired positions, not the combined number of nucleotides in both strands. The lecture's approximately 4–5 million positions and approximately 4,500 genes give a useful order of magnitude, but gene counts depend on strain, annotation and whether RNA genes are included. The roughly three-billion-base human comparison refers to a haploid genome, one chromosome set, rather than twice that set in an ordinary diploid cell. Comparing like counting conventions prevents a spurious factor of two.</p>
+
+<p>Inspect the lecture's coding-density arithmetic before using its conclusion. If 4,500 protein coding regions each encoded 200 amino acids, their amino-acid codons would occupy $4500(200)(3)=2.7\times10^6$ bases. Against a $4.5\times10^6$-base genome this is 60 percent. Choosing 250 residues gives $3.375\times10^6$ bases, or 75 percent. Stops, overlaps, RNA genes and actual length distributions complicate the estimate. These particular assumptions do not independently derive “80 percent or more”; an empirical coding fraction requires actual annotation rather than rounding the toy result to the desired value.</p>
+
+<p>Nor is every base outside protein coding regions intergenic. Intergenic means between annotated genes. Introns, untranslated regions and noncoding RNA genes are different categories; some noncoding sequence is transcribed and some has regulatory or structural roles. The lecture's contrast with the small protein coding fraction in humans is useful, but interpreting its complement as wholly untranscribed, wholly intergenic or functionless would be incorrect. A promoter is also not a name for every noncoding interval.</p>
+
+<p>Finally, the number of gene types is not the number of molecules. One gene can produce many RNA molecules, and each RNA can support successive ribosomes or several translating simultaneously, a polysome. A <em>proteome</em> denotes the collection of proteins present under specified conditions; distinct protein species and total protein molecule count are different summaries. The lecture's million-molecule scale illustrates why thousands of expressed genes do not imply thousands of total molecules. It is not a fixed count for every cell or an assertion that every expressed gene contributes equally.</p>
+
+<p>In our toy count of 2,500 expressed genes and one million total protein molecules, the mean is 400 molecules per expressed gene. One possible distribution has 100 highly abundant products at 5,000 copies each and the other 2,400 averaging about 208.3 copies. That aggregate accounting is compatible with the same total and very unequal expression. Function, cost and stochastic fluctuations depend on the distribution and turnover, so the mean alone cannot determine the lactose machinery's abundance.</p>
+
+<h2 id="calculation">Check the lecture's mutation examples with an explicit sequence contract</h2>
+
+<p>This standard-library program implements the sequence map already described. It accepts a nonempty uppercase coding-DNA string containing only A, C, G and T, beginning at an explicitly supplied ATG start in frame zero, with a whole number of codons. It returns a one-letter amino acid chain at the first stop. The 64 assignments are the standard-code row from NCBI, enumerated in T, C, A, G order. The same elongation assignments apply to bacterial table 11 for these examples; alternative initiation is deliberately excluded.</p>
+
+<p>The function rejects unknown bases, a non-ATG first codon, incomplete triplets or a missing in-frame stop. It does not discover genes, translate an unlabeled template, infer protein activity or model RNA abundance. Rejecting an incomplete triplet is an input boundary, not a claim that real frameshifted regions cannot be translated until an eventual stop. It prints four deterministic comparisons, writes no files and uses no randomness. Early termination is permitted even if more codons remain after the first stop.</p>
+
+<pre><code class="language-python">from itertools import product
+
+
+BASES = "TCAG"
+AMINO_ACIDS = (
+    "FFLLSSSSYY**CC*WLLLLPPPPHHQQRRRR"
+    "IIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG"
+)
+CODE = dict(zip(("".join(c) for c in product(BASES, repeat=3)),
+                AMINO_ACIDS))
+
+
+def translate_coding_dna(sequence):
+    if not sequence or set(sequence) - set("ACGT"):
+        raise ValueError("Use nonempty uppercase, unambiguous coding DNA")
+    if len(sequence) % 3 or not sequence.startswith("ATG"):
+        raise ValueError("Supply whole codons, beginning at ATG in frame zero")
+    residues = []
+    for offset in range(0, len(sequence), 3):
+        amino_acid = CODE[sequence[offset:offset + 3]]
+        if amino_acid == "*":
+            return "".join(residues)
+        residues.append(amino_acid)
+    raise ValueError("No in-frame stop codon")
+
+
+if __name__ == "__main__":
+    cases = (
+        ("original", "ATGCCCAAAAGCTGA"),
+        ("missense", "ATGCACAAAAGCTGA"),
+        ("synonymous", "ATGCCTAAAAGCTGA"),
+        ("nonsense", "ATGCCCTAAAGCTGA"),
+    )
+    for name, dna in cases:
+        print(f"{name}: {translate_coding_dna(dna)}")
+</code></pre>
+
+<p>A clean run gives:</p>
+<pre class="output">original: MPKS
+missense: MHKS
+synonymous: MPKS
+nonsense: MP</pre>
+
+<h2 id="exercises">Six exercises with worked solutions</h2>
+
+<h3>1. Repair a strand-label error</h3>
+<p><strong>Problem.</strong> An analyst receives template DNA 5′-TCAGCTTTTGGGCAT-3′ and obtains RNA by changing T to U. Explain the mistake and determine the correct RNA and peptide under our initiation assumptions.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> RNA must be complementary and antiparallel to the template. Reverse its listed order and complement the bases to obtain coding DNA 5′-ATGCCCAAAAGCTGA-3′. Replace T with U on this coding strand to obtain RNA 5′-AUGCCCAAAAGCUGA-3′. Starting at the supplied AUG gives AUG/CCC/AAA/AGC/UGA, hence MPKS and termination. The incorrect U-substitution used the template as though it were coding DNA and did not preserve the required orientation. A real initiation prediction would additionally require the transcript's start-site context.</p>
+</details>
+
+<h3>2. Distinguish sequence categories from fitness categories</h3>
+<p><strong>Problem.</strong> Compare CCC→CCT, CCC→CAC and AAA→TAA in the original toy region. Which one must be selectively neutral, and what does the four-residue example establish about lactose transport?</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> The first preserves proline and the MPKS chain, the second changes proline to histidine and gives MHKS, and the third supplies a premature stop and gives MP. They are synonymous, missense and nonsense respectively in this specified frame and code. None is guaranteed selectively neutral or beneficial by that category alone. Equality of amino acid sequence does not guarantee equal expression; an amino acid change does not guarantee altered function; truncation consequences depend on the real product and assay. These short strings establish sequence-map possibilities, not measured transport by LacY.</p>
+</details>
+
+<h3>3. Infer an operator effect without changing the protein sequence</h3>
+<p><strong>Problem.</strong> In the two-state model take $R=90$, $\alpha_0=0.02$ and $\alpha_1=1$. An operator substitution changes $K_d$ from 10 to 90 while all other parameters remain fixed. Find the new RNA production rate and steady protein fold change.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> Initially $p_{\mathrm{on}}=10/100=0.1$ and $\alpha=0.02+0.98(0.1)=0.118$. After the substitution $p_{\mathrm{on}}=90/180=0.5$, so $\alpha=0.02+0.98(0.5)=0.51$. Since $\beta$, $\gamma$ and $\delta$ are fixed, $P_*$ scales with $\alpha$: the fold change is $0.51/0.118\approx4.322$. Weaker binding raises expression without requiring a change to the regulated amino acid sequence. This inference depends on the single-site equilibrium model and fixed active repressor pool; it is not a fitted effect of an actual operator variant.</p>
+</details>
+
+<h3>4. Distinguish induction from immediate protein replacement</h3>
+<p><strong>Problem.</strong> A culture begins at steady state with $\alpha=0.118$ and $\delta=0.2$ per minute. At time zero, production rises to one transcript per minute while $\delta$ remains fixed. Find mean mRNA after five minutes. Can protein concentration jump discontinuously at time zero in the stated model?</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> Initial mean is $0.118/0.2=0.59$ and final mean is $1/0.2=5$. Therefore $M(5)=5+(0.59-5)e^{-1}\approx3.378$ transcripts per modeled cell. Protein obeys an ordinary differential equation with a finite input, so $P$ remains continuous at time zero even though its future production changes. Because $M$ itself is continuous, the instantaneous protein derivative initially still uses the old RNA count. Rapid RNA production and delayed protein accumulation are consistent with an unchanged DNA sequence.</p>
+</details>
+
+<h3>5. Check a coding-density inference</h3>
+<p><strong>Problem.</strong> A simplified annotation has 4,500 nonoverlapping protein coding regions averaging 250 residues, each with a three-base stop, in a 4.5-million-base-pair chromosome. Calculate the accounted fraction and identify two reasons its complement cannot automatically be called untranscribed intergenic DNA.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> Each region accounts for $3(250)+3=753$ bases. Total is $4500(753)=3{,}388{,}500$, giving fraction $0.753$, or 75.3 percent. This is the consequence of the stipulated simplified annotation, not an empirical genome estimate. Untranslated portions of transcripts can lie outside these coding regions, and noncoding RNA genes can also be transcribed. In genomes with introns, intronic sequence is another within-gene noncoding category. Regulatory DNA is neither necessarily translated nor necessarily between every definition of gene boundary. The complement of coding sequence and the set of intergenic intervals are different objects.</p>
+</details>
+
+<h3>6. Design a causal comparison across molecular levels</h3>
+<p><strong>Problem.</strong> A descendant grows faster on lactose and has twice the measured LacY protein abundance. Design observations distinguishing a coding-activity explanation, an expression explanation and an environmental carryover explanation. State what growth alone cannot establish.</p>
+<details class="solution"><summary>Worked solution</summary>
+<p><strong>Solution.</strong> First compare independently grown clones under a common, controlled history, measuring growth, RNA abundance, protein amount and transport activity per unit protein. Sequence the relevant coding and regulatory regions, but treat association as a hypothesis rather than proof. Reconstruct candidate variants in the same genetic background and test whether each changes the proposed intermediate and growth; reciprocal restoration provides an additional check. Unchanged activity per unit protein with increased RNA supports an expression route, while changed activity at matched abundance supports a coding-function route. Disappearance after standardized growth history suggests carryover, though persistent epigenetic states and other loci remain possible. Growth alone identifies a condition-specific performance difference; it does not identify the mutated site, molecular mechanism, lifetime descendant contribution in another environment or the historical origin of the variant.</p>
+</details>
+
+<h2 id="source-note">Source boundaries and further reading</h2>
+
+<p>All preferred uploader subtitle transcripts for Lectures 7–9 were read completely and sequentially. Their English – NPTEL Verified label does not determine human or machine production. Timed links locate the lecture's information-flow, sequence, lactose and scale material. Strand orientation, the genetic-code slips, operon versus separate-protein cartoons, and coding-versus-intergenic arithmetic are explicitly reconciled here. Complete frame-by-frame video review and continuous listening are not claimed.</p>
+
+<p>Primary inspection included the complete <a href="https://doi.org/10.1038/227561a0">Crick 1970 clarification</a> and its actual transfer diagram; the relevant structural/regulator and operator/operon sections, Tables 2–3 and model figure in <a href="https://doi.org/10.1016/S0022-2836(61)80072-7">Jacob and Monod 1961</a>; the specific inducer-identity claim in the publisher abstract of <a href="https://doi.org/10.1016/0022-2836(72)90253-7">Jobe and Bourgeois 1972</a>; and <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi">NCBI's explicit code assignments and initiation notes</a>. The binding and accumulation equations, parameter values, program and worked exercises are original teaching constructions. The next chapter asks how DNA replication, cell division and reproduction turn molecular differences into population variation.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-02-natural-selection-and-ecological-context.html">Previous available chapter</a><a href="index.html">Lecture index</a><a rel="next" href="chapter-04-microbial-growth-mutation-and-reproduction.html">Next available chapter</a></nav></main></div>
+<footer class="site-footer">Independent study notes. NPTEL IIT Bombay course recordings supply the topic sequence; added explanations and teaching constructions are separately attributed. Complete local reading edition; source and validation boundaries are recorded in this repository.</footer></body></html>

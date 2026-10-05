@@ -1,0 +1,256 @@
+{
+  "chapter_order": 7,
+  "title": "Distributions, landscapes, and epistasis",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 21,
+      "video_id": "TsGhGUu-Spc",
+      "duration": 2135.041,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 2136,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "transcription_model": null,
+      "transcript_kind": "publisher English subtitles",
+      "caption_sha256": "d02fd25ffecf5e58041518c3e95fb8b58ad264e064920b76da512958ec0dcab4",
+      "selected_transcript_sha256": "7b60587e9a1375aa667beb1ee8b5dbb8712165cdae67720c5d78535e58b317a6",
+      "selected_first_start": 4.895,
+      "selected_last_end": 2108.5480000000002,
+      "endpoint_gap_seconds": 26.492999999999938,
+      "source_reported_duration": 2135,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "6f206585c4ef90dc162ed655425149328250153c2715d820907c200f0d289dba",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Uploader subtitle production method unknown; shorthand corrections in private ledger."
+    },
+    {
+      "lecture_number": 22,
+      "video_id": "9g2Vd85jlwY",
+      "duration": 1446.301,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1447,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "transcription_model": null,
+      "transcript_kind": "publisher English subtitles",
+      "caption_sha256": "337c9a942afdd849be193d46b510c8a60a693fccb16add2f32aeab665f51fa3e",
+      "selected_transcript_sha256": "396b9527f6ac581e129584dd89b2744354ff39b0f23c17cdf50f9a75ade85797",
+      "selected_first_start": 17.802,
+      "selected_last_end": 1424.681,
+      "endpoint_gap_seconds": 21.61999999999989,
+      "source_reported_duration": 1446,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "296ad1fcbab57564c970488eb3351673a02733d61ae210916c5081fa856aca77",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Uploader subtitle production method unknown; shorthand corrections in private ledger."
+    },
+    {
+      "lecture_number": 23,
+      "video_id": "HIoc5absygs",
+      "duration": 1781.121,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1782,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": null,
+      "transcription_model": "Systran/faster-whisper-small.en",
+      "transcript_kind": "local machine ASR",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "ae9b3b5587d96b15ddd8b45ea68b309e419040199c98f50226d2637118a7812b",
+      "selected_first_start": 1.17,
+      "selected_last_end": 1750.67,
+      "endpoint_gap_seconds": 30.451000000000022,
+      "source_reported_duration": 1781.0986875,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "20ea8e9724fea14dd7eedeb6a85da305055115074771eec79d035f0c4c3c7cc3",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Local small.en machine ASR; phonetic names/numerical entries can be wrong. L23 contribution table ambiguous: manuscript uses original declared consistent values."
+    },
+    {
+      "lecture_number": 24,
+      "video_id": "Bwr751ZdIXA",
+      "duration": 1729.021,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1730,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": null,
+      "transcription_model": "Systran/faster-whisper-small.en",
+      "transcript_kind": "local machine ASR",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "5d9a639c56b3a7564cbcf8dbf36966144afd030760f4a2d20eb191db7e1cb52d",
+      "selected_first_start": 1.17,
+      "selected_last_end": 1699.57,
+      "endpoint_gap_seconds": 29.451000000000022,
+      "source_reported_duration": 1729.0026875,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "b1c9111e56dddba9fc963acc1d0ce6353c045b434acb9dfbd2a2faf0167b09f6",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Local small.en machine ASR; phonetic names/numerical entries can be wrong. L23 contribution table ambiguous: manuscript uses original declared consistent values."
+    }
+  ],
+  "sections": [
+    {
+      "section": "A distribution requires a sampling rule",
+      "video_id": "TsGhGUu-Spc",
+      "duration": 2135.041,
+      "start": 4.89,
+      "end": 824.11,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Repeated mutations in a common ancestor, beneficial/deleterious histograms, conditional effects and qualitative DFE sketches.",
+      "research_extension": "MacLean/Buckling2009 Results/Discussion Table2 and Methods: selected resistance-mutant effects depend on environment.",
+      "teaching_construction": "Probability versus density, neutral atom, sampling denominators, detection weighting and synthetic ten-effect example.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Fitness metaphor and historical context",
+      "video_id": "TsGhGUu-Spc",
+      "duration": 2135.041,
+      "start": 824.87,
+      "end": 1265.5,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Mountain-climbing metaphor, Sewall Wright and distinction from modern molecular interpretation.",
+      "research_extension": "Wright1932 primary reprint pp1,5: biparental reproduction, gene combinations and peak context.",
+      "teaching_construction": "Separate finite-genotype walk assumptions from historical thought experiments.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Sequence space and Hamming distance",
+      "video_id": "TsGhGUu-Spc",
+      "duration": 2135.041,
+      "start": 1270.46,
+      "end": 2108.55,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Four choices per nucleotide, 4^L vertices, equal-length pairwise Hamming distance.",
+      "research_extension": "No external empirical claim in this section.",
+      "teaching_construction": "Exact indicator definition, corrected two-position example and combinatorial shell consistency.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Single-change graph connections",
+      "video_id": "9g2Vd85jlwY",
+      "duration": 1446.301,
+      "start": 17.8,
+      "end": 534.46,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Connect Hamming-distance-one vertices; each has 3L neighbours.",
+      "research_extension": "No external empirical claim in this section.",
+      "teaching_construction": "Handshaking edge count, binary restricted graph and projection limitations.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Fitness attaches values to vertices",
+      "video_id": "9g2Vd85jlwY",
+      "duration": 1446.301,
+      "start": 535.64,
+      "end": 1424.68,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Thought experiment assigns growth proxy to sequences, height interpretation, beneficial uphill directions.",
+      "research_extension": "No external empirical claim in this section.",
+      "teaching_construction": "Explicit graph/value distinction, local versus global peaks and finite uphill termination.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Why one-step edges are useful",
+      "video_id": "HIoc5absygs",
+      "duration": 1781.121,
+      "start": 1.17,
+      "end": 1007.63,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Small mutation probabilities motivate single-change edges rather than simultaneous specified doubles.",
+      "research_extension": "Recording mutation probabilities treated as order-of-magnitude illustrations, not newly verified E.coli estimates.",
+      "teaching_construction": "Separate genome-wide U, edge probability, production, establishment, sequential intermediates and weak-mutation approximation.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "What an additive landscape guarantees",
+      "video_id": "HIoc5absygs",
+      "duration": 1781.121,
+      "start": 1007.63,
+      "end": 1750.67,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Independent locus contributions and GCA endpoint in the illustrative three-position example.",
+      "research_extension": "No external empirical claim in this section; ASR table entries unresolved.",
+      "teaching_construction": "Declared original consistent table, unique-optimum proof and tied-best-letter counterexample.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Epistasis and predictability",
+      "video_id": "Bwr751ZdIXA",
+      "duration": 1729.021,
+      "start": 1.17,
+      "end": 986.96,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Background dependence, repeated-history question, smooth versus multi-peak diagrams and chance of different terminal peaks.",
+      "research_extension": "Ferretti2015 introduction pp2–4 distinguishes landscape statistics and constraints.",
+      "teaching_construction": "Epistasis does not imply multiple peaks; conditional endpoint versus path predictability.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Interaction magnitude and sign classes",
+      "video_id": "Bwr751ZdIXA",
+      "duration": 1729.021,
+      "start": 989.1,
+      "end": 1699.57,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Single and double mutant effects, additive null, positive/negative/sign epistasis; next empirical studies preview.",
+      "research_extension": "Ferretti2015 introduction p2 supplies explicit log-scale convention.",
+      "teaching_construction": "Raw versus log residuals, general and reciprocal sign flips, original two-peak graph; experimental study details deferred chapter8.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Original derivations, examples, code, exercises and separately attributed research",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": null,
+      "lecture_material": "Not attributed to a recording.",
+      "research_extension": "Inspected MacLean/Buckling2009, Wright1932 and Ferretti2015 claims separately attributed.",
+      "teaching_construction": "Original exact derivations, synthetic numerical cases, executed code and six reasoned exercises; not experimental reproductions.",
+      "evidence_class": "original mathematical teaching constructions and inspected primary research, not empirical reproduction"
+    }
+  ],
+  "symbol_ledger": [
+    [
+      "f_0, f_m, s_m",
+      "reference fitness, mutant fitness, f_m/f_0-1"
+    ],
+    [
+      "M, q(s)",
+      "tested mutation count, effect-dependent detection"
+    ],
+    [
+      "beta",
+      "mean of illustrative conditional exponential law"
+    ],
+    [
+      "L, B_alphabet",
+      "fixed sequence length and DNA alphabet"
+    ],
+    [
+      "h(a,b), V_graph, E_graph",
+      "Hamming distance, vertices, edges"
+    ],
+    [
+      "U, u_a_to_b, C",
+      "genome-wide expected mutations, edge probability, divisions"
+    ],
+    [
+      "F, f_j, c",
+      "landscape score, locus contributions, offset"
+    ],
+    [
+      "F_00, F_10, F_01, F_11",
+      "binary two-locus fitness scores"
+    ],
+    [
+      "epsilon, epsilon_log",
+      "raw additive and log multiplicative residual"
+    ]
+  ],
+  "accepted_body_sha256": "27b3ac6684abfcf475c2da7da60255ca117d0d088f5d89739d540b0179e6c7c5"
+}

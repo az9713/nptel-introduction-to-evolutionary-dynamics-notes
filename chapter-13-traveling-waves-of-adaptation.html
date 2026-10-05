@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="65f6ae62d71a8c7e759b0a854848a12f222dbc3aa4065ec937d4ec258d689ef7"><title>A traveling wave in fitness space · Introduction to Evolutionary Dynamics</title>
+<link rel="stylesheet" href="assets/book.css"><script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="index.html">Introduction to Evolutionary Dynamics · January 2025</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main">
+<div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>A traveling wave in fitness space</h1>
+<p class="lead">In a population with many concurrent beneficial lineages, the next important mutation need not arise in the most abundant genotype. It can arise among the few cells at the high-fitness edge. Understanding adaptation then requires matching the stochastic supply of that edge to the deterministic motion of the population behind it.</p>
+<p>Our running construction is an asexual haploid population: each cell carries one genome set, and the tracked mutations are inherited together without recombination. Its fixed size is $N=10^8$. We choose a beneficial mutation probability $U_b=10^{-5}$ per division and equal log-fitness increments $h=0.02$ per reference generation. These numbers define an original model case, not fitted microbial data. Equal increments exclude large-effect jumps and interactions between mutation effects. The size and mutation probability resemble the lecture's illustrative scales, but their biological applicability must be tested.</p>
+<p class="source-note">Complete local machine transcripts of <a href="https://www.youtube.com/watch?v=pOPgo5TeAzk">lecture 43</a> and <a href="https://www.youtube.com/watch?v=spjPlFQ_YD0">lecture 44</a> were read sequentially. Their spine is the isolated-sweep scale, translating fitness distribution, leading-edge mutation supply and two-equation closure. We distinguish their approximations from exact probability laws and reconstruct equations independently where ASR corrupts a product or quotient. Primary comparison uses inspected <a href="https://www.desai-lab.com/publications/PDFs/desaifisher07.pdf">Desai and Fisher (2007)</a> pages 4–7, with the actual Figures 1 and 2 inspected. The finite-class differential equation and numerical closure below are original teaching constructions.</p>
+
+<h2 id="sweep">An exponential rise gives a scale rather than an exact fixation time <a class="timestamp" href="https://www.youtube.com/watch?v=pOPgo5TeAzk&amp;t=139">L43 · 2:19</a></h2>
+<p>The lecture begins with an established mutant at count approximately $1/s$ and growth advantage $s$. Extending exponential growth to count $N$ gives $N\approx(1/s)e^{s\tau}$ and hence $\tau\approx\log(Ns)/s$. This is useful as an order-of-magnitude comparison to the waiting time, provided the same reference-generation clock and weak-advantage convention are used.</p>
+<p>It is not an exact finite-population fixation time. Exponential growth ignores the decline of relative advantage as the lineage becomes the whole population. A deterministic frequency equation reaches one only asymptotically, and the final few resident cells require a stochastic endpoint description. Desai and Fisher's PDF page 5 explicitly distinguishes reaching a large fraction from conventional complete fixation, with a roughly doubled scale for the latter in that heuristic. The preceding chapter instead computed a log-odds interval between specified interior frequencies.</p>
+<p>For the original $N=10^8$, $h=0.02$ scale, $\log(Nh)/h$ is approximately 725.433 generations. An illustrative successful-origin interval near 0.05 generations would be far shorter, indicating overlapping candidates. This comparison does not prove that separated sweeps are impossible in every microbial population. A small bottleneck, very low beneficial supply or changed environment can place a culture in the separated regime. The decisive criterion compares its actual timescales.</p>
+
+<h2 id="coordinate">Choose a fitness coordinate before talking about translation <a class="timestamp" href="https://www.youtube.com/watch?v=pOPgo5TeAzk&amp;t=603">L43 · 10:03</a></h2>
+<p>A genotype's relative reproductive multiplier over one reference generation is $G/G_{\mathrm{ref}}$, where $G_{\mathrm{ref}}$ is a fixed comparison multiplier. Define its log fitness as $\ell=\log(G/G_{\mathrm{ref}})$. If each beneficial mutation multiplies that relative factor by $e^h$, then successive mutations add $h$ to $\ell$. A class with $k$ increments has log fitness $\ell_k=kh$ relative to the initial class.</p>
+<p>The increment $h$ is dimensionless over the reference interval; in continuous growth equations it supplies a numerical rate per generation. A Moran reproductive excess $s=r-1$ instead compares event-selection weights. For a specified per-generation multiplicative model, $h=\log r$ relates those two numbers, but an event weight alone does not establish that generation model. Weak advantages allow $h\approx s$ only after the convention is chosen.</p>
+<p>The lecture draws fitness classes as $1,1+s_0,1+2s_0,\ldots$. We use the additive log coordinate to avoid silently treating repeated relative percentage changes as exact additive raw-fitness changes. The diagram's idea survives: the high-fitness edge lies several increments ahead of the mean. A normalization that labels the current mean as one at each instant is a moving reference. Recording the normalization factors or an absolute comparison is necessary to recover the actual gain over time.</p>
+
+<h2 id="wave">A traveling profile is stationary only in its moving frame <a class="timestamp" href="https://www.youtube.com/watch?v=pOPgo5TeAzk&amp;t=1097">L43 · 18:17</a></h2>
+<p>Let $f(\ell,t)$ describe the frequency density over log fitness, normalized so its integral is one. A steadily translating shape has the form</p>
+\[
+f(\ell,t)=F(\ell-vt),
+\]
+<p>where $F$ is a fixed profile and $v$ is its speed, measured in log-fitness units per generation. Substituting $z=\ell-vt$ into the mean integral gives $\bar\ell(t)=\bar\ell(0)+vt$. Translation preserves centered moments such as variance, while the mean moves. It does not mean that each individual receives the same mutation at the same time.</p>
+<p>In the equal-step cartoon, one advance by $h$ takes a characteristic interval $\tau$, suggesting $v\approx h/\tau$. This relates a mean speed to a typical establishment interval. Actual establishment times fluctuate, class abundances change, and extinction at the trailing edge is stochastic. A perfectly rigid shape on every trajectory is stronger than the model justifies; an approximately stable statistical profile is the useful concept.</p>
+<p>Call the most-fit rare region the <em>nose</em> or leading edge. The bulk contains most cells, while the nose can contain only a few cells with a large advantage over the current mean. In a constant-step model, mutation from the nose creates a previously unoccupied fitter class. Mutations arising behind the nose generally enter already occupied classes. This explains their different leverage in that approximation, not a universal assertion that mutations in common genotypes never matter. Unequal-effect jumps, recombination and changing conditions alter the conclusion.</p>
+
+<h2 id="bulk">Selection in the bulk and mutation at the nose have different roles</h2>
+<p>An original deterministic class model makes the bulk bookkeeping explicit. Let $x_k$ be the frequency of class $k$, let $\ell_k=kh$, and let $\bar\ell=\sum_k x_k\ell_k$. Assume constant class log-growth rates and one-step beneficial mutation at rate $U_b$ per reference generation. On an unbounded sequence of classes, a simple frequency equation is</p>
+\[
+\frac{dx_k}{dt}
+=(\ell_k-\bar\ell)x_k+U_b(x_{k-1}-x_k).
+\]
+<p>The first term implements growth relative to the population mean. The second moves probability from class $k$ to $k+1$. With a properly handled lower boundary, mutation terms telescope and the total frequency remains one. Truncating the upper class range requires explicit treatment of outgoing mutation flux; silently discarding it breaks normalization.</p>
+<p>Differentiate the mean and sum the selection contribution. For constant $\ell_k$, it is $\sum_k x_k(\ell_k-\bar\ell)\ell_k=\operatorname{Var}(\ell)$. The mutation contribution shifts each mutating cell's coordinate by $h$, giving</p>
+\[
+\frac{d\bar\ell}{dt}=\operatorname{Var}(\ell)+U_bh.
+\]
+<p>The equality is exact for this specified deterministic class equation. Its rate units use the reference-generation normalization. It does not claim that all measured fitness changes are explained by variance alone. Time-varying growth rates, epistasis, frequency dependence and other mutation rules add terms or change the objects.</p>
+<p>Nor does this continuous equation by itself predict the finite-population wave speed. It permits positive frequencies far below $1/N$, effectively fractions of one cell. At the nose, those fractional lineages cannot be treated as established competitors. Desai and Fisher's PDF page 7 explains why stochastic treatment there is essential. A deterministic bulk calculation needs a finite-population rule at the edge.</p>
+
+<h2 id="nose">Integrate successful-origin hazard at an exponentially growing edge <a class="timestamp" href="https://www.youtube.com/watch?v=spjPlFQ_YD0&amp;t=660">L44 · 11:00</a></h2>
+<p>Let the lead be $q$ equal increments above the mean, so its current advantage is $Q=qh$. The lecture calls this number of steps $k$; here $q$ avoids confusing it with the general class index. For small positive $Q$, assume an established edge begins at count $n_0\approx1/Q$ and initially grows as $n(t)\approx Q^{-1}e^{Qt}$. Time is numerically measured in reference generations.</p>
+<p>Hold the mean advantage fixed over the next interval as a local approximation, and take a new edge origin's establishment probability to be approximately $Q$. This neglects order-one-step differences between the old and new edge and requires $Q\ll1$. At count $n(t)$, the successful-origin rate is then $U_b n(t)Q$. Its cumulative hazard through time $t$ is</p>
+\[
+\mathcal H(t)=\int_0^t U_b\,\frac{e^{Qu}}{Q}\,Q\,du
+=\frac{U_b}{Q}(e^{Qt}-1).
+\]
+<p>The integration variable $u$ is elapsed time; it is unrelated to the earlier fixation probability $u_i$. Set $\mathcal H(\tau)=1$ as a characteristic establishment-time convention. This yields</p>
+\[
+e^{Q\tau}=1+\frac{Q}{U_b},\qquad
+\tau_{\mathrm{nose}}=\frac{\log(1+Q/U_b)}{Q}.
+\]
+<p>The factor is a ratio $Q/U_b$, not a product. Substituting back into the integral checks that the expected successful-origin count is one. Under a nonhomogeneous Poisson approximation, no establishment by $\tau$ has probability $e^{-1}$, so establishment by then has probability approximately0.632121. A cumulative-hazard-one time is not exactly the mean waiting time. The median instead solves $\mathcal H(t)=\log2$.</p>
+<p>When $Q/U_b\gg1$, the logarithm can be approximated by $\log(Q/U_b)$. Dropping the minus-one term requires this ratio to be large. A large number of steps alone is insufficient. The source's rough leading-edge argument deliberately prioritizes scaling; our retained terms make the approximation and its probability interpretation inspectable.</p>
+
+<h2 id="closure">A second equation matches edge growth to bulk abundance <a class="timestamp" href="https://www.youtube.com/watch?v=spjPlFQ_YD0&amp;t=1185">L44 · 19:45</a></h2>
+<p>As the mean advances one increment every $\tau$, a previously leading class has successive approximate advantages $qh,(q-1)h,\ldots,h$. Multiplying its growth factors over those intervals gives</p>
+\[
+n_{\mathrm{bulk}}\approx\frac1{qh}
+\exp\left[\frac{q(q+1)}2h\tau\right].
+\]
+<p>The arithmetic-sum exponent is exact for integer $q$ under this staircase construction. Using a real-valued $q$ later interpolates a scale relation; it does not create a fractional mutation in a cell. The calculation also treats the shrinking advantage as piecewise constant, rather than solving a full stochastic wave.</p>
+<p>The lecture closes the model by placing about $N/2$ cells in the class when it reaches the bulk. That fraction is not a universal property of fitness distributions. Introduce a chosen bulk fraction $c$, with $0&lt;c&lt;1$, and write $n_{\mathrm{bulk}}\approx cN$. Its value is a closure assumption to test against an assay or a more complete model. Our illustration uses $c=1/2$.</p>
+<p>Taking logarithms and combining with the nose equation gives</p>
+\[
+\frac{q(q+1)}2h\tau=\log(cNqh),\qquad
+\frac{q+1}{2}\log(1+qh/U_b)=\log(cNqh).
+\]
+<p>This scalar equation determines a provisional lead on a selected physical branch. It must satisfy $q&gt;1$, $qh\ll1$ for the small-advantage establishment rule, and enough cells between edge and bulk. A numerical root does not certify those conditions. For the running values it gives $q\approx2.461865$, $\tau\approx172.674487$ generations and $v\approx0.000115825$ log-fitness units per generation. The edge-count scale is about20.31 cells. Because $q$ is only moderately above one, this is a heuristic illustration, not a precision prediction from a large-lead asymptotic formula.</p>
+<p>Desai and Fisher's PDF page 7 matches the mean's motion to nose establishment using related large-lead estimates. Its approximate expressions $q\sim2\log(Nh)/\log(h/U_b)$ and $v\sim2h^2\log(Nh)/[\log(h/U_b)]^2$ emphasize logarithmic dependence on population and mutation supply under their assumptions. The finite-log closure above retains different constants and is not claimed to be their exact solution. Outside the concurrent, weak-step regime, neither approximation should be extrapolated.</p>
+
+<h2 id="code">Solve a declared closure and check both equations</h2>
+<p>The standard-library program bisects a bracket for the scalar residual. It checks the nose integral and bulk equation separately after solving, so a root of the wrong rearrangement would be exposed. The bracket is chosen for this example; failure to change sign raises an error. It prints a heuristic model calculation and has no file or network effects.</p>
+<pre><code class="language-python">import math
+
+
+def residual(q, n, h, mutation, fraction):
+    return ((q + 1) * math.log1p(q * h / mutation) / 2
+            - math.log(fraction * n * q * h))
+
+
+n, h, mutation, fraction = 1e8, 0.02, 1e-5, 0.5
+left, right = 1.0, 20.0
+if residual(left, n, h, mutation, fraction) &gt;= 0:
+    raise ValueError("left bracket must have negative residual")
+if residual(right, n, h, mutation, fraction) &lt;= 0:
+    raise ValueError("right bracket must have positive residual")
+for _ in range(100):
+    middle = (left + right) / 2
+    if residual(middle, n, h, mutation, fraction) &gt; 0:
+        right = middle
+    else:
+        left = middle
+q = (left + right) / 2
+advantage = q * h
+tau = math.log1p(advantage / mutation) / advantage
+hazard = mutation * math.expm1(advantage * tau) / advantage
+bulk = math.exp(q * (q + 1) * h * tau / 2) / advantage
+assert math.isclose(hazard, 1, rel_tol=1e-12)
+assert math.isclose(bulk, fraction * n, rel_tol=1e-12)
+print(f"lead={q:.9f}; interval={tau:.9f}")
+print(f"speed={h / tau:.9f}; edge_count={1 / advantage:.9f}")
+print(f"hazard={hazard:.9f}; bulk_fraction={bulk / n:.9f}")
+</code></pre>
+<p>Actual clean-run output:</p>
+<pre class="output">lead=2.461864743; interval=172.674486896
+speed=0.000115825; edge_count=20.309807899
+hazard=1.000000000; bulk_fraction=0.500000000</pre>
+<p>The root's numerical precision exceeds the accuracy of the biology assumptions. Showing several digits makes the algebra reproducible; it does not imply that an experiment predicts a lead to nine decimal places. A useful next check varies the closure fraction, mutation-effect distribution and edge establishment convention.</p>
+
+<h2 id="exercises">Six exercises with full solutions</h2>
+<section class="exercise"><h3>1. Fix an incorrectly normalized speed</h3><p>An analyst relabels the mean fitness as one in every snapshot and concludes mean fitness is constant. What information has been discarded, and how can the adaptation speed be recovered?</p>
+<details class="solution"><summary>Solution</summary><p>The labels refer to different moving reference multipliers. Constant normalized mean does not imply constant fitness relative to the original reference. Record each reference's relative multiplier, take its logarithm in the same generation convention, and estimate its change per time. In a log-coordinate wave, retain the translation $\bar\ell(t)$; its derivative is $v$. Without those reference factors or external comparisons, absolute gain cannot be reconstructed from normalized shapes alone.</p></details></section>
+<section class="exercise"><h3>2. Check a nose-time quotient</h3><p>Take $Q=0.05$ and $U_b=10^{-5}$. Find the cumulative-hazard-one time, the probability of establishment by that time and the median establishment time under the declared nonhomogeneous Poisson model.</p>
+<details class="solution"><summary>Solution</summary><p>The characteristic time is $\log(1+5000)/0.05\approx170.347864$ generations. Establishment probability there is $1-e^{-1}\approx0.632121$. The median solves $(U_b/Q)(e^{Qt}-1)=\log2$, giving $\log[1+5000\log2]/0.05\approx163.019375$ generations. Neither time is automatically the mean. A product $QU_b$ inside the logarithm fails the integral substitution and reverses the supply dependence.</p></details></section>
+<section class="exercise"><h3>3. Compute a moment without invoking a universal theorem</h3><p>For the specified deterministic class model, current log-fitness variance is0.0004 and $U_b=10^{-5}$, $h=0.02$. Find instantaneous mean increase. State one change that invalidates this complete formula.</p>
+<details class="solution"><summary>Solution</summary><p>The equation gives $d\bar\ell/dt=0.0004+(10^{-5})(0.02)=0.0004002$ per reference-generation time. The direct mutation term is small in this snapshot, although mutation can still be crucial to replenishing future variance at the nose. If class growth rates change with the environment, differentiating their values adds $\sum_k x_k\,d\ell_k/dt$. The variance-plus-step-flux formula then omits part of the total change.</p></details></section>
+<section class="exercise"><h3>4. Diagnose a numerical wave artifact</h3><p>A deterministic simulation retains a fitter class at frequency $10^{-12}$ in a population with $N=10^8$ and lets it grow exponentially. What does this class represent, and why is an accurate ODE solver insufficient?</p>
+<details class="solution"><summary>Solution</summary><p>The represented count is $Nx=10^{-4}$ cells, below one individual. In a finite population that state is not an established genotype. The ODE can amplify this fractional seed into a future dominant lineage while bypassing the probability that no such mutant appeared or that its first carrier was lost. Smaller integration error solves the chosen deterministic equations more accurately; it does not repair their demographic assumption. Use an explicitly stochastic edge or a justified finite-population boundary treatment.</p></details></section>
+<section class="exercise"><h3>5. Identify a closure assumption</h3><p>In the staircase model, replace $c=1/2$ by $c=1/4$, holding $N,h,U_b$ fixed. At a fixed trial lead $q$, which matching term changes and by how much? Does this alter the mutation mechanism?</p>
+<details class="solution"><summary>Solution</summary><p>The right-hand bulk logarithm $\log(cNqh)$ decreases by $\log2$. The nose hazard at fixed $q$ is unchanged because it depends on $qh$ and $U_b$. A newly solved lead generally changes to restore the matching relation. This modifies the chosen abundance at which the edge class is regarded as having entered the bulk; it does not change the one-step mutation mechanism. Sensitivity to this fraction is evidence about approximation robustness, rather than proof of a universal half-population peak.</p></details></section>
+<section class="exercise"><h3>6. Separate traveling shapes from cell histories</h3><p>A fitted frequency profile translates by $h$ over $\tau$ with unchanged centered variance. Does every cell gain a mutation, does every genotype preserve its frequency, and can the original low-fitness class still disappear?</p>
+<details class="solution"><summary>Solution</summary><p>No common per-cell mutation event is implied. Frequencies at fixed fitness coordinates change as the profile moves; the same numerical frequency at a translated coordinate usually refers to a different class. The original low-fitness class can decline and disappear while a new fitter class forms at the other edge. Translation is a description of the distribution's statistics, not a deterministic assignment of each cell's ancestry. Stable centered variance is compatible with changing membership and increasing mean.</p></details></section>
+
+<h2 id="limits">The wave is a model of a regime, not a law of every culture</h2>
+<p>The leading-edge calculation connects small numbers, large reproductive leverage and mutation supply. Its closure makes equal effects, a stable environment, fixed size, weak advantages and lack of recombination explicit. Real data can reject any of those premises. In particular, a fitness landscape with diminishing returns need not support indefinite translation at constant speed, and a spatial invasion is a different wave from translation through fitness classes. The remaining lectures move toward experiments that test such distinctions.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-12-mutation-supply-and-overlapping-sweeps.html">Previous available chapter</a><a href="index.html">Lecture index</a><a rel="next" href="chapter-14-sequence-comparisons-and-experimental-design.html">Next available chapter</a></nav></main></div>
+<footer class="site-footer">Independent study notes. NPTEL IIT Bombay course recordings supply the topic sequence; added explanations and teaching constructions are separately attributed. Complete local reading edition; source and validation boundaries are recorded in this repository.</footer></body></html>

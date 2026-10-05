@@ -1,0 +1,8 @@
+* text=auto
+# Authored HTML and Python companions have exact byte digests.
+*.html -text
+*.json text eol=lf
+*.py -text
+*.css text eol=lf
+*.js text eol=lf
+*.png binary

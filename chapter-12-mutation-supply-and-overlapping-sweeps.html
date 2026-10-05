@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="0df88835d601e86991e3c28525de3dfcb11cd8d39874a0396f088b3051780156"><title>Mutation supply, waiting times, and overlapping sweeps · Introduction to Evolutionary Dynamics</title>
+<link rel="stylesheet" href="assets/book.css"><script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="index.html">Introduction to Evolutionary Dynamics · January 2025</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main">
+<div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>Mutation supply, waiting times, and overlapping sweeps</h1>
+<p class="lead">Two cultures can have the same selective advantage for a new mutant and evolve in different ways. One waits many generations between successful origins. The other generates new competitors while earlier lineages are still spreading. The relevant comparison is between a supply clock and a sweep clock.</p>
+<p>Our running construction uses a fixed haploid culture of $N=100{,}000$ cells, resident $A$ and mutant $B$. Haploid means one genome set per cell. A beneficial origin has relative reproductive weight $r=1.05$ in the Moran model already derived. We compare an illustrative beneficial mutation probability $U_b=10^{-8}$ per division with $U_b=10^{-5}$. These are chosen model inputs, not measured bacterial rates. Keeping the population and advantage fixed exposes what changing mutation supply alone does.</p>
+<p class="source-note">Complete local machine transcripts of <a href="https://www.youtube.com/watch?v=8puNqWijeCc">lecture 39</a>, <a href="https://www.youtube.com/watch?v=JtGx7Z6pgSc">lecture 40</a>, <a href="https://www.youtube.com/watch?v=Jgb0lktzfs4">lecture 41</a>, and <a href="https://www.youtube.com/watch?v=HOKUnqWph78">lecture 42</a> were read sequentially. They supply the two timescale regimes, population/fitness diagrams, critical-count intuition, competing lineages and beneficial mutation supply. The Poisson and observation calculations, finite threshold tolerance, deterministic sweep surrogate and code below are original elaborations. Claims about typical mutation rates or sugar adaptation are not inferred from their illustrative numbers.</p>
+
+<h2 id="clocks">The two clocks answer different questions <a class="timestamp" href="https://www.youtube.com/watch?v=8puNqWijeCc&amp;t=1060">L39 · 17:40</a></h2>
+<p>An <em>isogenic</em> starting population consists of cells with the same genotype at the sites relevant to the experiment. A beneficial mutation's appearance first creates a rare second type. The lecture distinguishes a waiting time, $\tau_{\mathrm{wait}}$, until a beneficial origin that survives its early stochastic phase, and a subsequent spread time, $\tau_{\mathrm{sweep}}$. A <em>selective sweep</em> is the rise of an advantageous inherited variant toward high frequency, potentially carrying linked variants with it.</p>
+<p>Neither time should be confused with the preceding chapter's unconditional mean time until a mutant is either lost or fixed. A sweep duration describes a successful or established lineage. Most new origins do not become such lineages. Establishment also needs a declared threshold, since finite stochastic processes do not become perfectly deterministic at a magic count.</p>
+<p>If the wait is much longer than the spread, successful lineages tend to arise in succession. After one largely replaces its resident, the next origin occurs on the new background. If the wait is shorter, several adaptive lineages can be present before any one completes a sweep. These are regimes of one biological question under different scales, rather than two different definitions of selection.</p>
+
+<h2 id="graphs">Read counts, fitness distributions and ancestry separately <a class="timestamp" href="https://www.youtube.com/watch?v=JtGx7Z6pgSc&amp;t=76">L40 · 1:16</a></h2>
+<p>A histogram with fitness on the horizontal axis and cell number on the vertical axis is a snapshot. A bar's horizontal position describes its fitness in the declared assay; its height describes abundance. Time is not an axis of that single plot. A sequence of such histograms can show a new one-cell class, its expansion, and the old class's loss.</p>
+<p>A stacked count diagram instead has time horizontally and total count vertically. At a given time, the thickness of a band's vertical cross-section gives that genotype's abundance. The height of a boundary line by itself is a cumulative count of bands below it, not generally one genotype's count. Divide each band thickness by $N$ to obtain a frequency. Every vertical cross-section sums to $N$.</p>
+<p>An ancestral genotype can disappear while one of its mutations persists. If a genotype carrying mutation $M_1$ produces a descendant with $M_1$ and $M_2$, the single-mutant genotype may later vanish. That does not mean $M_1$ was lost: the double-mutant descendants still carry it. A genotype-frequency plot and a mutation-frequency plot therefore need not show the same disappearance.</p>
+<p>Finite sampling adds a further distinction between what exists and what is observed. If a genotype has true frequency $x$ and $m$ cells are sampled independently with replacement, the probability it is missed is $(1-x)^m$. One carrier in our $100{,}000$-cell culture has $x=10^{-5}$; even a sample of 1000 cells misses it with probability about 0.99005. “One genotype detected” does not establish that exactly one genotype exists. Real sequencing and colony assays introduce their own detection errors beyond this ideal sampling calculation.</p>
+
+<h2 id="threshold">A critical count is a scale, not a hard boundary <a class="timestamp" href="https://www.youtube.com/watch?v=JtGx7Z6pgSc&amp;t=1693">L40 · 28:13</a></h2>
+<p>The lectures introduce a count of order $1/s$ beyond which selection can dominate early stochastic effects, where $s=r-1$ is a small positive relative reproductive advantage. For $s=0.05$ this scale is about 20 cells. It identifies a crossover in a specified stochastic model, not a point after which all paths follow one exact curve.</p>
+<p>The finite Moran result quantifies why that qualification matters. In a large population, the chance of subsequent loss from count $i$ is approximately $r^{-i}$. At $r=1.05$ and $i=20$, that is approximately 0.376889. A count of order $1/s$ is not enough to guarantee 99% survival. For a chosen subsequent-loss tolerance $\varepsilon$, a suitable large-population threshold is</p>
+\[
+L\geq\frac{\log(1/\varepsilon)}{\log r}.
+\]
+<p>With $\varepsilon=0.01$ the first integer threshold is 95. For finite $N$, use the exact loss probability $1-u_L$ rather than dropping $r^{-N}$. This is an operational confidence threshold for this model. A common catastrophe, changing environment or new competitors can invalidate the single-lineage calculation even after that count is reached.</p>
+
+<h2 id="supply">Count beneficial origins in divisions, not in vague time <a class="timestamp" href="https://www.youtube.com/watch?v=HOKUnqWph78&amp;t=644">L42 · 10:44</a></h2>
+<p>Let $U_b$ be the probability that a division produces a new beneficial origin in the stated genotype and environment. Count a generation here as a period with $N$ divisions in a fixed-size approximation. If division events independently have probability $U_b$, the number of beneficial origins in that period is binomial with mean $NU_b$. That product is an expected number, rather than a count that must be realized in every generation.</p>
+<p>A total mutation probability, $\mu$, includes mutations with beneficial, neutral and deleterious effects under a stated classification. If the categories are disjoint and exhaustive, their probabilities sum to $\mu$. The beneficial part $U_b$ need not be a constant fraction across environments or genetic backgrounds. A per-nucleotide rate also cannot be substituted for a per-genome probability without a specified target size and mutation model.</p>
+<p>The lecture uses total mutation probability near $10^{-3}$ per division and a hypothetical one-percent beneficial fraction, yielding $U_b=10^{-5}$. Here that is an illustrative construction. It does not establish a species-wide beneficial rate. Nor does ignoring deleterious origins in an adaptive model mean their fixation probability is mathematically zero: finite positive-fitness variants can occasionally fix, as the earlier finite formula shows.</p>
+<p>Suppose an isolated origin succeeds with probability $p$, independently of its arrival time and other origins. Thinning a homogeneous Poisson origin process of rate $NU_b$ per generation gives a Poisson successful-origin process of rate</p>
+\[
+\lambda=NU_b p,\qquad
+\Pr(W&gt;t)=e^{-\lambda t},\qquad
+\mathbb E[W]=\frac1\lambda.
+\]
+<p>The waiting random variable $W$ is measured in generations, but can take noninteger values because origin events happen continuously within a generation. To see the thinning step, divide a small time interval $dt$ into potential origin opportunities. The chance of an origin followed by success is $NU_b\,dt\,p+o(dt)$. Independent increments give survival probability $e^{-\lambda t}$. Integrating that survival function gives the mean wait. The exponential distribution additionally has variance $1/\lambda^2$; a mean is not a predictable deadline.</p>
+<p>At our population size and $r=1.05$, finite-size corrections to the isolated one-copy probability are negligible, so use $p\approx1/21$. The low mutation supply gives $\lambda=1/21000$ per generation and mean wait 21,000 generations. The higher supply gives $\lambda=1/21$ and mean wait 21 generations. Increasing supply by 1000 changes this provisional isolated-success waiting rate by 1000. Whether those successes stay isolated is a separate consistency check.</p>
+
+<h2 id="resolution">Whole-generation observation changes the waiting statistic <a class="timestamp" href="https://www.youtube.com/watch?v=HOKUnqWph78&amp;t=1401">L42 · 23:21</a></h2>
+<p>If success opportunities occur only at $N$ independent division trials per generation and observations are made after each whole period, the chance of at least one successful origin in a period is</p>
+\[
+q=1-(1-U_b p)^N.
+\]
+<p>The number of observed periods to the first nonempty one is geometric, with mean $1/q$, counting the successful period. For small $NU_b p$, $q\approx NU_b p$ and this mean agrees approximately with $1/\lambda$. When many origins arrive in one period, the coarse waiting count cannot average below one period. A continuous event-time wait can still be much shorter than a generation.</p>
+<p>Thus a lecture illustration of 20 established origins per generation can consistently give a continuous mean interval of 0.05 generations, while the mean first-positive observation at one-generation resolution is essentially one generation. These are two different measurement protocols. Neither requires twenty origins to occur at fixed equally spaced instants.</p>
+
+<h2 id="sweep">A deterministic sweep surrogate has stated endpoints</h2>
+<p>To compare clocks, introduce an original deterministic approximation after establishment. Let $x$ be the mutant fraction, and let $\sigma&gt;0$ be its constant growth-rate difference per generation in a two-type abundance model:</p>
+\[
+\frac{dx}{dt}=\sigma x(1-x).
+\]
+<p>The rate $\sigma$ has units of inverse generations, while the Moran reproductive excess $s$ is dimensionless. We choose $\sigma=0.05$ per generation as a separate illustrative parameter. Equating it numerically with $s$ is a modeling choice, not a conversion proved by the fixation formula. A physical or event clock must be supplied to compare a particular culture.</p>
+<p>Integrate the log odds from $x_0=L/N$ to $x_1=1-L/N$. The resulting duration is</p>
+\[
+\tau_{\mathrm{sweep}}
+=\frac{\log[x_1/(1-x_1)]-\log[x_0/(1-x_0)]}{\sigma}
+=\frac{2}{\sigma}\log\frac{N-L}{L}.
+\]
+<p>This interval excludes both the early one-copy phase and the final rare-resident phase. The differential equation reaches exact frequency one only asymptotically. Calling this duration a time to exact finite-population fixation would be incorrect. A stochastic endpoint calculation is needed for the actual last resident's loss.</p>
+<p>With $N=100{,}000$, $L=95$ and $\sigma=0.05$, the duration is approximately 278.324 generations. The order-of-magnitude scale is $(1/\sigma)\log(N/L)$ for the rise to a substantial frequency, and roughly twice that for the symmetric near-endpoint interval used here. Threshold choice and sweep definition account for factors of two that might otherwise look contradictory.</p>
+
+<h2 id="overlap">Test the isolated-sweep assumption before predicting adaptation <a class="timestamp" href="https://www.youtube.com/watch?v=Jgb0lktzfs4&amp;t=319">L41 · 5:19</a></h2>
+<p>Define an overlap index $\mathcal I=\lambda\tau_{\mathrm{sweep}}$. In the provisional constant-rate Poisson construction, it is the expected number of further isolated-success candidates arriving during one sweep. The probability of at least one such arrival is $1-e^{-\mathcal I}$. When $\mathcal I\ll1$, separated sweeps are plausible. When it is large, the isolated-origin probability used to construct $\lambda$ becomes a warning diagnostic rather than an accurate success rate in the competing population.</p>
+<p>Our low-supply case gives $\mathcal I\approx0.013254$; the high-supply case gives approximately 13.2535. The first is consistent with rare overlaps. The second makes independent completed sweeps untenable. The expected waits and durations are model estimates, and the diagnostic does not identify which competing genotype wins.</p>
+<p>In an ideal cycle that alternates a wait of mean $1/\lambda$ and a sweep of fixed duration $\tau_{\mathrm{sweep}}$, the long-run fraction of time in the sweep phase is $\tau_{\mathrm{sweep}}/(1/\lambda+\tau_{\mathrm{sweep}})$. This helps interpret the lecture's snapshot question in the separated regime. It is not the fraction of time with any genetic diversity: unsuccessful lineages and neutral variants can coexist during the nominal waiting phase, and the detection threshold can conceal them.</p>
+
+<h2 id="interference">Competing clones and nested mutations are different mechanisms <a class="timestamp" href="https://www.youtube.com/watch?v=Jgb0lktzfs4&amp;t=1291">L41 · 21:31</a></h2>
+<p>A <em>clone</em> is a lineage reproducing without the recombination that would ordinarily mix the variants being tracked. If a beneficial mutation arises on the resident background while another beneficial lineage is spreading, the two clones can compete. One mutation can be lost because its whole lineage loses, despite its advantage over the original ancestor. This competition is commonly called clonal interference.</p>
+<p>A second mechanism is a further mutation arising inside an already-beneficial lineage. The resulting double mutant inherits its parent's mutation as well as the new one. It can replace the single-mutant genotype while preserving the first mutation. The course's broad competing-genotype discussion includes both mechanisms. In <a href="https://www.desai-lab.com/publications/PDFs/desaifisher07.pdf">Desai and Fisher (2007)</a>, PDF pages 2–3 and Figure 1, the authors distinguish competition between separate clones from accumulation of multiple mutations within a clone. Their PDF page 5 also defines fitness as log growth rate, so their additive $s$ is not silently substituted for this book's Moran reproductive weight.</p>
+<p>Under deterministic multi-type growth, let genotype $a$ have fixed growth rate $g_a$ and frequency $x_a$, with $\sum_a x_a=1$. Its frequency equation is $dx_a/dt=x_a(g_a-\bar g)$, where $\bar g=\sum_a x_a g_a$. It rises when its rate exceeds the current mean, not merely when it exceeds the original ancestor's rate. This follows by differentiating its abundance divided by total abundance. Mean fitness and the relative ranking relevant to growth can therefore change as competitors become common.</p>
+<p>For an original three-type snapshot with rates $0,0.05,0.10$ per generation and frequencies $0.2,0.6,0.2$, the mean is 0.05. Frequency derivatives are $-0.01,0,+0.01$ per generation. The middle genotype has an advantage over the ancestor but is momentarily stationary relative to the population. Its future direction can change when the mean changes. A fitness histogram alone does not encode the ancestry needed to distinguish independent and nested origins.</p>
+
+<h2 id="code">Calculate supply, sweep duration and the overlap warning</h2>
+<p>This standard-library program evaluates the original construction. It prints continuous waiting times and overlap diagnostics for the two mutation supplies, plus the coarse-period waiting count. Inputs require a finite positive rate and an interior threshold; the fixed values below satisfy those domains. It does not simulate genetics, read files or infer empirical parameters.</p>
+<pre><code class="language-python">import math
+
+
+def clocks(n, threshold, sigma, mutation_probability, success):
+    if type(n) is not int or n &lt;= 0:
+        raise ValueError("population must be a positive integer")
+    if type(threshold) is not int or not 0 &lt; 2 * threshold &lt; n:
+        raise ValueError("threshold must be an interior integer count")
+    inputs = (sigma, mutation_probability, success)
+    if any(type(value) not in (int, float) or not math.isfinite(value)
+           for value in inputs):
+        raise ValueError("rates and probabilities must be finite numbers")
+    if sigma &lt;= 0:
+        raise ValueError("growth-rate difference must be positive")
+    if not 0 &lt; mutation_probability &lt;= 1 or not 0 &lt; success &lt;= 1:
+        raise ValueError("probabilities must be in (0, 1]")
+    rate = n * mutation_probability * success
+    sweep = 2 * math.log((n - threshold) / threshold) / sigma
+    if not math.isfinite(rate) or rate &lt;= 0:
+        raise ValueError("successful-origin rate exceeds numeric range")
+    if not math.isfinite(sweep) or sweep &lt;= 0:
+        raise ValueError("sweep duration exceeds numeric range")
+    overlap = rate * sweep
+    probability = -math.expm1(-overlap)
+    product = mutation_probability * success
+    per_period = 1 if product == 1 else -math.expm1(
+        n * math.log1p(-product))
+    if per_period == 0:
+        raise ValueError("per-period probability underflows")
+    return 1 / rate, sweep, overlap, probability, 1 / per_period
+
+
+for mutation in (1e-8, 1e-5):
+    values = clocks(100000, 95, 0.05, mutation, 1 / 21)
+    wait, sweep, overlap, probability, periods = values
+    print(f"U_b={mutation:g}; wait={wait:.3f}; sweep={sweep:.3f}")
+    print(f"overlap={overlap:.6f}; any_overlap={probability:.6f}")
+    print(f"whole_period_wait={periods:.6f}")
+</code></pre>
+<p>Actual output from a clean execution:</p>
+<pre class="output">U_b=1e-08; wait=21000.000; sweep=278.324
+overlap=0.013254; any_overlap=0.013166
+whole_period_wait=21000.499999
+U_b=1e-05; wait=21.000; sweep=278.324
+overlap=13.253520; any_overlap=0.999998
+whole_period_wait=21.503963</pre>
+<p>The calculation uses an isolated-lineage success probability as a provisional input. For large overlap it diagnoses that input's failure in a many-lineage population; it does not prove a high-supply adaptation speed. The full distribution of beneficial effects and background-dependent success can alter both supply and competition.</p>
+
+<h2 id="exercises">Six exercises with full solutions</h2>
+<section class="exercise"><h3>1. Mutation supply and successful-origin supply</h3><p>A fixed population has $N=10^6$, $U_b=10^{-7}$ per division and isolated success probability $p=0.02$. Under the continuous Poisson approximation, compute the expected beneficial origins per generation, successful candidates per generation, mean wait and probability of a wait longer than 500 generations.</p>
+<details class="solution"><summary>Solution</summary><p>Origin supply is $NU_b=0.1$ per generation. Success supply is $\lambda=0.1(0.02)=0.002$ per generation. Mean wait is 500 generations and tail probability at that time is $e^{-1}\approx0.367879$. A mean wait of 500 does not mean a majority of waits exceed 500; the median is $\log2/0.002\approx346.574$. Independence and constant rates are required.</p></details></section>
+<section class="exercise"><h3>2. A one-generation instrument</h3><p>A continuous successful-origin Poisson process has rate 20 per generation. What is the mean exact waiting time, and what is the mean number of whole generations until the first positive observation?</p>
+<details class="solution"><summary>Solution</summary><p>The exact mean wait is $1/20=0.05$ generations. Independent Poisson increments make the per-generation positive probability $q=1-e^{-20}$, so the first-positive period count has mean $1/q\approx1.00000000206$. The instrument rounds events into periods; it does not slow down the underlying process. This calculation uses the Poisson observation model, while the preceding division-trial formula has $q=1-(1-U_b p)^N$.</p></details></section>
+<section class="exercise"><h3>3. Fix the critical-count claim</h3><p>A new lineage has $r=1.05$ in a very large Moran population. Someone claims reaching 20 cells guarantees survival. Estimate its later-loss probability and find a threshold for at most 1% later loss.</p>
+<details class="solution"><summary>Solution</summary><p>Later loss is approximately $1.05^{-20}\approx0.376889$, which is substantial. For tolerance0.01 require $L\geq\log100/\log1.05$; the first integer is95. The $1/s=20$ count is a crossover scale, not a guarantee. At finite $N$, use $(r^{-L}-r^{-N})/(1-r^{-N})$, and competing lineages or environmental changes can invalidate the isolated Moran model.</p></details></section>
+<section class="exercise"><h3>4. An advantage can stop raising frequency</h3><p>Use the three-type snapshot with rates $0,0.05,0.10$ and frequencies $0.2,0.6,0.2$. Calculate the mean, each derivative and the instantaneous rate of change of the mean when no new mutation occurs.</p>
+<details class="solution"><summary>Solution</summary><p>The mean is0.05. Derivatives are $0.2(0-0.05)=-0.01$, $0.6(0.05-0.05)=0$ and $0.2(0.10-0.05)=0.01$; they sum to zero. With constant growth rates, $d\bar g/dt=\sum_a x_a(g_a-\bar g)^2=0.001$ in squared inverse-generation units. This follows by differentiating $\sum_a x_a g_a$. If growth rates depend on time or environment, their derivatives add another term, so the variance identity alone no longer gives the complete change.</p></details></section>
+<section class="exercise"><h3>5. Predict a missed lineage</h3><p>One lineage is present at frequency0.001. How many independent with-replacement cell samples are needed for at least95% probability of detecting it? What assumptions limit this calculation?</p>
+<details class="solution"><summary>Solution</summary><p>Miss probability is $(0.999)^m$. Require it to be at most0.05, giving $m\geq\log0.05/\log0.999\approx2994.234$. The minimum integer is2995. Samples must be independent and must identify the genotype correctly. Sampling without replacement changes the law, and sequencing depth with amplification bias is not automatically equivalent to independent cell sampling.</p></details></section>
+<section class="exercise"><h3>6. Classify an ancestry diagram</h3><p>Mutation $M_1$ appears on the original background. Before its lineage fixes, one descendant acquires $M_2$, while a different resident independently acquires $M_3$. The final population carries $M_1$ and $M_2$ but not $M_3$. Which genotype disappeared, which mutations persisted, and which two concurrent mechanisms occurred?</p>
+<details class="solution"><summary>Solution</summary><p>The original, the $M_1$-only and the $M_3$ genotypes may all be absent at the endpoint; the endpoint itself establishes their absence under the stated no-other-genotype description. $M_1$ persisted in the double mutant even though its single-mutant genotype disappeared. $M_2$ also persisted and $M_3$ did not. Nested accumulation created $M_1M_2$, while independent $M_3$ competed with the $M_1$ family. A mutation-frequency trace cannot by itself reveal all genotype ancestry; linked genotype measurements are needed to reconstruct it.</p></details></section>
+
+<h2 id="forward">The distribution now becomes the object of study</h2>
+<p>Supply and sweep clocks determine when a single-lineage description stops being self-consistent. Once competing and nested origins coexist, the population has a distribution of fitness values rather than one resident and one mutant. The next chapter asks how mutation replenishes its high-fitness edge while selection moves its bulk.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-11-beneficial-mutations-and-fixation.html">Previous available chapter</a><a href="index.html">Lecture index</a><a rel="next" href="chapter-13-traveling-waves-of-adaptation.html">Next available chapter</a></nav></main></div>
+<footer class="site-footer">Independent study notes. NPTEL IIT Bombay course recordings supply the topic sequence; added explanations and teaching constructions are separately attributed. Complete local reading edition; source and validation boundaries are recorded in this repository.</footer></body></html>

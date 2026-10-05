@@ -1,0 +1,210 @@
+{
+  "checked_at_utc": "2026-10-05T18:04:45.320653+00:00",
+  "scope": "Exact authored bodies independently reviewed and locally checked",
+  "accepted_chapters": 20,
+  "expected_chapters": 20,
+  "chapters": [
+    {
+      "chapter": 1,
+      "file": "chapter-01-the-origin-of-evolutionary-thinking.html",
+      "title": "The origin of evolutionary thinking",
+      "accepted_body_sha256": "fdec4d8af70426603092892ccc46e111ef84965d3ad06d3a508e1f961d2312d7",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 2,
+      "file": "chapter-02-natural-selection-and-ecological-context.html",
+      "title": "Natural selection, adaptation, and ecological context",
+      "accepted_body_sha256": "4cd84baba89d9a0dd31ae543c4b05e606a77b4f4e9a7c182a673b847cc15ab69",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 3,
+      "file": "chapter-03-molecular-biology-and-the-scales-of-evolution.html",
+      "title": "Molecular biology and the scales of evolution",
+      "accepted_body_sha256": "ede6c521c6fcc1c751b49e99192842474ad16f265288c79bcdc576c4141173cb",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 4,
+      "file": "chapter-04-microbial-growth-mutation-and-reproduction.html",
+      "title": "Microbial growth, mutation, and reproduction",
+      "accepted_body_sha256": "cc4f8b2820ed73d81f2e44f8db6e3b4aadc0864582026152c94bc4ccca4059ee",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 5,
+      "file": "chapter-05-batch-growth-and-fitness.html",
+      "title": "Batch growth and what fitness measures",
+      "accepted_body_sha256": "7048f70b2728f4074407334ee95897a9c49dfdc3804e69e00fe1aefd29fe5746",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 6,
+      "file": "chapter-06-continuous-culture-and-selection.html",
+      "title": "Continuous culture and selection relative to the mean",
+      "accepted_body_sha256": "4fc049a94b423b14659dbf19d250f04e98162b76246f76e53147a1ca963c032d",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 7,
+      "file": "chapter-07-distributions-landscapes-and-epistasis.html",
+      "title": "Distributions, landscapes, and epistasis",
+      "accepted_body_sha256": "27b3ac6684abfcf475c2da7da60255ca117d0d088f5d89739d540b0179e6c7c5",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 8,
+      "file": "chapter-08-experimental-landscapes-and-accessibility.html",
+      "title": "Experimental landscapes and evolutionary accessibility",
+      "accepted_body_sha256": "6e770626bb700b25b4de6ec46580f4d030f96495acbf7a44d8af5aeabd9e2243",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 9,
+      "file": "chapter-09-chance-and-the-loss-of-diversity.html",
+      "title": "Chance, lineage survival, and the loss of diversity",
+      "accepted_body_sha256": "00ba4ad095102428c86f906c1bd622755549787da6e913544ce7aa38a9965c35",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 10,
+      "file": "chapter-10-moran-process-and-neutral-fixation.html",
+      "title": "The Moran process and the fate of a neutral lineage",
+      "accepted_body_sha256": "7b2360557bd7855eb26bc71d9018a0068af166f96d5337ee233c8bbf27ba4d5b",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 11,
+      "file": "chapter-11-beneficial-mutations-and-fixation.html",
+      "title": "Why most beneficial mutations are lost",
+      "accepted_body_sha256": "732df0ac2fac17d68a21f12ee4605e242a79bd76a31e90ffcf7b5415ac277cdc",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 12,
+      "file": "chapter-12-mutation-supply-and-overlapping-sweeps.html",
+      "title": "Mutation supply, waiting times, and overlapping sweeps",
+      "accepted_body_sha256": "0df88835d601e86991e3c28525de3dfcb11cd8d39874a0396f088b3051780156",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 13,
+      "file": "chapter-13-traveling-waves-of-adaptation.html",
+      "title": "A traveling wave in fitness space",
+      "accepted_body_sha256": "65f6ae62d71a8c7e759b0a854848a12f222dbc3aa4065ec937d4ec258d689ef7",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 14,
+      "file": "chapter-14-sequence-comparisons-and-experimental-design.html",
+      "title": "Sequence comparisons and the design of evolution experiments",
+      "accepted_body_sha256": "5105e1c4fb3331e53f45c05e42467fd52de4c2a2f7e0fe7f8542e49f5eeb50f0",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 15,
+      "file": "chapter-15-experimental-platforms-and-the-mega-plate.html",
+      "title": "Experimental platforms and the MEGA-plate",
+      "accepted_body_sha256": "a6ba3e656f435f3b6c5363279499ca8e83aaca85c5b64282a7753a77b69ff5ad",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 16,
+      "file": "chapter-16-long-term-evolution-and-fitness-trajectories.html",
+      "title": "Long-term evolution and fitness trajectories",
+      "accepted_body_sha256": "0c74328d715be608b94a6e24909f13610aad99b5b7790072a4323631d62e88d6",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 17,
+      "file": "chapter-17-mutation-rates-and-landscape-peaks.html",
+      "title": "Mutation rates, future adaptation, and landscape peaks",
+      "accepted_body_sha256": "3d1ab9ce996bf7c22a0eab86add0a88bd9ecf67ec4780762614e7239a4999bcf",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 18,
+      "file": "chapter-18-innovation-selection-and-historical-contingency.html",
+      "title": "Innovation, selection, and historical contingency",
+      "accepted_body_sha256": "87bb43549735d35c5185e88bc263ba37f25f593fc909b2f1db28d71a0c683c31",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 19,
+      "file": "chapter-19-multicellularity-and-diversification.html",
+      "title": "Multicellularity and diversification",
+      "accepted_body_sha256": "35cc078178eee09d9a31d6458f41674cc03884f326d09c00acd6302a94307f05",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    },
+    {
+      "chapter": 20,
+      "file": "chapter-20-synonymous-fitness-and-mutation-accumulation.html",
+      "title": "Synonymous fitness effects, mutation accumulation, and the limits of a lineage model",
+      "accepted_body_sha256": "1b46681c4b23df6cf0b4333080f286a89e1ed4a3466f859463802b507996502f",
+      "scientific_review": "independently accepted; zero blocking findings",
+      "worked_solutions": 6,
+      "python_listings": 1,
+      "reader": "offline desktop and mobile checks passed"
+    }
+  ],
+  "human_accessibility": "not performed",
+  "complete_course_review": "independently accepted; zero blocking findings"
+}

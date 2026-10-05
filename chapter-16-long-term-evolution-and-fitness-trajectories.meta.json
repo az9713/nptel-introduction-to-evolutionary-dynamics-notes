@@ -1,0 +1,255 @@
+{
+  "chapter_order": 16,
+  "title": "Long-term evolution and fitness trajectories",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 50,
+      "video_id": "A6sJe4TE3_c",
+      "duration": 1634.141,
+      "playlist_reported_duration": 1635,
+      "selected_transcript_media_duration": 1634.1333125,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": "Systran/faster-whisper-small.en",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "fc5fd8f2b23db212a24d54a1f2f6f89d07ce5e9fae2346c7c7cf8b8f93d45b41",
+      "readable_transcript_sha256": "79cf4343e3eca4702192de4accd0f2b930ea18b8195ca3a37eeba4b31613bc2e",
+      "selected_transcript_first_start": 1.17,
+      "selected_transcript_last_end": 1604.75,
+      "selected_transcript_endpoint_gap": 29.391000000000076,
+      "transcript_reading": "Complete selected local machine transcript read sequentially before drafting; no publisher caption track was acquired.",
+      "input_media_sha256": "3222d3482dbf9af6f8b375edcfbec7678ca3b964a3e814135b8702c329e6ec40",
+      "input_media_type": "audio",
+      "audio_sha256": "3222d3482dbf9af6f8b375edcfbec7678ca3b964a3e814135b8702c329e6ec40",
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Complete available selected machine transcripts read sequentially through final speech. Exact endpoints and uncovered final gaps independently recorded; full audiovisual review/continuous listening not claimed."
+    },
+    {
+      "lecture_number": 51,
+      "video_id": "MpaCS2kRxTE",
+      "duration": 1720.101,
+      "playlist_reported_duration": 1721,
+      "selected_transcript_media_duration": 1720.0853125,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": "Systran/faster-whisper-small.en",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "68855dc9ec1239b1be36228daf2cbd2e56948f2cda5b160e56cd9d96c5fee4ac",
+      "readable_transcript_sha256": "20289bf4922cd0f70cec2ffcd35ff7747c46549b76f15cc5767ae7f69612d0ee",
+      "selected_transcript_first_start": 1.17,
+      "selected_transcript_last_end": 1690.51,
+      "selected_transcript_endpoint_gap": 29.591000000000122,
+      "transcript_reading": "Complete selected local machine transcript read sequentially before drafting; no publisher caption track was acquired.",
+      "input_media_sha256": "f466c9bf8e5ebb2c82b33b55405acba4b09ca5c23a5b6de60a86f6c7ecffe8cd",
+      "input_media_type": "audio",
+      "audio_sha256": "f466c9bf8e5ebb2c82b33b55405acba4b09ca5c23a5b6de60a86f6c7ecffe8cd",
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Complete available selected machine transcripts read sequentially through final speech. Exact endpoints and uncovered final gaps independently recorded; full audiovisual review/continuous listening not claimed."
+    }
+  ],
+  "sections": [
+    {
+      "section": "Environmental change and adaptation have competing time scales",
+      "video_id": "A6sJe4TE3_c",
+      "duration": 1634.141,
+      "start": 1.17,
+      "end": 633.84,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Recap abrupt versus gradual challenge, ecological change motivation and horizontal DNA transfer.",
+      "teaching_construction": "Finite noncrossing not impossibility, no unsupported extinction percentage, adaptation/demography time scales and specified routes.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Dallinger's experiment demonstrates tolerance change, with historical limits",
+      "video_id": "A6sJe4TE3_c",
+      "duration": 1634.141,
+      "start": 798.0,
+      "end": 1107.0,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Historical temperature experiment and schematic trade-off.",
+      "teaching_construction": "Separate physiological change from genomic inference and design common-passage reconstruction.",
+      "research_extension": "Original1887 pp190–199 read; actual196,198,199 scans viewed to repair badOCR. Three monads and60°F→158°F rather than bacterial25°C comparison. Return60°Fdeath actualreport.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "A recoverable ancestor turns a culture history into a comparative experiment",
+      "video_id": "A6sJe4TE3_c",
+      "duration": 1634.141,
+      "start": 633.84,
+      "end": 798.0,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Introduction to LTEE/history/replicate experiment.",
+      "teaching_construction": "No unverified current generation/custody assertion; historical scopes declared.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "A recoverable ancestor turns a culture history into a comparative experiment",
+      "video_id": "A6sJe4TE3_c",
+      "duration": 1634.141,
+      "start": 1107.0,
+      "end": 1604.75,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Daily dilution and12populations, medium, archive/research prospects.",
+      "teaching_construction": "Marker neutrality conditional, archive versus clone, log2doubling and dailycycle physiology.",
+      "research_extension": "LenskiTravisano1994 actual Methods6809read for10mL1:10037°C/aeration/glucose/archives/acclimation.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "A recoverable ancestor turns a culture history into a comparative experiment",
+      "video_id": "MpaCS2kRxTE",
+      "duration": 1720.101,
+      "start": 1.17,
+      "end": 198.0,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Protocol recap/mutation populations.",
+      "teaching_construction": "Population doublings not fixed lineage depth, evolution replicate versus technical replicate.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Competition measures realized reproductive performance",
+      "video_id": "MpaCS2kRxTE",
+      "duration": 1720.101,
+      "start": 198.0,
+      "end": 335.52,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Growth rate as proxy, competing variants.",
+      "teaching_construction": "Operational ratio of realized Malthusian log expansions, frequency identity, finite positive reference condition.",
+      "research_extension": "LenskiTravisano1994 actual competition Methods6809; no conflation with maximum exponential rate.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Parallel trajectories can coexist with persistent divergence",
+      "video_id": "MpaCS2kRxTE",
+      "duration": 1720.101,
+      "start": 335.52,
+      "end": 904.43,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Plot/culturemean trajectory, deceleration and parallel replicates.",
+      "teaching_construction": "Repeatable response not identical molecular or fitness endpoint; no inevitable single fixation; sampling resolution.",
+      "research_extension": "LenskiTravisano1994 actual6810–6811 and actualFigures5–7 inspected.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "A declining slope does not establish a finite fitness ceiling",
+      "video_id": "MpaCS2kRxTE",
+      "duration": 1720.101,
+      "start": 904.43,
+      "end": 973.23,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Question why fitness gains slow.",
+      "teaching_construction": "Derive hyperbolic versus power-law limits/derivatives/Taylor matching and withheld forecast distinction.",
+      "research_extension": "Wiser2013 full5PDFpages andactualFigures1–2 inspected;20kfit/50kforecast and40kversus50kdirect9populationgain.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "The available beneficial effects can change with genetic background",
+      "video_id": "MpaCS2kRxTE",
+      "duration": 1720.101,
+      "start": 973.23,
+      "end": 1239.7,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Ancestor/evolved DFE, changing favorable mutation fractions.",
+      "teaching_construction": "Fraction versus conditional effect, no empirical piechartpercentages, causal background reconstruction.",
+      "research_extension": "Wiser2013 diminishingreturns model bounded to inspected actualpaper; trajectory notuniquemechanism.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "A mutation-rate modifier can hitchhike with the variants it generates",
+      "video_id": "MpaCS2kRxTE",
+      "duration": 1720.101,
+      "start": 1239.7,
+      "end": 1690.51,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Rateincrease and linked beneficial search.",
+      "teaching_construction": "DUfb supply not fixation guarantee, harmful load not costfree rejected, noanticipatory choice.",
+      "research_extension": "Wiser2013 datedsix100foldpointmutators comparison, notunverifiedcurrent invariant.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Executable model and six worked exercises",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": null,
+      "lecture_material": "No additional lecture span attributed to original models or exercises.",
+      "teaching_construction": "Original twelve-population investigator; realized competition/log-expansion identity and numerical example; concavity/limit counterexample and early derivative-matching; original executable toy-model forecast; mutation-supply comparison and six full varied worked solutions.",
+      "research_extension": "",
+      "evidence_class": "original teaching construction"
+    }
+  ],
+  "source_uncertainties": [
+    "No publisher track acquired; selected actual local faster-whisper small.en JSON and text with actual audio hash. Complete available speech read, no continuous listening/full recording review.",
+    "Spoken dilution1is200/2000 artifacts resolved to actual primary1:100; daily6.6 rounded from log2 100.",
+    "Current experiment generation total/location/custody not verified and not asserted.",
+    "Dallinger original1887 followed three monad forms, started60°F15.56°C reached158°F70°C; not bacterial25°Cquantitative fitness experiment.",
+    "Original Dallinger196OCR badly damaged, actual scan read;198/199terminal values verified actual scans. Original reported adapted forms died onreturn60°F, physiological inference not DNAproof.",
+    "No unsupported ecological extinction fraction or universal abruptbarrier impossibility.",
+    "Historical ancestral neutralmarker neutrality conditional on environment; assay must control marker effects.",
+    "Competitive fitness ratio of realized Malthusian expansions distinct from maximal exponential growth or endpoint count ratio.",
+    "Clonal interference doesnot guarantee one final genotype; endpoint mutations may include linked neutral changes.",
+    "DFE spokenpiechart percentages illustrative and not asserted empirical.",
+    "Power-law mathematical unboundedlimit not actual infinitebiological fitness proof; held-out predictions scoped to2013interval.",
+    "Wiser40k/50k directgain comparison nine populations/threeexcluded; sixmutators100fold are2013 datedcomparison.",
+    "Deleterious load and direct modifier cost not eliminated by purifyingselection; mutation supply event count not adaptiveoutcome.",
+    "Toycode parameters not empirical fit."
+  ],
+  "references": [
+    {
+      "title": "Dallinger (1887), The President's Address",
+      "url": "https://doi.org/10.1111/j.1365-2818.1887.tb01566.x",
+      "supports": "Actual original190–199 via retained IA journalofroyalmi188713roya; actual196,198,199 scan inspection repairsOCR; three specified monads/60°F158°F/terminalaccident/reversal. No genomic inference."
+    },
+    {
+      "title": "Lenski and Travisano (1994), Dynamics of adaptation and diversification: a 10,000-generation experiment with bacterial populations",
+      "url": "https://doi.org/10.1073/pnas.91.15.6808",
+      "supports": "Actual original6809–6811 methods/discussion and actualFigures5–7 inspected, archived12population1:10010mL37°Cprotocol, loggrowthratiofitness, samplingresolution/parallelism/divergence."
+    },
+    {
+      "title": "Wiser, Ribeck and Lenski (2013), Long-term dynamics of adaptation in asexual populations",
+      "url": "https://doi.org/10.1126/science.1243357",
+      "supports": "Full actual5pageScienceExpress14Nov2013mainarticle read; actualFigures1–2 viewed, 20kfit laterforecast, direct40k/50k9populationgain; diminishingreturns conditionalmodel, dated6pointmutatorlines."
+    }
+  ],
+  "symbol_ledger": [
+    {
+      "symbol": "LTEE,q,Gcycle",
+      "first_section": "ltee-protocol",
+      "definition": "Long-term evolution experiment, transferred fraction1/100, population doublingmeasure percompletedcycle."
+    },
+    {
+      "symbol": "E,A,i,T,Ni(0),Ni(T),mi,w",
+      "first_section": "competition",
+      "definition": "Evolved and ancestralcompetitors, competitorindex, assayduration, viablecounts, realizedlog expansion, logexpansionratio relativefitness conditionalpositiveancestor expansion."
+    },
+    {
+      "symbol": "t,w(t),wH,a,b,wP,c,p",
+      "first_section": "deceleration",
+      "definition": "Evolutionarygenerationtime, trajectory, hyperbola/maxincrement/time scale andpowerlaw/ratescale/exponent0<p<1; parameters model-specific."
+    },
+    {
+      "symbol": "DFE",
+      "first_section": "changing-dfe",
+      "definition": "Distribution of effectsof declaredmutation sample/process in specified background/environment."
+    },
+    {
+      "symbol": "D,U,fb,r",
+      "first_section": "mutator",
+      "definition": "Reproductiveexposure, mean totalmutations/reproduction, declaredbeneficialfraction, modifier rate multiplier."
+    },
+    {
+      "symbol": "x,T",
+      "first_section": "code",
+      "definition": "Scaledtoytime t/T andT=20000generation scale; distinctfromearlierassaydurationTbyexplicitcontext."
+    }
+  ],
+  "validation_evidence": [
+    "1 actual HTML code block(s) extracted and executed; exact stdout matched; pycodestyle and <=79 columns pass."
+  ],
+  "independent_review": {
+    "status": "pending"
+  },
+  "accepted_body_sha256": "0c74328d715be608b94a6e24909f13610aad99b5b7790072a4323631d62e88d6"
+}

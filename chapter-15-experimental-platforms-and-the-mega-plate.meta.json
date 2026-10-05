@@ -1,0 +1,278 @@
+{
+  "chapter_order": 15,
+  "title": "Experimental platforms and the MEGA-plate",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 47,
+      "video_id": "JcpqaRQN15g",
+      "duration": 1756.261,
+      "playlist_reported_duration": 1757,
+      "selected_transcript_media_duration": 1756.2453125,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": "Systran/faster-whisper-small.en",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "357b498b63d2535c884d7701ee6cc9c69758274f40d4d27a87bc8ba37681ca84",
+      "readable_transcript_sha256": "28a648ade218066f679a7b909d4d3777a0d5bf58f9ddd3b673df09840f3fcc8a",
+      "selected_transcript_first_start": 1.17,
+      "selected_transcript_last_end": 1726.38,
+      "selected_transcript_endpoint_gap": 29.880999999999858,
+      "transcript_reading": "Complete selected local machine transcript read sequentially before drafting; no publisher caption track was acquired.",
+      "input_media_sha256": "3d5827072c9cd47ca3ce099667d8a0449fc1669a3bb02206a960448bd29e3fb7",
+      "input_media_type": "audio",
+      "audio_sha256": "3d5827072c9cd47ca3ce099667d8a0449fc1669a3bb02206a960448bd29e3fb7",
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Complete available selected machine transcript read sequentially including closing speech. Exact final segment and uncovered tail gap recorded independently. Continuous listening and full video review not claimed."
+    },
+    {
+      "lecture_number": 48,
+      "video_id": "Af9rn9pABhM",
+      "duration": 1954.941,
+      "playlist_reported_duration": 1955,
+      "selected_transcript_media_duration": 1954.9226875,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": "Systran/faster-whisper-small.en",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "f7f2dd6b7786bfa4a9da4a658b1c4a668dc3c20db7eee3a4342115c07ab5231d",
+      "readable_transcript_sha256": "820bd38067a8a8afaa870fc3c761fcebdd30160298fefc603e23e32e19136016",
+      "selected_transcript_first_start": 1.17,
+      "selected_transcript_last_end": 1925.2,
+      "selected_transcript_endpoint_gap": 29.740999999999985,
+      "transcript_reading": "Complete selected local machine transcript read sequentially before drafting; no publisher caption track was acquired.",
+      "input_media_sha256": "7a12a12f3971ed6dca62752384c29276c278254c637123487e56ebb9c23ca22b",
+      "input_media_type": "audio",
+      "audio_sha256": "7a12a12f3971ed6dca62752384c29276c278254c637123487e56ebb9c23ca22b",
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Complete available selected machine transcript read sequentially including closing speech. Exact final segment and uncovered tail gap recorded independently. Continuous listening and full video review not claimed."
+    },
+    {
+      "lecture_number": 49,
+      "video_id": "kxcZOBJGA0s",
+      "duration": 1736.861,
+      "playlist_reported_duration": 1737,
+      "selected_transcript_media_duration": 1736.8533125,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "track_name": "Systran/faster-whisper-small.en",
+      "caption_sha256": null,
+      "selected_transcript_sha256": "d9822591cca4b626cff39382a3b2f3f41e7bce49de1f3e55c7d22cb67744229b",
+      "readable_transcript_sha256": "fc0c3623ed31cf41ede13420657bf56cdfb6975be8c3bae2651176c747cbdcb1",
+      "selected_transcript_first_start": 1.17,
+      "selected_transcript_last_end": 1707.44,
+      "selected_transcript_endpoint_gap": 29.42100000000005,
+      "transcript_reading": "Complete selected local machine transcript read sequentially before drafting; no publisher caption track was acquired.",
+      "input_media_sha256": "8be37bc7267147f3b4892df2eaf09bbfc7a5305476a8780b120ddad352957f9f",
+      "input_media_type": "audio",
+      "audio_sha256": "8be37bc7267147f3b4892df2eaf09bbfc7a5305476a8780b120ddad352957f9f",
+      "audio_hash_note": "Exact retained audio file hash is recorded when the ASR input was audio; for video-container inputs no separate audio-file hash is claimed.",
+      "endpoint_check": "Complete available selected machine transcript read sequentially including closing speech. Exact final segment and uncovered tail gap recorded independently. Continuous listening and full video review not claimed."
+    }
+  ],
+  "sections": [
+    {
+      "section": "A serial transfer imposes a growth-and-sampling cycle",
+      "video_id": "JcpqaRQN15g",
+      "duration": 1756.261,
+      "start": 1.17,
+      "end": 596.22,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Serial culture/dilution and logarithmic generations; undergrowth crash.",
+      "teaching_construction": "Resolve machine1is2000errors as stated1:1000 arithmetic, actual9.965784 versus10; cycle map, lag-aware scheduling and nutrient limits.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Equal generation counts do not imply equal mutation supply",
+      "video_id": "JcpqaRQN15g",
+      "duration": 1756.261,
+      "start": 596.22,
+      "end": 1065.76,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Tube/flask volume, matched generations and tenfold event supply.",
+      "teaching_construction": "Event supply UK(1-q), stochastic lineage capture, Bernoulli thinning versus fixedsamplehypergeometric.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Batch adaptation responds to the whole repeating environment",
+      "video_id": "JcpqaRQN15g",
+      "duration": 1756.261,
+      "start": 1065.76,
+      "end": 1726.38,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Resource oscillation, parallel lines and divergent/convergent sequences.",
+      "teaching_construction": "Cycle odds, time-integratednet growth, independentpopulation versus aliquot, no verified90percentprevalence asserted.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "A chemostat controls flow; steady state still requires biological balance",
+      "video_id": "Af9rn9pABhM",
+      "duration": 1954.941,
+      "start": 102.66,
+      "end": 1191.18,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Batch/resource recap, flowreactor, residence and washout logistics.",
+      "teaching_construction": "Dilutionratebiomassbalance, steadystateconditionalnotguaranteed, tracerexponential distribution notfixedexitdeadline, ln2 conversion and naturalniche limitations.",
+      "research_extension": "Gresham2008 originalpublisher ResultsPhysiologicalPhenotypes and ChemostatCultureMethods read; residualglucose change underfixedsettings.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Mutation accumulation reduces selective filtering without abolishing it",
+      "video_id": "Af9rn9pABhM",
+      "duration": 1954.941,
+      "start": 1191.18,
+      "end": 1925.2,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Selectionfilter versus total mutations and randomizedsinglecolony accumulation.",
+      "teaching_construction": "Correctonlydrift/noselectionandonlybeneficial adaptiveendpoint claims; colonygenealogy/callability/PoissonMLE and DFEassay limitations.",
+      "research_extension": "Lee2012 pertinent actualauthor-uploaded SpontaneousMutationRate/MaterialsMethods inspected earlierfor4, appliedsamebounded empirical implementation here.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Resistance thresholds and reproductive performance are separate measurements",
+      "video_id": "kxcZOBJGA0s",
+      "duration": 1736.861,
+      "start": 140.53,
+      "end": 633.07,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "MIC schematic, environmentalfitness and resistancecost.",
+      "teaching_construction": "MICvisiblegrowthassay notclinicalbreakpoint orkill; illustrative3strain thresholds and measuredgrowthcompetition, costsconditional.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "The MEGA-plate makes intermediate environments spatially accessible",
+      "video_id": "kxcZOBJGA0s",
+      "duration": 1736.861,
+      "start": 637.39,
+      "end": 1411.52,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Plate motility/bands, chemotaxis, pausedfronts and resistant expansion; embeddedmovieinterval.",
+      "teaching_construction": "Actualprimarybands/isolateMIC separatelecturecartoon; expansion increases mutationopportunities, visiblefrontwait notliteralmutationbirth.",
+      "research_extension": "Baym2016 fullactualmainarticle1147–1151 read; actualFigures1–4 viewed. Embeddedlecturemovie notclaimedwatched.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "The MEGA-plate makes intermediate environments spatially accessible",
+      "video_id": "kxcZOBJGA0s",
+      "duration": 1736.861,
+      "start": 1588.78,
+      "end": 1707.44,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Abrupt versusgradualantibiotic challenge.",
+      "teaching_construction": "Noncrossingfiniteobservation notgeneticimpossibility orentirepopulationextinction; noforcedsinglebase-onlyeventuniversalrule.",
+      "research_extension": "",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Front position changes which variants can shape the future",
+      "video_id": "kxcZOBJGA0s",
+      "duration": 1736.861,
+      "start": 1411.52,
+      "end": 1588.27,
+      "timing_source": "Complete selected preferred transcript; timestamps identify lecture discussion, not original extensions.",
+      "lecture_material": "Samplingplate, gene sequencing recurrence folA/mar/sox.",
+      "teaching_construction": "Independentancestral events versus mutatedsamplecount; frontiergeometry versus wellmixedfitness.",
+      "research_extension": "BaymactualFigure3eventinferenceandFigure4spatialtrapping/transplant measurements inspected, explicitlyprimaryextension.",
+      "evidence_class": "source-grounded explanatory model"
+    },
+    {
+      "section": "Executable model and six worked exercises",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": null,
+      "lecture_material": "No additional lecture span attributed to original models or exercises.",
+      "teaching_construction": "Originalsameancestorplatformchoice; cycle/persistence/lag map; Bernoulli clone-retention probability and executable program; chemostat tracer/biomass balance; mutationrateMLE; originalMICtoy comparison and six full worked solutions.",
+      "research_extension": "",
+      "evidence_class": "original teaching construction"
+    }
+  ],
+  "source_uncertainties": [
+    "No publishertrack acquired; actualselectedlocalfaster-whisper small.en transcript. Dilution1is2000 andconservedversusconvergent wording are machine artifacts resolved from sourcearithmetic.",
+    "Availablemachine speechreadingcomplete; exact endpointgaps retained, continuousaudio/fullvideo notclaimed.",
+    "Lecture90percentplatform prevalence not supported by inspected survey and not asserted numerically.",
+    "Chemostatstablecontrol settings do not guaranteeunchanginginternalchemistry or steadystate during adaptation.",
+    "Residence meanV/Q not deadline; constantvolumetracermodel not valid wheninletstopsbutoutflowcontinues.",
+    "Maximumdoublingtime20min is illustrative, not universalbacteriallimit; growthrate ln2/tau.",
+    "Mutation accumulation attenuatesratherthanabolishesselection; lethal/slowcolony ascertainment andwithincolony selection remain.",
+    "Adaptiveendpoint sequencescancontainneutral hitchhikers and some deleteriouschanges, notonlybeneficialfixations.",
+    "MIC assayvisiblegrowthinhibition not cellkilling orclinicalbreakpoint; growthfitnessandcost qualified.",
+    "BaymactualTMPbands0,3,30,300,3000timeswildtypeMIC versuslecturecartoon0,1,10,100,1000; isolateMIC10^4TMP/10^5CPR distinctfrombandconcentration.",
+    "Frontwait doesnot locate mutationbirth; molecularancestry imputed fromvideo/genome, notdirectDNAchange imaging.",
+    "Finiteabruptbarrier noncrossingnotuniversal multiplemutationimpossibility orlowdrugpopulationextinction.",
+    "No clinical treatment inference."
+  ],
+  "references": [
+    {
+      "title": "Gresham et al. (2008), The Repertoire and Dynamics of Evolutionary Adaptations to Controlled Nutrient-Limited Environments in Yeast",
+      "url": "https://doi.org/10.1371/journal.pgen.1000303",
+      "supports": "OriginalPLOSResultsPhysiologicalPhenotypes andMethodsChemostatCulture inspected; fixedflow/residualresourcechanges; completepaper/figureinspection notclaimed."
+    },
+    {
+      "title": "Lee et al. (2012), Rate and molecular spectrum of spontaneous mutations in the bacterium Escherichia coli as determined by whole-genome sequencing",
+      "url": "https://doi.org/10.1073/pnas.1210309109",
+      "supports": "Actualauthor-uploaded primary rate/MA methodssections read; retained mutation conventions as recorded chapter4primaryledger."
+    },
+    {
+      "title": "Baym et al. (2016), Spatiotemporal microbial evolution on antibiotic landscapes",
+      "url": "https://doi.org/10.1126/science.aag0822",
+      "supports": "Successful actualauthorlabPDF1716857bytes/6PDFpages includesadjacentarticles; fullBaymarticle1147–1151 read, actualFigures1–4 viewed. Actualconcentration/MICseparation, repeatedevents inferredbyancestry, compensatedmutantspatialtrapping/transplant."
+    },
+    {
+      "title": "EUCAST (2003), Determination of minimum inhibitory concentrations (MICs) of antibacterial agents by broth dilution",
+      "url": "https://doi.org/10.1046/j.1469-0691.2003.00790.x",
+      "supports": "Actual original publisher Introduction paragraphs on visible-growth MIC endpoint, controlled conditions and assay reproducibility inspected; preparation of working solutions separates breakpoints from full-range MIC testing. No complete protocol inspection claim."
+    }
+  ],
+  "symbol_ledger": [
+    {
+      "symbol": "Delta t,d,q,N0,Gcycle",
+      "first_section": "serial-cycle",
+      "definition": "Cycleinterval, dilutionfactor>1, transferredfraction1/d, startingcount andpopulationdoublings/cycle."
+    },
+    {
+      "symbol": "Aj,nj,g,ell",
+      "first_section": "serial-cycle",
+      "definition": "Actualbatch expansion, startingcountincyclej, illustrativeconstantnetgrowthrate, laginterval."
+    },
+    {
+      "symbol": "K,U,Mevent,m",
+      "first_section": "size-and-supply",
+      "definition": "Finalbatch census, countedmeanmutations/division, mutationeventcount andparticularclonecellcount."
+    },
+    {
+      "symbol": "A1,A2,g1(t),g2(t)",
+      "first_section": "periodic-selection",
+      "definition": "Genotypecyclemultipliers andtime-dependentpercapitanetrates inprescribedcommonenvironment."
+    },
+    {
+      "symbol": "V,Q,delta,B,S,Sstar,Tres",
+      "first_section": "chemostat",
+      "definition": "Constantreactorvolume, volumetricflow, flow/volume, celldensity, resourceconcentration, steadyresourcevalue, randomtracerresidencetime."
+    },
+    {
+      "symbol": "kj,Gj,Lj,u,uhat,Uhat",
+      "first_section": "mutation-accumulation",
+      "definition": "Linejdetectedretainedchanges, transmittedlineagegenerations, callablepositions; perpositionrate, itsPoissonMLE andcommoncallablegenomemeanestimate."
+    },
+    {
+      "symbol": "A,B,C,MIC",
+      "first_section": "mic",
+      "definition": "Toystrainlabels andminimaltestedconcentrationinhibitingdefinedvisiblegrowthendpoint; Bstrainlabeldistinctfromearlierdensitycontext."
+    },
+    {
+      "symbol": "m,p",
+      "first_section": "mega-plate",
+      "definition": "Toynextstepreproductiveopportunitycount andrelevantvarianteventprobability/opportunity; distinctfromearlierclonecellcountbyexplicitcontext."
+    }
+  ],
+  "validation_evidence": [
+    "1 actual HTML code block(s) extracted and executed; exact stdout matched; pycodestyle and <=79 columns pass."
+  ],
+  "independent_review": {
+    "status": "pending"
+  },
+  "accepted_body_sha256": "a6ba3e656f435f3b6c5363279499ca8e83aaca85c5b64282a7753a77b69ff5ad"
+}

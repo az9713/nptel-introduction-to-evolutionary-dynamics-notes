@@ -1,0 +1,306 @@
+{
+  "scope": "Actual authored Python listings in clean subprocesses; not a proof or editorial acceptance",
+  "status": "passed",
+  "chapters": [
+    {
+      "chapter": "chapter-01-the-origin-of-evolutionary-thinking.html",
+      "html_sha256": "cd717772f221acbb87a60a52f9a77d6a3d8a2afaf1d54cb45e8f4e034f1d6bb0",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "7bb88c2a701f2eb7764527e7d7ba2474576f32056abd3b082d8382d31023a1f8",
+          "execution": "passed",
+          "stdout": "inside pH 8: -5.71 kJ/mol; bound 9\ninside pH 9: -11.42 kJ/mol; bound 5\ninside pH 10: -17.12 kJ/mol; bound 3",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-02-natural-selection-and-ecological-context.html",
+      "html_sha256": "5f9017833a79eb2cf52b204c123c898d8c87b573e1923c1710bbc7c1322bb9b2",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "7ed375a6715354df1e01bedad746b72f89f12dd2fd24e7fc13d1ce0a8103b24c",
+          "execution": "passed",
+          "stdout": "directional: mean=1/4; variance=7/16\nstabilizing: mean=0; variance=1/3\ndisruptive: mean=0; variance=2/3",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-03-molecular-biology-and-the-scales-of-evolution.html",
+      "html_sha256": "9511c4a544ec4abc683ec2e6d18b8a1f4ddd274b78a4f171b4b9ec9acb783ee5",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "8df1353cab02e0e6f421927401297c691052083ef91502b9404a8bb663596833",
+          "execution": "passed",
+          "stdout": "original: MPKS\nmissense: MHKS\nsynonymous: MPKS\nnonsense: MP",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-04-microbial-growth-mutation-and-reproduction.html",
+      "html_sha256": "fc7d05fe79a38913996402a654d582eb8cc33d75c6642a68a983fc71c4fc9459",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "6f0904bd8635a8275ce6c171f74052935a024274f980153d8e7de9875ec7d26e",
+          "execution": "passed",
+          "stdout": "G=8 N=256 mean=1.022210 variance=32.395546 V/mean=31.691680 P0=0.774818\nG=12 N=4096 mean=24.508529 variance=8290.630971 V/mean=338.275346 P0=0.0166217\nG=16 N=65536 mean=522.326500 variance=2114413.570926 V/mean=4048.068728 P0=3.34404e-29",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-05-batch-growth-and-fitness.html",
+      "html_sha256": "85516da8dd2498d8a473d9e3c1afdc73f97d33a91d92bfc6a889003b12f84bf5",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "fcd067a85355e31a5149ce72913c957db9082a6c7d4a60edc1a7dc652b358413",
+          "execution": "passed",
+          "stdout": "t= 4.0 h: A=  604.965, B=  222.554, x=0.268941\nt= 9.0 h: A=12151.042, B=12151.042, x=0.500000\nt=12.0 h: A=73509.519, B=133943.076, x=0.645656\nshared limit: z=5.390394 h, A=2538.698, B=7461.302, x=0.746130",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-06-continuous-culture-and-selection.html",
+      "html_sha256": "50d827bc0bde664e8a1a52701cb8d529d76592ae829a0f8395b9e0df35a71bed",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "83a977bc0c4602da7c1cee971182b34ec3d4b19eae0b1edb3bf5f9507dd5863a",
+          "execution": "passed",
+          "stdout": "t= 0.000000 h: total= 10000.000, x=0.010000, mean=0.402000/h\nt=10.000000 h: total=  3913.835, x=0.069453, mean=0.413891/h\nt=22.975599 h: total=  1989.975, x=0.500000, mean=0.500000/h\nS*_A=0.050000, S*_B=0.100000 mg/L\nB invasion exponent at A equilibrium=-0.085714/h",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-07-distributions-landscapes-and-epistasis.html",
+      "html_sha256": "fbe936dd5537bdb67ad72a72627c8bc909e9442cbb0748fa44cd048b836c6c7b",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "75d55caf9a262595d31d54e444644bad2a7fc9afa1f89d6808094c5f40d79d3e",
+          "execution": "passed",
+          "stdout": "DNA3: vertices=64, degree=9, edges=288\nadditive strict peaks=['GCA']\nTAA: F=1.000\nGAA: F=1.300\nGCA: F=1.500\nreciprocal sign strict peaks=['01', '10']\nmultiplicative example: raw epsilon=0.020000, log epsilon=0.000000\nbeneficial means: generated=0.045000, s-weighted=0.072222",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-08-experimental-landscapes-and-accessibility.html",
+      "html_sha256": "35615a9fa06618de2ac99d80ef1b67c960edfcd76688024abf442b32d2727c3e",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "8e074cc0bda5b2f29237ae5b0adee7f195508fc33cfb395981c84f1aea0b6494",
+          "execution": "passed",
+          "stdout": "sign paths 60 peaks [31]\ndiminishing paths 120 peaks [31]\ntwo-peak start000 [(1, 0.3333333333333333), (7, 0.6666666666666666)]\nlog-enrichment 1.098612",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-09-chance-and-the-loss-of-diversity.html",
+      "html_sha256": "75c2baa50e43bac271f70870c6d70bd1e1edff2f8c3364113f795691309c88c6",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "d3536289c51bb28ee10eec34fd16c0587f631f901fe304db5ada998eb689bd0d",
+          "execution": "passed",
+          "stdout": "row=81/256, 27/64, 27/128, 3/64, 1/256\nmean_count=1\nexpected_richness=175/64 (2.734375)\ndiversity=3/4; expected_next=9/16",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-10-moran-process-and-neutral-fixation.html",
+      "html_sha256": "6bc7ddc423bde428d353625a9b3b8a51860b6de1302443c45f759b2798b6d955",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "3ca461f804258c9ce2cf51e9b0299e2077fc70f13e4c8d2a256ae7efc4773739",
+          "execution": "passed",
+          "stdout": "fixation=0.516129032258\nloss=0.483870967742\nneutral=0.200000000000",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-11-beneficial-mutations-and-fixation.html",
+      "html_sha256": "9b9af8e10844a28cb5f8f8830ec1b6dbd3004f674b003db147ec56666c19c5cb",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "dfe8a4f523fc47b5fba42f78dcaf555ece824b6aadefc6344c5c69e65c6a4485",
+          "execution": "passed",
+          "stdout": "five_cell_selected=0.219975998217\nvarying_ratio_fixation=1/3\ntwenty_trial_success=0.623110517127",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-12-mutation-supply-and-overlapping-sweeps.html",
+      "html_sha256": "47ead87b100de4f2ef91e720f6b14bf409a8c8ce0ef630e22eade8e57e2c6c89",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "e74d3d3509cbb34ef7dc3dd4971cf8c6cd91e6342465042c00d5783d7b89dbc0",
+          "execution": "passed",
+          "stdout": "U_b=1e-08; wait=21000.000; sweep=278.324\noverlap=0.013254; any_overlap=0.013166\nwhole_period_wait=21000.499999\nU_b=1e-05; wait=21.000; sweep=278.324\noverlap=13.253520; any_overlap=0.999998\nwhole_period_wait=21.503963",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-13-traveling-waves-of-adaptation.html",
+      "html_sha256": "ece761f61fcd031a93c8536b6fd84d9a824e20c1e438dd0e7eac03694d3c1f56",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "e2e10bea0616a3377fef6fcedf7ed98dddabb54dd145276c4fb4122f12c474ff",
+          "execution": "passed",
+          "stdout": "lead=2.461864743; interval=172.674486896\nspeed=0.000115825; edge_count=20.309807899\nhazard=1.000000000; bulk_fraction=0.500000000",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-14-sequence-comparisons-and-experimental-design.html",
+      "html_sha256": "d05747e94daffde4a76d043becd1b1101202c3d400e1604cc49c878bbc08e455",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "3156931e3fbaebf29a8d1dfca222f7352e57aa7a757f34e5218ea6f293436fee",
+          "execution": "passed",
+          "stdout": "K_S=12; K_N=24; D_S=2; D_N=2\nnormalized_count_ratio=1/2\nCCC opportunities=(3, 6, 0)\nTGG opportunities=(0, 7, 2)\nfold=100; 30-cycle doublings=199.315686\nfold=1000; 30-cycle doublings=298.973529\nmiss_at_bottleneck=0.367695",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-15-experimental-platforms-and-the-mega-plate.html",
+      "html_sha256": "d5aa476b766a2cf7ed074a7a42e9fef720ac71d6d27a6bb5d79f797e82fd7b2b",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "47ddacbbeb1a0cbfad30da083b6a8dba63746e8cf590e601b3fb99ebbfd684bc",
+          "execution": "passed",
+          "stdout": "expansion=600 cycle multiplier=0.600\nexpansion=1000 cycle multiplier=1.000\nexpansion=1200 cycle multiplier=1.200\nmutants=1 capture=0.001000\nmutants=20 capture=0.019811\nmutants=1000 capture=0.632305",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-16-long-term-evolution-and-fitness-trajectories.html",
+      "html_sha256": "25d113d3974f6e3495d335541563dd048a559b9063049647f015bab5cc0a2c59",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "4dd7c7cf43b86e8734e6216473ab0b64be128abb0d0d0a39658853c6bbc05ce7",
+          "execution": "passed",
+          "stdout": "t=     0 H=1.000000 P=1.000000\nt=  1000 H=1.028571 P=1.028606\nt= 20000 H=1.300000 P=1.343933\nt= 50000 H=1.428571 P=1.591979\nt=100000 H=1.500000 P=1.838616",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-17-mutation-rates-and-landscape-peaks.html",
+      "html_sha256": "19ff960b070a9e704622ea11bc0e8b293154bcd342c63f6706369e8d352a6fb4",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "ba39376724ed5662d87a96b5f615b585493fd89f42c8cab01e6371a0d2daf57b",
+          "execution": "passed",
+          "stdout": "mutator first-event probability 0.502513\ngeneration hyperbola power\n         0 1.000000 1.000000\n     20000 1.105263 1.116123\n     40000 1.142857 1.174619\n   1000000 1.217391 1.586471\nThese curves are original constructions, not fitted LTEE data.",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-18-innovation-selection-and-historical-contingency.html",
+      "html_sha256": "db3f316abcdd24d4dfe05acd0dc514f13b14054d874d5b668645f0932d7d2138",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "7bc598bd4ecb517b8f406f435c184e9a7b56e3e406e7f963d34f18e6b0add441",
+          "execution": "passed",
+          "stdout": "zero-event rate upper 2.99573227e-10\noriginal20/20 trial comparison;0early and5late successes\nconditional one-sided tail 0.023562\ngrand_mean 1.500000\nwithin_variance 0.000400\nhistory_variance_raw 0.039867\nOriginal examples; variance components are not causal fractions.",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-19-multicellularity-and-diversification.html",
+      "html_sha256": "2ed1a9b4e338aac6627dcbddd8f24e41f85d53b16fa08b2424aaa59a5906a017",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "aefa65ce537a9b74264277b86ced39d2ec6262706c6da0039f2686043cf7dc18",
+          "execution": "passed",
+          "stdout": "x0=0.1 cycle= 0 x=0.100000\nx0=0.1 cycle= 1 x=0.126866\nx0=0.1 cycle= 5 x=0.257771\nx0=0.1 cycle=20 x=0.481824\nx0=0.5 cycle= 0 x=0.500000\nx0=0.5 cycle= 1 x=0.500000\nx0=0.5 cycle= 5 x=0.500000\nx0=0.5 cycle=20 x=0.500000\nx0=0.9 cycle= 0 x=0.900000\nx0=0.9 cycle= 1 x=0.873134\nx0=0.9 cycle= 5 x=0.742229\nx0=0.9 cycle=20 x=0.518176",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    },
+    {
+      "chapter": "chapter-20-synonymous-fitness-and-mutation-accumulation.html",
+      "html_sha256": "964791e117e84d11eba47725678916f37b59e96bc47cea07b5caa144c8b52b0d",
+      "python_programs": 1,
+      "checks": [
+        {
+          "code_sha256": "104c73a8469c8642f7a47b42ac705754482175bc585fba44e38d3d25ead2e0b0",
+          "execution": "passed",
+          "stdout": "window=0.2; fold=0.329680\nwindow=1.0; fold=0.864665\ngenome_rate=0.002000; Poisson_SE=0.00008839\nmean_log=-0.080000; var_log=0.000800\nmean_fitness=0.923484; exp_mean_log=0.923116\nzero_count_upper=0.00001170\ntransfer_equilibrium=0.750000",
+          "stderr": "",
+          "pep8": "passed",
+          "style_details": ""
+        }
+      ]
+    }
+  ]
+}

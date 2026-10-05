@@ -1,0 +1,263 @@
+{
+  "chapter_order": 1,
+  "title": "The origin of evolutionary thinking",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 1,
+      "video_id": "joX7lvfLvzI",
+      "duration": 1857.821,
+      "playlist_reported_duration": 1858,
+      "caption_declared_duration": 1858,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "ea9c64ad6d6c8e8cfc47d1ccfdfb24f38cc2edbfa97af7568bcee18dbd6bcf5a",
+      "publisher_first_start": 1.513,
+      "publisher_last_end": 1836.218,
+      "publisher_endpoint_gap": 21.602999999999838,
+      "transcript_reading": "Complete preferred publisher transcript read sequentially before drafting; no complete secondary-ASR reading claimed.",
+      "input_media_sha256": "55c00412e002c35f4dfd1dbad3ff0193c9e71fff4016d3ec2e1b72697ac4198f",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained video container hashed and matched to machine source record; no separate audio-file hash claimed.",
+      "endpoint_check": "Terminal teaching/closing caption checked; final sampled recording frame visually inspected and shows production credits. No full frame-by-frame visual review claimed.",
+      "selected_transcript_sha256": "07360f6311914dcef9f2b593121bd8b3e4156c48b58f7bd127f79a62c43c593b",
+      "readable_transcript_sha256": "f7885c39bd191e9180f109d2832dd58818f86cb4165c134df2b959f192a1a90b"
+    },
+    {
+      "lecture_number": 2,
+      "video_id": "mwlT7kLQ-BY",
+      "duration": 2047.701,
+      "playlist_reported_duration": 2048,
+      "caption_declared_duration": 2048,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "a7044eac9567c575dbc4acbd4e14049f5e57deb9b051853597013ef992332831",
+      "publisher_first_start": 4.896,
+      "publisher_last_end": 2026.097,
+      "publisher_endpoint_gap": 21.604000000000042,
+      "transcript_reading": "Complete preferred publisher transcript read sequentially before drafting; no complete secondary-ASR reading claimed.",
+      "input_media_sha256": "2d58698c84d2e1a7074d1832c78ed8273b7880f79e037a14f15a569ecab3d42c",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained video container hashed and matched to machine source record; no separate audio-file hash claimed.",
+      "endpoint_check": "Terminal teaching/closing caption checked; final sampled recording frame visually inspected and shows production credits. No full frame-by-frame visual review claimed.",
+      "selected_transcript_sha256": "3a765ff6917a3f896c293de6835208be6f1a694a392799050b44d80447a0dd98",
+      "readable_transcript_sha256": "d37c391c454549140aaf8f3771f2f98737074a10a2ca126ac3113ca84afcc357"
+    },
+    {
+      "lecture_number": 3,
+      "video_id": "rQzNZbI87U8",
+      "duration": 1758.861,
+      "playlist_reported_duration": 1759,
+      "caption_declared_duration": 1759,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "a6f986c2642df81ecb83f04b09019c8d9e15c051fd17a74417958c466ac30757",
+      "publisher_first_start": 1.513,
+      "publisher_last_end": 1737.259,
+      "publisher_endpoint_gap": 21.60200000000009,
+      "transcript_reading": "Complete preferred publisher transcript read sequentially before drafting; no complete secondary-ASR reading claimed.",
+      "input_media_sha256": "fa058f7ab4c11e16983594f76a292cb9486a836fef7c02cb03e7c6afe9f322e2",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained video container hashed and matched to machine source record; no separate audio-file hash claimed.",
+      "endpoint_check": "Terminal teaching/closing caption checked; final sampled recording frame visually inspected and shows production credits. No full frame-by-frame visual review claimed.",
+      "selected_transcript_sha256": "1f7184c11264543215cc559392228847076d7e96554c077a9f21646fac1c8705",
+      "readable_transcript_sha256": "1720c06bdee4eff859550680feca3eae606bb85676029fc7ecd427a570669f93"
+    }
+  ],
+  "sections": [
+    {
+      "section": "A geographic pattern poses a historical question",
+      "video_id": "joX7lvfLvzI",
+      "duration": 1857.821,
+      "start": 266.9,
+      "end": 1228.0,
+      "timing_source": "Complete preferred publisher captions; rounded seconds in coverage ledger. Original derivations are identified separately from the discussion located by these spans.",
+      "lecture_material": "Collecting, fossil affinities, island patterns, tree and geography.",
+      "teaching_construction": "Hypothetical field collection; definitions and inference limits.",
+      "research_extension": "Primary-source specifics recorded in references and private claim ledger; equations are original.",
+      "evidence_class": "source-grounded exposition with labeled original models and primary-source corrections"
+    },
+    {
+      "section": "Population pressure supplies a mechanism only when variation is inherited",
+      "video_id": "joX7lvfLvzI",
+      "duration": 1857.821,
+      "start": 1232.0,
+      "end": 1836.218,
+      "timing_source": "Complete preferred publisher captions; rounded seconds in coverage ledger. Original derivations are identified separately from the discussion located by these spans.",
+      "lecture_material": "Population pressure, resource differentiation, Wallace mechanism.",
+      "teaching_construction": "Two-type descendant normalization, explicit inheritance and limits.",
+      "research_extension": "Primary-source specifics recorded in references and private claim ledger; equations are original.",
+      "evidence_class": "source-grounded exposition with labeled original models and primary-source corrections"
+    },
+    {
+      "section": "Discovery, publication and a developed explanation are different achievements",
+      "video_id": "mwlT7kLQ-BY",
+      "duration": 2047.701,
+      "start": 4.9,
+      "end": 1220.58,
+      "timing_source": "Complete preferred publisher captions; rounded seconds in coverage ledger. Original derivations are identified separately from the discussion located by these spans.",
+      "lecture_material": "Manuscript, 1858 communication, book, mimicry, Matthew acknowledgment.",
+      "teaching_construction": "Priority/awareness/influence distinguished with primary documents.",
+      "research_extension": "Primary-source specifics recorded in references and private claim ledger; equations are original.",
+      "evidence_class": "source-grounded exposition with labeled original models and primary-source corrections"
+    },
+    {
+      "section": "The surviving tree is a filtered record of a much older history",
+      "video_id": "mwlT7kLQ-BY",
+      "duration": 2047.701,
+      "start": 1288.06,
+      "end": 2017.59,
+      "timing_source": "Complete preferred publisher captions; rounded seconds in coverage ledger. Original derivations are identified separately from the discussion located by these spans.",
+      "lecture_material": "LUCA, early history, endosymbiosis, diversification and extinction.",
+      "teaching_construction": "LUCA is not first life; survival bias and corrected chronology.",
+      "research_extension": "Primary-source specifics recorded in references and private claim ledger; equations are original.",
+      "evidence_class": "source-grounded exposition with labeled original models and primary-source corrections"
+    },
+    {
+      "section": "The surviving tree is a filtered record of a much older history",
+      "video_id": "rQzNZbI87U8",
+      "duration": 1758.861,
+      "start": 17.27,
+      "end": 399.04,
+      "timing_source": "Complete preferred publisher captions; rounded seconds in coverage ledger. Original derivations are identified separately from the discussion located by these spans.",
+      "lecture_material": "Ediacaran and Burgess orientation; replay and contingency.",
+      "teaching_construction": "Whole-planet counterfactual versus narrow replicate experiments.",
+      "research_extension": "Primary-source specifics recorded in references and private claim ledger; equations are original.",
+      "evidence_class": "source-grounded exposition with labeled original models and primary-source corrections"
+    },
+    {
+      "section": "A first living system needs coupled functions",
+      "video_id": "rQzNZbI87U8",
+      "duration": 1758.861,
+      "start": 401.32,
+      "end": 768.42,
+      "timing_source": "Complete preferred publisher captions; rounded seconds in coverage ledger. Original derivations are identified separately from the discussion located by these spans.",
+      "lecture_material": "Heredity, energy, catalysis, boundary, element supply, replication.",
+      "teaching_construction": "Function versus implementation; coupled systems and entropy balance.",
+      "research_extension": "Primary-source specifics recorded in references and private claim ledger; equations are original.",
+      "evidence_class": "source-grounded exposition with labeled original models and primary-source corrections"
+    },
+    {
+      "section": "Making building blocks demonstrates one step, not a complete origin",
+      "video_id": "rQzNZbI87U8",
+      "duration": 1758.861,
+      "start": 770.67,
+      "end": 1171.31,
+      "timing_source": "Complete preferred publisher captions; rounded seconds in coverage ledger. Original derivations are identified separately from the discussion located by these spans.",
+      "lecture_material": "Transport proposals, warm pond, Miller, concentration bottleneck.",
+      "teaching_construction": "Feasibility versus history; original dilution rate example.",
+      "research_extension": "Primary-source specifics recorded in references and private claim ledger; equations are original.",
+      "evidence_class": "source-grounded exposition with labeled original models and primary-source corrections"
+    },
+    {
+      "section": "A proton gradient is an energy resource only if a system can couple to it",
+      "video_id": "rQzNZbI87U8",
+      "duration": 1758.861,
+      "start": 1171.31,
+      "end": 1451.22,
+      "timing_source": "Complete preferred publisher captions; rounded seconds in coverage ledger. Original derivations are identified separately from the discussion located by these spans.",
+      "lecture_material": "ATP, electron transfer, ion gradient, ATP synthase.",
+      "teaching_construction": "Chemical/electrical potential derivation and ideal bound; broad ATP-generality corrected.",
+      "research_extension": "Primary-source specifics recorded in references and private claim ledger; equations are original.",
+      "evidence_class": "source-grounded exposition with labeled original models and primary-source corrections"
+    },
+    {
+      "section": "Hydrothermal experiments test parts of a proposed pathway",
+      "video_id": "rQzNZbI87U8",
+      "duration": 1758.861,
+      "start": 1452.3,
+      "end": 1737.26,
+      "timing_source": "Complete preferred publisher captions; rounded seconds in coverage ledger. Original derivations are identified separately from the discussion located by these spans.",
+      "lecture_material": "Alkaline vents, confinement/catalysts, laboratory analogs.",
+      "teaching_construction": "Hypothesis status and independently inspected 2020 controls.",
+      "research_extension": "Primary-source specifics recorded in references and private claim ledger; equations are original.",
+      "evidence_class": "source-grounded exposition with labeled original models and primary-source corrections"
+    },
+    {
+      "section": "Executable energy-accounting check and six worked exercises",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": null,
+      "lecture_material": "No additional source span.",
+      "research_extension": "No simulated empirical claim.",
+      "teaching_construction": "Original standard-library model, actual stdout, six inference/assumption/design/accounting exercises.",
+      "evidence_class": "original teaching construction"
+    }
+  ],
+  "source_uncertainties": [
+    "Uploader caption production method is unknown; subtitle labeling does not establish human production.",
+    "Caption source uses whole-second playlist durations; canonical duration is retained-media ffprobe, with both preserved.",
+    "Historical anecdotes and exact book-sales assertions not necessary to the scientific explanation are not adopted.",
+    "LUCA/first life, entropy, ATP-generality, Miller apparatus and extinction chronology shortcuts are corrected explicitly.",
+    "Alkaline hydrothermal setting is a hypothesis, not a demonstrated historical origin or complete cell-production experiment.",
+    "Only named figures and sampled credit frames viewed; no complete frame-by-frame visual inspection claimed."
+  ],
+  "references": [
+    {
+      "title": "Darwin and Wallace (1858)",
+      "url": "https://darwin-online.org.uk/converted/published/1858_species_F350.html",
+      "supports": "Covering letter pp45–46; inherited differential persistence pp47–50 and Wallace varieties pp53–62."
+    },
+    {
+      "title": "Darwin (1860), Natural selection",
+      "url": "https://darwin-online.org.uk/content/contentblock?basepage=1&itemID=F1705&hitpage=1&viewtype=text",
+      "supports": "Complete public acknowledgment read, pp362–363."
+    },
+    {
+      "title": "Miller (1953)",
+      "url": "https://doi.org/10.1126/science.117.3046.528",
+      "supports": "Complete two-page original pp528–529, apparatus and chromatogram visually inspected. Tested gases, duration and bounded findings."
+    },
+    {
+      "title": "Hudson et al. (2020)",
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10109879/",
+      "supports": "Relevant PDFpp1–4 Results, Tables1–2, Figure1 inspected; formate detection and isotopic/omission controls in a microfluidic setup."
+    },
+    {
+      "title": "ICS International Chronostratigraphic Chart (2026/06)",
+      "url": "https://stratigraphy.org/chart/",
+      "supports": "Cambrian/endPermian/K–Pg boundary dates only."
+    }
+  ],
+  "symbol_ledger": [
+    {
+      "symbol": "A,B,p,N,w_A,w_B,p_prime",
+      "first_section": "mechanism",
+      "definition": "Two perfectly inherited types, initial A fraction, starting count, expected recruited descendants per parent and next A fraction."
+    },
+    {
+      "symbol": "S_sys,S_env,DeltaS",
+      "first_section": "cell",
+      "definition": "System/environment entropy and changes, J/K."
+    },
+    {
+      "symbol": "v,k,c_A,c_B,V",
+      "first_section": "miller",
+      "definition": "Rate per volume, fixed-condition second-order rate constant, reactant concentrations and well-mixed volume."
+    },
+    {
+      "symbol": "ATP,ADP",
+      "first_section": "energy",
+      "definition": "Adenosine tri/diphosphate."
+    },
+    {
+      "symbol": "a_o,a_i,R,T,F,psi_o,psi_i,DeltaG,pH",
+      "first_section": "energy",
+      "definition": "Dimensionless proton activities, gas constant, absolute temperature, Faraday constant, electrical potentials, molar free-energy change and negative base-ten logarithm of activity."
+    },
+    {
+      "symbol": "h_A,h_B",
+      "first_section": "exercise2",
+      "definition": "Parental-type conditional probabilities of offspring typeA."
+    }
+  ],
+  "validation_evidence": [
+    "One actual code block extracted and executed from HTML; stdout exactly matched; pycodestyle passed and max line <=79."
+  ],
+  "independent_review": {
+    "status": "pending"
+  },
+  "accepted_body_sha256": "fdec4d8af70426603092892ccc46e111ef84965d3ad06d3a508e1f961d2312d7"
+}

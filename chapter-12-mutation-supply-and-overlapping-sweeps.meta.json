@@ -1,0 +1,230 @@
+{
+  "chapter_order": 12,
+  "title": "Mutation supply, waiting times, and overlapping sweeps",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 39,
+      "video_id": "8puNqWijeCc",
+      "duration": 1733.261,
+      "playlist_reported_duration": 1734,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "transcript_filename": "transcript.machine.json",
+      "transcript_sha256": "3f51f77a9678bb19ad2cae0ea51e280428401fc0e3d03c025ea9f3f330e91411",
+      "first_start_seconds": 1.17,
+      "last_end_seconds": 1703.98,
+      "input_media_sha256": "b7011b3e8a4d35f2beefd37514e95f752116cf31f02ccb49a422bb0b8c5c0190",
+      "input_media_filename": "audio.webm",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained media container was ASR input; no extracted audio hash asserted.",
+      "transcript_reading": "Complete preferred machine transcript read in numbered order.",
+      "visual_review": "Recording diagrams described through their explicit transcript rules; no visually inferred quantities or full video review asserted."
+    },
+    {
+      "lecture_number": 40,
+      "video_id": "JtGx7Z6pgSc",
+      "duration": 1842.101,
+      "playlist_reported_duration": 1843,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "transcript_filename": "transcript.machine.json",
+      "transcript_sha256": "384852667c3fcca7d492170374c3e264ffc037c36bbb23ce436dc703fcaa2344",
+      "first_start_seconds": 1.17,
+      "last_end_seconds": 1812.72,
+      "input_media_sha256": "d5d1114a83fdb0bb039f7bc0bb84af086d9b90fb06540eaa7ef9c75101e77c58",
+      "input_media_filename": "audio.webm",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained media container was ASR input; no extracted audio hash asserted.",
+      "transcript_reading": "Complete preferred machine transcript read in numbered order.",
+      "visual_review": "Recording diagrams described through their explicit transcript rules; no visually inferred quantities or full video review asserted."
+    },
+    {
+      "lecture_number": 41,
+      "video_id": "Jgb0lktzfs4",
+      "duration": 1901.021,
+      "playlist_reported_duration": 1902,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "transcript_filename": "transcript.machine.json",
+      "transcript_sha256": "09c61f54f7244e72c51b983d59703ebfda9fbcfe9090fda3bec92a97f615c7bf",
+      "first_start_seconds": 1.17,
+      "last_end_seconds": 1871.66,
+      "input_media_sha256": "d9a9268c02f0745b54fa7b8cd0e3412ffd4424516abbe0aebdf392edec6852e2",
+      "input_media_filename": "audio.webm",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained media container was ASR input; no extracted audio hash asserted.",
+      "transcript_reading": "Complete preferred machine transcript read in numbered order.",
+      "visual_review": "Recording diagrams described through their explicit transcript rules; no visually inferred quantities or full video review asserted."
+    },
+    {
+      "lecture_number": 42,
+      "video_id": "HOKUnqWph78",
+      "duration": 1710.901,
+      "playlist_reported_duration": 1711,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "transcript_filename": "transcript.machine.json",
+      "transcript_sha256": "66d1bd0512f31043ee611bb77ba7124fc434827db2c6912ab5acc4cf10596ff5",
+      "first_start_seconds": 1.17,
+      "last_end_seconds": 1681.46,
+      "input_media_sha256": "da7ba8aeacee78513efe8a0961831e8e90734476d8b9fe1778aa966d93937792",
+      "input_media_filename": "audio.webm",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained media container was ASR input; no extracted audio hash asserted.",
+      "transcript_reading": "Complete preferred machine transcript read in numbered order.",
+      "visual_review": "Recording diagrams described through their explicit transcript rules; no visually inferred quantities or full video review asserted."
+    }
+  ],
+  "sections": [
+    {
+      "section": "The two clocks answer different questions",
+      "video_id": "8puNqWijeCc",
+      "duration": 1733.261,
+      "start": 1.17,
+      "end": 1703.98,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Origin/fixation probabilities, fitness snapshots, wait for surviving beneficial origin, spread time, separated regime and snapshot question.",
+      "research_extension": "",
+      "teaching_construction": "Explicit conditional/unconditional distinction, original population and supply inputs, finite deleterious correction.",
+      "evidence_class": "source-grounded model and original quantitative elaboration"
+    },
+    {
+      "section": "Read counts, fitness distributions and ancestry separately",
+      "video_id": "JtGx7Z6pgSc",
+      "duration": 1842.101,
+      "start": 1.17,
+      "end": 1294.22,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Time/count versus fitness/count representations, sampling visibility, successive mutations on new backgrounds, genotype versus persistent mutation.",
+      "research_extension": "",
+      "teaching_construction": "Band-thickness rather than boundary-height counts and exact sampling-detection formula.",
+      "evidence_class": "source-grounded model and original quantitative elaboration"
+    },
+    {
+      "section": "A critical count is a scale, not a hard boundary",
+      "video_id": "JtGx7Z6pgSc",
+      "duration": 1842.101,
+      "start": 1294.77,
+      "end": 1812.72,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Stochastic early phases, larger advantage needs fewer carriers, critical count of order1/s.",
+      "research_extension": "",
+      "teaching_construction": "Finite threshold tolerance, residual loss at20cells and model-conditioned95cellthreshold.",
+      "evidence_class": "source-grounded model and original quantitative elaboration"
+    },
+    {
+      "section": "A critical count is a scale, not a hard boundary: recap",
+      "video_id": "Jgb0lktzfs4",
+      "duration": 1901.021,
+      "start": 1.17,
+      "end": 319.92,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Selection coefficient and1/s examples.",
+      "research_extension": "",
+      "teaching_construction": "Distinction between crossover and certain deterministic trajectory.",
+      "evidence_class": "source-grounded model and original quantitative elaboration"
+    },
+    {
+      "section": "Test the isolated-sweep assumption before predicting adaptation",
+      "video_id": "Jgb0lktzfs4",
+      "duration": 1901.021,
+      "start": 319.92,
+      "end": 1215.54,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Frequent established mutations, manyfitnessclasses, comparison to current meanfitness, overlapping regimes.",
+      "research_extension": "",
+      "teaching_construction": "Poissonoverlapindex, self-consistency warning, explicit rate units and moment snapshot.",
+      "evidence_class": "source-grounded model and original quantitative elaboration"
+    },
+    {
+      "section": "Competing clones and nested mutations are different mechanisms",
+      "video_id": "Jgb0lktzfs4",
+      "duration": 1901.021,
+      "start": 1216.78,
+      "end": 1871.66,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Nested mutation backgrounds, simultaneous genotype competition, independent stronger resident-origin example and clonal interference.",
+      "research_extension": "",
+      "teaching_construction": "Distinguish independentclones frommultiplemutationaccumulation using inspected Desai/FisherFigure1.",
+      "evidence_class": "source-grounded model and original quantitative elaboration"
+    },
+    {
+      "section": "Count beneficial origins in divisions, not in vague time",
+      "video_id": "HOKUnqWph78",
+      "duration": 1710.901,
+      "start": 1.17,
+      "end": 1400.59,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Regimes recap, Ndivision clock, totalmutationrate split byeffects, environmentaldependence andNmuB supply.",
+      "research_extension": "",
+      "teaching_construction": "Expectedratherthanrealizedcount, perdivisionversusnucleotiderate, no empiricalrateclaim.",
+      "evidence_class": "source-grounded model and original quantitative elaboration"
+    },
+    {
+      "section": "Whole-generation observation changes the waiting statistic",
+      "video_id": "HOKUnqWph78",
+      "duration": 1710.901,
+      "start": 1401.17,
+      "end": 1681.46,
+      "timing_source": "retained local faster-whisper small.en transcript",
+      "lecture_material": "Supply times survivalprobability, inverseNmuBs meanwait, subgeneration examples and populationsizechange.",
+      "research_extension": "",
+      "teaching_construction": "Poissonthinning versuscoarsegeometricobservation, variance/tails, exactsuccessprobability.",
+      "evidence_class": "source-grounded model and original quantitative elaboration"
+    },
+    {
+      "section": "Deterministic sweep surrogate, primary comparison, executable clock model and six exercises",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "No additional timed lecture-derived sweep formula asserted for39-42.",
+      "research_extension": "Desai/Fisher2007 PDFpp2-5: independent/nested mechanisms and logfitness convention, Figure1 inspected.",
+      "teaching_construction": "Logodds interval fromL/Nto1-L/N, overlap/sampling calculations, six fullsolutions and standardlibrarycode.",
+      "evidence_class": "inspected primary comparison and original teaching"
+    }
+  ],
+  "references": [
+    {
+      "title": "Desai and Fisher, Beneficial Mutation-Selection Balance and the Effect of Linkage on Positive Selection (2007)",
+      "url": "https://www.desai-lab.com/publications/PDFs/desaifisher07.pdf",
+      "supports": "PDFpp2-5 Figure1 and heuristic setup: separate clone competition versus nested mutations; loggrowthfitness convention."
+    }
+  ],
+  "source_uncertainties": [
+    "Machine labels/fitness words occasionally swapped; formal definitions kept stable.",
+    "Rate products are expectations, not guaranteed counts.",
+    "Total10^-3 andbeneficialfractionexamples areillustrations, not verified species-wide estimates.",
+    "Glucose/galactose adaptiveclaims are not promoted to established findings without namedprimaryexperiment.",
+    "Critical1/s isacrossover, notcertain survival.",
+    "No full recording-frame review; Desai/Fisher primaryFigure1 andFigure2 visually inspected separately."
+  ],
+  "symbol_ledger": [
+    {
+      "symbol": "N,A,B,r,U_b",
+      "definition": "Fixed haploidcount,resident/mutant,dimensionlessrelativeweight,beneficialoriginprobabilityperdivision."
+    },
+    {
+      "symbol": "tau_wait,tau_sweep",
+      "definition": "Waitforsuccesscandidate andsubsequentspecifiedspreadinterval; notunconditionalabsorption."
+    },
+    {
+      "symbol": "s,L,epsilon",
+      "definition": "r-1,operationalcarrierthreshold,chosenlaterlosstolerance."
+    },
+    {
+      "symbol": "lambda,W,t,q",
+      "definition": "SuccessfuloriginPoissonrate,continuouswait,timeingenerations,coarseperiodpositiveprobability."
+    },
+    {
+      "symbol": "x,sigma,I",
+      "definition": "Mutantfraction,deterministicgrowthratedifferencepergeneration,overlapindexlambda*tau."
+    },
+    {
+      "symbol": "g_a,x_a,bar_g,m",
+      "definition": "Genotypegrowthrate/frequency,weightedmeanrate,independentcellsamplecount."
+    }
+  ],
+  "independent_review": {
+    "status": "pending"
+  },
+  "validation_evidence": [],
+  "accepted_body_sha256": "0df88835d601e86991e3c28525de3dfcb11cd8d39874a0396f088b3051780156"
+}

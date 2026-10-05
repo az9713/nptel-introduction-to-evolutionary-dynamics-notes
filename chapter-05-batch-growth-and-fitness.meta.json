@@ -1,0 +1,240 @@
+{
+  "chapter_order": 5,
+  "title": "Batch growth and what fitness measures",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 14,
+      "video_id": "6VZdrT-o2jo",
+      "duration": 1951.001,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1952,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "28de11db03aa7ded709059f4df18622c558e802f6dad3fef8cd2f93ca51d820d",
+      "selected_transcript_sha256": "90728924ab6c6f5b04836c959af2020a09d31b9bdbcd10d011691b7bed8002e6",
+      "selected_first_start": 1.513,
+      "selected_last_end": 1929.792,
+      "endpoint_gap_seconds": 21.20900000000006,
+      "source_reported_duration": 1951,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "87c0354f4bb45e584f4044704e6c88e8a25b64c0bd9d40042de680181e0ad532",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Subtitle production method unknown; source shorthand corrected in claim ledger. Endpoint gaps preserved; no author video-frame endpoint claim."
+    },
+    {
+      "lecture_number": 15,
+      "video_id": "P-VfKwNSmTU",
+      "duration": 2007.381,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 2008,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "f06ea9dd8162384f03f9bc9bcc70aad443c98ed48bd63a5e21f1b2af2ca201d0",
+      "selected_transcript_sha256": "c3daa4f51930117d7cb6dc9409f40d5f52f22defbe5b0d57cdb52cacde8e6cd0",
+      "selected_first_start": 1.513,
+      "selected_last_end": 1983.3680000000002,
+      "endpoint_gap_seconds": 24.01299999999992,
+      "source_reported_duration": 2007,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "bef88e9410c1bb455a6f81d9103000a48fc49bd7659d4884f8d04a09cd67c7fd",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Subtitle production method unknown; source shorthand corrected in claim ledger. Endpoint gaps preserved; no author video-frame endpoint claim."
+    },
+    {
+      "lecture_number": 16,
+      "video_id": "NRkPk0zYLIc",
+      "duration": 1244.941,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1245,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "94227daf0bd422ba529a36fd843ca0fd51f34360ecbfa2282c93cf9133b454a1",
+      "selected_transcript_sha256": "0ff0f99444f56c5f5d3506f2e685c4c274f59578614c0403005e568b9c59b718",
+      "selected_first_start": 2.233,
+      "selected_last_end": 1223.625,
+      "endpoint_gap_seconds": 21.31600000000003,
+      "source_reported_duration": 1245,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "1d7f30d4fa6e0e617cb17d8dea31749dce9bce0d1c4243a196e81dfdea20ddf0",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Subtitle production method unknown; source shorthand corrected in claim ledger. Endpoint gaps preserved; no author video-frame endpoint claim."
+    },
+    {
+      "lecture_number": 17,
+      "video_id": "ymkvTpJssY0",
+      "duration": 1969.781,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1970,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "e42b274a89ed23b5c1b181ab7f6cae83f2d37c1292835e9f9b3837383970cae9",
+      "selected_transcript_sha256": "c29303f62eb8b365411fc8791e1b058f192dfed4617ab7b4a803bf9183bcf646",
+      "selected_first_start": 14.059,
+      "selected_last_end": 1944.843,
+      "endpoint_gap_seconds": 24.937999999999874,
+      "source_reported_duration": 1970,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "819f83273b43e3bb9802cd83ace8c2c8d8edbe51e74325e75b8ea09198314184",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Subtitle production method unknown; source shorthand corrected in claim ledger. Endpoint gaps preserved; no author video-frame endpoint claim."
+    }
+  ],
+  "sections": [
+    {
+      "section": "Constructing a batch-culture measurement",
+      "video_id": "6VZdrT-o2jo",
+      "duration": 1951.001,
+      "start": 17.23,
+      "end": 1508.27,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Microbial experimental advantages, frozen ancestral archives, finite batch resources, optical measurement and diluted colony counts.",
+      "research_extension": "Stevenson2016 Results/Methods: morphology and growth condition change OD/count calibration.",
+      "teaching_construction": "CFU dilution equation, measurement distinctions and sampling uncertainty.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Growth phases are different components of performance",
+      "video_id": "P-VfKwNSmTU",
+      "duration": 2007.381,
+      "start": 17.45,
+      "end": 1470.26,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Lag, exponential, stationary and death phases; lactose adaptation, physiological history and genotype; no single curve feature resolves every competition.",
+      "research_extension": "No external empirical claim in this section.",
+      "teaching_construction": "Fixed-lag piecewise exponential teaching model and explicit phase limitations.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Exponential growth and the doubling-time conversion",
+      "video_id": "NRkPk0zYLIc",
+      "duration": 1244.941,
+      "start": 2.23,
+      "end": 1208.24,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Proportional growth ODE, integration, twenty-minute doubling extrapolation and idealised cell geometry.",
+      "research_extension": "No external empirical claim in this section.",
+      "teaching_construction": "Derivation, correct natural-log doubling conversion, mass arithmetic and approximation limits.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Logistic growth: a finite capacity and its exact consequences",
+      "video_id": "ymkvTpJssY0",
+      "duration": 1969.781,
+      "start": 14.06,
+      "end": 1642.71,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Logistic growth, environment-dependent capacity, low-density approximation, half-capacity and saturation.",
+      "research_extension": "No external empirical claim in this section.",
+      "teaching_construction": "Exact solution, maximum absolute growth, instantaneous versus global rate and undefined K=0 correction.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Two strains compete for one capacity",
+      "video_id": "ymkvTpJssY0",
+      "duration": 1969.781,
+      "start": 1644.75,
+      "end": 1930.8,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Two strains share a factor depending on their combined count and one capacity.",
+      "research_extension": "No external empirical claim in this section.",
+      "teaching_construction": "Frequency derivative, finite cumulative exposure root, invariant and nonextinction proof.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Fitness belongs to an assay",
+      "video_id": "P-VfKwNSmTU",
+      "duration": 2007.381,
+      "start": 1471.54,
+      "end": 1977.38,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Assay endpoint and growth phases can change which strain has a relative advantage.",
+      "research_extension": "Manhart2018 Methods Eq2.2–2.3 and Results§3: log-fold advantage and resource-dependent competition.",
+      "teaching_construction": "Synthetic lag-rate crossover, cycle-relative fitness conventions and exact odds update.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Chemostat preview, developed in chapter 6",
+      "video_id": "6VZdrT-o2jo",
+      "duration": 1951.001,
+      "start": 1510.27,
+      "end": 1917.55,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Continuous feed/outflow and balanced growth preview, developed in chapter6.",
+      "research_extension": "No external empirical claim in this preview.",
+      "teaching_construction": "Distinguish batch change from an achieved steady state.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Original derivations, examples, code, exercises and separately attributed research",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": null,
+      "lecture_material": "Not attributed to a recording.",
+      "research_extension": "Stevenson2016 calibration and Manhart2018 competition claims separately attributed.",
+      "teaching_construction": "Original exact derivations, synthetic numerical cases, executed code and six reasoned exercises; not experimental reproductions.",
+      "evidence_class": "original mathematical teaching constructions and inspected primary research, not empirical reproduction"
+    }
+  ],
+  "symbol_ledger": [
+    [
+      "X(t)",
+      "cell count in fixed volume"
+    ],
+    [
+      "C(t), V",
+      "concentration and culture volume"
+    ],
+    [
+      "d, v, n",
+      "dilution fraction, plated mL, colony count"
+    ],
+    [
+      "A, B",
+      "resident and mutant counts"
+    ],
+    [
+      "lambda_A, lambda_B",
+      "lag times in hours"
+    ],
+    [
+      "g_A, g_B, g",
+      "per-capita rates in inverse hours"
+    ],
+    [
+      "t_d",
+      "doubling time"
+    ],
+    [
+      "K",
+      "positive carrying count"
+    ],
+    [
+      "q",
+      "shared crowding factor 1-(A+B)/K"
+    ],
+    [
+      "x",
+      "mutant fraction B/(A+B)"
+    ],
+    [
+      "z",
+      "cumulative growth exposure in hours"
+    ],
+    [
+      "ell",
+      "dimensionless log-fold cycle advantage"
+    ],
+    [
+      "r_cycle, s_cycle",
+      "exp(ell) and r_cycle-1"
+    ]
+  ],
+  "accepted_body_sha256": "7048f70b2728f4074407334ee95897a9c49dfdc3804e69e00fe1aefd29fe5746"
+}

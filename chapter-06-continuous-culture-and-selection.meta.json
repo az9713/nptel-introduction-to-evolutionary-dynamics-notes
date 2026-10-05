@@ -1,0 +1,216 @@
+{
+  "chapter_order": 6,
+  "title": "Continuous culture and selection relative to the mean",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 18,
+      "video_id": "4nc7Qh_aeho",
+      "duration": 1910.221,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1911,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "46dd918de95b5caeaa961936d3d75ceb997cd8a135c66d39bd7f3b448330bf7e",
+      "selected_transcript_sha256": "48afd55c112f62657f4dab49b3f1554e7a53d7a77abb20a93ef80648843f9953",
+      "selected_first_start": 17.617,
+      "selected_last_end": 1889.021,
+      "endpoint_gap_seconds": 21.200000000000045,
+      "source_reported_duration": 1910,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "182468e55d7826ea7b5bd7904acbe14a41b465ada629715fd0ee6b7eb71b25b5",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Subtitle production method unknown; source shorthand corrected in claim ledger. Endpoint gaps preserved; no author video-frame endpoint claim."
+    },
+    {
+      "lecture_number": 19,
+      "video_id": "SygnMFkKsb8",
+      "duration": 1980.901,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1981,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "42acaa266138feb9f8c9c989890a05bff073670dc74dbc63377f99fa755f4d51",
+      "selected_transcript_sha256": "8cfd6668191c5c73ad0d2322bfd0a4f0daea81cfd77a2ae273956ec59e4bf7c8",
+      "selected_first_start": 14.041,
+      "selected_last_end": 1954.434,
+      "endpoint_gap_seconds": 26.4670000000001,
+      "source_reported_duration": 1981,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "c1257f1c7d183022dfd8d2e4aabc6e7d33d77c7d0a877cfc9472383e55fe8229",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Subtitle production method unknown; source shorthand corrected in claim ledger. Endpoint gaps preserved; no author video-frame endpoint claim."
+    },
+    {
+      "lecture_number": 20,
+      "video_id": "_rLi2lTGeGk",
+      "duration": 1774.421,
+      "duration_source": "ffprobe duration of retained hashed media",
+      "playlist_reported_duration": 1775,
+      "transcript_provenance": "uploader-provided English caption track labelled English - NPTEL Verified; platform classifies track as subtitles, not automatic captions",
+      "track_name": "English - NPTEL Verified",
+      "caption_sha256": "15bf7147aea12e9762cd4038d7f51a3002dbe16645bbc403a1604bff876ee686",
+      "selected_transcript_sha256": "3bfb4e8ebb975f8d6e944bdb55105dea974f90f78b8df831d781c6dc99395201",
+      "selected_first_start": 1.513,
+      "selected_last_end": 1749.7779999999998,
+      "endpoint_gap_seconds": 24.643000000000256,
+      "source_reported_duration": 1774,
+      "transcript_reading": "complete selected transcript read sequentially",
+      "input_media_sha256": "6b5275576ab52ba318a25367510dc8e92850cd80e33899d42cbb92d3433bc58e",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained input container hash; no separately extracted audio hash claimed.",
+      "uncertainty": "Subtitle production method unknown; source shorthand corrected in claim ledger. Endpoint gaps preserved; no author video-frame endpoint claim."
+    }
+  ],
+  "sections": [
+    {
+      "section": "Equal flows fix volume, not population size",
+      "video_id": "4nc7Qh_aeho",
+      "duration": 1910.221,
+      "start": 17.62,
+      "end": 1080.05,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Well-mixed chemostat, sterile inflow, equal volumetric flows, growth/removal balance and two types.",
+      "research_extension": "No external empirical claim in this section.",
+      "teaching_construction": "Derive D=F/V and absolute-count balance; correct constant-volume versus constant-count conflation.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Frequency changes relative to a population mean",
+      "video_id": "4nc7Qh_aeho",
+      "duration": 1910.221,
+      "start": 1080.59,
+      "end": 1889.02,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Genotype fractions, common removal coefficient, sum constraint and composition-weighted mean growth.",
+      "research_extension": "No external empirical claim in this section.",
+      "teaching_construction": "Physical quotient derivation and explicit X=1-x,Y=x notation translation.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Frequency mean and multiple types",
+      "video_id": "SygnMFkKsb8",
+      "duration": 1980.901,
+      "start": 14.04,
+      "end": 919.28,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Rates above or below the population mean control frequency; extend to multiple existing types.",
+      "research_extension": "No external empirical claim in this section.",
+      "teaching_construction": "Variance identity, exact log-odds trajectory and target time; absolute abundance is separate.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Mutation, existing variation and assay-dependent fitness",
+      "video_id": "SygnMFkKsb8",
+      "duration": 1980.901,
+      "start": 921.02,
+      "end": 1530.49,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Existing-variation model excludes mutation; batch endpoint makes growth an assay-dependent fitness proxy; effect categories introduced.",
+      "research_extension": "No external empirical claim in this section.",
+      "teaching_construction": "Define genetic change versus neutral measured effect and finite deterministic/stochastic boundaries.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Magnitude and definition of selection coefficients",
+      "video_id": "SygnMFkKsb8",
+      "duration": 1980.901,
+      "start": 1532.73,
+      "end": 1954.43,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Beneficial variants have different magnitudes; relative selection coefficient defined by parent/mutant rate ratio.",
+      "research_extension": "No external empirical claim in this section.",
+      "teaching_construction": "Separate dimensionless s from dimensional Delta g and finite-interval ell.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Mutation categories and context",
+      "video_id": "_rLi2lTGeGk",
+      "duration": 1774.421,
+      "start": 17.45,
+      "end": 1097.88,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Mutation effect categories, genomic context, lactose/glucose and resistance illustrations.",
+      "research_extension": "Illustrations treated as proposed context-dependent cases, not universal empirical resistance costs.",
+      "teaching_construction": "Explicit mutation/background/environment/assay conditioning and qualifications.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Effect magnitudes and distribution preview",
+      "video_id": "_rLi2lTGeGk",
+      "duration": 1774.421,
+      "start": 1101.82,
+      "end": 1744.53,
+      "timing_source": "selected full transcript segment times",
+      "lecture_material": "Relative selection formula and its signs; effects differ within categories; DFE preview.",
+      "research_extension": "No external empirical claim in this section.",
+      "teaching_construction": "Consistent conventions and forward dependency to chapter7.",
+      "evidence_class": "lecture exposition with independently derived mathematics; see private coverage ledger"
+    },
+    {
+      "section": "Original derivations, examples, code, exercises and separately attributed research",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "timing_source": null,
+      "lecture_material": "Not attributed to a recording.",
+      "research_extension": "Inspected primary claims are attributed in manuscript; chapter6 substrate balance follows Fritsch2014§2.1 Eq1–3.",
+      "teaching_construction": "Original exact derivations, synthetic numerical cases, executed code and six reasoned exercises; not experimental reproductions.",
+      "evidence_class": "original mathematical teaching constructions and inspected primary research, not empirical reproduction"
+    }
+  ],
+  "symbol_ledger": [
+    [
+      "V, F, D",
+      "volume, equal volumetric flow, F/V per hour"
+    ],
+    [
+      "A, B, N",
+      "resident, mutant, total cell counts"
+    ],
+    [
+      "g_A, g_B",
+      "net per-capita growth before flow removal per hour"
+    ],
+    [
+      "x",
+      "mutant frequency B/N"
+    ],
+    [
+      "g_bar, Delta g",
+      "mean rate and g_B-g_A"
+    ],
+    [
+      "p_j, g_j",
+      "frequencies and rates of m existing types"
+    ],
+    [
+      "M, S, S_in",
+      "biomass, substrate, feed mg/L"
+    ],
+    [
+      "Y, mu(S)",
+      "biomass yield and substrate-dependent rate"
+    ],
+    [
+      "mu_max, H",
+      "maximum rate and half-saturation concentration"
+    ],
+    [
+      "f_A, f_B, r, s",
+      "positive comparable fitness, f_B/f_A, r-1"
+    ],
+    [
+      "ell",
+      "dimensionless interval log-fold advantage"
+    ],
+    [
+      "m, G, E, A_script",
+      "mutation, background, environment, assay"
+    ]
+  ],
+  "accepted_body_sha256": "4fc049a94b423b14659dbf19d250f04e98162b76246f76e53147a1ca963c032d"
+}

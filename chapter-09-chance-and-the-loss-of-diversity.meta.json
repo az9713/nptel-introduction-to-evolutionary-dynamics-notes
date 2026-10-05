@@ -1,0 +1,195 @@
+{
+  "chapter_order": 9,
+  "title": "Chance, lineage survival, and the loss of diversity",
+  "status": "reviewed and locally validated",
+  "recordings": [
+    {
+      "lecture_number": 29,
+      "video_id": "wC7UhT50Vp8",
+      "duration": 1628.621,
+      "playlist_reported_duration": 1629,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "transcript_sha256": "a81a1a4fcbc75d24cdddefe125d8b8ed0cb83b1831b86aafc597489d8a6e8a3b",
+      "transcript_filename": "transcript.machine.json",
+      "first_start_seconds": 1.17,
+      "last_end_seconds": 1599.25,
+      "endpoint_gap_seconds": 29.371000000000095,
+      "input_media_sha256": "c8a202e420233499ba399eb0024b769530607f68c6dbc0c62e37722b07873781",
+      "input_media_filename": "audio.webm",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained media container was transcribed; no separate extracted audio hash asserted.",
+      "transcript_reading": "Complete preferred transcript read sequentially by author.",
+      "visual_review": "No visual interpretation is used or complete video review asserted."
+    },
+    {
+      "lecture_number": 30,
+      "video_id": "i_94sLZrSII",
+      "duration": 1738.941,
+      "playlist_reported_duration": 1739,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "transcript_sha256": "f6dc0c122ac7dcff7c46f6a2e052eb160f30040fc80b4878a359592b46791b9d",
+      "transcript_filename": "transcript.machine.json",
+      "first_start_seconds": 1.17,
+      "last_end_seconds": 1709.52,
+      "endpoint_gap_seconds": 29.42100000000005,
+      "input_media_sha256": "a2ae8ff37323f77f3d8178f428cb31c0f28a574f1ad6d03956ae585377279f05",
+      "input_media_filename": "audio.webm",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained media container was transcribed; no separate extracted audio hash asserted.",
+      "transcript_reading": "Complete preferred transcript read sequentially by author.",
+      "visual_review": "No visual interpretation is used or complete video review asserted."
+    },
+    {
+      "lecture_number": 31,
+      "video_id": "izTN713702k",
+      "duration": 1699.341,
+      "playlist_reported_duration": 1700,
+      "transcript_provenance": "local machine transcription; not publisher captions",
+      "transcript_sha256": "87e003759192b4aa148e051760cf38d195bbf7d2cbf3b94637439b9433b8099f",
+      "transcript_filename": "transcript.machine.json",
+      "first_start_seconds": 1.17,
+      "last_end_seconds": 1669.84,
+      "endpoint_gap_seconds": 29.500999999999976,
+      "input_media_sha256": "f70d52c9e5499682a9a0ed46c1c2d867993ccecab33e519d9e4870eb86227ec7",
+      "input_media_filename": "audio.webm",
+      "audio_sha256": null,
+      "audio_hash_note": "Retained media container was transcribed; no separate extracted audio hash asserted.",
+      "transcript_reading": "Complete preferred transcript read sequentially by author.",
+      "visual_review": "No visual interpretation is used or complete video review asserted."
+    }
+  ],
+  "sections": [
+    {
+      "section": "A reproductive advantage does not guarantee survival",
+      "video_id": "wC7UhT50Vp8",
+      "duration": 1628.621,
+      "start": 1.17,
+      "end": 1599.25,
+      "timing_source": "retained local faster-whisper small.en machine transcript",
+      "lecture_material": "Deterministic growth expectations, new beneficial chemostat cell, washout before reproduction and composition-dependent role of chance.",
+      "research_extension": "",
+      "teaching_construction": "Four-marker running case, continuous-versus-integer distinction, fitness units, limitations of one-carrier origins and independent loss.",
+      "evidence_class": "source-grounded model explanation and original derivation"
+    },
+    {
+      "section": "Sampling with replacement gives the marble game its force",
+      "video_id": "i_94sLZrSII",
+      "duration": 1738.941,
+      "start": 1.17,
+      "end": 705.41,
+      "timing_source": "retained local faster-whisper small.en machine transcript",
+      "lecture_material": "N marbles, equal opportunities, returning each parent marble, copying N offspring, successive jars.",
+      "research_extension": "",
+      "teaching_construction": "Explicit inherited marker, neutrality, count-frequency and multinomial-state definitions.",
+      "evidence_class": "source-grounded model explanation and original derivation"
+    },
+    {
+      "section": "The next population has a multinomial law",
+      "video_id": "i_94sLZrSII",
+      "duration": 1738.941,
+      "start": 705.41,
+      "end": 1088.02,
+      "timing_source": "retained local faster-whisper small.en machine transcript",
+      "lecture_material": "Stacked color counts and changes on constructing a new jar.",
+      "research_extension": "",
+      "teaching_construction": "Original multinomial/binomial proof, exact four-cell row, conditional mean and variance.",
+      "evidence_class": "source-grounded model explanation and original derivation"
+    },
+    {
+      "section": "Diversity can fall while every mean frequency stays constant",
+      "video_id": "i_94sLZrSII",
+      "duration": 1738.941,
+      "start": 1089.84,
+      "end": 1709.52,
+      "timing_source": "retained local faster-whisper small.en machine transcript",
+      "lecture_material": "Loss of colors, differing realized trajectories, eventual one-color outcome, tracing marker histories.",
+      "research_extension": "",
+      "teaching_construction": "Original richness expectation and pair-diversity recurrence; pathwise richness versus expected diversity.",
+      "evidence_class": "source-grounded model explanation and original derivation"
+    },
+    {
+      "section": "Eventual fixation has a probability, not a predetermined winner",
+      "video_id": "izTN713702k",
+      "duration": 1699.341,
+      "start": 1.17,
+      "end": 1149.3,
+      "timing_source": "retained local faster-whisper small.en machine transcript",
+      "lecture_material": "Color-to-genotype translation, neutral reproduction, loss without selection, fixation and equal-singleton symmetry.",
+      "research_extension": "",
+      "teaching_construction": "Original finite-block proof and bounded-convergence argument extending fixation to unequal starting counts.",
+      "evidence_class": "source-grounded model explanation and original derivation"
+    },
+    {
+      "section": "The analogy identifies a mechanism and its limits",
+      "video_id": "izTN713702k",
+      "duration": 1699.341,
+      "start": 142.61,
+      "end": 756.82,
+      "timing_source": "retained local faster-whisper small.en machine transcript",
+      "lecture_material": "Genotypes as marble colors, equal reproductive opportunity, genotype/phenotype distinction and drift-driven change.",
+      "research_extension": "",
+      "teaching_construction": "Explicit assay-dependent neutrality, stable terminology and limits of the genotype-color analogy.",
+      "evidence_class": "source-grounded model explanation and original derivation"
+    },
+    {
+      "section": "The analogy identifies a mechanism and its limits",
+      "video_id": "izTN713702k",
+      "duration": 1699.341,
+      "start": 1151.5,
+      "end": 1669.84,
+      "timing_source": "retained local faster-whisper small.en machine transcript",
+      "lecture_material": "Small-versus-large population intuition, drift and selection combined, transition to the forthcoming model.",
+      "research_extension": "",
+      "teaching_construction": "Sampling-size comparison, explicit effective-size definition, assay limits and differentiated clocks.",
+      "evidence_class": "source-grounded model explanation and original derivation"
+    },
+    {
+      "section": "Research comparison, exact code and six full solutions",
+      "video_id": null,
+      "duration": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "No additional recording span claimed.",
+      "research_extension": "Kimura 1962, PDF page3 (printed715), diploid sampling variance and assumptions.",
+      "teaching_construction": "Exact Fraction binomial enumeration, six varied inference/model/counterexample exercises.",
+      "evidence_class": "inspected primary model comparison and original teaching construction"
+    }
+  ],
+  "references": [
+    {
+      "title": "Kimura, On the Probability of Fixation of Mutant Genes in a Population (1962)",
+      "url": "https://www.zoology.ubc.ca/let/pdfs/Kimura_1962.pdf",
+      "supports": "PDF page3, printed715: diploid random-sampling variance x(1-x)/(2N); translated to haploid N-copy jar."
+    }
+  ],
+  "source_uncertainties": [
+    "Machine wording can corrupt type labels and formulas; equations independently derived.",
+    "Lecture statement of guaranteed beneficial success is bounded by a finite stochastic model.",
+    "Richness need not decrease every generation, and pair diversity can increase on a realized path.",
+    "A new mutation need not have only one origin under recurrent mutation or migration.",
+    "No full frame-by-frame video review asserted; the substantive spine uses complete transcripts."
+  ],
+  "symbol_ledger": [
+    {
+      "symbol": "A,B,x,g_A,g_B,Delta g,t",
+      "definition": "Resident/mutant; mutant fraction; physical growth rates and difference; physical time in growth section."
+    },
+    {
+      "symbol": "N,m,a,n_a,p_a,K_a",
+      "definition": "Fixed haploid count, represented colors, color label, parent count/frequency, random next counts."
+    },
+    {
+      "symbol": "X',R',H",
+      "definition": "Random next focal frequency, richness, pair diversity with replacement."
+    },
+    {
+      "symbol": "t,T,delta,u",
+      "definition": "Whole-generation count after the growth example, first fixation generation, finite positive absorption bound, eventual focal fixation probability."
+    }
+  ],
+  "independent_review": {
+    "status": "pending"
+  },
+  "validation_evidence": [],
+  "accepted_body_sha256": "00ba4ad095102428c86f906c1bd622755549787da6e913544ce7aa38a9965c35"
+}
